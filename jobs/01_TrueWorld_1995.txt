@@ -1,0 +1,4 @@
+Period:December, 1994 - July, 1995
+Company:True World Access
+Title:Senior Developer / Systems Administrator
+Desc:<div class="SMALL DESC"> Senior System Administrator/Programmer for a network of mixed SunOS/Solaris/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.  </div>

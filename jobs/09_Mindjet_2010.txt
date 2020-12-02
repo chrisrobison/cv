@@ -1,0 +1,5 @@
+Period:Sept, 2007 - July, 2010
+Company:Mindjet
+Title:Web Architect
+URL:www.mindjet.com
+Desc:<p>Initially brought in for a 3 month contract to architect and migrate the Mindjet website from PHP to an ASP.Net solution.  My role quickly grew into heading up Mindjet's foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.</p><p>Mindjet Catalyst is web-based mindmapping software that allows real-time multi-person sharing, collaboration and editing of mindmaps without leaving your browser.  The Catalyst client canvas is written in Flash and written to via Javascript frameworks and API's which handle communication with the server.  The system has been designed such that it is poised to utilize only open standards with HTML5, CSS3, canvas/VML and SVG.  Server-side built with Java/JSP however a large portion of the account handling still resides on the .Net platform requiring the definition and build-out of RESTful services to bridge the two systems.</p>
