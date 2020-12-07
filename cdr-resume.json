@@ -1,0 +1,348 @@
+{
+    "basics": {
+        "name": "Christopher Robison",
+        "label": "Chief Technology Officer at D Harris Tours",
+        "summary": "I am a highly skilled internet software engineer and web application architect.  I have experience managing small and large teams at NetOasis, Genetic Savings & Clone, Interactivate and Mediaplex.\n\nI understand the business ramifications of operational issues in addition to understanding the systems and technology they support.  My exposure to all aspects of business from the customer to the backend to the frontend has enabled me to build systems and software that look at the big picture and increase the bottom line.\n\nI have been pushing the limits of Javascript, CSS, HTML since their inception and, more recently, leveraged the power of web 2.0 technologies (AJAX \/ XMLHttpRequest \/ JSON) to architect and develop web applications.  My server-side skill set is as strong, if not stronger, than my front-end.  I have extensive experience with object oriented programming and have implemented just about every design pattern known to man.  Expert with most modern programming languages such as Javascript, Java, PHP, C#, Swift,  Python and others.  I'm also a pretty good Unix (Linux\/FreeBSD\/Solaris) systems administrator.\n\nSpecialties: Javascript (nodejs & client), NoSQL (MongoDB, redis), business process management & automation, web based software, programming, software frameworks, XML, DOM, PHP, Perl, Javascript, AJAX",
+        "location": {
+            "address": "621 Holloway Ave.",
+            "postalCode": "94112",
+            "city": "San Francisco",
+            "countryCode": "US",
+            "region": "CA"
+        },
+        "phone": "415-300-0180",
+        "website": "http:\/\/www.cdrmail.com\/",
+        "profiles": [
+            {
+                "network": "linkedin",
+                "username": "crobison",
+                "url": "https:\/\/www.linkedin.com\/in\/crobison"
+            },
+            {
+                "network": "twitter",
+                "username": "thechrisrobison",
+                "url": "https:\/\/twitter.com\/thechrisrobison"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "D Harris Tours",
+            "summary": "D Harris Tours is a shuttle and tour bus company in the SF Bay Area.  10 years ago, D Harris Tours was only 2 buses and 2 drivers when they started using Simple Software's business management software.  Today, the company now owns 11 buses with 14 employees people.",
+            "position": "Chief Technology Officer",
+            "startDate": "2020-03-01"
+        },
+        {
+            "company": "Simple Software Co. of San Francisco",
+            "position": "Founder \/ Chief Software Architect",
+            "website": "",
+            "startDate": "2009-05-01",
+            "endDate": "2017-06-15",
+            "summary": ""
+        },
+        {
+            "company": "Conversant (formerly Mediaplex)",
+            "position": "Senior Software Engineering Manager",
+            "startDate": "2014-04-01",
+            "endDate": "2020-03-01"
+        },
+        {
+            "company": "Conversant (formerly Mediaplex)",
+            "summary": "Responsible for architecting and designing the next generation of rich media advertisements.  Since 1999, Mediaplex has been quite successful in traditional online advertising but the recent surge in popularity of new \"rich media\" ads offered by competing ad vendors had been slowly taking its toll on Mediaplex's bottom line.  I was brought on board to lead their rich media effort.  I stabilized the existing codebase and managed engineering resources working with the product services team to ensure the successful deployment of all rich media advertising campaigns.  Responsible for architecting and managing the development of Mediaplex's flexible rich media framework.  This framework is implemented entirely in the client using Javascript and utilizes the latest in web technologies such as HTML5, CSS3 and AJAX while still maintaining compatibility with older browser software.  This framework has been designed to be modular, extensible and thoroughly customizable.  The new system builds on existing infrastructure, is browser independent, client agnostic (flash\/html5\/email), has a small footprint and loads quickly and politely (read: unobtrusive and fast loading).",
+            "position": "Rich Media Architect",
+            "startDate": "2010-07-01",
+            "endDate": "2014-04-01"
+        },
+        {
+            "company": "San Francisco Elks Lodge No. 3",
+            "position": "Esteemed Loyal Knight",
+            "startDate": "2004-01-01",
+            "endDate": "2014-01-01"
+        },
+        {
+            "company": "MindJet",
+            "summary": "Hired to redevelop and architect a new strategy for MindJet's website and software as a service (SaaS) offerings.  While in this position released Mindjet Catalyst, a web based application of their flagship MindManager software.",
+            "position": "Senior Web Architect \/ Developer",
+            "startDate": "2007-09-01",
+            "endDate": "2010-11-01"
+        },
+        {
+            "company": "The NetOASIS Software Co.",
+            "position": "Founder \/ President",
+            "startDate": "2006-01-01",
+            "endDate": "2007-08-01"
+        },
+        {
+            "company": "Genetic Savings & Clone",
+            "position": "Senior Programmer\/Architect",
+            "startDate": "2004-08-01",
+            "endDate": "2006-02-01"
+        },
+        {
+            "company": "Interactivate",
+            "position": "Technical Director",
+            "startDate": "2002-01-01",
+            "endDate": "2004-09-01"
+        },
+        {
+            "company": "Slip.Net",
+            "summary": "Architected, designed and developed the Slip.Net Control Center and Signup System",
+            "position": "Web Administrator",
+            "startDate": "1997-01-01",
+            "endDate": "2000-04-01"
+        },
+        {
+            "company": "Food.Com",
+            "position": "Web Engineer",
+            "startDate": "1999-01-01",
+            "endDate": "2000-01-01"
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "San Francisco Elks Lodge #3",
+            "position": "Youth Activities Co-Chair",
+            "summary": "As youth activities chair I was responsible to organizing and holding events to raise money for local underprivileged children living in the Tenderloin.  With the help of the SFPD, we built bicycles to give as Christmas presents which were very well received.  We raised over $34,000 for the children in that year.",
+            "startDate": "2010-04-01",
+            "endDate": "2011-04-01"
+        }
+    ],
+    "education": [
+        {
+            "institution": "California State University-Chico",
+            "area": "Computer Science",
+            "startDate": "1988-01-01",
+            "endDate": "1992-01-01"
+        },
+        {
+            "institution": "City College of San Francisco",
+            "area": "Japanese, Business",
+            "startDate": "2009-01-01",
+            "endDate": "2010-01-01"
+        },
+        {
+            "institution": "Butte College",
+            "area": "Computer Science, General Education",
+            "startDate": "1988-01-01",
+            "endDate": "1990-01-01"
+        },
+        {
+            "institution": "Paradise High School",
+            "area": "General Studies",
+            "startDate": "1984-01-01",
+            "endDate": "1988-01-01"
+        }
+    ],
+    "awards": [
+        {
+            "title": "Computer Science Award",
+            "date": "1988-06-01",
+            "awarder": "Paradise High School",
+            "summary": "First recipient of the Paradise High School \"Computer Science Award\" for developing a data application to track school resources that ran on an Apple IIe.  "
+        }
+    ],
+    "skills": [
+        {
+            "name": "Information Mapping"
+        },
+        {
+            "name": "jQuery"
+        },
+        {
+            "name": "HTML5"
+        },
+        {
+            "name": "Firebug"
+        },
+        {
+            "name": "Google API"
+        },
+        {
+            "name": "OAuth"
+        },
+        {
+            "name": "Entrepreneur"
+        },
+        {
+            "name": "Technical Leadership"
+        },
+        {
+            "name": "MySQL"
+        },
+        {
+            "name": "Exim"
+        },
+        {
+            "name": "HTML 5"
+        },
+        {
+            "name": "AJAX"
+        },
+        {
+            "name": "Entrepreneurship"
+        },
+        {
+            "name": "Software Development"
+        },
+        {
+            "name": "SaaS"
+        },
+        {
+            "name": "Agile Methodologies"
+        },
+        {
+            "name": "JSON"
+        },
+        {
+            "name": "JavaScript"
+        },
+        {
+            "name": "PHP"
+        },
+        {
+            "name": "Mobile Applications"
+        },
+        {
+            "name": "Cloud Computing"
+        },
+        {
+            "name": "CSS"
+        },
+        {
+            "name": "C#"
+        },
+        {
+            "name": "Apache"
+        },
+        {
+            "name": "Linux"
+        },
+        {
+            "name": "MongoDB"
+        },
+        {
+            "name": "Python"
+        },
+        {
+            "name": "Perl"
+        },
+        {
+            "name": "Web Services"
+        },
+        {
+            "name": "SMTP"
+        },
+        {
+            "name": "Databases"
+        },
+        {
+            "name": "Unix"
+        },
+        {
+            "name": "Design Patterns"
+        },
+        {
+            "name": "HTML"
+        },
+        {
+            "name": "JSP"
+        },
+        {
+            "name": "Software as a Service (SaaS)"
+        },
+        {
+            "name": "SQL"
+        },
+        {
+            "name": "Java"
+        },
+        {
+            "name": "Android Development"
+        },
+        {
+            "name": "iOS Development"
+        },
+        {
+            "name": "Software Development Life Cycle (SDLC)"
+        },
+        {
+            "name": "React.js"
+        },
+        {
+            "name": "React"
+        },
+        {
+            "name": "AngularJS"
+        },
+        {
+            "name": "Cascading Style Sheets (CSS)"
+        },
+        {
+            "name": "Project Management"
+        },
+        {
+            "name": "Software Project Management"
+        },
+        {
+            "name": "Leadership"
+        },
+        {
+            "name": "Management"
+        },
+        {
+            "name": "Integration"
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native or bilingual"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Making things",
+            "keywords": [
+                "3d printing",
+                "raspberry pi",
+                "arduino",
+                "laser cutting\/etching",
+                "maker"
+            ]
+        },
+        {
+            "name": "3D Printing",
+            "keywords": [
+                "3d printing",
+                "FDM",
+                "SLA"
+            ]
+        },
+        {
+            "name": "Golf",
+            "keywords": [
+                "golf",
+                "high score",
+                "senior tour"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "Kevin Ready (Software Developer and Consultant)",
+            "reference": "Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs."
+        },
+        {
+            "name": "Thomas Weaver (Network Provisioner at Twitch)",
+            "reference": "This guy has some seriously mad coding skills."
+        },
+        {
+            "name": "Benoit Marsot (Senior Developer R&D at Medsphere Systems Corporation)",
+            "reference": "His system is well oil; all my web services are working with no down time.  He offers all the greatest gadgets, ideal environment for a programmer like me."
+        },
+        {
+            "name": "Benoit Marsot (Senior Developer R&D at Medsphere Systems Corporation)",
+            "reference": "Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager."
+        }
+    ]
+}

@@ -1,0 +1,310 @@
+{
+    "basics": {
+        "name": "Christopher Robison",
+        "label": "Chief Technology Officer at D Harris Tours",
+        "summary": "An accomplished technology leader excelling in managing complex technical environments for growing operations, ranging from startups to billion dollar industry leaders. Build, develop and lead high-performance technical teams, effectively managing resources in-person and remotely across multiple geographic locations. Leverage business acumen and technical expertise to translate technology needs into innovative solutions and actionable plans that enable success of both short and long-term objectives.",
+        "location": {
+            "address": "621 Holloway Ave.",
+            "postalCode": "94112",
+            "city": "San Francisco",
+            "region": "CA"
+        },
+        "phone": "415-300-0180",
+        "picture": "https:\/\/cdr2.com\/cdr-profile1.jpg",
+        "website": "http:\/\/www.cdr2.com\/",
+        "profiles": [
+            {
+                "network": "linkedin",
+                "username": "crobison",
+                "url": "https:\/\/www.linkedin.com\/in\/crobison"
+            },
+            {
+                "network": "twitter",
+                "username": "thechrisrobison",
+                "url": "https:\/\/twitter.com\/thechrisrobison"
+            }
+        ]
+    },
+    "work": [{
+    "period": "March, 2020 - December, 2020",
+    "company": "D. Harris Tours, Inc.",
+    "position": "Chief Technology Officer [CTO]",
+    "website": "https:\/\/dharristours.com\/",
+    "summary": "D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire.  The majority of their business is derived from schools (student event transportation) and local tours.  10 years ago, I developed and implemented software that allowed D Harris to grow from 2 buses to 12. But the system I implemented 10 years ago was not made for the increased number of drivers, buses, customers and trips the company had grown to serve.  They were quick to hire me on as their CTO where I updated and enhanced their systems with real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. After reviewing the first months trip data, I found that drivers would often sit idle for 4-5 hours, waiting to pickup students they had dropped off at a football game or band practice.  I developed an algorithm to identify these idle times and match them with jobs. I offered drivers an extra hours pay if they did the extra trip.  This nearly doubled the daily revenue until the COVID-19 shutdown.\n",
+    "startDate": "2020-03-01",
+    "endDate": "2020-12-01"
+}, {
+    "period": "July, 2010 - March, 2020",
+    "company": "Conversant, Inc.",
+    "position": "Manager, Software Engineering",
+    "website": "http:\/\/conversantmedia.com",
+    "summary": "Having worked at the same company for 10 years, I wore many hats and performed many roles in addition to the company changing names multiple times. By the time my team was cut due to COVID-19, I was responsible for architecting the infrastructure and code that serves millions of mobile and rich media ads each day. The following are descriptions of just a few of the roles and accomplishments I feel highlight my time there.\n\nMediaplex was an online advertising company that was started in 1999 and was quite successful during the next couple of years. So successful that in 2001, Mediaplex was acquired by ValueClick. The servers and software that ran the ad serving portion of the business had been setup in 2000 and not had any major updates in almost a decade so their tech stack was beginning to show its age. When Mediaplex first started, ads were simply text with links, perhaps a background image.  But the surge in popularity of \"Rich Media\" ads that began hitting the market in 2009 was beyond what their backend had been engineered to handle. Competing ad vendors who could serve these new rich media ads began stealing away valuable business, costing the company revenue and customers. I was hired to lead their Rich Media effort and help modernize their ad serving and metric collection. I architected and deployed a RESTful API for serving rich media ads and built out scalable backend servers and services to handle integration with existing infrastructure.  A large part of Rich Media ad serving and reporting is performed in the client and this required creating a small, reliable, cross-browser client-side ad loading framework that worked in tandem with the new backend API. After stablizing the infrastructure, I then managed engineering resources to work with the product services team to ensure the successful deployment of all Rich Media advertising campaigns. The Rich Media enhancements were a great success on all counts, increasing revenue by $1.2 million in the first year alone.\n\nBy the time Rich Media ad serving was running smoothly, demand for mobile ads was steadily increasing and I was tasked with implementing a mobile ad solution. I convinced management to have our company join the IAB [https:\/\/iab.com], a consortium of online advertising companies that develops industry standards. We participated and were instrumental in defining the updated MRAID 2.0 standard for mobile ad serving which is still currently in use and the defacto standard for mobile ad serving. I wrote the initial Conversant Mobile Ad MRAID SDK's for both iOS and Android as well test apps for both platforms to be used internally and by our customers to preview ads in a mobile environment before deployment. The infrastructure and reporting updates that had been completed for rich media ads carried over to mobile quite nicely and minimized the need for further changes to our infrastructure.\n",
+    "highlights": ["Implemented MRAID SDK's on iOS and Android platforms", "Developed and deployed mobile ad solutions for multiple platforms", "Designed and deployed 'Rich Media' ad delivery and reporting infrastructure"],
+    "startDate": "2010-07-01",
+    "endDate": "2020-03-01"
+}, {
+    "period": "Sept, 2007 - July, 2010",
+    "company": "Mindjet",
+    "position": "Web Architect",
+    "website": "www.mindjet.com",
+    "summary": "Initially brought in to architect and migrate the Mindjet website from PHP to an ASP.Net solution, my role quickly grew into heading up Mindjet's foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.\n\nMindjet Catalyst was a web-based mindmapping software that allowed browser-based real-time multi-person sharing, collaborating and editing of mindmaps.  The Catalyst client canvas was originally written in Flash and my team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.  The new application was designed to utilize open standards with HTML5, CSS3, Javascipt, canvas and SVG with few to zero dependancies on external 3rd party libraries.",
+    "startDate": "2007-09-01",
+    "endDate": "2010-07-01"
+}, {
+    "period": "April, 2006 - Sept, 2007",
+    "company": "Simple Software, Inc.",
+    "position": "CEO / Founder",
+    "summary": "Contracted software development and consulting. Provided support for previous work positions (such as with Interactivate), developed and deployed custom content management systems and business process management applications.",
+    "highlights": [
+        "GC Homes - Contractor documents and blueprints online. [http:\/\/gch-dev.netoasis.net\/app\/]",
+        "Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages",
+        "Lender Tool: http:\/\/bay-dev.netoasis.net\/lenders.php",
+        "Form Definition Tool: http:\/\/bay-dev.netoasis.net\/fields.php?id=50",
+        "HUD Calculator - calculates potential reverse mortgage values: http:\/\/bay-dev.netoasis.net\/HUD\/calc.html",
+        "DB Tool: http:\/\/bay-dev.netoasis.net\/admin\/dbedit\/",
+        "Tzero Technology - Customized content management system http:\/\/www.tzerotech.com\/site\/",
+        "CMS: http:\/\/tzero-dev.netoasis.net\/",
+        "Metrika - Customized content management system http:\/\/www.metrika.com\/site\/",
+        "CMS: http:\/\/met-dev.netoasis.net\/"
+    ],
+    "startDate": "2006-04",
+    "endDate": "2007-09"
+}, {
+    "period": "August, 2004 - April, 2006",
+    "company": "Genetic Savings & Clone",
+    "position": "VP Engineering",
+    "location": "Sausalito, CA",
+    "summary": "GS&C afforded me the opportunity to apply my technical and management skills to the genetic sciences industry.  I was responsible for managing and integrating diverse genetic equipment into our server network and securely providing data to both internal and customer facing applications. I had the unique experience of cloning a cat in the course of documenting and automating business processes.",
+    "highlights": [
+        "Cloned a cat and delivered it to customer",
+        "Clonesoft - Architected and implemented client/server based web-based application using XML as the data transport mechanism to automate and manage the animal gene-banking and feline cloning business processes utilizing the latest in AJAX technologies.",
+        "CatBank - http://www.catbank.org/ Designed and developed framework to quickly implement the front-end and back-end for this database driven feline DNA identification website. Back-end requirements included integration with various genetic analysis hardware including the Applied Biosystem Genetic Analyser 3130",
+        "Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time's bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)"
+    ],
+    "startDate": "2004-08",
+    "endDate": "2006-04"
+}, {
+    "period": "December, 2001 - June, 2004",
+    "company": "Inter@ctivate, Inc.",
+    "position": "Technical Director",
+    "location": "San Diego, CA",
+    "summary": "As Technical Director for Interactivate, Inc., my responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. ",
+    "highlights": [
+        "Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.",
+        "Designed and implemented web-based network management, monitoring & systems analysis tools",
+		"Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.",
+		"Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.",
+		"Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.",
+		"Installation & administration of Solaris, FreeBSD & Windows NT in a heterogeneous environment",
+		"Design, implementation, migration and maintenance for Interactivate's internal and external network infrastructure.",
+		"Working with vendors, developers & 3rd party integrators.",
+		"Maintain and monitor over 50 hosted client web sites and dozens of web applications",
+		"Identifying & resolving network related problems",
+		"Responsible for backup implementation and recovery strategy & procedures",
+		"Required to support high volume access & availability characteristics as well as identifying & resolving system hardware & software problems",
+		"Responsible for the full availability of DNS, SMTP, HTTP, POP & IMAP servers",
+		"Maintaining security for all Interactivate networks"
+    ],
+    "startDate": "2001-12",
+    "endDate": "2004-06"
+}, {
+    "period": "May, 2000 - November, 2001",
+    "company": "TheFinancialCafe.Com",
+    "position": "Software Architect \/ Technical Director",
+    "summary": "TheFinancialCafe.Com was an Online Financial Broker\/Dealer which provides free online market orders. Hired to build a custom CRM application for their support staff, the application quickly grew to encompass every aspect of the company from CRM to billing to handling email, managing the company website and integration with 3rd party financial services.",
+    "highlights": [
+		"Designed and implemented web-based network management & systems analysis tools",
+		"Required to support high volume access & availability characteristics as well as identifying & resolving system hardware & software problems",
+		"Working with vendors, developers & 3rd party integrators.",
+		"Installation & administration of Solaris, FreeBSD & Windows NT in a heterogeneous environment",
+		"Installation & maintaining network equipment",
+		"Responsible for the full availability of DNS, SMTP, HTTP, POP & IMAP servers",
+		"Design, implementation, and maintenance for the companies internal and external network infrastructure.",
+		"Extensive automation of administrative functions via shell scripting & Perl",
+		"Responsible for backup implementation and recovery strategy & procedures",
+		"DBA to a number of Mysql databases (one master, multiple slaves)",
+		"Responsible for the seamless integration of multiple third-party application services into the company's website."
+    ],
+    "startDate": "2000-05-01",
+    "endDate": "2001-11-01"
+}, {
+    "period": "April, 1998 - May, 2000",
+    "company": "Food.Com",
+    "position": "Senior Web Developer \/ Administrator",
+    "summary": "Food.Com was an nationwide online food ordering and delivery service. Responsible for architecting and development of the online ordering application and the processes and procedures for delivering customer orders to restaurants via various notification mechanisms including IVR phone calls, faxes and custom terminals.",
+    "highlights": [
+        "Developed 'FUDGE', the 'Food.Com Ubiquitous Dining Guide Engine' which was used by thousands of restaurant reviewers to enter and maintain Food.Com's dining guide database.",
+        "Setup of automated development environment using web-based tools",
+        "Development of tools and utilities (both web based and command line) to automate development efforts",
+        "Migration of code-base from Objective-C/WebObjects to Java",
+        "Wrote and maintained various web-based backend tools for maintaining accounts and order information"
+    ],
+    "startDate": "1998-04-01",
+    "endDate": "2000-05-01"
+}, {
+    "period": "June, 1996 - March, 1998",
+    "company": "Slip.Net",
+    "position": "Web Engineer",
+    "summary": "Slip.Net was one of the earliest Internet Service Providers in the San Francisco Bay Area with a client base of over 50,000 users.  My roles and responsibilities were divided between system administration and web application development. As the 'Web Administrator', I was responsible for shared administration of our server farm of 30+ servers.  I was responsible for all web-based software, E-commerce, network accessible databases, secure server certificates, web server maintenance, and more. In addition to these administration duties, I was also given a myriad of development projects, including the renovation of the existing system of disassociated and unwieldy collection of flat text db files and dbm's that constituted their 'client database'. I developed an easy to use and coherent system of procedures, tools, scripts, and interfaces using the new 'MySQL' open source database engine and Perl.",
+    "highlights": [
+        "Built the Slip.Net Account Control Center which allowed customers to administrate their own accounts.  Reduced support call volume by 50% the first week.",
+        "Developed Slip.Net Signup Wizard that walked a customer through setting up a new account as well as register domain names and setup website services all handled automatically"
+    ],
+    "startDate": "1996-06",
+    "endDate": "1998-03"
+}, {
+    "period": "May, 1995 - May, 1996",
+    "company": "The NetOASIS Software Co.",
+    "position": "Founder \/ Chief Developer",
+    "summary": "As founder and President of the NetOASIS Software Co. I was responsible for every aspect of running the business from graphic design to programming to market research and client solicitation. The primary focus of the company was development of web based applications and the integration of a clients systems into a computer based environment. We also offered freelance programming services, web hosting, web site design and maintenance, and setup and installation of intranet hardware and software components. Specialized in online commerce systems and I have installed, upgraded and maintained online payment servers by Cybercash, First Virtual, and Verisign.",
+    "highlights": [
+        "Clients included: Symantec, King Media, The Exploratorium and The Astronomical Society of the Pacific"
+    ],
+    "startDate": "1995-05",
+    "endDate": "1996-05"
+}, {
+    "period": "December, 1994 - July, 1995",
+    "company": "True World Access",
+    "position": "Senior Developer \/ Systems Administrator",
+    "summary": "Senior System Administrator\/Programmer for a network of mixed SunOS\/Solaris\/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.",
+    "startDate": "1994-12-01",
+    "endDate": "1995-07-01"
+}],
+    "volunteer": [
+        {
+            "organization": "San Francisco Elks Lodge #3",
+            "position": "Esteemed Leading Knight / House Committee Chair",
+            "summary": "As Leading Knight and House Committee Chair I was responsible for the day-to-day operations of the Lodge restaurant and bar as well as organizing and holding events to raise money for local underprivileged children.  During my tenure as House Committee Chair, with the help of the SFPD, we were able to build 100 bicycles to give as Christmas presents to children which were very well received.  We raised over $34,000 for the children in that year.",
+            "startDate": "2010-04-01",
+            "endDate": "2011-04-01"
+        }
+    ],
+    "education": [
+        {
+            "institution": "California State University-Chico",
+            "area": "Computer Science",
+            "startDate": "1988-01-01",
+            "endDate": "1992-01-01"
+        },
+        {
+            "institution": "City College of San Francisco",
+            "area": "Japanese, Business",
+            "startDate": "2009-01-01",
+            "endDate": "2010-01-01"
+        },
+        {
+            "institution": "Butte College",
+            "area": "Computer Science, General Education",
+            "startDate": "1988-01-01",
+            "endDate": "1990-01-01"
+        },
+        {
+            "institution": "Paradise High School",
+            "area": "General Studies",
+            "startDate": "1984-01-01",
+            "endDate": "1988-01-01"
+        }
+    ],
+    "awards": [
+        {
+            "title": "Computer Science Award",
+            "date": "1988-06-01",
+            "awarder": "Paradise High School",
+            "summary": "First recipient of the Paradise High School \"Computer Science Award\" for developing a data application to track school resources that ran on an Apple IIe.  "
+        }
+    ],
+    "skills": [
+        {
+            "name": "Technical Solutions"
+        },
+        {
+            "name": "Team Leadership"
+        },
+        {
+            "name": "Product Development"
+        },
+        {
+            "name": "Procedure Development"
+        },
+        {
+            "name": "Process Improvement"
+        },
+        {
+            "name": "Strategic Planning"
+        },
+        {
+            "name": "Best Practices"
+        },
+        {
+            "name": "Team Building"
+        },
+        {
+            "name": "Entrepreneurship"
+        },
+        {
+            "name": "Software Development"
+        },
+        {
+            "name": "Microservices Architecture"
+        },
+        {
+            "name": "Scrum / Agile"
+        },
+        {
+            "name": "Budgeting / Financial Planning"
+        },
+        {
+            "name": "Mobile Application Development"
+        },
+        {
+            "name": "Cloud Services"
+        },
+        {
+            "name": "Service Integration"
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native or bilingual"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Hobbies",
+            "keywords": [
+                "3D Printing",
+                "Raspberry Pi",
+                "Arduino",
+                "Laser engraving",
+                "Electronics"
+            ]
+        },
+        {
+            "name": "Recreation",
+            "keywords": [
+                "Golf",
+                "Recreational Programming",
+                "Karaoke"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "Kevin Ready (Software Developer and Consultant)",
+            "reference": "Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs."
+        },
+        {
+            "name": "Thomas Weaver (Network Provisioner at Twitch)",
+            "reference": "This guy has some seriously mad coding skills."
+        },
+        {
+            "name": "Benoit Marsot (Senior Developer R&D at Medsphere Systems Corporation)",
+            "reference": "His system is well oil; all my web services are working with no down time.  He offers all the greatest gadgets, ideal environment for a programmer like me."
+        },
+        {
+            "name": "Benoit Marsot (Senior Developer R&D at Medsphere Systems Corporation)",
+            "reference": "Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager."
+        }
+    ]
+}

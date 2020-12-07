@@ -1,0 +1,35 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "CV & Resume for Christopher Robison",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisrobison/cv.git"
+  },
+  "keywords": [
+    "resume",
+    "cv",
+    "robison",
+    "developer",
+    "manager",
+    "executive",
+    "software",
+    "engineer",
+    "maker",
+    "tech"
+  ],
+  "author": "Christopher Robison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisrobison/cv/issues"
+  },
+  "homepage": "https://github.com/chrisrobison/cv#readme",
+  "dependencies": {
+    "jsonresume-theme-rocketspacer": "^1.2.2",
+    "resume-schema": "^1.0.0"
+  }
+}

@@ -1,4 +1,31 @@
-[{
+const resume = {
+    "basics": {
+        "name": "Christopher Robison",
+        "label": "Chief Technology Officer at D Harris Tours",
+        "summary": "I am a highly skilled internet software engineer and web application architect.  I have experience managing small and large teams at NetOasis, Genetic Savings & Clone, Interactivate and Mediaplex.\n\nI understand the business ramifications of operational issues in addition to understanding the systems and technology they support.  My exposure to all aspects of business from the customer to the backend to the frontend has enabled me to build systems and software that look at the big picture and increase the bottom line.\n\nI have been pushing the limits of Javascript, CSS, HTML since their inception and, more recently, leveraged the power of web 2.0 technologies (AJAX \/ XMLHttpRequest \/ JSON) to architect and develop web applications.  My server-side skill set is as strong, if not stronger, than my front-end.  I have extensive experience with object oriented programming and have implemented just about every design pattern known to man.  Expert with most modern programming languages such as Javascript, Java, PHP, C#, Swift,  Python and others.  I'm also a pretty good Unix (Linux\/FreeBSD\/Solaris) systems administrator.\n\nSpecialties: Javascript (nodejs & client), NoSQL (MongoDB, redis), business process management & automation, web based software, programming, software frameworks, XML, DOM, PHP, Perl, Javascript, AJAX",
+        "location": {
+            "address": "621 Holloway Ave.",
+            "postalCode": "94112",
+            "city": "San Francisco",
+            "countryCode": "US",
+            "region": "CA"
+        },
+        "phone": "415-300-0180",
+        "website": "http:\/\/www.cdr2.com\/",
+        "profiles": [
+            {
+                "network": "linkedin",
+                "username": "crobison",
+                "url": "https:\/\/www.linkedin.com\/in\/crobison"
+            },
+            {
+                "network": "twitter",
+                "username": "thechrisrobison",
+                "url": "https:\/\/twitter.com\/thechrisrobison"
+            }
+        ]
+    },
+    "work": [{
     "period": "March, 2020 - December, 2020",
     "company": "D. Harris Tours, Inc.",
     "position": "Chief Technology Officer [CTO]",
@@ -80,4 +107,252 @@
     "summary": "<div class=\"SMALL DESC\"> Senior System Administrator\/Programmer for a network of mixed SunOS\/Solaris\/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.  <\/div>",
     "startDate": "1994-12-01",
     "endDate": "1995-07-01"
-}]
+}],
+    "volunteer": [
+        {
+            "organization": "San Francisco Elks Lodge #3",
+            "position": "Youth Activities Co-Chair",
+            "summary": "As youth activities chair I was responsible to organizing and holding events to raise money for local underprivileged children living in the Tenderloin.  With the help of the SFPD, we built bicycles to give as Christmas presents which were very well received.  We raised over $34,000 for the children in that year.",
+            "startDate": "2010-04-01",
+            "endDate": "2011-04-01"
+        }
+    ],
+    "education": [
+        {
+            "institution": "California State University-Chico",
+            "area": "Computer Science",
+            "startDate": "1988-01-01",
+            "endDate": "1992-01-01"
+        },
+        {
+            "institution": "City College of San Francisco",
+            "area": "Japanese, Business",
+            "startDate": "2009-01-01",
+            "endDate": "2010-01-01"
+        },
+        {
+            "institution": "Butte College",
+            "area": "Computer Science, General Education",
+            "startDate": "1988-01-01",
+            "endDate": "1990-01-01"
+        },
+        {
+            "institution": "Paradise High School",
+            "area": "General Studies",
+            "startDate": "1984-01-01",
+            "endDate": "1988-01-01"
+        }
+    ],
+    "awards": [
+        {
+            "title": "Computer Science Award",
+            "date": "1988-06-01",
+            "awarder": "Paradise High School",
+            "summary": "First recipient of the Paradise High School \"Computer Science Award\" for developing a data application to track school resources that ran on an Apple IIe.  "
+        }
+    ],
+    "skills": [
+        {
+            "name": "Information Mapping"
+        },
+        {
+            "name": "jQuery"
+        },
+        {
+            "name": "HTML5"
+        },
+        {
+            "name": "Firebug"
+        },
+        {
+            "name": "Google API"
+        },
+        {
+            "name": "OAuth"
+        },
+        {
+            "name": "Entrepreneur"
+        },
+        {
+            "name": "Technical Leadership"
+        },
+        {
+            "name": "MySQL"
+        },
+        {
+            "name": "Exim"
+        },
+        {
+            "name": "HTML 5"
+        },
+        {
+            "name": "AJAX"
+        },
+        {
+            "name": "Entrepreneurship"
+        },
+        {
+            "name": "Software Development"
+        },
+        {
+            "name": "SaaS"
+        },
+        {
+            "name": "Agile Methodologies"
+        },
+        {
+            "name": "JSON"
+        },
+        {
+            "name": "JavaScript"
+        },
+        {
+            "name": "PHP"
+        },
+        {
+            "name": "Mobile Applications"
+        },
+        {
+            "name": "Cloud Computing"
+        },
+        {
+            "name": "CSS"
+        },
+        {
+            "name": "C#"
+        },
+        {
+            "name": "Apache"
+        },
+        {
+            "name": "Linux"
+        },
+        {
+            "name": "MongoDB"
+        },
+        {
+            "name": "Python"
+        },
+        {
+            "name": "Perl"
+        },
+        {
+            "name": "Web Services"
+        },
+        {
+            "name": "SMTP"
+        },
+        {
+            "name": "Databases"
+        },
+        {
+            "name": "Unix"
+        },
+        {
+            "name": "Design Patterns"
+        },
+        {
+            "name": "HTML"
+        },
+        {
+            "name": "JSP"
+        },
+        {
+            "name": "Software as a Service (SaaS)"
+        },
+        {
+            "name": "SQL"
+        },
+        {
+            "name": "Java"
+        },
+        {
+            "name": "Android Development"
+        },
+        {
+            "name": "iOS Development"
+        },
+        {
+            "name": "Software Development Life Cycle (SDLC)"
+        },
+        {
+            "name": "React.js"
+        },
+        {
+            "name": "React"
+        },
+        {
+            "name": "AngularJS"
+        },
+        {
+            "name": "Cascading Style Sheets (CSS)"
+        },
+        {
+            "name": "Project Management"
+        },
+        {
+            "name": "Software Project Management"
+        },
+        {
+            "name": "Leadership"
+        },
+        {
+            "name": "Management"
+        },
+        {
+            "name": "Integration"
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Native or bilingual"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Making things",
+            "keywords": [
+                "3d printing",
+                "raspberry pi",
+                "arduino",
+                "laser cutting\/etching",
+                "maker"
+            ]
+        },
+        {
+            "name": "3D Printing",
+            "keywords": [
+                "3d printing",
+                "FDM",
+                "SLA"
+            ]
+        },
+        {
+            "name": "Golf",
+            "keywords": [
+                "golf",
+                "high score",
+                "senior tour"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "Kevin Ready (Software Developer and Consultant)",
+            "reference": "Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs."
+        },
+        {
+            "name": "Thomas Weaver (Network Provisioner at Twitch)",
+            "reference": "This guy has some seriously mad coding skills."
+        },
+        {
+            "name": "Benoit Marsot (Senior Developer R&D at Medsphere Systems Corporation)",
+            "reference": "His system is well oil; all my web services are working with no down time.  He offers all the greatest gadgets, ideal environment for a programmer like me."
+        },
+        {
+            "name": "Benoit Marsot (Senior Developer R&D at Medsphere Systems Corporation)",
+            "reference": "Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager."
+        }
+    ]
+}

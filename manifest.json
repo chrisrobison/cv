@@ -1,0 +1,10 @@
+{
+  "name": "Christopher Robison CV",
+  "short_name": "Robison CV",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "browser",
+  "orientation": "landscape",
+  "scope": "/",
+  "start_url": "~crobison/cv/"
+}
