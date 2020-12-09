@@ -1,9 +1,9 @@
 self.importScripts('resume.js');
 
-var cacheName = 'resume-v1.02';
+var cacheName = 'resume-v1.12';
 var filesToCache = [
       'app.js',
-      'resume.js',
+      'resume.json',
       'style.css',
       'scripts.js',
       'img/cdr-suit.jpg',
