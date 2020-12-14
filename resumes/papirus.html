@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 		body {
-  background: #D2D4D3;
+  background: #E5DED4;
   font: 15px Arial, Helvetica, sans-serif;
   line-height: 1.4;
   color: #929292;
@@ -56,26 +56,22 @@ section {
 /* Sidebar */
 .sidebar {
   padding: 2rem;
-  background: #E6EAED !important;
+  background: #333438 !important;
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }
 
-.sidebar, .sidebar h1 {
-  color: #656567 !important;
+.sidebar, .sidebar h1, .sidebar h2 {
+  color: #ffffff !important;
 }
 
-
 .sidebar h2 {
-  color: #ffffff;
   text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem;
   letter-spacing: 0.5rem;
   font-weight: bold;
-  margin-bottom: 1rem !important;
-  background: #646466;
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+  margin-top: 5rem;
 }
 
 .avatar {
@@ -89,7 +85,6 @@ section {
 
 .section-education .item {
   margin-bottom: 3rem;
-  text-align: center;
 }
 
 .section-education .studyTitle {
@@ -125,8 +120,7 @@ section {
 
 /* Content */
 .content {
-  padding: 0 5rem 0 5rem;
-  padding-bottom: 0px;
+  padding: 5rem;
   background: #FFFFFF;
   margin-bottom: -99999px;
   padding-bottom: 99999px;
@@ -142,15 +136,13 @@ section {
 }
 
 .content h2 {
-    color: #646466;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.5rem;
-    letter-spacing: 0.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem !important;
-    background: #E6EAED;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+  color: #6D6D6D;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  margin-top: 5rem;
 }
 
 .content a:link, .content a:hover, .content a:visited {
@@ -160,20 +152,17 @@ section {
 
 /* Sections */
 .section-name {
-  margin: 0rem 0 5rem 0;
-  background: #E6EAED;
-  padding: 6rem 0 4rem 0;
+  margin: 5rem 0 10rem 0;
 }
 
 .section-name h2 {
   color: #6D6D6D;
-  text-transform: unset;
+  text-transform: uppercase;
   text-align: center;
   font-size: 1.5rem;
   letter-spacing: 0.5rem;
   font-weight: bold;
   margin-top: 5rem;
-  background: none;
 }
 
 .section-summary {
@@ -186,13 +175,13 @@ section {
 
 .section-work .item .position {
   font-weight: bold;
-  color: #252324;
+  color: #333438;
   text-transform: uppercase;
 }
 
 .section-work .item .company {
     padding: 0.5rem 0 0.5rem 0;
-    color: #605E5F;
+    color: #6D6D6D;
     font-weight: bold;
 }
 
@@ -207,7 +196,7 @@ section {
 
 .section-volunteer .item .position {
   font-weight: bold;
-  color: #252324;
+  color: #333438;
   text-transform: uppercase;
 }
 
@@ -229,7 +218,7 @@ section {
 
 .section-publications .item .name {
   font-weight: bold;
-  color: #252324;
+  color: #333438;
   text-transform: uppercase;
 }
 
@@ -247,7 +236,7 @@ section {
 
 .section-awards .item .title {
   font-weight: bold;
-  color: #252324;
+  color: #333438;
 }
 
 .section-awards .item .date, .section-awards .item .awarder {
@@ -263,7 +252,7 @@ section {
 
 .section-languages .item .language {
   font-weight: bold;
-  color: #252324;
+  color: #333438;
 }
 
 .section-languages .item .fluency {
@@ -282,18 +271,20 @@ section {
 
 .section-skills .item {
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 
 .section-contact .fa {
   padding: 0.8rem 0 0 0;
-  color: #646466;
+  background: #fff;
+  color: #333438;
+  border-radius: 100rem;
+  width: 3rem;
+  height: 3rem;
   text-align: center;
-  display: block;
-  margin: 0 auto 0.8rem auto;
+  margin: -0.4rem 0.8rem 0.8rem 0.5rem;
+  float: left;
 }
-
 
 .section-contact ul.contact {
   list-style-type: none;
@@ -303,7 +294,6 @@ section {
 
 .section-contact ul.contact li {
   margin: 1rem 0 1rem 0;
-  text-align: center;
 }
 
 .section-contact ul.profiles {
@@ -316,16 +306,8 @@ section {
   margin: 1rem 0 1rem 0;
 }
 
-.section-contact ul li span {
-    text-align: center;
-    display: inherit;
-}
-
 /* Print */
 @media print {
-  *, :after, :before{
-    color: #646466 !important;
-  }
   body {
     font: 10px Arial, Helvetica, sans-serif;
     line-height: 1.4;
@@ -343,12 +325,12 @@ section {
   }
 
   section {
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
   }
 
   [class^="section-"] > .title {
     text-transform: uppercase;
-    padding: 15px 0;
+    padding: 0.7rem 0;
     margin: 0;
   }
 
@@ -372,55 +354,65 @@ section {
 
   /* Sidebar */
   .sidebar {
-    padding: 2rem 2rem 2rem 3rem;
-    background: #E6EAED !important;
+    padding: 2rem;
+    background: #333438 !important;
     margin-bottom: -99999px;
     padding-bottom: 99999px;
+		color: #ffffff !important;
   }
 
-  .sidebar, .sidebar h1 {
-    color: #656567 !important;
+  .sidebar, .sidebar h1, .sidebar h2 {
+    color: #ffffff !important;
   }
-
 
   .sidebar h2 {
-    color: #ffffff !important;
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
     font-weight: bold;
-    margin-bottom: 1rem !important;
-    background: #646466 !important;
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+    margin-top: 5rem;
+		color: #ffffff !important;
   }
 
-  .sidebar h2 span{
+  .sidebar h2.title span {
     color: #ffffff !important;
-  }
+}
 
   .avatar {
-    margin: 5rem 0;
+    margin: 2rem 0 2rem 1rem;
     text-align: center;
   }
 
   .avatar img {
-    width: 90%;
+    width: 85%;
   }
 
   .section-education .item {
     margin-bottom: 3rem;
-    text-align: center;
+		color: #ffffff !important;
   }
 
-  .section-education .studyTitle {
+  .section-education .studyTitle span{
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+		color: #ffffff !important;
   }
+
+  .section-education .studyTitle span.badge{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.0rem;
+		color: #ffffff !important;
+    background: #939393 !important;
+  }
+
   .section-education .courses {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+		color: #ffffff !important;
   }
+
   .section-education ul.courses {
     list-style-type: none;
     margin: 0.5rem 0 0.5rem 0;
@@ -429,82 +421,69 @@ section {
 
   .section-education .ul.courses li {
     margin:0;
+		color: #ffffff !important;
   }
 
   .section-education .institution {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
+		color: #ffffff !important;
   }
 
-  .section-education .date {
-    font-size: 1.2rem;
+  .section-education .date span{
+    font-size: 1.0rem;
+		color: #ffffff !important;
   }
 
   .sidebar a:link, .sidebar a:hover, .sidebar a:visited {
     text-decoration: none;
-    color: #ffffff !important;
-  }
-
-  .sidebar .section-skills .keywords span.label{
-    display: inline-block !important;
-    margin-bottom: 0.3rem !important;
+		color: #ffffff !important;
   }
 
   /* Content */
   .content {
-    padding: 0 3rem 0 2rem;
-    padding-bottom: 0px;
-    background: #FFFFFF;
+    padding: 3rem 5rem 3rem 2rem;
+    background: #FFFFFF !important;
     margin-bottom: -99999px;
     padding-bottom: 99999px;
   }
 
   .content h1 {
-    color: #3C3C3C;
+    color: #3C3C3C !important;
     text-transform: uppercase;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
     letter-spacing: 1.0rem;
     font-weight: bold;
   }
 
   .content h2 {
-      color: #646466 !important;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 1.5rem !important;
-      letter-spacing: 0.5rem;
-      font-weight: bold;
-      margin-bottom: 1rem !important;
-      background: #E6EAED !important;
-      padding: 0.5rem 0.5rem 0.5rem 0.5rem !important;
+    color: #6D6D6D !important;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
   }
 
   .content a:link, .content a:hover, .content a:visited {
     text-decoration: none;
-    color: #6D6D6D;
+    color: #6D6D6D !important;
   }
 
   /* Sections */
   .section-name {
-    margin: 0rem 0 5rem 0 !important;
-    background: #E6EAED !important;
-    padding: 6rem 0 4rem 0 !important;
-  }
-
-  .section-name h1 {
-    font-size: 2.8rem !important;
-    font-weight: bold !important;
+    margin: 1rem 0 5rem 0;
   }
 
   .section-name h2 {
     color: #6D6D6D !important;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 1.5rem !important;
+    font-size: 1.2rem;
     letter-spacing: 0.5rem;
     font-weight: bold;
-    margin-top: 5rem;
-    background: none;
+    margin-top: 3rem;
   }
 
   .section-summary {
@@ -517,13 +496,13 @@ section {
 
   .section-work .item .position {
     font-weight: bold;
-    color: #252324;
+    color: #333438 !important;
     text-transform: uppercase;
   }
 
   .section-work .item .company {
       padding: 0.5rem 0 0.5rem 0;
-      color: #605E5F;
+      color: #6D6D6D !important;
       font-weight: bold;
   }
 
@@ -538,13 +517,13 @@ section {
 
   .section-volunteer .item .position {
     font-weight: bold;
-    color: #252324;
+    color: #333438 !important;
     text-transform: uppercase;
   }
 
   .section-volunteer .item .company {
       padding: 0.5rem 0 0.5rem 0;
-      color: #6D6D6D;
+      color: #6D6D6D !important;
       font-weight: bold;
   }
 
@@ -560,13 +539,13 @@ section {
 
   .section-publications .item .name {
     font-weight: bold;
-    color: #252324;
+    color: #333438 !important;
     text-transform: uppercase;
   }
 
   .section-publications .item .publication {
       padding: 0.5rem 0 0.5rem 0;
-      color: #6D6D6D;
+      color: #6D6D6D !important;
       font-weight: bold;
   }
 
@@ -578,12 +557,12 @@ section {
 
   .section-awards .item .title {
     font-weight: bold;
-    color: #252324;
+    color: #333438 !important;
   }
 
   .section-awards .item .date, .section-awards .item .awarder {
     font-weight: normal;
-    color: #929292;
+    color: #929292 !important;
   }
 
   .section-awards .item .summary {
@@ -594,12 +573,12 @@ section {
 
   .section-languages .item .language {
     font-weight: bold;
-    color: #252324;
+    color: #333438 !important;
   }
 
   .section-languages .item .fluency {
     font-weight: normal;
-    color: #929292;
+    color: #929292 !important;
   }
 
   .section-interests .title {
@@ -607,34 +586,51 @@ section {
   }
 
   .section-interests .item {
-    margin: 0.8rem 0 0.8rem 0;
-    line-height: 1.9rem;
+    margin: 0.2rem 0 0.0rem 0;
+    line-height: 1.4rem;
   }
 
   .section-skills .item {
     margin-bottom: 1rem;
-    text-align: center;
+  }
+
+  .section-skills .item .name {
+    color: #ffffff !important;
+  }
+
+	.section-skills .item .keywords .span {
+		color: #ffffff !important;
+		background: #929292 !important;
+	}
+
+  .section-skills .keywords span.label {
+      color: #000 !important;
+      background: #929292 !important;
+      line-height: 1.7rem;
   }
 
 
   .section-contact .fa {
-    padding: 0.8rem 0 0 0;
-    color: #646466 !important;
+    padding: 0.5rem 0 0 0;
+    background: #ffffff  !important;
+    color: #333438 !important;
+    border-radius: 100rem;
+    width: 2.2rem;
+    height: 2.2rem;
     text-align: center;
-    display: block;
-    margin: 0 auto 0.8rem auto;
+    margin: -0.4rem 0.8rem 0.8rem 0.5rem;
+    float: left;
   }
-
 
   .section-contact ul.contact {
     list-style-type: none;
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.2rem 0 0.2rem 0;
     padding: 0;
   }
 
   .section-contact ul.contact li {
-    margin: 1rem 0 1rem 0;
-    text-align: center;
+    margin: 0.5rem 0 0.5rem 0;
+		color: #ffffff !important;
   }
 
   .section-contact ul.profiles {
@@ -644,13 +640,16 @@ section {
   }
 
   .section-contact ul.profiles li {
-    margin: 1rem 0 1rem 0;
+    margin: 0.5rem 0 0.5rem 0;
+		color: #ffffff !important;
   }
 
-  .section-contact ul li span {
-      text-align: center;
-      display: inherit;
+  .section-contact ul.contact li span,.section-contact ul.profiles li span {
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      color: #ffffff !important;
   }
+
 }
 
 		</style>
@@ -671,7 +670,7 @@ section {
 					        </h2>
 					        <ul class="contact">
 					                <li class="icon-item clearfix">
-					                    <i class="fa fa-2x fa-map-marker"></i>
+					                    <i class="fa fa-map-marker"></i>
 					                    621 Holloway Ave.
 					                        94112
 					                        San Francisco
@@ -679,21 +678,21 @@ section {
 					                        
 					                </li>
 					                <li class="icon-item clearfix">
-					                    <i class="fa fa-2x fa-phone "></i>
+					                    <i class="fa fa-phone "></i>
 					                    (415) 810-6991
 					                </li>
 					                <li class="icon-item clearfix">
-					                    <i class="fa fa-2x fa-link "></i>
+					                    <i class="fa fa-link "></i>
 					                    http://www.cdr2.com/
 					                </li>
 					        </ul>
 					            <ul class="profiles">
 					                    <li class="icon-item clearfix">
-					                        <i class="fa fa-2x fa-linkedin "></i>
+					                        <i class="fa fa-linkedin "></i>
 					                        <span>https://www.linkedin.com/ in/ crobison</span>
 					                    </li>
 					                    <li class="icon-item clearfix">
-					                        <i class="fa fa-2x fa-twitter "></i>
+					                        <i class="fa fa-twitter "></i>
 					                        <span>https://twitter.com/ thechrisrobison</span>
 					                    </li>
 					            </ul>
