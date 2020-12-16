@@ -30,6 +30,8 @@
   "homepage": "https://github.com/chrisrobison/cv#readme",
   "dependencies": {
     "jsonresume-theme-rocketspacer": "^1.2.2",
-    "resume-schema": "^1.0.0"
+    "react-awesome-resume": "^0.1.0",
+    "resume-schema": "^1.0.0",
+    "semantic-ui-css": "^2.4.1"
   }
 }
