@@ -29,8 +29,13 @@
   },
   "homepage": "https://github.com/chrisrobison/cv#readme",
   "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jsonresume-theme-modern": "0.0.18",
     "jsonresume-theme-rocketspacer": "^1.2.2",
+    "jsonresume-theme-stackoverflow-FA5": "file:jsonresume-theme-stackoverflow",
+    "jsonresume-theme-timeline-fixed": "file:jsonresume-theme-timeline-fixed",
     "react-awesome-resume": "^0.1.0",
+    "resume-cli": "^3.0.0",
     "resume-schema": "^1.0.0",
     "semantic-ui-css": "^2.4.1"
   }
