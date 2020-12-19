@@ -49,7 +49,7 @@
     <nav>
     </nav>
     <main>
-        <iframe id='viewer' name='viewer' width='100%' height='100%'></iframe>
+        <iframe id='viewer' name='viewer' width='100%' height='100%' src='view.php?theme=timeline-fixed'></iframe>
     </main>
 
 <script>
@@ -60,6 +60,7 @@
             init: function() {
                 app.fetchThemes();
             },
+            ignoreThemes: ["elite","apage","kards","latex","classy","dave","even","flat-fr","mocha-responsive","kwan-linkedin","onepageresume","orbit","srt",""],
             themes: [],
             fetchThemes: function() {
                 fetch("https://registry.jsonresume.org/themes").then(response => response.json()).then(function(data) {
@@ -67,9 +68,12 @@
                     let out = '';
                     data.forEach(function(item) {
                         let name = item.replace(/jsonresume\-theme\-/, '');
-                        app.themes.push({"name": name, "fullname": item, "url":"https://registry.jsonresume.org/chrisrobison?theme=" + name });
-                        //out += "<input type='checkbox' id='"+name+"'> <a target='viewer' href='https://registry.jsonresume.org/chrisrobison?theme=" + name + "#" + name + "' class='themeLink'>" + (name.charAt(0).toUpperCase() + name.slice(1)) + "</a><br>";
-                        out += "<input type='checkbox' id='"+name+"'> <a target='viewer' href='view.php?theme=" + name + "#" + name + "' class='themeLink'>" + (name.charAt(0).toUpperCase() + name.slice(1)) + "</a><br>";
+                        if (!app.ignoreThemes.includes(name)) {
+                            app.themes.push({"name": name, "fullname": item, "url":"https://registry.jsonresume.org/chrisrobison?theme=" + name });
+                            //out += "<input type='checkbox' id='"+name+"'> <a target='viewer' href='https://registry.jsonresume.org/chrisrobison?theme=" + name + "#" + name + "' class='themeLink'>" + (name.charAt(0).toUpperCase() + name.slice(1)) + "</a><br>";
+                            out += "<input type='checkbox' id='"+name+"'> ";
+                            out += "<a target='viewer' href='view.php?theme=" + name + "#" + name + "' class='themeLink'>" + (name.charAt(0).toUpperCase() + name.slice(1)) + "</a><br>";
+                        }
                     });
                     $("nav").innerHTML = out;
                     $$(".themeLink").forEach(function(item) { 
