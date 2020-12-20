@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin:0;
+        padding:0;
+        font-size:14px;
+        font-family: "Roboto", sans-serif;
+    }
+    header {
+        background-color:#999;
+        color:#eee;
+        height:5vh;
+    }
+    main {
+        background-color:#333;
+        color:#ddd;
+        height:90vh;
+    }
+    footer {
+        background-color:#666;
+        color:#eee;
+        height:5vh;
+    }
+    ul {
+        list-style-type:disc;
+        padding-left:2em;
+        border:1px solid red;
+    }
+    ul ul {
+
+        border:1px solid yellow;
+    }
+    ul ul ul {
+        list-style-type:none;
+        border:1px solid green;
+    }
+    .key {
+        display:inline-block;
+        width:6em;
+        text-align:left;
+        margin-right:.5em;
+        font-weight:bold;
+        overflow:hidden;
+    }
+    li p {
+        display: inline-block;
+    }
+</style>
+</head>
+
+<body id="home">
+    <header>
+    </header>
+    <main>
+    </main>
+    <footer>
+    </footer>
+<script>
+    function $(str) { return document.querySelector(str); }
+    function $$(str) { return document.querySelectorAll(str); }
+
+    (function() {
+        const app = {
+            init: function() {
+                app.state.loaded = true;
+                app.loadResume();
+                app.loadSchema();
+            },
+            state: {
+                loaded: false,
+                schema:{},
+                resume:{}
+            },
+            loadResume: function() {
+                fetch("resume.json").then(response=>response.json()).then(data=>{
+                    app.state.resume = data;
+                    console.log("resume");
+                    console.dir(data);
+                });
+            },
+            loadSchema: function() {
+                fetch("schema.json").then(response=>response.json()).then(data=>{
+                    app.state.schema = data;
+                    console.log("schema");
+                    console.dir(data);
+                    app.buildUI();
+                });
+            },
+            buildUI: function() {
+                let out = app.genTree(app.state.resume);
+                console.dir(out);
+                $("main").innerHTML = out;
+            },
+            genTree: function(obj) {
+                console.dir(obj);
+                out = "<ul>";
+                for (let i in obj) {
+                    out += "<li><span class='key'>" + i + ":</span>";
+                    if (typeof obj[i] === "object") {
+                        out += app.genTree(obj[i]);
+                    } else {
+                        if (i === 'picture') {
+                            out += "<img src='"+obj[i]+"'>";
+                        } else {
+                            out += "<p>"+obj[i]+"</p>";
+                        }
+                    }
+                    out += "</li>\n";
+                }
+                out += "</ul>";
+
+                return out;
+            }
+        }
+        window.app = app;
+        app.init();
+    })();
+</script>
+</body>
+</html>
