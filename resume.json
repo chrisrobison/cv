@@ -79,9 +79,9 @@
         "HUD Calculator - calculates potential reverse mortgage values: http:\/\/bay-dev.netoasis.net\/HUD\/calc.html",
         "DB Tool: http:\/\/bay-dev.netoasis.net\/admin\/dbedit\/",
         "Tzero Technology - Customized content management system http:\/\/www.tzerotech.com\/site\/",
-        "CMS: http:\/\/tzero-dev.netoasis.net\/",
+        "TZero Technology CMS: http:\/\/tzero-dev.netoasis.net\/",
         "Metrika - Customized content management system http:\/\/www.metrika.com\/site\/",
-        "CMS: http:\/\/met-dev.netoasis.net\/"
+        "Metrika CMS: http:\/\/met-dev.netoasis.net\/"
     ],
     "startDate": "2006-04",
     "endDate": "2007-09"
@@ -90,7 +90,7 @@
     "company": "Genetic Savings & Clone",
     "position": "VP Engineering",
     "location": "Sausalito, CA",
-    "summary": "GS&C gave me the opportunity to apply my technical and management skills to the genetic sciences industry.  I was responsible for managing and integrating diverse genetic equipment into our server network and securely providing data to both internal and customer facing applications. I had the unique experience of cloning a cat in the course of documenting and automating business processes.",
+    "summary": "Genetic Savings & Clone was company that offered commercial pet gene banking and cloning services.  Working here was a lot of fun as it gave me the opportunity to apply my technical and management skills to the genetic sciences industry.  I was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery. My team managed and integrated diverse genetic equipment such as PCR machines and genetic analysers into our network while securely providing real-time data to internal and client facing applications. I had the unique experience of successfully cloning a cat during the course of this project.",
     "highlights": [
         "Cloned a cat and delivered it to customer",
         "Clonesoft - Architected and implemented client/server based web-based application using XML as the data transport mechanism to automate and manage the animal gene-banking and feline cloning business processes utilizing the latest in AJAX technologies.",

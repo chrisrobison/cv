@@ -38,8 +38,8 @@
     "region": "CA",
     "location": "San Francisco, CA",
     "summary": "D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire.  The majority of their business is derived from schools (student event transportation) and local tours.  10 years ago, I developed and implemented software that allowed D Harris to grow from 2 buses to 12. But the system I implemented 10 years ago was not made for the increased number of drivers, buses, customers and trips the company had grown to serve. Hired as CTO where I updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. After reviewing the first months trip data, I found that drivers would often sit idle for 4-5 hours, waiting to pickup students they had dropped off at a football game or band practice.  I developed an algorithm to identify these idle times and match them with jobs. I offered drivers an extra hours pay if they did the extra trip.  This nearly doubled the daily revenue until the COVID-19 shutdown.\n",
-    "startDate": "2020-02-01",
-    "endDate": "2020-12-01",
+    "startDate": "2020-02",
+    "endDate": "2020-12",
     "highlights": [
         "Automated notifications for trips, bus maintenance",
         "Automated billing and invoicing",
@@ -54,8 +54,8 @@
     "location": "San Francisco, CA",
     "summary": "Working at the same company for 10 years presented many challenges. I wore many hats and performed many roles all while the company changed names and was bought and sold twice. By the time my team was cut due to COVID-19, we were responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. \n\nMediaplex was an online advertising company that was started in 1999 and in 2001 acquired by ValueClick. The servers and software that ran the ad serving platform was over a decade old and the stack was beginning to show its age. The surge in popularity of \"Rich Media\" ads that began hitting the market in 2009 was beyond what their backend had been engineered to handle. Competing ad vendors who could serve these new rich media ads began stealing away valuable business, costing the company revenue and customers. I was hired to lead their Rich Media effort and help modernize their ad serving infrastructure and metric collection.\n\nI was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure.\n\nA large part of Rich Media ad serving and reporting is performed in the client and this required creating a small, reliable, cross-browser client-side ad loading framework that worked in tandem with the new backend API. After stablizing the infrastructure, I then managed engineering resources to work with the product services team to ensure the successful deployment of all Rich Media advertising campaigns. The Rich Media enhancements were a great success on all counts, increasing revenue by $1.2 million in the first year alone.\n\nBy the time Rich Media ad serving was running smoothly, demand for mobile ads was steadily increasing.  My team was tasked with implementing a mobile ad solution. Our company joined the IAB [https://iab.com], a consortium of online advertising companies that develops industry standards on my recommendation. As a participating IAB member, we  were instrumental in helping to define the updated MRAID 2.0 standard for serving mobile ads.  The MRAID protocol is still currently in use and the defacto standard for mobile ad serving. I wrote the initial Conversant Mobile Ad MRAID SDK's for both iOS and Android as well test apps for both platforms to be used internally and by our customers to preview ads in a mobile environment before deployment. Infrastructure upgrades done for logging and reporting of rich media ads carried over nicely to mobile and no changes to the backend were needed.",
     "highlights": ["Contributed to IAB MRAID 2.0 standard", "Implemented MRAID SDK's on iOS and Android platforms", "Developed and deployed mobile ad solutions for multiple platforms.", "Designed and deployed 'Rich Media' ad delivery and reporting infrastructure.","Architected and deployed RESTful API for ad serving, metrics and reporting.","Developed client-side code to request ads for mobile and web","Developed flexible metrics tracking with non-blocking endpoints","10 years"],
-    "startDate": "2010-07-01",
-    "endDate": "2020-02-01"
+    "startDate": "2010-07",
+    "endDate": "2020-02"
 }, {
     "period": "Sept, 2007 - July, 2010",
     "company": "Mindjet",
@@ -63,8 +63,8 @@
     "website": "www.mindjet.com",
     "location": "San Francisco, CA",
     "summary": "Hired to migrate the Mindjet website from PHP to an ASP.Net solution, my role quickly grew into heading up Mindjet's foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.\n\nMindjet Catalyst was a web-based mindmapping software that allowed browser-based real-time multi-person sharing, collaborating and editing of mindmaps.  The Catalyst client canvas was originally written in Flash and my team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.  The new application was designed to utilize open standards with HTML5, CSS3, Javascipt, canvas and SVG with few to zero dependancies on external 3rd party libraries.",
-    "startDate": "2007-09-01",
-    "endDate": "2010-07-01"
+    "startDate": "2007-09",
+    "endDate": "2010-07"
 }, {
     "period": "April, 2006 - Sept, 2007",
     "company": "Simple Software, Inc.",
@@ -142,13 +142,13 @@
 		"DBA to a number of Mysql databases (one master, multiple slaves)",
 		"Responsible for the seamless integration of multiple third-party application services into the company's website."
     ],
-    "startDate": "2000-05-01",
-    "endDate": "2001-11-01"
+    "startDate": "2000-05",
+    "endDate": "2001-11"
 }, {
     "period": "April, 1998 - May, 2000",
     "company": "Food.Com",
     "location": "San Francisco, CA",
-    "position": "Senior Web Developer \/ Administrator",
+    "position": "Web Architect",
     "summary": "Food.Com was an nationwide online food ordering and delivery service. Responsible for architecting and development of the online ordering application and the processes and procedures for delivering customer orders to restaurants via various notification mechanisms including IVR phone calls, faxes and custom terminals.",
     "highlights": [
         "Developed 'FUDGE', the 'Food.Com Ubiquitous Dining Guide Engine' which was used by thousands of restaurant reviewers to enter and maintain Food.Com's dining guide database.",
@@ -157,8 +157,8 @@
         "Migration of code-base from Objective-C/WebObjects to Java",
         "Wrote and maintained various web-based backend tools for maintaining accounts and order information"
     ],
-    "startDate": "1998-04-01",
-    "endDate": "2000-05-01"
+    "startDate": "1998-04",
+    "endDate": "2000-05"
 }, {
     "period": "June, 1996 - March, 1998",
     "company": "Slip.Net",
@@ -188,48 +188,48 @@
     "location": "Los Angeles, CA",
     "position": "Senior Developer \/ Systems Administrator",
     "summary": "Senior System Administrator\/Programmer for a network of mixed SunOS\/Solaris\/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.",
-    "startDate": "1994-12-01",
-    "endDate": "1995-07-01"
+    "startDate": "1994-12",
+    "endDate": "1995-07"
 }],
     "volunteer": [
         {
             "organization": "San Francisco Elks Lodge #3",
             "position": "Esteemed Leading Knight / House Committee Chair",
             "summary": "As Leading Knight and House Committee Chair I was responsible for the day-to-day operations of the Lodge restaurant and bar as well as organizing and holding events to raise money for local underprivileged children.  During my tenure as House Committee Chair, with the help of the SFPD, we were able to build 100 bicycles to give as Christmas presents to children which were very well received.  We raised over $34,000 for the children in that year.",
-            "startDate": "2010-04-01",
-            "endDate": "2011-04-01"
+            "startDate": "2010-04",
+            "endDate": "2011-04"
         }
     ],
     "education": [
         {
             "institution": "City College of San Francisco",
             "area": "Japanese, Business",
-            "startDate": "2009-01-01",
-            "endDate": "2010-01-01"
+            "startDate": "2009-01",
+            "endDate": "2010-01"
         },
         {
             "institution": "California State University-Chico",
             "area": "Computer Science",
-            "startDate": "1988-01-01",
-            "endDate": "1991-01-01"
+            "startDate": "1988-01",
+            "endDate": "1991-01"
         },
         {
             "institution": "Butte College",
             "area": "Computer Science, General Education",
-            "startDate": "1988-01-01",
-            "endDate": "1990-01-01"
+            "startDate": "1988-01",
+            "endDate": "1990-01"
         },
         {
             "institution": "Paradise High School",
             "area": "General Studies",
-            "startDate": "1984-01-01",
-            "endDate": "1988-01-01"
+            "startDate": "1984-01",
+            "endDate": "1988-01"
         }
     ],
     "awards": [
         {
             "title": "Computer Science Award",
-            "date": "1988-06-01",
+            "date": "1988-06",
             "awarder": "Paradise High School",
             "summary": "First recipient of the Paradise High School \"Computer Science Award\" for developing a data application to track school resources that ran on an Apple IIe.  "
         }
