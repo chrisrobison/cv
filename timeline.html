@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Christopher Robison Work History Timeline</title>
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        header {
+            background-color: #999;
+            color: #eee;
+            height: 5vh;
+        }
+
+        main {
+            background-color: #eee;
+            color: #ddd;
+            height: 95vh;
+            overflow: scroll;
+            margin:2.5vh 0px;
+        }
+
+        footer {
+            background-color: #666;
+            color: #eee;
+            height: 5vh;
+        }
+        .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline, .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline p { 
+            font-size: 16px;
+            text-align:center;
+            line-height: 1rem;
+        }
+        .tl-timenav span.company {
+            font-weight:bold;
+            font-size:16px;
+        }
+        .tl-timenav span.position {
+            font-size:14px;
+        }
+    </style>
+</head>
+
+<body id="home">
+
+
+    <header>
+    </header>
+    <main>
+        <div id='timeline-embed' style="width: 100%; height: 90vh"></div>
+    </main>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+    <script>
+        function $(str) {
+            return document.querySelector(str);
+        }
+
+        function $$(str) {
+            return document.querySelectorAll(str);
+        }
+
+        (function() {
+            const app = {
+                init: function() {
+                    app.state.loaded = true;
+
+                    app.getResume();
+                },
+                state: {
+                    loaded: false,
+                    timeline: {},
+                    resume: {}
+                },
+                getResume: function() {
+                    fetch("resume.json").then(response => response.json()).then(data => {
+                        app.state.resume = data;
+                        console.log("resume");
+                        console.dir(data);
+                        app.makeTimeline(data);
+                    });
+                },
+                makeTimeline: function(resume) {
+                    let json = app.resume2timeline(resume);
+                    app.state.timeline = new TL.Timeline('timeline-embed', json);
+                },
+                resume2timeline: function(resume) {
+                    let out = {};
+                    out.title = {
+                        "text": {
+                            "headline": "Christopher Robison",
+                            "text": "This is the work history for Christopher Robison"
+                        }
+                    };
+                    out.events = [];
+
+                    for (let i in resume.work) {
+                        let job = resume.work[i];
+                        let sdate = new Date(job.startDate);
+                        let edate = new Date(job.endDate);
+
+                        let evt = {
+                            "start_date": {"month":sdate.getMonth(),"year":sdate.getFullYear(), "day":sdate.getDate() }, 
+                            "end_date": {"month":edate.getMonth(),"year":edate.getFullYear(), "day":edate.getDate() }, 
+                            "text": {
+                                "headline": "<span class='company'>" + job.company + "</span><br><span class='position'>" + job.position + "</span>",
+                                "text": job.summary.replace(/\n\n/g, "<br><br>")
+                            }
+                        };
+                        out.events.push(evt);
+                    }
+                    return out;
+                }
+            }
+            window.app = app;
+            app.init();
+        })();
+    </script>
+</body>
+
+</html>
