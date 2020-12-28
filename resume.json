@@ -30,16 +30,16 @@
         ]
     },
     "work": [{
-    "period": "February, 2020 - December, 2020",
+    "period": "February, 2020 - Present",
     "company": "D. Harris Tours, Inc.",
-    "position": "Chief Technology Officer [CTO]",
+    "position": "Chief Technology Officer",
     "website": "https:\/\/dharristours.com\/",
     "city": "San Francisco",
     "region": "CA",
     "location": "San Francisco, CA",
     "summary": "D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire.  The majority of their business is derived from schools (student event transportation) and local tours.  10 years ago, I developed and implemented software that allowed D Harris to grow from 2 buses to 12. But the system I implemented 10 years ago was not made for the increased number of drivers, buses, customers and trips the company had grown to serve. Hired as CTO where I updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. After reviewing the first months trip data, I found that drivers would often sit idle for 4-5 hours, waiting to pickup students they had dropped off at a football game or band practice.  I developed an algorithm to identify these idle times and match them with jobs. I offered drivers an extra hours pay if they did the extra trip.  This nearly doubled the daily revenue until the COVID-19 shutdown.\n",
-    "startDate": "2020-02-01",
-    "endDate": "2020-12-01",
+    "startDate": "2020-02",
+    "endDate": "2020-12",
     "highlights": [
         "Automated notifications for trips, bus maintenance",
         "Automated billing and invoicing",
@@ -52,10 +52,10 @@
     "position": "Manager, Software Engineering",
     "website": "http:\/\/conversantmedia.com",
     "location": "San Francisco, CA",
-    "summary": "Working at the same company for 10 years presented many challenges. I wore many hats and performed many roles all while the company changed names and was bought and sold twice. By the time my team was cut due to COVID-19, we were responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. \n\nMediaplex was an online advertising company that was started in 1999 and in 2001 acquired by ValueClick. The servers and software that ran the ad serving platform was over a decade old and the stack was beginning to show its age. The surge in popularity of \"Rich Media\" ads that began hitting the market in 2009 was beyond what their backend had been engineered to handle. Competing ad vendors who could serve these new rich media ads began stealing away valuable business, costing the company revenue and customers. I was hired to lead their Rich Media effort and help modernize their ad serving infrastructure and metric collection.\n\nI was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure.\n\nA large part of Rich Media ad serving and reporting is performed in the client and this required creating a small, reliable, cross-browser client-side ad loading framework that worked in tandem with the new backend API. After stablizing the infrastructure, I then managed engineering resources to work with the product services team to ensure the successful deployment of all Rich Media advertising campaigns. The Rich Media enhancements were a great success on all counts, increasing revenue by $1.2 million in the first year alone.\n\nBy the time Rich Media ad serving was running smoothly, demand for mobile ads was steadily increasing.  My team was tasked with implementing a mobile ad solution. Our company joined the IAB [https://iab.com], a consortium of online advertising companies that develops industry standards on my recommendation. As a participating IAB member, we  were instrumental in helping to define the updated MRAID 2.0 standard for serving mobile ads.  The MRAID protocol is still currently in use and the defacto standard for mobile ad serving. I wrote the initial Conversant Mobile Ad MRAID SDK's for both iOS and Android as well test apps for both platforms to be used internally and by our customers to preview ads in a mobile environment before deployment. Infrastructure upgrades done for logging and reporting of rich media ads carried over nicely to mobile and no changes to the backend were needed.",
-    "highlights": ["Contributed to IAB MRAID 2.0 standard", "Implemented MRAID SDK's on iOS and Android platforms", "Developed and deployed mobile ad solutions for multiple platforms.", "Designed and deployed 'Rich Media' ad delivery and reporting infrastructure.","Architected and deployed RESTful API for ad serving, metrics and reporting.","Developed client-side code to request ads for mobile and web","Developed flexible metrics tracking with non-blocking endpoints","10 years"],
-    "startDate": "2010-07-01",
-    "endDate": "2020-02-01"
+    "summary": "Working at the same company for 10 years presented many challenges. I wore many hats and performed many roles all while the company changed names and was bought and sold twice. By the time my team was cut due to COVID-19, we were responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. \n\nMediaplex was an online advertising company that was started in 1999 and in 2001 acquired by ValueClick. The servers and software that ran the ad serving platform was over a decade old and the stack was beginning to show its age. The surge in popularity of \"Rich Media\" ads that began hitting the market in 2009 was beyond what their backend had been engineered to handle. Competing ad vendors who could serve these new rich media ads began stealing away valuable business, costing the company revenue and customers. I was hired to lead their Rich Media effort and help modernize their ad serving infrastructure and metric collection.\n\nI was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure.\n\nA large part of Rich Media ad serving and reporting is performed in the client and this required creating a small, reliable, cross-browser client-side ad loading framework that worked in tandem with the new backend API. After stablizing the infrastructure, Managed engineering resources to work with product services team to ensure the successful deployment of all Rich Media ad campaigns. These enhancements were a great success by all counts; increasing revenue by $1.2 million in the first year alone.\n\nBy the time Rich Media ad serving was running smoothly, demand for mobile ads was steadily increasing.  My team was tasked with implementing a mobile ad solution. Our company joined the IAB [https://iab.com], a consortium of online advertising companies that develops industry standards on my recommendation. As a participating IAB member, we  were instrumental in helping to define the updated MRAID 2.0 standard for serving mobile ads.  The MRAID protocol is still currently in use and the defacto standard for mobile ad serving. I wrote the initial Conversant Mobile Ad MRAID SDK's for both iOS and Android as well test apps for both platforms to be used internally and by our customers to preview ads in a mobile environment before deployment. Infrastructure upgrades done for logging and reporting of rich media ads carried over nicely to mobile and no changes to the backend were needed.",
+    "highlights": ["Contributed to IAB MRAID 2.0 standard", "Implemented MRAID SDK's on iOS and Android platforms", "Developed and deployed mobile ad solutions for multiple platforms.", "Designed and deployed 'Rich Media' ad delivery and reporting infrastructure.","Architected and deployed RESTful API for ad serving, tracking metrics and reporting.","Developed client-side Javascript 'ad controller' for mobile and web","Developed flexible metrics tracking with non-blocking endpoints","10 years"],
+    "startDate": "2010-07",
+    "endDate": "2020-02"
 }, {
     "period": "Sept, 2007 - July, 2010",
     "company": "Mindjet",
@@ -63,8 +63,8 @@
     "website": "www.mindjet.com",
     "location": "San Francisco, CA",
     "summary": "Hired to migrate the Mindjet website from PHP to an ASP.Net solution, my role quickly grew into heading up Mindjet's foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.\n\nMindjet Catalyst was a web-based mindmapping software that allowed browser-based real-time multi-person sharing, collaborating and editing of mindmaps.  The Catalyst client canvas was originally written in Flash and my team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.  The new application was designed to utilize open standards with HTML5, CSS3, Javascipt, canvas and SVG with few to zero dependancies on external 3rd party libraries.",
-    "startDate": "2007-09-01",
-    "endDate": "2010-07-01"
+    "startDate": "2007-09",
+    "endDate": "2010-07"
 }, {
     "period": "April, 2006 - Sept, 2007",
     "company": "Simple Software, Inc.",
@@ -86,18 +86,19 @@
     "startDate": "2006-04",
     "endDate": "2007-09"
 }, {
-    "period": "August, 2004 - April, 2006",
+    "period": "June, 2004 - April, 2006",
     "company": "Genetic Savings & Clone",
     "position": "VP Engineering",
     "location": "Sausalito, CA",
-    "summary": "Genetic Savings & Clone was company that offered commercial pet gene banking and cloning services.  Working here was a lot of fun as it gave me the opportunity to apply my technical and management skills to the genetic sciences industry.  I was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery. My team managed and integrated diverse genetic equipment such as PCR machines and genetic analysers into our network while securely providing real-time data to internal and client facing applications. I had the unique experience of successfully cloning a cat during the course of this project.",
+    "summary": "Genetic Savings & Clone was a genetic services company that offered commercial pet gene banking and cloning.  Working here was a lot of fun as it gave me the opportunity to apply my technical and management skills to the genetic sciences industry.  I was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery. My team managed and integrated diverse genetic equipment such as PCR machines and genetic analysers into our network while securely providing real-time data to internal and client facing applications. Developed a unique application for viewing real-time business operations with high-level overview drilling down into details in an animated, interactive map. Automated business processes pushed customer orders through the pipeline from biobox to clone. During the course of researching, integrating and automating business processes, I had the unique experience of cloning a cat, Lil' Nicky, from start to finish.",
     "highlights": [
         "Cloned a cat and delivered it to customer",
-        "Clonesoft - Architected and implemented client/server based web-based application using XML as the data transport mechanism to automate and manage the animal gene-banking and feline cloning business processes utilizing the latest in AJAX technologies.",
-        "CatBank - http://www.catbank.org/ Designed and developed framework to quickly implement the front-end and back-end for this database driven feline DNA identification website. Back-end requirements included integration with various genetic analysis hardware including the Applied Biosystem Genetic Analyser 3130",
+        "Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business.",
+        "CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with various genetic analysis hardware including the Applied Biosystem Genetic Analyser 3130",
+        "Integration of genetic analysis hardware",
         "Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time's bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)"
     ],
-    "startDate": "2004-08",
+    "startDate": "2004-06",
     "endDate": "2006-04"
 }, {
     "period": "December, 2001 - June, 2004",
@@ -142,10 +143,10 @@
 		"DBA to a number of Mysql databases (one master, multiple slaves)",
 		"Responsible for the seamless integration of multiple third-party application services into the company's website."
     ],
-    "startDate": "2000-05-01",
-    "endDate": "2001-11-01"
+    "startDate": "2000-05",
+    "endDate": "2001-11"
 }, {
-    "period": "April, 1998 - May, 2000",
+    "period": "March, 1998 - May, 2000",
     "company": "Food.Com",
     "location": "San Francisco, CA",
     "position": "Senior Web Developer \/ Administrator",
@@ -157,10 +158,10 @@
         "Migration of code-base from Objective-C/WebObjects to Java",
         "Wrote and maintained various web-based backend tools for maintaining accounts and order information"
     ],
-    "startDate": "1998-04-01",
-    "endDate": "2000-05-01"
+    "startDate": "1998-03",
+    "endDate": "2000-05"
 }, {
-    "period": "June, 1996 - March, 1998",
+    "period": "May, 1996 - March, 1998",
     "company": "Slip.Net",
     "position": "Web Engineer",
     "location": "San Francisco, CA",
@@ -169,7 +170,7 @@
         "Built the Slip.Net Account Control Center which allowed customers to administrate their own accounts.  Reduced support call volume by 50% the first week.",
         "Developed Slip.Net Signup Wizard that walked a customer through setting up a new account as well as register domain names and setup website services all handled automatically"
     ],
-    "startDate": "1996-06",
+    "startDate": "1996-05",
     "endDate": "1998-03"
 }, {
     "period": "May, 1995 - May, 1996",
@@ -183,13 +184,13 @@
     "startDate": "1995-05",
     "endDate": "1996-05"
 }, {
-    "period": "December, 1994 - July, 1995",
+    "period": "January, 1994 - May, 1995",
     "company": "True World Access, Inc.",
     "location": "Los Angeles, CA",
-    "position": "Senior Developer \/ Systems Administrator",
-    "summary": "Senior System Administrator\/Programmer for a network of mixed SunOS\/Solaris\/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.",
-    "startDate": "1994-12-01",
-    "endDate": "1995-07-01"
+    "position": "Web Developer \/ Systems Administrator",
+    "summary": "System Administrator\/Programmer for a network of mixed SunOS\/Solaris\/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.",
+    "startDate": "1994-01-01",
+    "endDate": "1995-05-01"
 }],
     "volunteer": [
         {
