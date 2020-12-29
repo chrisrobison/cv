@@ -232,7 +232,13 @@
         "Clients included: Symantec, King Media, The Exploratorium and The Astronomical Society of the Pacific"
     ],
     "startDate": "1995-05",
-    "endDate": "1996-05"
+    "endDate": "1996-05",
+    "media": {
+        "url": "assets/netoasis.png",
+        "thumbnail": "assets/netoasis-thumb.png",
+        "caption": "",
+        "credit": "© Copyright 1996, All Rights Reserved"
+    }
 }, {
     "period": "January, 1994 - May, 1995",
     "company": "True World Access, Inc.",
