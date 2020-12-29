@@ -111,6 +111,16 @@
                                 "text": job.summary.replace(/\n\n/g, "<br><br>")
                             }
                         };
+
+                        if (job.media) {
+                            evt["media"] = {
+                                "url": job.media.url,
+                                "thumbnail": job.media.thumbnail,
+                                "caption": job.media.caption,
+                                "credit": job.media.credit
+                            }
+                        }
+
                         out.events.push(evt);
                     }
                     return out;

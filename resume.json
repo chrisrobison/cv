@@ -40,6 +40,12 @@
     "summary": "D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire.  The majority of their business is derived from schools (student event transportation) and local tours.  10 years ago, I developed and implemented software that allowed D Harris to grow from 2 buses to 12. But the system I implemented 10 years ago was not made for the increased number of drivers, buses, customers and trips the company had grown to serve. Hired as CTO where I updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. After reviewing the first months trip data, I found that drivers would often sit idle for 4-5 hours, waiting to pickup students they had dropped off at a football game or band practice.  I developed an algorithm to identify these idle times and match them with jobs. I offered drivers an extra hours pay if they did the extra trip.  This nearly doubled the daily revenue until the COVID-19 shutdown.\n",
     "startDate": "2020-02",
     "endDate": "2020-12",
+    "media": {
+        "url": "assets/dharristours.png",
+        "thumbnail": "assets/dharristours-thumb.png",
+        "caption": "",
+        "credit": "© Copyright 2020, All Rights Reserved"
+    },
     "highlights": [
         "Automated notifications for trips, bus maintenance",
         "Automated billing and invoicing",
@@ -55,7 +61,13 @@
     "summary": "Working at the same company for 10 years presented many challenges. I wore many hats and performed many roles all while the company changed names and was bought and sold twice. By the time my team was cut due to COVID-19, we were responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. \n\nMediaplex was an online advertising company that was started in 1999 and in 2001 acquired by ValueClick. The servers and software that ran the ad serving platform was over a decade old and the stack was beginning to show its age. The surge in popularity of \"Rich Media\" ads that began hitting the market in 2009 was beyond what their backend had been engineered to handle. Competing ad vendors who could serve these new rich media ads began stealing away valuable business, costing the company revenue and customers. I was hired to lead their Rich Media effort and help modernize their ad serving infrastructure and metric collection.\n\nI was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure.\n\nA large part of Rich Media ad serving and reporting is performed in the client and this required creating a small, reliable, cross-browser client-side ad loading framework that worked in tandem with the new backend API. After stablizing the infrastructure, Managed engineering resources to work with product services team to ensure the successful deployment of all Rich Media ad campaigns. These enhancements were a great success by all counts; increasing revenue by $1.2 million in the first year alone.\n\nBy the time Rich Media ad serving was running smoothly, demand for mobile ads was steadily increasing.  My team was tasked with implementing a mobile ad solution. Our company joined the IAB [https://iab.com], a consortium of online advertising companies that develops industry standards on my recommendation. As a participating IAB member, we  were instrumental in helping to define the updated MRAID 2.0 standard for serving mobile ads.  The MRAID protocol is still currently in use and the defacto standard for mobile ad serving. I wrote the initial Conversant Mobile Ad MRAID SDK's for both iOS and Android as well test apps for both platforms to be used internally and by our customers to preview ads in a mobile environment before deployment. Infrastructure upgrades done for logging and reporting of rich media ads carried over nicely to mobile and no changes to the backend were needed.",
     "highlights": ["Contributed to IAB MRAID 2.0 standard", "Implemented MRAID SDK's on iOS and Android platforms", "Developed and deployed mobile ad solutions for multiple platforms.", "Designed and deployed 'Rich Media' ad delivery and reporting infrastructure.","Architected and deployed RESTful API for ad serving, tracking metrics and reporting.","Developed client-side Javascript 'ad controller' for mobile and web","Developed flexible metrics tracking with non-blocking endpoints","10 years"],
     "startDate": "2010-07",
-    "endDate": "2020-02"
+    "endDate": "2020-02",
+    "media": {
+        "url": "assets/conversant.png",
+        "thumbnail": "assets/conversant-thumb.png",
+        "caption": "",
+        "credit": "© Copyright 2019, All Rights Reserved"
+    }
 }, {
     "period": "Sept, 2007 - July, 2010",
     "company": "Mindjet",
@@ -64,7 +76,13 @@
     "location": "San Francisco, CA",
     "summary": "Hired to migrate the Mindjet website from PHP to an ASP.Net solution, my role quickly grew into heading up Mindjet's foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.\n\nMindjet Catalyst was a web-based mindmapping software that allowed browser-based real-time multi-person sharing, collaborating and editing of mindmaps.  The Catalyst client canvas was originally written in Flash and my team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.  The new application was designed to utilize open standards with HTML5, CSS3, Javascipt, canvas and SVG with few to zero dependancies on external 3rd party libraries.",
     "startDate": "2007-09",
-    "endDate": "2010-07"
+    "endDate": "2010-07",
+    "media": {
+        "url": "assets/mindjet.png",
+        "thumbnail": "assets/mindjet-thumb.png",
+        "caption": "",
+        "credit": "© Copyright 2009, All Rights Reserved"
+    }
 }, {
     "period": "April, 2006 - Sept, 2007",
     "company": "Simple Software, Inc.",
@@ -99,7 +117,14 @@
         "Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time's bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)"
     ],
     "startDate": "2004-06",
-    "endDate": "2006-04"
+    "endDate": "2006-04",
+    "media": {
+        "url": "assets/gsc.png",
+        "thumbnail": "assets/gsc-thumb.png",
+        "caption": "",
+        "credit": "© Copyright 2004, All Rights Reserved"
+    }
+
 }, {
     "period": "December, 2001 - June, 2004",
     "company": "Inter@ctivate, Inc.",
@@ -123,7 +148,13 @@
 		"Maintaining security for all Interactivate networks"
     ],
     "startDate": "2001-12",
-    "endDate": "2004-06"
+    "endDate": "2004-06",
+    "media": {
+        "url": "assets/interactivate.png",
+        "thumbnail": "assets/interactivate-thumb.png",
+        "caption": "",
+        "credit": "© Copyright 2001, All Rights Reserved"
+    }
 }, {
     "period": "May, 2000 - November, 2001",
     "company": "TheFinancialCafe.Com",
@@ -144,7 +175,13 @@
 		"Responsible for the seamless integration of multiple third-party application services into the company's website."
     ],
     "startDate": "2000-05",
-    "endDate": "2001-11"
+    "endDate": "2001-11",
+    "media": {
+        "url": "assets/tfc.gif",
+        "thumbnail": "assets/tfc-thumb.png",
+        "caption": "",
+        "credit": "© Copyright 2001, All Rights Reserved"
+    }
 }, {
     "period": "March, 1998 - May, 2000",
     "company": "Food.Com",
@@ -159,7 +196,14 @@
         "Wrote and maintained various web-based backend tools for maintaining accounts and order information"
     ],
     "startDate": "1998-03",
-    "endDate": "2000-05"
+    "endDate": "2000-05",
+    "media": {
+        "url": "assets/foodcom-logo.png",
+        "thumbnail": "assets/foodcom-logo-thumb.png",
+        "caption": "",
+        "credit": "© Copyright 2000, All Rights Reserved"
+    }
+
 }, {
     "period": "May, 1996 - March, 1998",
     "company": "Slip.Net",
@@ -171,7 +215,13 @@
         "Developed Slip.Net Signup Wizard that walked a customer through setting up a new account as well as register domain names and setup website services all handled automatically"
     ],
     "startDate": "1996-05",
-    "endDate": "1998-03"
+    "endDate": "1998-03",
+    "media": {
+        "url": "assets/sliplogo.png",
+        "thumbnail": "assets/sliplogo-thumb.png",
+        "caption": "",
+        "credit": "© Copyright 1998, All Rights Reserved"
+    }
 }, {
     "period": "May, 1995 - May, 1996",
     "location": "San Francisco, CA",
@@ -190,7 +240,13 @@
     "position": "Web Developer \/ Systems Administrator",
     "summary": "System Administrator\/Programmer for a network of mixed SunOS\/Solaris\/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.",
     "startDate": "1994-01-01",
-    "endDate": "1995-05-01"
+    "endDate": "1995-05-01",
+    "media": {
+        "url": "assets/trueworld.png",
+        "thumbnail": "assets/trueworld-thumb.png",
+        "caption": "",
+        "credit": "© Copyright 1996, All Rights Reserved"
+    }
 }],
     "volunteer": [
         {
