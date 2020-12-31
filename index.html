@@ -78,7 +78,11 @@
                     $("nav").innerHTML = out;
                     $$(".themeLink").forEach(function(item) { 
                         item.addEventListener("click", function(e) {
-                            app.loadResume(e.target.hash.slice(1));
+                            if (e.shiftKey) {
+                                window.open("view.php?theme=" + e.target.hash.slice(1));
+                            } else {
+                                app.loadResume(e.target.hash.slice(1));
+                            }
                             e.preventDefault();
                             return false;
                         });
