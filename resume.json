@@ -42,7 +42,7 @@
     "endDate": "2020-12",
     "media": {
         "url": "assets/dharristours.png",
-        "thumbnail": "assets/dharristours-thumb.png",
+        "thumbnail": "assets/logos/dharristours.png",
         "caption": "",
         "credit": "© Copyright 2020, All Rights Reserved"
     },
@@ -64,7 +64,7 @@
     "endDate": "2020-02",
     "media": {
         "url": "assets/conversant.png",
-        "thumbnail": "assets/conversant-thumb.png",
+        "thumbnail": "assets/logos/conversant.png",
         "caption": "",
         "credit": "© Copyright 2019, All Rights Reserved"
     }
@@ -79,7 +79,7 @@
     "endDate": "2010-07",
     "media": {
         "url": "assets/mindjet.png",
-        "thumbnail": "assets/mindjet-thumb.png",
+        "thumbnail": "assets/logos/mindjet.jpg",
         "caption": "",
         "credit": "© Copyright 2009, All Rights Reserved"
     }
@@ -102,7 +102,13 @@
         "Metrika CMS: http:\/\/met-dev.netoasis.net\/"
     ],
     "startDate": "2006-04",
-    "endDate": "2007-09"
+    "endDate": "2007-09",
+    "media": {
+        "url": "assets/simple.png",
+        "thumbnail": "assets/logos/simple.png",
+        "caption": "",
+        "credit": "© Copyright 2007, All Rights Reserved"
+    }
 }, {
     "period": "June, 2004 - April, 2006",
     "company": "Genetic Savings & Clone",
@@ -120,7 +126,7 @@
     "endDate": "2006-04",
     "media": {
         "url": "assets/gsc.png",
-        "thumbnail": "assets/gsc-thumb.png",
+        "thumbnail": "assets/logos/gsc.png",
         "caption": "",
         "credit": "© Copyright 2004, All Rights Reserved"
     }
@@ -151,7 +157,7 @@
     "endDate": "2004-06",
     "media": {
         "url": "assets/interactivate.png",
-        "thumbnail": "assets/interactivate-thumb.png",
+        "thumbnail": "assets/logos/iai.png",
         "caption": "",
         "credit": "© Copyright 2001, All Rights Reserved"
     }

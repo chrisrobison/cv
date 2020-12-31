@@ -43,6 +43,13 @@
         .tl-timenav span.position {
             font-size:14px;
         }
+        .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container {
+            max-width:64px;
+            max-height:64px;
+        }
+        .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container .tl-timemarker-media {
+            max-width:64px;
+        }
     </style>
 </head>
 
@@ -85,8 +92,11 @@
                     });
                 },
                 makeTimeline: function(resume) {
+                    let opts = {
+                        initial_zoom: 3
+                    };
                     let json = app.resume2timeline(resume);
-                    app.state.timeline = new TL.Timeline('timeline-embed', json);
+                    app.state.timeline = new TL.Timeline('timeline-embed', json, opts);
                 },
                 resume2timeline: function(resume) {
                     let out = {};
