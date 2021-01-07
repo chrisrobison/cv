@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for var in "$@"
+do
+    name=$(echo "$var" | cut -f 1 -d '.')
+    wkhtmltopdf $var $name.pdf
+done
+
