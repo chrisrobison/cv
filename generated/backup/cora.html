@@ -1,0 +1,600 @@
+
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christopher Robison</title>
+	<script src="/cdn-cgi/apps/head/QEWNwoPSl2O5LqMXvi595gsiMPg.js"></script><link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+		body {
+    font-family: Montserrat;
+    font-size:1em;
+    color: #333333;
+}
+
+.picture {
+    border-radius: 3%;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4e4e4e;
+}
+
+a:hover {
+    color: #4e4e4e;
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 1.7em;
+    margin-top: 2em;
+    margin-bottom: 0.2em;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #4e4e4e;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+.profile {
+    font-family: Montserrat;
+    white-space:nowrap;
+    margin: 0.5em;
+}
+
+.contact-header {
+    font-weight: bold;
+    color: #4e4e4e;
+    margin:1em;
+}
+
+.contact-header .fa {
+    font-size: 1.5em;
+}
+
+.profile .fa {
+    font-size: 1.5em;
+}
+
+.label {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.fa {
+    font-size: 2em;
+}
+
+.left {
+    font-size: 1em;
+}
+
+.main {
+    margin: 0 auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+}
+
+.skills {
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: &#x27;Open Sans&#x27;;
+}
+
+li {
+    font-family: &#x27;Open Sans&#x27;;
+}
+
+.keywords {
+    background-color: #333333;
+    color: #fff;
+    padding: 6px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+blockquote {
+    margin: 2em 10px;
+    padding: 1em 10px;
+    border-left: 10px solid #edf0f5;
+    font-family: &#x27;Open Sans&#x27;;
+    font-size: 1.5em;
+}
+
+blockquote .name {
+    font-weight: bold;
+    font-family: &quot;Montserrat&quot;;
+}
+
+.responsive-show {
+    display: none;
+}
+
+.address {
+    display: block
+}
+
+section.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        font-size: 1.66em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    p {
+        font-size: 1.2em;
+    }
+    li {
+        font-size: 1.2em;
+    }
+    blockquote {
+        font-size: 1.2em;
+    }
+    h2 {
+        font-size: 2.3em;
+    }
+    .responsive-hidden {
+        display: none;
+        visibility: hidden;
+    }
+    .responsive-show {
+        display: inline;
+        visibility: visible;
+    }
+}
+
+@media print {
+
+    body {
+        font-size:0.6em;
+    }
+
+    .address {
+        display: inline-block
+    }
+
+    .profile {
+        font-size: 1em;
+        display: inline-block
+    }
+
+    #profiles .contact-header {
+        display: none;
+    }
+
+    #languages,
+    #interests {
+        display: none;
+    }
+
+    section.skills section {
+        margin-right: 10em
+    }
+
+    .skills{
+        page-break-inside: avoid;
+    }
+
+    .main{
+        padding:10px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    section:not(#work) {
+        page-break-inside: avoid;
+    }
+
+    .job {
+        page-break-inside: avoid;
+    }
+
+    @page  
+    { 
+        size: auto;   /* auto is the initial value */ 
+        /* this affects the margin in the printer settings */ 
+        margin: 25mm 10mm;  
+    }
+}
+    </style>
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	</head>
+	<body>
+				<header>
+				<h1>Christopher Robison</h1>
+				<h3 class= "label">Award-winning technology leader</h3>
+		
+					<img src= "data:image/jpeg;base64,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" class= "picture">
+		
+				<div id= "contact">
+					<span class= "contact-header">
+						<a href="https://maps.google.com/?q=San Francisco, CA, "><i title="ADDRESS" class="fa fa-map-marker left"></i>&nbsp;San Francisco, CA, </a>
+					</span>
+					<br/><br/>
+					<span class= "contact-header">
+						<a href= "mailto:cdr@cdr2.com" target= "_blank"><i title="EMAIL" class="fa fa-envelope left"></i>&nbsp;cdr@cdr2.com</a>
+					</span>
+					<br/><br/>
+					<span class= "contact-header">
+						<a href= "tel:(415) 810-6991" target= "_blank"><i title="PHONE" class="fa fa-phone-square left"></i>&nbsp;(415) 810-6991</a>
+					</span>
+					<br/><br/>
+					<span class= "contact-header">
+						<a href= "https://www.cdr2.com/" target= "_blank"><i title="WEBSITE" class="fa fa-globe left"></i>&nbsp;https://www.cdr2.com/</a>
+					</span>
+					<br><br>
+				</div>
+				<br>
+				<div id= "profiles">
+					<span class= "profile"><a href= "https://www.linkedin.com/in/crobison" target= "_blank" class= "profile"><i class="fa fa-linkedin left"></i>&nbsp;crobison</a></span> 
+					<span class= "profile"><a href= "https://twitter.com/thechrisrobison" target= "_blank" class= "profile"><i class="fa fa-twitter left"></i>&nbsp;thechrisrobison</a></span> 
+					<span class= "profile"><a href= "https://github.com/chrisrobison" target= "_blank" class= "profile"><i class="fa fa-github left"></i>&nbsp;chrisrobison</a></span> 
+				</div>		
+			</header>		<div class="main">
+			<section id="about">
+				<h2><i class="fa fa-user left"></i> ABOUT</h2>
+				<p>
+					Skilled technology leader excelling in the rapid development of solutions to manage complex technical environments for growing companies, ranging from startups to billion dollar industry leaders. With over 20 years experience in the industry, I can build, develop and lead high-performance technical teams and effectively manage people and resources in-person and remotely across multiple geographic locations. My extensive experience allows me to leverage my business acumen and technical expertise to translate a technology needs into innovative solutions and actionable plans. Hands-on but I know how to delegate. I am just as comfortable managing people and engineering resources as I am hacking away at code.  tl;dr: I build things that make companies go.
+				</p>
+			</section>
+			<section id= "work">
+				<h2><i class= "fa fa-suitcase left"></i> WORK EXPERIENCE</h2>
+					<div class= "job">
+						<h3>Chief Technology Officer, D. Harris Tours, Inc.</h3>
+						<h4>2020-Feb 
+						<span class="endDate">
+							- 2020-Dec
+						</span>
+			</h4>
+						<p>D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire.  The majority of their business is derived from schools (student event transportation) and local tours.  10 years ago, I developed and implemented software that allowed D Harris to grow from 2 buses to 12. But the system I implemented 10 years ago was not made for the increased number of drivers, buses, customers and trips the company had grown to serve. Hired as CTO where I updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. After reviewing the first months trip data, I found that drivers would often sit idle for 4-5 hours, waiting to pickup students they had dropped off at a football game or band practice.  I developed an algorithm to identify these idle times and match them with jobs. I offered drivers an extra hours pay if they did the extra trip.  This nearly doubled the daily revenue until the COVID-19 shutdown.
+			</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Automated notifications for trips, bus maintenance</li>
+							<li>Automated billing and invoicing</li>
+							<li>Migrated driver logs to digital format</li>
+							<li>Increased daily revenue with better trip optimization</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Manager, Software Engineering, Conversant, Inc. (formerly Mediaplex)</h3>
+						<h4>2010-Jul 
+						<span class="endDate">
+							- 2020-Feb
+						</span>
+			</h4>
+						<p>Working at the same company for 10 years presented many challenges. I wore many hats and performed many roles all while the company changed names and was bought and sold twice. By the time my team was cut due to COVID-19, we were responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. 
+			
+			Mediaplex was an online advertising company that was started in 1999 and in 2001 acquired by ValueClick. The servers and software that ran the ad serving platform was over a decade old and the stack was beginning to show its age. The surge in popularity of &quot;Rich Media&quot; ads that began hitting the market in 2009 was beyond what their backend had been engineered to handle. Competing ad vendors who could serve these new rich media ads began stealing away valuable business, costing the company revenue and customers. I was hired to lead their Rich Media effort and help modernize their ad serving infrastructure and metric collection.
+			
+			I was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure.
+			
+			A large part of Rich Media ad serving and reporting is performed in the client and this required creating a small, reliable, cross-browser client-side ad loading framework that worked in tandem with the new backend API. After stablizing the infrastructure, Managed engineering resources to work with product services team to ensure the successful deployment of all Rich Media ad campaigns. These enhancements were a great success by all counts; increasing revenue by $1.2 million in the first year alone.
+			
+			By the time Rich Media ad serving was running smoothly, demand for mobile ads was steadily increasing.  My team was tasked with implementing a mobile ad solution. Our company joined the IAB [https://iab.com], a consortium of online advertising companies that develops industry standards on my recommendation. As a participating IAB member, we  were instrumental in helping to define the updated MRAID 2.0 standard for serving mobile ads.  The MRAID protocol is still currently in use and the defacto standard for mobile ad serving. I wrote the initial Conversant Mobile Ad MRAID SDK&#x27;s for both iOS and Android as well test apps for both platforms to be used internally and by our customers to preview ads in a mobile environment before deployment. Infrastructure upgrades done for logging and reporting of rich media ads carried over nicely to mobile and no changes to the backend were needed.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Contributed to IAB MRAID 2.0 standard</li>
+							<li>Implemented MRAID SDK&#x27;s on iOS and Android platforms</li>
+							<li>Developed and deployed mobile ad solutions for multiple platforms.</li>
+							<li>Designed and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure.</li>
+							<li>Architected and deployed RESTful API for ad serving, tracking metrics and reporting.</li>
+							<li>Developed client-side Javascript &#x27;ad controller&#x27; for mobile and web</li>
+							<li>Developed flexible metrics tracking with non-blocking endpoints</li>
+							<li>10 years</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Web Architect, Mindjet</h3>
+						<h4>2007-Sep 
+						<span class="endDate">
+							- 2010-Jul
+						</span>
+			</h4>
+						<p>Hired to migrate the Mindjet website from PHP to an ASP.Net solution, my role quickly grew into heading up Mindjet&#x27;s foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.
+			
+			Mindjet Catalyst was a web-based mindmapping software that allowed browser-based real-time multi-person sharing, collaborating and editing of mindmaps.  The Catalyst client canvas was originally written in Flash and my team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.  The new application was designed to utilize open standards with HTML5, CSS3, Javascipt, canvas and SVG with few to zero dependancies on external 3rd party libraries.</p>
+					</div>
+					<div class= "job">
+						<h3>CEO / Founder, Simple Software, Inc.</h3>
+						<h4>2006-Apr 
+						<span class="endDate">
+							- 2007-Sep
+						</span>
+			</h4>
+						<p>Contracted software development and consulting. Provided contract support for previous work positions (Interactivate), developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses. Customers included Peterson-Dean Roofing, Interactivate, Genetic Savings &amp;amp; Clone, Symantec and more.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>GC Homes - Contractor documents and blueprints online. [http://gch-dev.netoasis.net/app/]</li>
+							<li>Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</li>
+							<li>Lender Tool: http://bay-dev.netoasis.net/lenders.php</li>
+							<li>Form Definition Tool: http://bay-dev.netoasis.net/fields.php?id&#x3D;50</li>
+							<li>HUD Calculator - calculates potential reverse mortgage values: http://bay-dev.netoasis.net/HUD/calc.html</li>
+							<li>DB Tool: http://bay-dev.netoasis.net/admin/dbedit/</li>
+							<li>Tzero Technology - Customized content management system http://www.tzerotech.com/site/</li>
+							<li>TZero Technology CMS: http://tzero-dev.netoasis.net/</li>
+							<li>Metrika - Customized content management system http://www.metrika.com/site/</li>
+							<li>Metrika CMS: http://met-dev.netoasis.net/</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>VP Engineering, Genetic Savings &amp; Clone</h3>
+						<h4>2004-Jun 
+						<span class="endDate">
+							- 2006-Apr
+						</span>
+			</h4>
+						<p>Genetic Savings &amp; Clone was a genetic services company that offered commercial pet gene banking and cloning.  Working here was a lot of fun as it gave me the opportunity to apply my technical and management skills to the genetic sciences industry.  I was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery. My team managed and integrated diverse genetic equipment such as PCR machines and genetic analysers into our network while securely providing real-time data to internal and client facing applications. Developed a unique application for viewing real-time business operations with high-level overview drilling down into details in an animated, interactive map. Automated business processes pushed customer orders through the pipeline from biobox to clone. During the course of researching, integrating and automating business processes, I had the unique experience of cloning a cat, Lil&#x27; Nicky, from start to finish.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Cloned a cat and delivered it to customer</li>
+							<li>Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business.</li>
+							<li>CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with various genetic analysis hardware including the Applied Biosystem Genetic Analyser 3130</li>
+							<li>Integration of genetic analysis hardware</li>
+							<li>Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time&#x27;s bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Technical Director, Inter@ctivate, Inc.</h3>
+						<h4>2001-Dec 
+						<span class="endDate">
+							- 2004-Jun
+						</span>
+			</h4>
+						<p>As Technical Director for Interactivate, Inc., my responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. </p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</li>
+							<li>Designed and implemented web-based network management, monitoring &amp; systems analysis tools</li>
+							<li>Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
+							<li>Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.</li>
+							<li>Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.</li>
+							<li>Installation &amp; administration of Solaris, FreeBSD &amp; Windows NT in a heterogeneous environment</li>
+							<li>Design, implementation, migration and maintenance for Interactivate&#x27;s internal and external network infrastructure.</li>
+							<li>Working with vendors, developers &amp; 3rd party integrators.</li>
+							<li>Maintain and monitor over 50 hosted client web sites and dozens of web applications</li>
+							<li>Identifying &amp; resolving network related problems</li>
+							<li>Responsible for backup implementation and recovery strategy &amp; procedures</li>
+							<li>Required to support high volume access &amp; availability characteristics as well as identifying &amp; resolving system hardware &amp; software problems</li>
+							<li>Responsible for the full availability of DNS, SMTP, HTTP, POP &amp; IMAP servers</li>
+							<li>Maintaining security for all Interactivate networks</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Software Architect / Technical Director, TheFinancialCafe.Com</h3>
+						<h4>2000-May 
+						<span class="endDate">
+							- 2001-Nov
+						</span>
+			</h4>
+						<p>TheFinancialCafe.Com was an Online Financial Broker/Dealer which provides free online market orders. Hired to build a custom CRM application for their support staff, the application quickly grew to encompass every aspect of the company from CRM to billing to handling email, managing the company website and integration with 3rd party financial services.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Designed and implemented web-based network management &amp; systems analysis tools</li>
+							<li>Required to support high volume access &amp; availability characteristics as well as identifying &amp; resolving system hardware &amp; software problems</li>
+							<li>Working with vendors, developers &amp; 3rd party integrators.</li>
+							<li>Installation &amp; administration of Solaris, FreeBSD &amp; Windows NT in a heterogeneous environment</li>
+							<li>Installation &amp; maintaining network equipment</li>
+							<li>Responsible for the full availability of DNS, SMTP, HTTP, POP &amp; IMAP servers</li>
+							<li>Design, implementation, and maintenance for the companies internal and external network infrastructure.</li>
+							<li>Extensive automation of administrative functions via shell scripting &amp; Perl</li>
+							<li>Responsible for backup implementation and recovery strategy &amp; procedures</li>
+							<li>DBA to a number of Mysql databases (one master, multiple slaves)</li>
+							<li>Responsible for the seamless integration of multiple third-party application services into the company&#x27;s website.</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Senior Web Developer / Administrator, Food.Com</h3>
+						<h4>1998-Mar 
+						<span class="endDate">
+							- 2000-May
+						</span>
+			</h4>
+						<p>Food.Com was an nationwide online food ordering and delivery service. Responsible for architecting and development of the online ordering application and the processes and procedures for delivering customer orders to restaurants via various notification mechanisms including IVR phone calls, faxes and custom terminals.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Developed &#x27;FUDGE&#x27;, the &#x27;Food.Com Ubiquitous Dining Guide Engine&#x27; which was used by thousands of restaurant reviewers to enter and maintain Food.Com&#x27;s dining guide database.</li>
+							<li>Setup of automated development environment using web-based tools</li>
+							<li>Development of tools and utilities (both web based and command line) to automate development efforts</li>
+							<li>Migration of code-base from Objective-C/WebObjects to Java</li>
+							<li>Wrote and maintained various web-based backend tools for maintaining accounts and order information</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Web Engineer, Slip.Net</h3>
+						<h4>1996-May 
+						<span class="endDate">
+							- 1998-Mar
+						</span>
+			</h4>
+						<p>Slip.Net was one of the earliest Internet Service Providers in the San Francisco Bay Area with a client base of over 50,000 users.  My roles and responsibilities were divided between system administration and web application development. As the &#x27;Web Administrator&#x27;, I was responsible for shared administration of our server farm of 30+ servers.  I was responsible for all web-based software, E-commerce, network accessible databases, secure server certificates, web server maintenance, and more. In addition to these administration duties, I was also given a myriad of development projects, including the renovation of the existing system of disassociated and unwieldy collection of flat text db files and dbm&#x27;s that constituted their &#x27;client database&#x27;. I developed an easy to use and coherent system of procedures, tools, scripts, and interfaces using the new &#x27;MySQL&#x27; open source database engine and Perl.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Built the Slip.Net Account Control Center which allowed customers to administrate their own accounts.  Reduced support call volume by 50% the first week.</li>
+							<li>Developed Slip.Net Signup Wizard that walked a customer through setting up a new account as well as register domain names and setup website services all handled automatically</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Founder / Chief Developer, The NetOASIS Software Co.</h3>
+						<h4>1995-May 
+						<span class="endDate">
+							- 1996-May
+						</span>
+			</h4>
+						<p>As founder and President of the NetOASIS Software Co. I was responsible for every aspect of running the business from graphic design to programming to market research and client solicitation. The primary focus of the company was development of web based applications and the integration of a clients systems into a computer based environment. We also offered freelance programming services, web hosting, web site design and maintenance, and setup and installation of intranet hardware and software components. Specialized in online commerce systems and I have installed, upgraded and maintained online payment servers by Cybercash, First Virtual, and Verisign.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Clients included: Symantec, King Media, The Exploratorium and The Astronomical Society of the Pacific</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Web Developer / Systems Administrator, True World Access, Inc.</h3>
+						<h4>1994-Jan 
+						<span class="endDate">
+							- 1995-May
+						</span>
+			</h4>
+						<p>System Administrator/Programmer for a network of mixed SunOS/Solaris/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.</p>
+					</div>
+			</section>
+			<section id="skills">
+				<h2><i class="fa fa-tasks left"></i> SKILLS</h2>
+				<section class="skills">
+				<section>
+				<h3 class="skills">Programming Languages</h3>
+				<span class="keywords">Javascript [node.js]</span> 
+				<span class="keywords">Javascript [browser]</span> 
+				<span class="keywords">C</span> 
+				<span class="keywords">C++</span> 
+				<span class="keywords">Java</span> 
+				<span class="keywords">Kotlin</span> 
+				<span class="keywords">Objective-C</span> 
+				<span class="keywords">Swift</span> 
+				<span class="keywords">PHP</span> 
+				<span class="keywords">Python</span> 
+				<span class="keywords">Perl</span> 
+				<span class="keywords">Go</span> 
+				<span class="keywords">C#</span> 
+				<span class="keywords">Bash</span> 
+				</section>
+				<section>
+				<h3 class="skills">Leadership</h3>
+				<span class="keywords">Strategic Planning</span> 
+				<span class="keywords">Team Building</span> 
+				<span class="keywords">Team Leadership</span> 
+				<span class="keywords">Procedure Development</span> 
+				<span class="keywords">Process Improvement</span> 
+				<span class="keywords">Product Development</span> 
+				<span class="keywords">Entrepreneurship</span> 
+				<span class="keywords">Budgeting / Financial Planning</span> 
+				</section>
+				<section>
+				<h3 class="skills">Software Engineering</h3>
+				<span class="keywords">Best Practices</span> 
+				<span class="keywords">Entrepreneurship</span> 
+				<span class="keywords">Software Development</span> 
+				<span class="keywords">Microservices Architecture</span> 
+				<span class="keywords">Scrum / Agile</span> 
+				<span class="keywords">Mobile Application Development</span> 
+				<span class="keywords">Cloud Services</span> 
+				<span class="keywords">Service Integration</span> 
+				</section>
+				</section>
+			</section>
+			<section id="education">
+				<h2><i class="fa fa-graduation-cap left"></i> EDUCATION</h2>
+				<h3>, Japanese, Business - City College of San Francisco</h3>
+				<h4>2009-Jan  - 2010-Jan  
+				</h4>
+			 	<h3>, Computer Science - California State University-Chico</h3>
+				<h4>1988-Jan  - 1991-Jan  
+				</h4>
+			 	<h3>, Computer Science, General Education - Butte College</h3>
+				<h4>1988-Jan  - 1990-Jan  
+				</h4>
+			 	<h3>, General Studies - Paradise High School</h3>
+				<h4>1984-Jan  - 1988-Jan  
+				</h4>
+			 
+			</section>
+			<section id="awards">
+				<h2><i class="fa fa-trophy left"></i> AWARDS</h2>
+				<h3>Computer Science Award - Paradise High School</h3>
+				<h4>
+					1988-Jun
+				</h4>
+				<p>First recipient of the Paradise High School &quot;Computer Science Award&quot; for developing a data application to track school resources that ran on an Apple IIe.  </p>
+			</section>
+			<section id="volunteer">
+				<h2><i class="fa fa-child left"></i> VOLUNTEER WORK</h2>
+					<h3>Esteemed Leading Knight / House Committee Chair, San Francisco Elks Lodge #3</h3>
+					<h4>2010-Apr 
+						<span class="endDate">
+								- 2011-Apr
+						</span> 
+					</h4>
+					<p>As Leading Knight and House Committee Chair I was responsible for the day-to-day operations of the Lodge restaurant and bar as well as organizing and holding events to raise money for local underprivileged children.  During my tenure as House Committee Chair, with the help of the SFPD, we were able to build 100 bicycles to give as Christmas presents to children which were very well received.  We raised over $34,000 for the children in that year.<br><a href="" target="_blank"></a></p>
+			</section>
+			<section id="languages">
+				<h2><i class="fa fa-language left"></i> LANGUAGES</h2>
+			
+				<h3>English</h3>
+				<h4>Fluency: Native or bilingual</h4>
+			</section>
+			<section id="interests">
+				<h2><i class="fa fa-star left"></i> INTERESTS</h2>
+				<h3 class="skills">Hobbies</h3>
+				 
+				<span class="keywords">3D Printing</span> 
+				<span class="keywords">Raspberry Pi</span> 
+				<span class="keywords">Arduino</span> 
+				<span class="keywords">Laser engraving</span> 
+				<span class="keywords">Electronics</span>   	<h3 class="skills">Recreation</h3>
+				 
+				<span class="keywords">Golf</span> 
+				<span class="keywords">Recreational Programming</span> 
+				<span class="keywords">Karaoke</span>   
+			</section>
+			<section id="references">
+				<h2><i class="fa fa-thumbs-up left"></i> REFERENCES</h2>
+				<blockquote>
+					Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs.
+					<div class="name"><br>- Kevin Ready (Software Developer and Consultant)</div>
+				</blockquote><br> 
+				<blockquote>
+					This guy has some seriously mad coding skills.
+					<div class="name"><br>- Thomas Weaver (Network Provisioner at Twitch)</div>
+				</blockquote><br> 
+				<blockquote>
+					His system is well oil; all my web services are working with no down time.  He offers all the greatest gadgets, ideal environment for a programmer like me.
+					<div class="name"><br>- Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</div>
+				</blockquote><br> 
+				<blockquote>
+					Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager.
+					<div class="name"><br>- Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</div>
+				</blockquote><br> 
+			</section>
+		</div>
+	</body>
+</html>

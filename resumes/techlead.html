@@ -1,114 +1,120 @@
 <!doctype html>
 <html>
-	<head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>Christopher Robison</title>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-  <script src="/cdn-cgi/apps/head/QEWNwoPSl2O5LqMXvi595gsiMPg.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-	<title>Christopher Robison</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            font-family: "Roboto", sans-serif;
+            font-size: 10pt;
+        }
 
-	<style>
-	body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #fafafa;
-  font-family: "Roboto", sans-serif;
-  font-size: 10pt;
-}
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-.page {
-  width: 210mm;
-  min-height: 297mm;
-  padding: 10mm;
-  margin: 10mm auto;
-  border: 1px #d3d3d3 solid;
-  border-radius: 5px;
-  background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
+        * {
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
 
-@page {
-  size: A4;
-  margin: 0;
-}
-@media print {
-  html,
-  body {
-    width: 210mm;
-    height: 297mm;
-  }
-  .page {
-    margin: 0;
-    border: initial;
-    border-radius: initial;
-    width: initial;
-    min-height: initial;
-    box-shadow: initial;
-    background: initial;
-    page-break-after: always;
-  }
-}
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 10mm;
+            margin: 10mm auto;
+            border: 1px #d3d3d3 solid;
+            border-radius: 5px;
+            background: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
 
-h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 15pt;
-}
+        @page {
+            size: A4;
+            margin: 0;
+        }
 
-p {
-  padding: 0;
-  margin: 2px 0 15px 0;
-}
-.title {
-  font-weight: bold;
-  margin-bottom: 3px;
-}
+        @media print {
 
-.endDate,
-.startDate {
-  color: #444;
-}
-section {
-  margin-bottom: 15px;
-}
+            html,
+            body {
+                width: 210mm;
+                height: 297mm;
+            }
 
-	</style>
+            .page {
+                margin: 0;
+                border: initial;
+                border-radius: initial;
+                width: initial;
+                min-height: initial;
+                box-shadow: initial;
+                background: initial;
+                page-break-after: always;
+            }
+        }
 
-	</head>
-	<body>
+        h1 {
+            padding: 0;
+            margin: 0;
+            font-size: 15pt;
+        }
 
-	<div class="page">
-			<h1>Christopher Robison</h1>
-			<section id="basics">
-						San Francisco
-					/
-					(415) 810-6991 /
-					cdr@cdr2.com
-			</section>
-		<section id="work">
-			<br />
-				<div>
-					<strong>
-						Chief Technology Officer - D. Harris Tours, Inc..
-					</strong>
-					  &nbsp;
-						San Francisco, CA,
-				<span class="startDate">
-					2020-02
-				</span>
-				<span class="endDate">
-					- 2020-12
-				</span>
-				</div>
-				<p>D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire.  The majority of their business is derived from schools (student event transportation) and local tours.  10 years ago, I developed and implemented software that allowed D Harris to grow from 2 buses to 12. But the system I implemented 10 years ago was not made for the increased number of drivers, buses, customers and trips the company had grown to serve. Hired as CTO where I updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. After reviewing the first months trip data, I found that drivers would often sit idle for 4-5 hours, waiting to pickup students they had dropped off at a football game or band practice.  I developed an algorithm to identify these idle times and match them with jobs. I offered drivers an extra hours pay if they did the extra trip.  This nearly doubled the daily revenue until the COVID-19 shutdown.
-		</p>
-				<!-- <div class="date">
+        p {
+            padding: 0;
+            margin: 2px 0 15px 0;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .endDate,
+        .startDate {
+            color: #444;
+        }
+
+        section {
+            margin-bottom: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="page">
+        <h1>Christopher Robison</h1>
+        <section id="basics">
+            San Francisco
+            /
+            (415) 810-6991 /
+            cdr@cdr2.com
+        </section>
+        <section id="work">
+            <br />
+            <div>
+                <strong>
+                    Chief Technology Officer - D. Harris Tours, Inc..
+                </strong>
+                &nbsp;
+                San Francisco, CA,
+                <span class="startDate">
+                    2020-02
+                </span>
+                <span class="endDate">
+                    - 2020-12
+                </span>
+            </div>
+            <p>D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire. The majority of their business is derived from schools (student event transportation) and local tours. 10 years ago, I developed and implemented software that allowed D Harris to grow from 2 buses to 12. But the system I implemented 10 years ago was not made for the increased number of drivers, buses, customers and trips the company had grown to serve. Hired as CTO where I updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. After reviewing the first months trip data, I found that drivers would often sit idle for 4-5 hours, waiting to pickup students they had dropped off at a football game or band practice. I developed an algorithm to identify these idle times and match them with jobs. I offered drivers an extra hours pay if they did the extra trip. This nearly doubled the daily revenue until the COVID-19 shutdown.
+            </p>
+            <!-- <div class="date">
 					<span class="startDate">
 						2020-02
 					</span>
@@ -133,29 +139,29 @@ section {
 					<li>Increased daily revenue with better trip optimization</li>
 				</ul>
 				 -->
-				<div>
-					<strong>
-						Manager, Software Engineering - Conversant, Inc. (formerly Mediaplex).
-					</strong>
-					  &nbsp;
-						San Francisco, CA,
-				<span class="startDate">
-					2010-07
-				</span>
-				<span class="endDate">
-					- 2020-02
-				</span>
-				</div>
-				<p>Working at the same company for 10 years presented many challenges. I wore many hats and performed many roles all while the company changed names and was bought and sold twice. By the time my team was cut due to COVID-19, we were responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. 
-		
-		Mediaplex was an online advertising company that was started in 1999 and in 2001 acquired by ValueClick. The servers and software that ran the ad serving platform was over a decade old and the stack was beginning to show its age. The surge in popularity of &quot;Rich Media&quot; ads that began hitting the market in 2009 was beyond what their backend had been engineered to handle. Competing ad vendors who could serve these new rich media ads began stealing away valuable business, costing the company revenue and customers. I was hired to lead their Rich Media effort and help modernize their ad serving infrastructure and metric collection.
-		
-		I was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure.
-		
-		A large part of Rich Media ad serving and reporting is performed in the client and this required creating a small, reliable, cross-browser client-side ad loading framework that worked in tandem with the new backend API. After stablizing the infrastructure, Managed engineering resources to work with product services team to ensure the successful deployment of all Rich Media ad campaigns. These enhancements were a great success by all counts; increasing revenue by $1.2 million in the first year alone.
-		
-		By the time Rich Media ad serving was running smoothly, demand for mobile ads was steadily increasing.  My team was tasked with implementing a mobile ad solution. Our company joined the IAB [https://iab.com], a consortium of online advertising companies that develops industry standards on my recommendation. As a participating IAB member, we  were instrumental in helping to define the updated MRAID 2.0 standard for serving mobile ads.  The MRAID protocol is still currently in use and the defacto standard for mobile ad serving. I wrote the initial Conversant Mobile Ad MRAID SDK&#x27;s for both iOS and Android as well test apps for both platforms to be used internally and by our customers to preview ads in a mobile environment before deployment. Infrastructure upgrades done for logging and reporting of rich media ads carried over nicely to mobile and no changes to the backend were needed.</p>
-				<!-- <div class="date">
+            <div>
+                <strong>
+                    Manager, Software Engineering - Conversant, Inc. (formerly Mediaplex).
+                </strong>
+                &nbsp;
+                San Francisco, CA,
+                <span class="startDate">
+                    2010-07
+                </span>
+                <span class="endDate">
+                    - 2020-02
+                </span>
+            </div>
+            <p>Working at the same company for 10 years presented many challenges. I wore many hats and performed many roles all while the company changed names and was bought and sold twice. By the time my team was cut due to COVID-19, we were responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day.
+
+                Mediaplex was an online advertising company that was started in 1999 and in 2001 acquired by ValueClick. The servers and software that ran the ad serving platform was over a decade old and the stack was beginning to show its age. The surge in popularity of &quot;Rich Media&quot; ads that began hitting the market in 2009 was beyond what their backend had been engineered to handle. Competing ad vendors who could serve these new rich media ads began stealing away valuable business, costing the company revenue and customers. I was hired to lead their Rich Media effort and help modernize their ad serving infrastructure and metric collection.
+
+                I was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure.
+
+                A large part of Rich Media ad serving and reporting is performed in the client and this required creating a small, reliable, cross-browser client-side ad loading framework that worked in tandem with the new backend API. After stablizing the infrastructure, Managed engineering resources to work with product services team to ensure the successful deployment of all Rich Media ad campaigns. These enhancements were a great success by all counts; increasing revenue by $1.2 million in the first year alone.
+
+                By the time Rich Media ad serving was running smoothly, demand for mobile ads was steadily increasing. My team was tasked with implementing a mobile ad solution. Our company joined the IAB [https://iab.com], a consortium of online advertising companies that develops industry standards on my recommendation. As a participating IAB member, we were instrumental in helping to define the updated MRAID 2.0 standard for serving mobile ads. The MRAID protocol is still currently in use and the defacto standard for mobile ad serving. I wrote the initial Conversant Mobile Ad MRAID SDK&#x27;s for both iOS and Android as well test apps for both platforms to be used internally and by our customers to preview ads in a mobile environment before deployment. Infrastructure upgrades done for logging and reporting of rich media ads carried over nicely to mobile and no changes to the backend were needed.</p>
+            <!-- <div class="date">
 					<span class="startDate">
 						2010-07
 					</span>
@@ -191,23 +197,23 @@ section {
 					<li>10 years</li>
 				</ul>
 				 -->
-				<div>
-					<strong>
-						Web Architect - Mindjet.
-					</strong>
-					  &nbsp;
-						San Francisco, CA,
-				<span class="startDate">
-					2007-09
-				</span>
-				<span class="endDate">
-					- 2010-07
-				</span>
-				</div>
-				<p>Hired to migrate the Mindjet website from PHP to an ASP.Net solution, my role quickly grew into heading up Mindjet&#x27;s foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.
-		
-		Mindjet Catalyst was a web-based mindmapping software that allowed browser-based real-time multi-person sharing, collaborating and editing of mindmaps.  The Catalyst client canvas was originally written in Flash and my team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.  The new application was designed to utilize open standards with HTML5, CSS3, Javascipt, canvas and SVG with few to zero dependancies on external 3rd party libraries.</p>
-				<!-- <div class="date">
+            <div>
+                <strong>
+                    Web Architect - Mindjet.
+                </strong>
+                &nbsp;
+                San Francisco, CA,
+                <span class="startDate">
+                    2007-09
+                </span>
+                <span class="endDate">
+                    - 2010-07
+                </span>
+            </div>
+            <p>Hired to migrate the Mindjet website from PHP to an ASP.Net solution, my role quickly grew into heading up Mindjet&#x27;s foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.
+
+                Mindjet Catalyst was a web-based mindmapping software that allowed browser-based real-time multi-person sharing, collaborating and editing of mindmaps. The Catalyst client canvas was originally written in Flash and my team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript. The new application was designed to utilize open standards with HTML5, CSS3, Javascipt, canvas and SVG with few to zero dependancies on external 3rd party libraries.</p>
+            <!-- <div class="date">
 					<span class="startDate">
 						2007-09
 					</span>
@@ -227,21 +233,21 @@ section {
 		Mindjet Catalyst was a web-based mindmapping software that allowed browser-based real-time multi-person sharing, collaborating and editing of mindmaps.  The Catalyst client canvas was originally written in Flash and my team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.  The new application was designed to utilize open standards with HTML5, CSS3, Javascipt, canvas and SVG with few to zero dependancies on external 3rd party libraries.</p>
 				</div>
 		 -->
-				<div>
-					<strong>
-						CEO / Founder - Simple Software, Inc..
-					</strong>
-					  &nbsp;
-						San Francisco, CA,
-				<span class="startDate">
-					2006-04
-				</span>
-				<span class="endDate">
-					- 2007-09
-				</span>
-				</div>
-				<p>Contracted software development and consulting. Provided contract support for previous work positions (Interactivate), developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses. Customers included Peterson-Dean Roofing, Interactivate, Genetic Savings &amp;amp; Clone, Symantec and more.</p>
-				<!-- <div class="date">
+            <div>
+                <strong>
+                    CEO / Founder - Simple Software, Inc..
+                </strong>
+                &nbsp;
+                San Francisco, CA,
+                <span class="startDate">
+                    2006-04
+                </span>
+                <span class="endDate">
+                    - 2007-09
+                </span>
+            </div>
+            <p>Contracted software development and consulting. Provided contract support for previous work positions (Interactivate), developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses. Customers included Peterson-Dean Roofing, Interactivate, Genetic Savings &amp;amp; Clone, Symantec and more.</p>
+            <!-- <div class="date">
 					<span class="startDate">
 						2006-04
 					</span>
@@ -271,21 +277,21 @@ section {
 					<li>Metrika CMS: http://met-dev.netoasis.net/</li>
 				</ul>
 				 -->
-				<div>
-					<strong>
-						VP Engineering - Genetic Savings &amp; Clone.
-					</strong>
-					  &nbsp;
-						Sausalito, CA,
-				<span class="startDate">
-					2004-06
-				</span>
-				<span class="endDate">
-					- 2006-04
-				</span>
-				</div>
-				<p>Genetic Savings &amp; Clone was a genetic services company that offered commercial pet gene banking and cloning.  Working here was a lot of fun as it gave me the opportunity to apply my technical and management skills to the genetic sciences industry.  I was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery. My team managed and integrated diverse genetic equipment such as PCR machines and genetic analysers into our network while securely providing real-time data to internal and client facing applications. Developed a unique application for viewing real-time business operations with high-level overview drilling down into details in an animated, interactive map. Automated business processes pushed customer orders through the pipeline from biobox to clone. During the course of researching, integrating and automating business processes, I had the unique experience of cloning a cat, Lil&#x27; Nicky, from start to finish.</p>
-				<!-- <div class="date">
+            <div>
+                <strong>
+                    VP Engineering - Genetic Savings &amp; Clone.
+                </strong>
+                &nbsp;
+                Sausalito, CA,
+                <span class="startDate">
+                    2004-06
+                </span>
+                <span class="endDate">
+                    - 2006-04
+                </span>
+            </div>
+            <p>Genetic Savings &amp; Clone was a genetic services company that offered commercial pet gene banking and cloning. Working here was a lot of fun as it gave me the opportunity to apply my technical and management skills to the genetic sciences industry. I was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery. My team managed and integrated diverse genetic equipment such as PCR machines and genetic analysers into our network while securely providing real-time data to internal and client facing applications. Developed a unique application for viewing real-time business operations with high-level overview drilling down into details in an animated, interactive map. Automated business processes pushed customer orders through the pipeline from biobox to clone. During the course of researching, integrating and automating business processes, I had the unique experience of cloning a cat, Lil&#x27; Nicky, from start to finish.</p>
+            <!-- <div class="date">
 					<span class="startDate">
 						2004-06
 					</span>
@@ -307,21 +313,21 @@ section {
 					<li>Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time&#x27;s bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</li>
 				</ul>
 				 -->
-				<div>
-					<strong>
-						Technical Director - Inter@ctivate, Inc..
-					</strong>
-					  &nbsp;
-						San Diego, CA,
-				<span class="startDate">
-					2001-12
-				</span>
-				<span class="endDate">
-					- 2004-06
-				</span>
-				</div>
-				<p>As Technical Director for Interactivate, Inc., my responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. </p>
-				<!-- <div class="date">
+            <div>
+                <strong>
+                    Technical Director - Inter@ctivate, Inc..
+                </strong>
+                &nbsp;
+                San Diego, CA,
+                <span class="startDate">
+                    2001-12
+                </span>
+                <span class="endDate">
+                    - 2004-06
+                </span>
+            </div>
+            <p>As Technical Director for Interactivate, Inc., my responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites. Help grow the company from 10 to 65 employees. </p>
+            <!-- <div class="date">
 					<span class="startDate">
 						2001-12
 					</span>
@@ -352,21 +358,21 @@ section {
 					<li>Maintaining security for all Interactivate networks</li>
 				</ul>
 				 -->
-				<div>
-					<strong>
-						Software Architect / Technical Director - TheFinancialCafe.Com.
-					</strong>
-					  &nbsp;
-						San Francisco, CA,
-				<span class="startDate">
-					2000-05
-				</span>
-				<span class="endDate">
-					- 2001-11
-				</span>
-				</div>
-				<p>TheFinancialCafe.Com was an Online Financial Broker/Dealer which provides free online market orders. Hired to build a custom CRM application for their support staff, the application quickly grew to encompass every aspect of the company from CRM to billing to handling email, managing the company website and integration with 3rd party financial services.</p>
-				<!-- <div class="date">
+            <div>
+                <strong>
+                    Software Architect / Technical Director - TheFinancialCafe.Com.
+                </strong>
+                &nbsp;
+                San Francisco, CA,
+                <span class="startDate">
+                    2000-05
+                </span>
+                <span class="endDate">
+                    - 2001-11
+                </span>
+            </div>
+            <p>TheFinancialCafe.Com was an Online Financial Broker/Dealer which provides free online market orders. Hired to build a custom CRM application for their support staff, the application quickly grew to encompass every aspect of the company from CRM to billing to handling email, managing the company website and integration with 3rd party financial services.</p>
+            <!-- <div class="date">
 					<span class="startDate">
 						2000-05
 					</span>
@@ -394,21 +400,21 @@ section {
 					<li>Responsible for the seamless integration of multiple third-party application services into the company&#x27;s website.</li>
 				</ul>
 				 -->
-				<div>
-					<strong>
-						Senior Web Developer / Administrator - Food.Com.
-					</strong>
-					  &nbsp;
-						San Francisco, CA,
-				<span class="startDate">
-					1998-03
-				</span>
-				<span class="endDate">
-					- 2000-05
-				</span>
-				</div>
-				<p>Food.Com was an nationwide online food ordering and delivery service. Responsible for architecting and development of the online ordering application and the processes and procedures for delivering customer orders to restaurants via various notification mechanisms including IVR phone calls, faxes and custom terminals.</p>
-				<!-- <div class="date">
+            <div>
+                <strong>
+                    Senior Web Developer / Administrator - Food.Com.
+                </strong>
+                &nbsp;
+                San Francisco, CA,
+                <span class="startDate">
+                    1998-03
+                </span>
+                <span class="endDate">
+                    - 2000-05
+                </span>
+            </div>
+            <p>Food.Com was an nationwide online food ordering and delivery service. Responsible for architecting and development of the online ordering application and the processes and procedures for delivering customer orders to restaurants via various notification mechanisms including IVR phone calls, faxes and custom terminals.</p>
+            <!-- <div class="date">
 					<span class="startDate">
 						1998-03
 					</span>
@@ -430,21 +436,21 @@ section {
 					<li>Wrote and maintained various web-based backend tools for maintaining accounts and order information</li>
 				</ul>
 				 -->
-				<div>
-					<strong>
-						Web Engineer - Slip.Net.
-					</strong>
-					  &nbsp;
-						San Francisco, CA,
-				<span class="startDate">
-					1996-05
-				</span>
-				<span class="endDate">
-					- 1998-03
-				</span>
-				</div>
-				<p>Slip.Net was one of the earliest Internet Service Providers in the San Francisco Bay Area with a client base of over 50,000 users.  My roles and responsibilities were divided between system administration and web application development. As the &#x27;Web Administrator&#x27;, I was responsible for shared administration of our server farm of 30+ servers.  I was responsible for all web-based software, E-commerce, network accessible databases, secure server certificates, web server maintenance, and more. In addition to these administration duties, I was also given a myriad of development projects, including the renovation of the existing system of disassociated and unwieldy collection of flat text db files and dbm&#x27;s that constituted their &#x27;client database&#x27;. I developed an easy to use and coherent system of procedures, tools, scripts, and interfaces using the new &#x27;MySQL&#x27; open source database engine and Perl.</p>
-				<!-- <div class="date">
+            <div>
+                <strong>
+                    Web Engineer - Slip.Net.
+                </strong>
+                &nbsp;
+                San Francisco, CA,
+                <span class="startDate">
+                    1996-05
+                </span>
+                <span class="endDate">
+                    - 1998-03
+                </span>
+            </div>
+            <p>Slip.Net was one of the earliest Internet Service Providers in the San Francisco Bay Area with a client base of over 50,000 users. My roles and responsibilities were divided between system administration and web application development. As the &#x27;Web Administrator&#x27;, I was responsible for shared administration of our server farm of 30+ servers. I was responsible for all web-based software, E-commerce, network accessible databases, secure server certificates, web server maintenance, and more. In addition to these administration duties, I was also given a myriad of development projects, including the renovation of the existing system of disassociated and unwieldy collection of flat text db files and dbm&#x27;s that constituted their &#x27;client database&#x27;. I developed an easy to use and coherent system of procedures, tools, scripts, and interfaces using the new &#x27;MySQL&#x27; open source database engine and Perl.</p>
+            <!-- <div class="date">
 					<span class="startDate">
 						1996-05
 					</span>
@@ -463,21 +469,21 @@ section {
 					<li>Developed Slip.Net Signup Wizard that walked a customer through setting up a new account as well as register domain names and setup website services all handled automatically</li>
 				</ul>
 				 -->
-				<div>
-					<strong>
-						Founder / Chief Developer - The NetOASIS Software Co..
-					</strong>
-					  &nbsp;
-						San Francisco, CA,
-				<span class="startDate">
-					1995-05
-				</span>
-				<span class="endDate">
-					- 1996-05
-				</span>
-				</div>
-				<p>As founder and President of the NetOASIS Software Co. I was responsible for every aspect of running the business from graphic design to programming to market research and client solicitation. The primary focus of the company was development of web based applications and the integration of a clients systems into a computer based environment. We also offered freelance programming services, web hosting, web site design and maintenance, and setup and installation of intranet hardware and software components. Specialized in online commerce systems and I have installed, upgraded and maintained online payment servers by Cybercash, First Virtual, and Verisign.</p>
-				<!-- <div class="date">
+            <div>
+                <strong>
+                    Founder / Chief Developer - The NetOASIS Software Co..
+                </strong>
+                &nbsp;
+                San Francisco, CA,
+                <span class="startDate">
+                    1995-05
+                </span>
+                <span class="endDate">
+                    - 1996-05
+                </span>
+            </div>
+            <p>As founder and President of the NetOASIS Software Co. I was responsible for every aspect of running the business from graphic design to programming to market research and client solicitation. The primary focus of the company was development of web based applications and the integration of a clients systems into a computer based environment. We also offered freelance programming services, web hosting, web site design and maintenance, and setup and installation of intranet hardware and software components. Specialized in online commerce systems and I have installed, upgraded and maintained online payment servers by Cybercash, First Virtual, and Verisign.</p>
+            <!-- <div class="date">
 					<span class="startDate">
 						1995-05
 					</span>
@@ -495,21 +501,21 @@ section {
 					<li>Clients included: Symantec, King Media, The Exploratorium and The Astronomical Society of the Pacific</li>
 				</ul>
 				 -->
-				<div>
-					<strong>
-						Web Developer / Systems Administrator - True World Access, Inc..
-					</strong>
-					  &nbsp;
-						Los Angeles, CA,
-				<span class="startDate">
-					1994-01-01
-				</span>
-				<span class="endDate">
-					- 1995-05-01
-				</span>
-				</div>
-				<p>System Administrator/Programmer for a network of mixed SunOS/Solaris/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.</p>
-				<!-- <div class="date">
+            <div>
+                <strong>
+                    Web Developer / Systems Administrator - True World Access, Inc..
+                </strong>
+                &nbsp;
+                Los Angeles, CA,
+                <span class="startDate">
+                    1994-01-01
+                </span>
+                <span class="endDate">
+                    - 1995-05-01
+                </span>
+            </div>
+            <p>System Administrator/Programmer for a network of mixed SunOS/Solaris/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.</p>
+            <!-- <div class="date">
 					<span class="startDate">
 						1994-01-01
 					</span>
@@ -524,60 +530,61 @@ section {
 					<p>System Administrator/Programmer for a network of mixed SunOS/Solaris/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.</p>
 				</div>
 		 -->
-		</section>
-		<section id="education">
-			<div class="title">EDUCATION</div>
-				<div>
-					<strong>City College of San Francisco,</strong>
-					<span class="startDate">
-						2009-01-01
-					</span>
-					<span class="endDate">
-						- 2010-01-01
-					</span>
-				</div>
-				
-				<div>
-					<strong>California State University-Chico,</strong>
-					<span class="startDate">
-						1988-01-01
-					</span>
-					<span class="endDate">
-						- 1991-01-01
-					</span>
-				</div>
-				
-				<div>
-					<strong>Butte College,</strong>
-					<span class="startDate">
-						1988-01-01
-					</span>
-					<span class="endDate">
-						- 1990-01-01
-					</span>
-				</div>
-				
-				<div>
-					<strong>Paradise High School,</strong>
-					<span class="startDate">
-						1984-01-01
-					</span>
-					<span class="endDate">
-						- 1988-01-01
-					</span>
-				</div>
-				
-		</section>
-		<section id="awards">
-			<div class="title">AWARDS</div>
-			<div class="item">
-					Computer Science Award (Paradise High School)
-			</div>
-		</section>
-		<section id="interests">
-			<div class="title">HOBBIES</div>
-					Hobbies,
-					Recreation
-		</section>
-	</body>
+        </section>
+        <section id="education">
+            <div class="title">EDUCATION</div>
+            <div>
+                <strong>City College of San Francisco,</strong>
+                <span class="startDate">
+                    2009-01-01
+                </span>
+                <span class="endDate">
+                    - 2010-01-01
+                </span>
+            </div>
+
+            <div>
+                <strong>California State University-Chico,</strong>
+                <span class="startDate">
+                    1988-01-01
+                </span>
+                <span class="endDate">
+                    - 1991-01-01
+                </span>
+            </div>
+
+            <div>
+                <strong>Butte College,</strong>
+                <span class="startDate">
+                    1988-01-01
+                </span>
+                <span class="endDate">
+                    - 1990-01-01
+                </span>
+            </div>
+
+            <div>
+                <strong>Paradise High School,</strong>
+                <span class="startDate">
+                    1984-01-01
+                </span>
+                <span class="endDate">
+                    - 1988-01-01
+                </span>
+            </div>
+
+        </section>
+        <section id="awards">
+            <div class="title">AWARDS</div>
+            <div class="item">
+                Computer Science Award (Paradise High School)
+            </div>
+        </section>
+        <section id="interests">
+            <div class="title">HOBBIES</div>
+            Hobbies,
+            Recreation
+        </section>
+</body>
+
 </html>

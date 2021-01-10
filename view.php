@@ -5,12 +5,11 @@ $content = "";
 $agereload = 2;
 $production = true;
 $base = "";
+$in['force'] = isset($in['force']) ? $in['force'] : "";
+$in['theme'] = isset($in['theme']) ? $in['theme'] : "actual";
 
-if (!$production && (!file_exists("resumes/" . $in['theme'] . ".html"))) {
-        // header("Location: https://registry.jsonresume.org/chrisrobison?theme=" . $in['theme']);
-        $content = file_get_contents("https://registry.jsonresume.org/chrisrobison?theme=" . $in['theme']);
-        file_put_contents("resumes/".$in['theme'].".html", $content);
-}
+header("Location: resumes/{$theme}.html");
+exit;
 
 if ($content == "") {
     if (file_exists("resumes/".$in['theme'].".html")) {
