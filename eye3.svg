@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="250"
+   width="250"
+   id="svg888"
+   version="1.1"
+   image-rendering="auto"
+   stroke-dashoffset="0"
+   font-size="12"
+   stroke-linejoin="miter"
+   font-style="normal"
+   font-family="'Dialog'"
+   stroke-width="1"
+   font-weight="normal"
+   stroke-dasharray="none"
+   fill="black"
+   stroke-opacity="1"
+   shape-rendering="auto"
+   stroke-miterlimit="10"
+   stroke-linecap="square"
+   stroke="black"
+   text-rendering="auto"
+   color-interpolation="auto"
+   color-rendering="auto"
+   fill-opacity="1">
+  <metadata
+     id="metadata892">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <!--Unicode Character 'EYE' (U+1F441)-->
+  <defs
+     id="genericDefs" />
+  <g
+     transform="matrix(0.89335551,0,0,0.96706,-2.6578765,-141.43338)"
+     id="g886">
+    <g
+       id="g884">
+      <path
+         id="path882"
+         stroke="none"
+         d="m 283.9219,271.9688 q -21.0938,38.1093 -58.7813,58.2187 -36,19.2656 -81,19.2656 -45.1406,0 -81,-19.2656 Q 25.4531,310.0781 4.0781,271.9688 25.5938,233.7188 63,213.6094 q 35.8594,-19.2656 81.1406,-19.2656 45.1406,0 81,19.2656 37.6875,20.1094 58.7813,58.3594 z m -26.5781,0 q -27.5626,-48.375 -86.9063,-58.2188 17.7187,7.5938 28.2656,23.2812 10.5469,15.6719 10.5469,34.9376 0,18.8437 -10.4062,34.5937 -10.4063,15.75 -27.7032,23.4844 58.9219,-9.9844 86.2032,-58.0781 z m -61.5938,0 q 0,-21.2344 -15.2656,-35.9219 -15.25,-14.7031 -36.4844,-14.7031 -11.1094,0 -21.375,4.6406 L 117.2812,213.75 q -59.2031,10.125 -86.625,58.2188 27.2813,47.9531 86.0626,58.0781 Q 99.4219,322.3125 89.0781,306.5625 78.75,290.8125 78.75,271.9688 q 0,-11.5313 4.0781,-22.5 l 13.0781,4.0781 q -3.6562,9.1406 -3.6562,18.4219 0,21.2343 15.1875,35.9374 15.1875,14.6876 36.5625,14.6876 21.375,0 36.5625,-14.6876 15.1875,-14.7031 15.1875,-35.9374 z m -12.6562,0 q 0,16.0312 -11.5313,27.2187 -11.5313,11.1719 -27.5625,11.1719 -16.1719,0 -27.6406,-11.1719 Q 104.9062,288 104.9062,271.9688 q 0,-7.1719 2.3907,-13.5 l 39.9375,18.1406 -18.7032,-39.6563 q 7.5938,-3.375 15.4688,-3.375 16.0312,0 27.5625,11.1875 11.5313,11.1719 11.5313,27.2032 z" />
+    </g>
+  </g>
+</svg>
