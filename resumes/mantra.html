@@ -143,6 +143,13 @@
             margin: 0 0 -4rem 0;
             height: 5rem;
         }
+        @media all {
+            .page-break { display: none; }
+        }
+
+        @media print {
+            .page-break { display: block; page-break-before: always; }
+        }
     </style>
 
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:600,700|Fira+Mono:400,500,700" rel="stylesheet">
@@ -216,7 +223,7 @@
             </div>
         </section>
         <hr>
-        <section id="work">
+        <section class='page-break' id="work">
             <h2>Experience</h2>
             <div class="item">
                 <h3 class="name">
@@ -287,7 +294,7 @@
                     <li>10 years</li>
                 </ul>
             </div>
-            <div class="item">
+            <div class="item page-break">
                 <h3 class="name">
                     Mindjet
                 </h3>
@@ -345,7 +352,7 @@
                     <li>Metrika CMS: http://met-dev.netoasis.net/</li>
                 </ul>
             </div>
-            <div class="item">
+            <div class="item page-break">
                 <h3 class="name">
                     Genetic Savings &amp; Clone
                 </h3>
@@ -464,7 +471,7 @@
                     <li>Wrote and maintained various web-based backend tools for maintaining accounts and order information</li>
                 </ul>
             </div>
-            <div class="item">
+            <div class="item page-break">
                 <h3 class="name">
                     Slip.Net
                 </h3>
@@ -500,7 +507,7 @@
                     </span>
                 </div>
                 <div class="position">
-                    Founder / Chief Developer
+                    Founder / Architect / Developer
                 </div>
                 <div class="summary">
                     As founder and President of the NetOASIS Software Co. I was responsible for every aspect of running the business from graphic design to programming to market research and client solicitation. The primary focus of the company was development of web based applications and the integration of a clients systems into a computer based environment. We also offered freelance programming services, web hosting, web site design and maintenance, and setup and installation of intranet hardware and software components. Specialized in online commerce systems and I have installed, upgraded and maintained online payment servers by Cybercash, First Virtual, and Verisign.
@@ -509,7 +516,7 @@
                     <li>Clients included: Symantec, King Media, The Exploratorium and The Astronomical Society of the Pacific</li>
                 </ul>
             </div>
-            <div class="item">
+            <div class="item page-break">
                 <h3 class="name">
                     True World Access, Inc.
                 </h3>

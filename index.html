@@ -19,7 +19,7 @@
             float: left;
             width: 80vw;
             height: 100vh;
-            margin-left:20vw;
+            margin-left: 20vw;
             background-color: #fff;
             overflow: scroll;
             color: #333;
@@ -29,9 +29,17 @@
             color: #eee;
             font-size: 25px;
             text-decoration: none;
-            padding-left: 1em;
+            padding-left: 2em;
             display: block;
             transition: all 300ms ease-in-out;
+            position: relative;
+        }
+
+        nav a::before {
+            position: relative;
+            display: inline-block;
+            width: 1.75em;
+            font-size: 18px;
         }
 
         nav a:visited {
@@ -48,17 +56,74 @@
             position: fixed;
             z-index: 1;
             top: 0px;
-            padding-bottom:1em;
+            padding-bottom: 1em;
             left: 0px;
             background-color: #111;
             overflow-x: hidden;
             transition: all 500ms ease-in-out;
-            white-space:nowrap;
+            white-space: nowrap;
+        }
+
+        .download {
+            background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS4wYmV0YTIgKDJiNzFkMjUsIDIwMTktMTItMDMpIgogICBzb2RpcG9kaTpkb2NuYW1lPSJkb3dubG9hZC5zdmciCiAgIGlkPSJzdmc4MzUiCiAgIHZlcnNpb249IjEuMSIKICAgaGVpZ2h0PSIxODVweCIKICAgd2lkdGg9IjE2MXB4Ij4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE4NDEiPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM4MzkiIC8+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzgzNSIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIwIgogICAgIGlua3NjYXBlOndpbmRvdy15PSIyMyIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgICBpbmtzY2FwZTpjeT0iOTIuNSIKICAgICBpbmtzY2FwZTpjeD0iODAuNSIKICAgICBpbmtzY2FwZTp6b29tPSIzLjYzMjQzMjQiCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlkPSJuYW1lZHZpZXc4MzciCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iOTgxIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTQzMCIKICAgICBpbmtzY2FwZTpwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIgogICAgIGd1aWRldG9sZXJhbmNlPSIxMCIKICAgICBncmlkdG9sZXJhbmNlPSIxMCIKICAgICBvYmplY3R0b2xlcmFuY2U9IjEwIgogICAgIGJvcmRlcm9wYWNpdHk9IjEiCiAgICAgaW5rc2NhcGU6ZG9jdW1lbnQtcm90YXRpb249IjAiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgcGFnZWNvbG9yPSIjZmZmZmZmIiAvPgogIDxwYXRoCiAgICAgc3R5bGU9InN0cm9rZTojMDAwMDAwO3N0cm9rZS1vcGFjaXR5OjE7ZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZS13aWR0aDozLjc3OTUyNzU2O3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lIgogICAgIGlkPSJwYXRoODMzIgogICAgIGQ9Ik04OC43NzEsNS44NTYgQzg4Ljc3MSwzNS43MTAgODguNzcxLDk2LjQ1NyA4OC43NzEsOTYuNDU3IEM4OC43NzEsOTYuNDU3IDExMC45MTIsNzQuNDA1IDExMS40NzEsNzMuODA3IEMxMTQuNTI1LDcxLjYxNyAxMTguNTMxLDcyLjc4MSAxMjAuNzU4LDc0LjgzNyBDMTIyLjk4NSw3Ni44OTIgMTI0Ljg0MCw4MS40MjUgMTIzLjg1NCw4My4wNzMgQzEyMS43OTAsODQuNzg5IDExOC42OTQsODguNTY0IDExNi42MzEsOTAuMjgwIEMxMTIuNTA0LDk0Ljc0MSAxMDguMzc2LDk5LjIwMyAxMDQuMjQ5LDEwMy42NjQgQzk3LjM3MCwxMTAuMTg0IDkwLjQ5MCwxMTYuNzA2IDgzLjYxMiwxMjMuMjI2IEM4MS41NDgsMTIzLjIyNiA3OS40ODQsMTIzLjIyNiA3Ny40MjEsMTIzLjIyNiBDNzQuMzI1LDEyMC40ODEgNzEuMjI5LDExNy43MzUgNjguMTM0LDExNC45OTAgQzYxLjYwMCwxMDguMTI2IDQxLjE1OCw4Ny4yODAgMzguMjEwLDg0LjEwMyBDMzUuMjYzLDgwLjkyNSAzNy42OTQsNzYuMzk4IDM5LjI0Miw3NC44MzcgQzQwLjkxNSw3My4xNTAgNDUuMjUwLDcwLjQ0NiA0Ny40OTcsNzEuNzQ4IEM1MC40MzIsNzQuMTg5IDcyLjI2MSw5Ni40NTcgNzIuMjYxLDk2LjQ1NyBMNzIuMjYxLDUuODU2IEM3Mi4yNjEsNS44NTYgODAuMjk0LC03LjMwNyA4OC43NzEsNS44NTYgWk0xNS41MTAsMTY4LjUyNyBDNTguODQzLDE2OC41MjcgMTAyLjE4OSwxNjguNTI3IDE0NS41MjIsMTY4LjUyNyBDMTQ1LjUyMiwxNTQuMTE0IDE0NS45NTQsMTI3LjcxMyAxNDUuNTIyLDEyNS4yODUgQzE1MS4yMDIsMTE5LjcxMCAxNTUuMzExLDExOS45MDEgMTYxLjAwMCwxMjUuMjg1IEMxNjAuODUxLDEyNi41OTEgMTYwLjgyNCwxNzUuMTY4IDE2MS4wMDAsMTc3Ljc5MyBDMTYxLjMwNSwxODIuMzQyIDE1Ny43ODIsMTg0Ljk1OSAxNTMuNzc3LDE4NS4wMDAgQzE1Mi44NjMsMTg0Ljg1NCAxMi44ODUsMTg1LjAxMCAxMS4zODMsMTg1LjAwMCBDNC4yMjMsMTg1LjAwOSAxLjc0NSwxODIuOTgxIDAuMDMyLDE3OS44NTIgQy0wLjA5NSwxNzguMjkzIDAuMjAxLDEyNi4xNDkgMC4wMzIsMTI1LjI4NSBDMS40MDgsMTI0LjM3MCAyLjc3NCwxMjEuMzUyIDcuMjU1LDEyMS4xNjcgQzExLjczNywxMjAuOTgyIDE0Ljg3NywxMjMuOTc5IDE1LjUxMCwxMjUuMjg1IEMxNS41MTAsMTM5LjY5OCAxNS41MTAsMTU0LjExNCAxNS41MTAsMTY4LjUyNyBaIgogICAgIGZpbGw9InJnYigyMjAsIDIyMCwgMjIwKSIKICAgICBmaWxsLXJ1bGU9ImV2ZW5vZGQiIC8+Cjwvc3ZnPgo=");
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 6rem;
+            cursor: pointer;
+            height: 6rem;
+            color: #eee;
+            background-size: 6rem 6rem;
+            float: right;
+            padding: 2px;
+            margin-left: 1rem;
+            filter: drop-shadow(3px 3px 3px #0009);
+
+        }
+
+        .view {
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQycHgiIGhlaWdodD0iMTQ3cHgiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiICBmaWxsPSJyZ2IoMjM4LCAyMzgsIDIzOCkiCiBkPSJNMTA5LjQwMSwwLjAwMCBDMTYxLjQ2NCwtMC42NTUgMjAzLjk2MCwxNS43MDQgMjI1LjU0Niw0NC41NzggQzIzMS4xNzYsNTIuMTEwIDIzNS4zODcsNjIuMTU0IDI0Mi4wMDAsNjguODA2IEMyNDIuMTA2LDg3LjQ1OCAyMjEuMjk2LDEwNi45NzQgMjEwLjA2MCwxMTUuMzIzIEMxOTEuNDUxLDEyOS4xNDkgMTc2LjQ2NCwxMzcuNDUwIDE1MC4wNTEsMTQ0LjM5NiBDMTM5LjM5MSwxNDcuMTk5IDEyMC42MDEsMTQ4LjAzMSAxMDkuNDAxLDE0NS4zNjUgQzEwMS44MDYsMTQzLjU1NyA5NS45MjksMTQ1LjM2MCA4OS4wNzUsMTQzLjQyNiBDNTkuOTI3LDEzNS4yMDUgMzUuMzg2LDEyMi4xODMgMTkuMzg4LDEwMC43ODYgQzEzLjYwOCw5My4wNTYgMi42ODcsODMuODQ4IDAuMDMwLDczLjY1MSBDLTAuODIyLDcwLjM4MSAxMy41MDMsNTMuMTU2IDE1LjUxNiw1MC4zOTMgQzI5LjUwNiwzMS4xOTcgNDguNjc1LDE2Ljg1OCA3Mi42MjEsNy43NTMgQzgxLjA1NCw0LjU0NiA5MC43NjAsMy4xNzIgOTkuNzIyLDAuOTY5IEMxMDMuMjEwLDAuMTEyIDEwNy4wNjQsMS40NTYgMTA5LjQwMSwwLjAwMCBaTTk1Ljg1MCwxOS4zODIgQzg3Ljc4NSwyMS45NjYgNzkuNzE4LDI0LjU1MSA3MS42NTMsMjcuMTM1IEM1Ni42OTcsMzMuNjY2IDI3LjgzMSw1Ni45NTEgMjUuMTk1LDc0LjYyMSBDMzAuNjMxLDgwLjM1MyAzNC4wMTAsODguNjU2IDM4Ljc0NSw5NC45NzIgQzQ5LjgzNiwxMDkuNzYzIDcxLjkxMiwxMjEuNDU2IDkyLjk0NywxMjUuOTgzIEM5Mi45NDcsMTI1LjY2MCA5Mi45NDcsMTI1LjMzNyA5Mi45NDcsMTI1LjAxNCBDNzIuMjA2LDExNC44NjMgNTcuNDc4LDgxLjIwMiA2OC43NTAsNTEuMzYyIEM3Mi40MzEsNTIuNzEzIDc4LjQwNSw1My44MjEgODEuMzMyLDU2LjIwOCBDNzUuMDM0LDY0LjEwNSA3Ny41NDQsODIuODM0IDgxLjMzMiw5MS4wOTUgQzkxLjUyMiwxMTMuMzE3IDExOS44OTQsMTMyLjEyOSAxNDcuMTQ4LDExMi40MTUgQzE2Mi4wNjcsMTAxLjYyNCAxNzQuMDE4LDcxLjE5MSAxNjAuNjk4LDQ5LjQyNCBDMTU0Ljg1MSwzOS44NjkgMTM2LjA2MCwyMS42NTkgMTE3LjE0NCwyNi4xNjYgQzExMi4xNzYsMjcuMzQ5IDEwNy4yNDgsMjkuNzEyIDEwMi42MjUsMzEuMDExIEMxMDEuMzM1LDI3LjEzNSAxMDAuMDQ0LDIzLjI1OCA5OC43NTQsMTkuMzgyIEM5Ny43ODYsMTkuMzgyIDk2LjgxOCwxOS4zODIgOTUuODUwLDE5LjM4MiBaTTE1MC4wNTEsMjAuMzUxIEMxNjAuNjk3LDMwLjk0MyAxNzAuMzg1LDM2LjE4MiAxNzYuMTg0LDUyLjMzMSBDMTg2Ljk2Niw4Mi4zNTYgMTcwLjQ2NSwxMTUuMzg3IDE1MS4wMTksMTI1LjAxNCBDMTUxLjAxOSwxMjUuMzM3IDE1MS4wMTksMTI1LjY2MCAxNTEuMDE5LDEyNS45ODMgQzE1MS42NjUsMTI1Ljk4MyAxNTIuMzEwLDEyNS45ODMgMTUyLjk1NSwxMjUuOTgzIEMxNTguNzYyLDEyNC4wNDUgMTY0LjU3MCwxMjIuMTA2IDE3MC4zNzcsMTIwLjE2OCBDMTg0LjMwOSwxMTQuMTEyIDIxNS42OTMsODkuNTY4IDIxOC43NzEsNzQuNjIxIEMyMjAuMDg1LDY4LjIzOCAyMTAuNzUxLDYwLjc5MyAyMDguMTI0LDU3LjE3NyBDMTk0Ljk0MSwzOS4wMzAgMTc1Ljg4OSwyNS42NTYgMTUwLjA1MSwyMC4zNTEgWk0xMTYuMTc2LDM2LjgyNiBDMTM2LjQ4OCwzNi4yODIgMTQ4LjIzOSw0NC40NDAgMTUzLjkyMyw1OC4xNDYgQzE2MS4xNjcsNzUuNjEzIDE1Mi4xMjgsOTYuNjYxIDE0Mi4zMDgsMTAzLjY5MyBDMTE0Ljg5MCwxMjMuMzMxIDc2LjE3OSw5My44NTEgOTAuMDQzLDYwLjA4NCBDMTAyLjExOCw2My4wNTQgMTEwLjk4Miw3Mi4xOTIgMTIyLjk1MSw3NS41OTAgQzEyMi45NTEsNzQuOTQ0IDEyMi45NTEsNzQuMjk3IDEyMi45NTEsNzMuNjUxIEMxMTguNDYzLDY4Ljc0MCAxMDkuNjUxLDQ3LjM1NiAxMDguNDMzLDM5LjczMyBDMTA4Ljc1NSwzOS40MTAgMTA5LjA3OCwzOS4wODcgMTA5LjQwMSwzOC43NjQgQzExMi4wNTIsMzguNTI3IDExNC41NDQsMzguMDY0IDExNi4xNzYsMzYuODI2IFoiLz4KPC9zdmc+Cg==");
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            color: #eee;
+            background-size: 24px 24px;
+            float: right;
+            padding: 2px;
+
+        }
+
+        .open {
+            background-image: url("data:image/svg+xml;base64,PHN2ZyAKIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIgogd2lkdGg9IjM4NHB4IiBoZWlnaHQ9IjM4M3B4Ij4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiAgc3Ryb2tlPSJyZ2IoMCwgMCwgMCkiIHN0cm9rZS13aWR0aD0iMTBweCIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIGZpbGw9InJnYigyMzgsIDIzOCwgMjM4KSIKIGQ9Ik0zNzQuMDAwLDE0My4wMDAgQzM3My43OTQsMTUxLjM5MiAzNjYuNzg0LDE1Ny44ODAgMzYwLjAwMCwxNTguMDAwIEMzNTMuMjE2LDE1OC4xMjAgMzQyLjM0MiwxNTguMTIwIDMzNC4wMDAsMTU4LjAwMCBDMzI1LjY1OCwxNTcuODgwIDMyMi44MDMsMTUxLjgxNiAzMjMuMDAwLDE0NS4wMDAgQzMyMy4xOTcsMTM4LjE4NCAzMjMuMDAwLDkxLjAwMCAzMjMuMDAwLDkxLjAwMCBDMzIzLjAwMCw5MS4wMDAgMTg2LjU2MSwyMjcuNDI3IDE4MS4wMDAsMjMzLjAwMCBDMTc1LjQzOSwyMzguNTczIDE2Ni44NjgsMjM2LjkzMiAxNjMuMDAwLDIzNC4wMDAgQzE1OS4xMzIsMjMxLjA2OCAxNDguOTM5LDIyMC40MDYgMTQ1LjAwMCwyMTUuMDAwIEMxNDEuMDYxLDIwOS41OTQgMTQwLjA5OSwyMDEuNDk5IDE0Ni4wMDAsMTk1LjAwMCBDMTUxLjI3OSwxODkuMTg2IDI4NS4wMDAsNTYuMDAwIDI4NS4wMDAsNTYuMDAwIEMyODUuMDAwLDU2LjAwMCAyNDEuMTkwLDU1LjA0MiAyMzQuMDAwLDU1LjAwMCBDMjI2LjgxMCw1NC45NTggMjIxLjA0Nyw0OS41NzkgMjIxLjAwMCw0MS4wMDAgQzIyMC45NTcsMzMuMDczIDIyMC44NzEsMTguMTQ4IDIyMS4wMDAsMTYuMDAwIEMyMjIuNjgwLDUuODI3IDIzMy4wMDAsNS4wMDAgMjMzLjAwMCw1LjAwMCBDMjMzLjAwMCw1LjAwMCAzNDMuMTQyLDUuMDAzIDM1OS4wMDAsNS4wMDAgQzM2OS4yMDYsNC45OTggMzczLjIwMywxMS4wMDMgMzczLjAwMCwyMS4wMDAgQzM3Mi43NzAsMzIuMzA3IDM3NC4yMDYsMTM0LjYwOCAzNzQuMDAwLDE0My4wMDAgWk01OC4wMDAsOTcuMDAwIEw1Ny4wMDAsMzIzLjAwMCBMMjgyLjAwMCwzMjIuMDAwIEwyODMuMDAwLDE2OS4wMDAgTDMzMi4wMDAsMTY5LjAwMCBDMzMyLjAwMCwxNjkuMDAwIDMzNC4zMjIsMzE5LjQ4OSAzMzMuMDAwLDMzNy4wMDAgQzMzMS42NzgsMzU0LjUxMSAzMjIuMTkyLDM3MS40MDggMjk0LjAwMCwzNzIuMDAwIEMyNjUuODA4LDM3Mi41OTIgNzcuMzY0LDM3Mi41OTUgNDkuMDAwLDM3Mi4wMDAgQzIwLjYzNiwzNzEuNDA1IDYuNjQ4LDM1My40NDcgNi4wMDAsMzMzLjAwMCBDNS4zNTIsMzEyLjU1MyA1Ljg1Niw5OC44MzUgNi4wMDAsODEuMDAwIEM2LjE0NCw2My4xNjUgMTkuNDYwLDQ2LjkxMyA0My4wMDAsNDYuMDAwIEM2Ni41NDAsNDUuMDg3IDIxMC4wMDAsNDYuMDAwIDIxMC4wMDAsNDYuMDAwIEwyMDkuMDAwLDk2LjAwMCBMNTguMDAwLDk3LjAwMCBaIi8+Cjwvc3ZnPgo=");
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            color: #eee;
+            background-size: 24px 24px;
+            float: right;
+            padding: 2px;
+
+        }
+
+        .printer {
+            background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgaWQ9InN2Zzg0OSIKICAgdmVyc2lvbj0iMS4xIgogICBoZWlnaHQ9IjEyMi41cHgiCiAgIHdpZHRoPSIxMTcuNXB4Ij4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE4NTUiPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM4NTMiIC8+CiAgPHBhdGgKICAgICBzdHlsZT0ic3Ryb2tlOiM0NDQ0NDQ7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICBpZD0icGF0aDgzMyIKICAgICBkPSJNIDI0LjUwNzYzMywzMC45OTIzNjcgViAyLjAwNzYzMzUgSCA3My4yNjg5MTYgTCA5My41ODYxMTcsMTkuOTk4MTU3IHYgMTAuOTk0MjEgeiIKICAgICBmaWxsPSJyZ2IoMjU1LCAyNTUsIDI1NSkiCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIKICAgICBzdHJva2UtbGluZWNhcD0iYnV0dCIKICAgICBzdHJva2Utd2lkdGg9IjJweCIKICAgICBzdHJva2U9InJnYigxMTgsIDExOCwgMTE4KSIKICAgICBmaWxsLXJ1bGU9ImV2ZW5vZGQiIC8+CiAgPHBhdGgKICAgICBzdHlsZT0ic3Ryb2tlOiM0NDQ0NDQ7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICBpZD0icGF0aDgzNSIKICAgICBkPSJtIDczLjUsMyB2IDE2IGggMTggeiIKICAgICBmaWxsPSJyZ2IoMjU1LCAyNTUsIDI1NSkiCiAgICAgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIKICAgICBzdHJva2UtbGluZWNhcD0iYnV0dCIKICAgICBzdHJva2Utd2lkdGg9IjJweCIKICAgICBzdHJva2U9InJnYigxMTgsIDExOCwgMTE4KSIKICAgICBmaWxsLXJ1bGU9ImV2ZW5vZGQiIC8+CiAgPHBhdGgKICAgICBzdHlsZT0ic3Ryb2tlOiM0NDQ0NDQ7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICBpZD0icGF0aDgzNyIKICAgICBkPSJtIDI0LjUsNzIgYyAwLDAgLTAuMjAxLDM2LjI1NSAwLDQwIDAuMjAxLDMuNzQ1IDQuMDAxLDQuOTczIDYsNSAxLjk5OSwwLjAyNyA1My4xMjgsMC4xNDEgNTcsMCAzLjg3MiwtMC4xNDEgNC45NDIsLTEuOTY1IDUsLTYgMC4wNTgsLTQuMDM1IDAsLTM5IDAsLTM5IHoiCiAgICAgZmlsbD0icmdiKDI1NSwgMjU1LCAyNTUpIgogICAgIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiCiAgICAgc3Ryb2tlLXdpZHRoPSIycHgiCiAgICAgc3Ryb2tlPSJyZ2IoMTE4LCAxMTgsIDExOCkiCiAgICAgZmlsbC1ydWxlPSJldmVub2RkIiAvPgogIDxwYXRoCiAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MC4yNSIKICAgICBpZD0icGF0aDgzOSIKICAgICBkPSJtIDM2LjUsODMgdiAzIGggNDMgdiAtMyB6IgogICAgIGZpbGw9InJnYigwLCAwLCAwKSIKICAgICBmaWxsLXJ1bGU9ImV2ZW5vZGQiIC8+CiAgPHBhdGgKICAgICBzdHlsZT0iZmlsbDojMDAwMDAwO2ZpbGwtb3BhY2l0eTowLjI1IgogICAgIGlkPSJwYXRoODQxIgogICAgIGQ9Im0gMzYuNSw5MyB2IDMgaCA0MyB2IC0zIHoiCiAgICAgZmlsbD0icmdiKDAsIDAsIDApIgogICAgIGZpbGwtcnVsZT0iZXZlbm9kZCIgLz4KICA8cGF0aAogICAgIHN0eWxlPSJmaWxsOiMwMDAwMDA7ZmlsbC1vcGFjaXR5OjAuMjUiCiAgICAgaWQ9InBhdGg4NDMiCiAgICAgZD0ibSAzNi41LDEwMyB2IDMgaCA0MyB2IC0zIHoiCiAgICAgZmlsbD0icmdiKDAsIDAsIDApIgogICAgIGZpbGwtcnVsZT0iZXZlbm9kZCIgLz4KICA8cGF0aAogICAgIHN0eWxlPSJzdHJva2U6IzIyMjIyMjtzdHJva2Utb3BhY2l0eToxO2ZpbGw6I2RkZGRkZDtmaWxsLW9wYWNpdHk6MSIKICAgICBpZD0icGF0aDg0NSIKICAgICBkPSJtIDIuNSwzNyBjIC0wLjIzODU5ODcsLTUuNDQ3MDAzIDUuNTUwOTkzNSwtOC4wMTA3OTkgMTIsLTggaCA5MyBjIDIuOTM3NTgsMCA1Ljc4MywxLjYwNyA2LDcgMC4yMTcsNS4zOTMgLTAuMzQyLDQ2LjA0NiAwLDUwIDAuMzQyLDMuOTU0IC0yLjc3Nyw1LjgxMSAtNyw2IC00LjIyMywwLjE4OSAtOSwwIC05LDAgViA3MiBoIC03OCB2IDIwIGMgMCwwIC0xMy43NTksLTAuMjQ0IC0xMSwwIDIuNzU5LDAuMjQ0IC02LC0wLjcxMDYzIC02LC03IHoiCiAgICAgZmlsbD0icmdiKDExOCwgMTE4LCAxMTgpIgogICAgIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiCiAgICAgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiCiAgICAgc3Ryb2tlLXdpZHRoPSIzcHgiCiAgICAgc3Ryb2tlPSJyZ2IoMjU1LCAyNTUsIDI1NSkiCiAgICAgZmlsbC1ydWxlPSJldmVub2RkIiAvPgogIDxwYXRoCiAgICAgc3R5bGU9InN0cm9rZTojMjIyMjIyO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgaWQ9InBhdGg4NDciCiAgICAgZD0ibSA5MC41LDQ1IGMgMC4zNDYzODUsNy4yOTAxMDIgMTEsNy4wNjQyMDUgMTEsMCAtMC4xNDE4MSwtNy4zMjY2NyAtMTEuMDI1ODg3LC03LjI3NDc0IC0xMSwwIHoiCiAgICAgZmlsbD0icmdiKDI1NSwgMjU1LCAyNTUpIgogICAgIGZpbGwtcnVsZT0iZXZlbm9kZCIgLz4KPC9zdmc+Cg==");
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 6rem;
+            height: 6rem;
+            color: #eee;
+            background-size: 6rem 6rem;
+            float: right;
+            padding: 2px;
+            margin-left: 2rem;
+            filter: drop-shadow(3px 3px 3px #0009);
+            cursor: pointer;
         }
 
         nav a:hover {
             color: #f1f1f1;
-            background-color:#333;
+            background-color: #333;
         }
 
         nav .closebtn {
@@ -83,62 +148,94 @@
                 font-size: 18px;
             }
         }
+
         nav {
-            width:20vw;
+            width: 20vw;
         }
+
         .closed main {
-            width:97vw;
-            margin-left:3em;
+            width: 97vw;
+            margin-left: 3em;
         }
+
         .closed nav {
-            width:0px;
+            width: 0px;
         }
+
         #viewer {
-            display:inline-block;
-            width:78vw;
+            display: inline-block;
+            width: 78vw;
         }
+
         .closed #viewer {
-            width:94vw;
+            width: 94vw;
         }
+
         #closebtn {
-            position:absolute;
-            right:8px;
-            top:0px;
-            font-size:2em;
-            z-index:1001;
-            cursor:pointer;
+            position: sticky;
+            top: 0px;
+            font-size: 2em;
+            z-index: 1001;
+            cursor: pointer;
+            width: 2rem;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+            left: 19rem;
         }
+
         #openbtn {
-            position:absolute;
-            top:8px;
-            left:8px;
-            font-size:32px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-size: 32px;
             cursor: pointer;
         }
+
         .selected {
-            background-color:#555;
-            color:#fff;
+            background-color: #555;
+            color: #fff;
+            padding-left: 1.4rem;
+        }
+
+        .selected::before {
+            content: "▶ ";
+            font-size: 18px;
+            position: relative;
+            top: -3px;
+            width: 1.75rem;
+            display: inline-block;
+        }
+
+        #controls {
+            position: absolute;
+            left: 20rem;
+            top: 0rem;
+            padding: 1rem;
+            background-color: #0006;
+            border-radius: 1rem;
+            transform: scale(.5);
         }
     </style>
+    <link rel='icon' type='image/png' href='favicon.ico'>
 </head>
 
 <body id="home">
     <nav>
         <a onclick="$('body').classList.add('closed')" id="closebtn">&times;</a>
-     </nav>
-     <a onclick="$('body').classList.remove('closed')" id='openbtn'>&#9776;</a>
+    </nav>
+    <a onclick="$('body').classList.remove('closed')" id='openbtn'>&#9776;</a>
     <main>
-        <iframe id='viewer' name='viewer' width='100%' height='100%' src='resumes/timeline.html'></iframe>
+        <iframe id='viewer' name='viewer' width='100%' height='100%' src='resumes/default.html'></iframe>
     </main>
-
+    <div id='controls'>
+        <div id='print' class="printer"></div>
+        <a id='pdflink' title='Download PDF' href="pdfs/default.pdf" download'Christopher_Robison_Resume.pdf'><span class='download' id='download'></span></a>
+    </div>
     <script>
-        function $(str) {
-            return document.querySelector(str);
-        }
-
-        function $$(str) {
-            return document.querySelectorAll(str);
-        }
+        function $(str) { return document.querySelector(str); }
+        function $$(str) { return document.querySelectorAll(str); }
         (function() {
             const app = {
                 init: function() {
@@ -154,37 +251,61 @@
                     });
                     $("nav").addEventListener("click", function(e) {
                         console.dir(e);
-                        if (e.target.id!=='closebtn') {
+                        if ((e.target.id !== 'closebtn') && (e.target.id !== 'openbtn')) {
                             $(".selected").classList.remove("selected");
                             e.target.classList.add('selected');
+
+                            let theme = e.target.href.replace(/.+?resumes\/(.+?)\.html/, "$1");
+                            console.log("theme: " + theme);
+                            let pdf = "pdfs/" + theme + ".pdf";
+                            console.log("new pdf url: " + pdf);
+                            $("#pdflink").href = pdf;
+                            $("#pdflink").download = "Christopher_Robison_Resume-" + theme + ".pdf";
+
+                            setTimeout(function() { $("#viewer").src = e.target.href; }, 500);
                         }
+                    });
+                    $("#controls").addEventListener("click", function(e) {
+                        let tgt = e.target;
+
+                        switch (tgt.id) {
+                            case "download":
+                                console.log("download");
+                                break;
+                            case "print":
+                                console.log("print");
+                                $("#viewer").contentWindow.focus();
+                                $("#viewer").contentWindow.print();
+                                break;
+                            default:
+
+                                console.log("default");
+                        }
+
                     });
                     app.fetchThemes();
                 },
-                ignoreThemes: ["elite", "apage", "latex", "flat-fr", "kwan-linkedin", "orbit", "srt", "", "mocha-responsive","onepageresume"],
+                ignoreThemes: ["elite", "apage", "latex", "flat-fr", "kwan-linkedin", "orbit", "srt", "", "mocha-responsive", "onepageresume", "simple-red", "msresume"],
                 themes: [],
                 fetchThemes: function() {
                     fetch("themes.json").then(response => response.json()).then(function(data) {
-                        console.dir(data);
                         let out = '';
                         data.forEach(function(item) {
                             let name = item.replace(/jsonresume\-theme\-/, '');
-                            console.log("theme name: " + name);
                             if (!app.ignoreThemes.includes(name)) {
-                                console.log("including " + name);
                                 app.themes.push({
                                     "name": name,
                                     "fullname": item,
                                     "url": "resumes/" + name + ".html"
                                 });
-//                                out += "<input type='checkbox' id='" + name + "'> ";
+                                //                                out += "<input type='checkbox' id='" + name + "'> ";
                                 let clsname = "";
-                                if (name == "timeline") {
-                                    clsname = " class='selected'"; 
+                                if (name == "default") {
+                                    clsname = " class='selected'";
                                 }
                                 out += "<a target='viewer'" + clsname + " href='resumes/" + name + ".html' class='themeLink'>" + (name.charAt(0).toUpperCase() + name.slice(1)) + "</a>";
                             } else {
-                                console.log("Skipping " + name);
+                                //console.log("Skipping " + name);
                             }
                         });
                         $("nav").innerHTML += out;
