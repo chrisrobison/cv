@@ -1,0 +1,13 @@
+#!/usr/bin/php
+<?php
+    $files = glob("chrisrobison*");
+
+    print_r($files);
+
+    foreach ($files as $file) {
+        if (preg_match("/chrisrobison\?theme\=(.*)/", $file, $match)) {
+            $result = `mv $file $match[1].html`;
+            print $result;
+        }
+    }
+?>
