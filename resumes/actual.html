@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         @charset "UTF-8";
 
@@ -37,12 +38,14 @@
         }
 
         .content {
-            width: 1000px;
+            width: 100%;
             height: auto;
             padding: 0 50px;
             margin: 0 auto;
-            font-family: Helvetica, Arial, sans-serif;
+            font-family: "Helvetica Neue", Arial, sans-serif;
             color: #222222;
+            display:flex;
+            flex-wrap: wrap;
         }
 
         .table {
@@ -340,6 +343,19 @@
 
         .links ul li {
             font-size: 14px;
+        }
+        .content .aside { flex:30%; }
+        .content .table { flex:30%; }
+        .table {
+            display: flex;
+            flex-wrap:wrap;
+        }
+        .table > * { 
+            flex: 30%; 
+        }
+        @media only screen and (max-width:700px) {
+            .content > * { flex:100%; }
+            .table > * { flex: 100%; }
         }
     </style>
     <title>Actual theme for JSON Resume</title>

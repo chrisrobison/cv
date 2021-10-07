@@ -50,7 +50,20 @@
         .tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-media-container .tl-timemarker-media {
             max-width:64px;
         }
+        div.tl-slidenav-icon {
+            animation: bounce1 3s infinite 5s ;
+            font-size:3em;
+        }
+
+    @keyframes bounce1 {
+        0%, 20%, 50%, 80%, 100% { transform: scale(1); }
+        40% { transform: scale(1.5); }
+        60% { transform: scale(2); }
+    }
+
     </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
 </head>
 
 <body id="home">
@@ -89,6 +102,7 @@
                         console.log("resume");
                         console.dir(data);
                         app.makeTimeline(data);
+    //                    setTimeout(function() { $(".tl-slidenav-icon").classList.add("animate__shakeX"); }, 1000);
                     });
                 },
                 makeTimeline: function(resume) {
