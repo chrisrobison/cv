@@ -19,7 +19,7 @@ foreach ($files as $idx=>$file) {
 
 	if ($pdf) {
         if (file_exists($theme.".html")) {
-            $cmd = "wkhtmltopdf -R 0 -L 0 -B 0 -T 0 --page-size Letter --print-media-type " . $theme . ".html ../pdfs/$theme.pdf";
+            $cmd = "wkhtmltopdf --log-level warn --enable-local-file-access -R 0 -L 0 -B 0 -T 0 --page-size Letter --print-media-type " . $theme . ".html ../pdfs/$theme.pdf";
             print $cmd."\n";
             $results = `$cmd`;
             print $results;

@@ -38,7 +38,6 @@
         }
 
         .content {
-            width: 100%;
             height: auto;
             padding: 0 50px;
             margin: 0 auto;
@@ -56,13 +55,13 @@
 
         .table .main {
             display: table-cell;
-            width: 70%;
+            width: 61vw;
             padding-right: 10px;
         }
 
         .table .side {
             display: table-cell;
-            width: 30%;
+            width: 22vw;
             padding-left: 10px;
             text-align: right;
         }
@@ -350,8 +349,8 @@
             display: flex;
             flex-wrap:wrap;
         }
-        .table > * { 
-            flex: 30%; 
+        .table .side { 
+            flex: 22vw; 
         }
         @media only screen and (max-width:700px) {
             .content > * { flex:100%; }
@@ -576,8 +575,8 @@
                     <div class="container">
                         <div class="article"><span>Programming Languages</span>
                             <ul class="margin-text-1">
-                                <li>Javascript [node.js]</li>
-                                <li>Javascript [browser]</li>
+                                <li>Javascript</li>
+                                <li>node.js</li>
                                 <li>C</li>
                                 <li>C++</li>
                                 <li>Java</li>
