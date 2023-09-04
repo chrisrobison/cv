@@ -39,7 +39,7 @@
     "jsonresume-theme-timeline-fixed": "file:jsonresume-theme-timeline-fixed",
     "popper.js": "^1.16.1",
     "react-awesome-resume": "^0.1.0",
-    "resume-cli": "^3.0.0",
+    "resume-cli": "^3.0.8",
     "resume-schema": "^1.0.0",
     "semantic-ui-css": "^2.4.1"
   }

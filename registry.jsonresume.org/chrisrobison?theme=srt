@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>Christopher Robison | Award-winning technology leader | https://www.cdr2.com/</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
+	<style>
+	/*
+---------------------------------------------------------------------------------
+	STRIPPED DOWN RESUME TEMPLATE
+    html resume
+
+    v0.9: 5/28/09
+
+    design and code by: thingsthatarebrown.com 
+                        (matt brown)
+---------------------------------------------------------------------------------
+*/
+
+
+.msg { padding: 10px; background: #222; position: relative; }
+.msg h1 { color: #fff;  }
+.msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
+.msg a:hover { background: #266400; }
+
+/* //-- yui-grids style overrides -- */
+body { font-family: Georgia; color: #444; }
+#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
+.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
+
+/* //-- header, body, footer -- */
+#hd { margin: 2.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
+#hd h2 { text-transform: uppercase; letter-spacing: 2px; }
+#bd, #ft { margin-bottom: 2em; }
+
+/* //-- footer -- */
+#ft { padding: 1em 0 5em 0; font-size: 92%; border-top: 1px solid #ccc; text-align: center; }
+#ft p { margin-bottom: 0; text-align: center;   }
+
+/* //-- core typography and style -- */
+#hd h1 { font-size: 48px; text-transform: uppercase; letter-spacing: 3px; }
+h2 { font-size: 152% }
+h3, h4 { font-size: 122%; }
+h1, h2, h3, h4 { color: #333; }
+p { font-size: 100%; line-height: 18px; padding-right: 3em; }
+a { color: #990003 }
+a:hover { text-decoration: none; }
+strong { font-weight: bold; }
+li { line-height: 24px; border-bottom: 1px solid #ccc; }
+p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
+p.enlarge span { color: #000 }
+.contact-info { margin-top: 7px; }
+.first h2 { font-style: italic; }
+.last { border-bottom: 0 }
+
+
+/* //-- section styles -- */
+
+a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 50px 6px 12px; margin-bottom: 6px; text-decoration: none;  }
+a#pdf:hover { background: #222; }
+
+.job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
+.job h4 { position: absolute; top: 0.35em; right: 0 }
+.job p { margin: 0.75em 0 3em 0; }
+
+.last { border: none; }
+.skills-list {  }
+.skills-list ul { margin: 0; }
+.skills-list li { margin: 3px 0; padding: 3px 0; }
+.skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
+.talent { width: 32%; float: left }
+.talent h2 { margin-bottom: 6px; }
+
+#srt-ttab { margin-bottom: 100px; text-align: center;  }
+#srt-ttab img.last { margin-top: 20px }
+
+/* --// override to force 1/8th width grids -- */
+.yui-gf .yui-u{width:80.2%;}
+.yui-gf div.first{width:12.3%;}
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="doc2" class="yui-t7">
+	<div id="inner">
+		<div id="hd">
+			<div class="yui-gc">
+				<div class="yui-u first">
+					<h1>Christopher Robison</h1>
+					<h2>Award-winning technology leader</h2>
+				</div>
+
+				<div class="yui-u">
+					<div class="contact-info">
+						<h3><a id="pdf" href="chrisrobison?theme=srt#">Download as PDF</a></h3>
+						<h3><a href="mailto:cdr@cdr2.com">cdr@cdr2.com</a></h3>
+						<h3>(415) 810-6991</h3>
+					</div><!--// .contact-info -->
+				</div>
+			</div><!--// .yui-gc -->
+		</div><!--// hd -->
+
+		<div id="bd">
+			<div id="yui-main">
+				<div class="yui-b">
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Profile</h2>
+						</div>
+						<div class="yui-u">
+							<p class="enlarge">
+								Getting the job done from Apache to z-index. 
+							</p>
+						</div>
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Skills</h2>
+						</div>
+						<div class="yui-u">
+								<div class="talent">
+									<h2>Programming Languages</h2>
+									<p>Javascript [node.js]</p>
+									<p>Javascript [browser]</p>
+									<p>C</p>
+									<p>C++</p>
+									<p>Java</p>
+									<p>Kotlin</p>
+									<p>Objective-C</p>
+									<p>Swift</p>
+									<p>PHP</p>
+									<p>Python</p>
+									<p>Perl</p>
+									<p>Go</p>
+									<p>C#</p>
+									<p>Bash</p>
+								</div>
+								<div class="talent">
+									<h2>Leadership</h2>
+									<p>Strategic Planning</p>
+									<p>Team Building</p>
+									<p>Team Leadership</p>
+									<p>Procedure Development</p>
+									<p>Process Improvement</p>
+									<p>Product Development</p>
+									<p>Entrepreneurship</p>
+									<p>Budgeting / Financial Planning</p>
+								</div>
+								<div class="talent">
+									<h2>Software Engineering</h2>
+									<p>Best Practices</p>
+									<p>Entrepreneurship</p>
+									<p>Software Development</p>
+									<p>Microservices Architecture</p>
+									<p>Scrum / Agile</p>
+									<p>Mobile Application Development</p>
+									<p>Cloud Services</p>
+									<p>Service Integration</p>
+								</div>
+						</div>
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Experience</h2>
+						</div><!--// .yui-u -->
+
+						<div class="yui-u">
+							<div class="job">
+								<h2>D. Harris Tours, Inc.</h2>
+								<h3>CTO</h3>
+								<h4>2020-02 - 
+                                                                Present
+</h4>
+								<p>D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire. The majority of their business is derived from schools (student event transportation) and local tours. Mr. Robison developed and implemented software that allowed D Harris to grow from 2 buses to 12 ten years ago. As the current CTO, he updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. He developed an algorithm to identify idle times for drivers and match them with jobs, resulting in a nearly doubled daily revenue until the COVID-19 shutdown.<br>
+								&bull; Automated notifications for trips, bus maintenance<br>
+							        								&bull; Automated billing and invoicing<br>
+							        								&bull; Migrated driver logs to digital format<br>
+							        								&bull; Increased daily revenue with better trip optimization<br>
+							        </p>
+							</div>
+							<div class="job">
+								<h2>Conversant, Inc. (formerly Mediaplex)</h2>
+								<h3>Manager, Software Engineering</h3>
+								<h4>2010-07 - 
+                                                                2020-02
+</h4>
+								<p>Mr. Robison was responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. He led the Rich Media effort and helped modernize their ad serving infrastructure and metric collection. He was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure. Mr. Robison contributed to IAB MRAID 2.0 standard, implemented MRAID SDK&#x27;s on iOS and Android platforms, and developed and deployed mobile ad solutions for multiple platforms. He designed and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure, architected and deployed RESTful API for ad serving, tracking metrics and reporting, and developed client-side Javascript &#x27;ad controller&#x27; for mobile and web.<br>
+								&bull; Contributed to IAB MRAID 2.0 standard<br>
+							        								&bull; Implemented MRAID SDK&#x27;s on iOS and Android platforms<br>
+							        								&bull; Developed and deployed mobile ad solutions for multiple platforms.<br>
+							        								&bull; Designed and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure.<br>
+							        								&bull; Architected and deployed RESTful API for ad serving, tracking metrics and reporting.<br>
+							        								&bull; Developed client-side Javascript &#x27;ad controller&#x27; for mobile and web<br>
+							        								&bull; Developed flexible metrics tracking with non-blocking endpoints<br>
+							        								&bull; 10 years<br>
+							        </p>
+							</div>
+							<div class="job">
+								<h2>Mindjet</h2>
+								<h3>Web Architect</h3>
+								<h4>2007-09 - 
+                                                                2010-07
+</h4>
+								<p>Mr. Robison migrated the Mindjet website from PHP to an ASP.Net solution and headed up Mindjet&#x27;s foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst. The Catalyst client canvas was originally written in Flash and his team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.<br>
+</p>
+							</div>
+							<div class="job">
+								<h2>Simple Software, Inc.</h2>
+								<h3>CEO / Founder</h3>
+								<h4>2006-04 - 
+                                                                2007-09
+</h4>
+								<p>Mr. Robison provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.<br>
+								&bull; GC Homes - Contractor documents and blueprints online. [http://gch-dev.netoasis.net/app/]<br>
+							        								&bull; Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages<br>
+							        								&bull; Lender Tool: http://bay-dev.netoasis.net/lenders.php<br>
+							        								&bull; Form Definition Tool: http://bay-dev.netoasis.net/fields.php?id=50<br>
+							        								&bull; HUD Calculator - calculates potential reverse mortgage values: http://bay-dev.netoasis.net/HUD/calc.html<br>
+							        								&bull; DB Tool: http://bay-dev.netoasis.net/admin/dbedit/<br>
+							        								&bull; Tzero Technology - Customized content management system http://www.tzerotech.com/site/<br>
+							        								&bull; TZero Technology CMS: http://tzero-dev.netoasis.net/<br>
+							        								&bull; Metrika - Customized content management system http://www.metrika.com/site/<br>
+							        								&bull; Metrika CMS: http://met-dev.netoasis.net/<br>
+							        </p>
+							</div>
+							<div class="job">
+								<h2>Genetic Savings &amp; Clone</h2>
+								<h3>VP Engineering</h3>
+								<h4>2004-06 - 
+                                                                2006-04
+</h4>
+								<p>Genetic Savings &amp; Clone was a genetic services company that offered commercial pet gene banking and cloning. Mr. Robison was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery.<br>
+								&bull; Cloned a cat and delivered it to customer<br>
+							        								&bull; Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business and automated many processes.<br>
+							        								&bull; CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with various genetic analysis hardware including the Applied Biosystem Genetic Analyser 3130<br>
+							        								&bull; Integration of genetic analysis hardware<br>
+							        								&bull; Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time&#x27;s bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)<br>
+							        </p>
+							</div>
+							<div class="job last">
+								<h2>Inter@ctivate, Inc.</h2>
+								<h3>Technical Director</h3>
+								<h4>2001-12 - 
+                                                                2004-06
+</h4>
+								<p>As Technical Director for Interactivate, Inc., Mr. Robison&#x27;s responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. <br>
+								&bull; Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.<br>
+							        								&bull; Designed and implemented web-based network management, monitoring &amp; systems analysis tools<br>
+							        								&bull; Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.<br>
+							        								&bull; Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.<br>
+							        								&bull; Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.<br>
+							        								&bull; Installation &amp; administration of Solaris, FreeBSD &amp; Windows NT in a heterogeneous environment<br>
+							        								&bull; Design, implementation, migration and maintenance for Interactivate&#x27;s internal and external network infrastructure.<br>
+							        								&bull; Working with vendors, developers &amp; 3rd party integrators.<br>
+							        								&bull; Maintain and monitor over 50 hosted client web sites and dozens of web applications<br>
+							        								&bull; Identifying &amp; resolving network related problems<br>
+							        								&bull; Responsible for backup implementation and recovery strategy &amp; procedures<br>
+							        								&bull; Required to support high volume access &amp; availability characteristics as well as identifying &amp; resolving system hardware &amp; software problems<br>
+							        								&bull; Responsible for the full availability of DNS, SMTP, HTTP, POP &amp; IMAP servers<br>
+							        								&bull; Maintaining security for all Interactivate networks<br>
+							        </p>
+							</div>
+						</div><!--// .yui-u -->
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Languages</h2>
+						</div>
+						<div class="yui-u">
+								<div class="talent">
+									<h2>English</h2>
+									<p>Native or bilingual</p>
+								</div>
+						</div>
+					</div><!--// .yui-gf -->
+					<div class="yui-gf last">
+						<div class="yui-u first">
+							<h2>Education</h2>
+						</div>
+						<div class="yui-u">
+							<h2>City College of San Francisco</h2>
+							<h3>Japanese, Business, 
+                                                        </h3>
+							<br>
+						</div>
+						<div class="yui-u">
+							<h2>California State University-Chico</h2>
+							<h3>Computer Science, 
+                                                        </h3>
+							<br>
+						</div>
+						<div class="yui-u">
+							<h2>Butte College</h2>
+							<h3>Computer Science, General Education, 
+                                                        </h3>
+							<br>
+						</div>
+						<div class="yui-u">
+							<h2>Paradise High School</h2>
+							<h3>General Studies, 
+                                                        </h3>
+							<br>
+						</div>
+					</div><!--// .yui-gf -->
+				</div><!--// .yui-b -->
+			</div><!--// yui-main -->
+		</div><!--// bd -->
+
+		<div id="ft">
+			<p>Christopher Robison &mdash; <a href="mailto:cdr@cdr2.com">cdr@cdr2.com</a> &mdash; (415) 810-6991</p>
+		</div><!--// footer -->
+	</div><!-- // inner -->
+</div><!--// doc -->
+</body>
+</html>

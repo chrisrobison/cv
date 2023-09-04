@@ -1,0 +1,653 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Christopher Robison</title>
+
+	<style>
+	body {
+	background: #fff;
+	font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
+	line-height: 1.4;
+	margin: 0 0;
+	margin-bottom: 100px;
+}
+em {
+	color: #999;
+}
+p {
+	line-height: 1.6;
+	font-size: 90%;
+}
+
+a {
+	color: #2C85B1;
+	text-decoration: none;
+	font-weight: 400;
+}
+ul {
+	margin-bottom: 0;
+}
+section {
+	margin: 1em 0 2em;
+}
+blockquote {
+	margin: 0;
+	margin-bottom: 1em;
+}
+#resume {
+	margin: 2em 2em 2em 2.5em;
+	max-width: 760px;
+}
+
+/* Resume heading */
+.heading header { 
+
+}
+
+.heading header h1 {
+	font-size: 180%;
+	margin: 0.5em 0;
+	font-weight: 600;
+}
+
+.heading header h2 {
+	font-size: 140%;
+	margin: 0;
+	font-weight: 400;
+}
+
+.heading header .contact .detail {
+	margin: 0 1em 0 0;
+}
+
+.profile {
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+
+.profile strong,
+.profile span {
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+/* section / line breaks */
+section h2 {
+	font-size: 140%;
+	margin: 0 0 1em;
+	text-transform: uppercase;
+	color: #BC1B39;
+	font-weight: 400;
+}
+
+/* Experience items */
+.item {
+	margin: 0 0 1em;
+	padding: 0 0 1em;
+	border-bottom: 1px solid #F2EBEC;
+}
+
+.item:last-child {
+	border-bottom: none;
+}
+
+
+.item header h3 {
+	margin: 0.2em 1em 0.2em 0;
+	display: inline-block;
+	font-weight: 600;
+}
+
+.item header a {
+	display: inline-block;
+}
+
+.item .position {
+	font-weight: 600;
+	font-size: 100%;
+	margin: 0.2em 1em 0.2em 0;
+}
+
+.item .startDate,
+.item .endDate {
+	color: #6B6B6B;
+}
+
+.item .highlights {
+	list-style: square;
+	font-size: 90%;
+}
+
+/* skills */
+#skills .item {
+	margin: 0.5em 0;
+	padding: 0 0 0.5em;
+	font-size: 90%;
+}
+
+#skills .item .name {
+	font-weight: 600;
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0 1em 0 0;
+	width: 23%;
+	vertical-align: top;
+}
+
+#skills .item .keywords {
+	display: inline-block;
+	width: 70%;
+	vertical-align: top;
+}
+
+/* education */
+#education .item {
+	display: inline-block;
+	vertical-align: top;
+	width: 49.5%;
+	border-bottom: 0;
+}
+
+
+
+	</style>
+	<style media="print">
+		body { font-size: 12px; }
+	</style>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+	
+	</head>
+	<body>
+	
+	<div id="resume">
+
+	<section class="heading">
+		<header>
+			<h1>Christopher Robison</h1>
+			<div class="contact">
+				<span class="detail">
+					<a href="mailto:cdr@cdr2.com">cdr@cdr2.com</a>
+				</span>
+				<span class="detail">
+					(415) 810-6991
+				</span>
+				<span class="detail">
+					<a href="https://www.cdr2.com/">https://www.cdr2.com/</a>
+				</span>
+			</div>
+		</header>
+
+
+		<p><p>Getting the job done from Apache to z-index.</p></p>
+
+			<div class="profile">
+				<strong class="network">
+					linkedin
+				</strong>
+				<span class="username">
+					<a href="https://www.linkedin.com/in/crobison">crobison</a>
+				</span>
+			</div>
+			<div class="profile">
+				<strong class="network">
+					twitter
+				</strong>
+				<span class="username">
+					<a href="https://twitter.com/thechrisrobison">thechrisrobison</a>
+				</span>
+			</div>
+			<div class="profile">
+				<strong class="network">
+					github
+				</strong>
+				<span class="username">
+					<a href="https://github.com/chrisrobison">chrisrobison</a>
+				</span>
+			</div>
+
+	</section>
+
+	<section id="skills">
+		<h2>Skills</h2>
+		<div class="item">
+			<div class="name">
+				Programming Languages
+			</div>
+			<div class="keywords">
+					Javascript [node.js],
+					Javascript [browser],
+					C,
+					C++,
+					Java,
+					Kotlin,
+					Objective-C,
+					Swift,
+					PHP,
+					Python,
+					Perl,
+					Go,
+					C#,
+					Bash
+			</div>
+		</div>
+		<div class="item">
+			<div class="name">
+				Leadership
+			</div>
+			<div class="keywords">
+					Strategic Planning,
+					Team Building,
+					Team Leadership,
+					Procedure Development,
+					Process Improvement,
+					Product Development,
+					Entrepreneurship,
+					Budgeting / Financial Planning
+			</div>
+		</div>
+		<div class="item">
+			<div class="name">
+				Software Engineering
+			</div>
+			<div class="keywords">
+					Best Practices,
+					Entrepreneurship,
+					Software Development,
+					Microservices Architecture,
+					Scrum / Agile,
+					Mobile Application Development,
+					Cloud Services,
+					Service Integration
+			</div>
+		</div>
+	</section>
+
+	<section class="experience">
+		<h2>Experience</h2>
+		<section class="item">
+			<header>
+					<h3 class="name">D. Harris Tours, Inc.</h3>
+			</header>
+			<span class="position">
+				CTO
+			</span>
+
+			<span class="startDate">
+				Feb 2020
+			</span>
+			<span class="endDate">
+				- undefined NaN
+			</span>
+
+			<div class="summary">
+				<p><p>D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire. The majority of their business is derived from schools (student event transportation) and local tours. Mr. Robison developed and implemented software that allowed D Harris to grow from 2 buses to 12 ten years ago. As the current CTO, he updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. He developed an algorithm to identify idle times for drivers and match them with jobs, resulting in a nearly doubled daily revenue until the COVID-19 shutdown.</p></p>
+			</div>
+			<ul class="highlights">
+				<li>Automated notifications for trips, bus maintenance</li>
+				<li>Automated billing and invoicing</li>
+				<li>Migrated driver logs to digital format</li>
+				<li>Increased daily revenue with better trip optimization</li>
+			</ul>
+		</section>
+		<section class="item">
+			<header>
+					<h3 class="name">Conversant, Inc. (formerly Mediaplex)</h3>
+			</header>
+			<span class="position">
+				Manager, Software Engineering
+			</span>
+
+			<span class="startDate">
+				Jul 2010
+			</span>
+			<span class="endDate">
+				- Feb 2020
+			</span>
+
+			<div class="summary">
+				<p><p>Mr. Robison was responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. He led the Rich Media effort and helped modernize their ad serving infrastructure and metric collection. He was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure. Mr. Robison contributed to IAB MRAID 2.0 standard, implemented MRAID SDK's on iOS and Android platforms, and developed and deployed mobile ad solutions for multiple platforms. He designed and deployed 'Rich Media' ad delivery and reporting infrastructure, architected and deployed RESTful API for ad serving, tracking metrics and reporting, and developed client-side Javascript 'ad controller' for mobile and web.</p></p>
+			</div>
+			<ul class="highlights">
+				<li>Contributed to IAB MRAID 2.0 standard</li>
+				<li>Implemented MRAID SDK&#x27;s on iOS and Android platforms</li>
+				<li>Developed and deployed mobile ad solutions for multiple platforms.</li>
+				<li>Designed and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure.</li>
+				<li>Architected and deployed RESTful API for ad serving, tracking metrics and reporting.</li>
+				<li>Developed client-side Javascript &#x27;ad controller&#x27; for mobile and web</li>
+				<li>Developed flexible metrics tracking with non-blocking endpoints</li>
+				<li>10 years</li>
+			</ul>
+		</section>
+		<section class="item">
+			<header>
+					<h3 class="name">Mindjet</h3>
+			</header>
+			<span class="position">
+				Web Architect
+			</span>
+
+			<span class="startDate">
+				Sep 2007
+			</span>
+			<span class="endDate">
+				- Jul 2010
+			</span>
+
+			<div class="summary">
+				<p><p>Mr. Robison migrated the Mindjet website from PHP to an ASP.Net solution and headed up Mindjet's foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst. The Catalyst client canvas was originally written in Flash and his team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.</p></p>
+			</div>
+		</section>
+		<section class="item">
+			<header>
+					<h3 class="name">Simple Software, Inc.</h3>
+			</header>
+			<span class="position">
+				CEO / Founder
+			</span>
+
+			<span class="startDate">
+				Apr 2006
+			</span>
+			<span class="endDate">
+				- Sep 2007
+			</span>
+
+			<div class="summary">
+				<p><p>Mr. Robison provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p></p>
+			</div>
+			<ul class="highlights">
+				<li>GC Homes - Contractor documents and blueprints online. [http://gch-dev.netoasis.net/app/]</li>
+				<li>Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</li>
+				<li>Lender Tool: http://bay-dev.netoasis.net/lenders.php</li>
+				<li>Form Definition Tool: http://bay-dev.netoasis.net/fields.php?id=50</li>
+				<li>HUD Calculator - calculates potential reverse mortgage values: http://bay-dev.netoasis.net/HUD/calc.html</li>
+				<li>DB Tool: http://bay-dev.netoasis.net/admin/dbedit/</li>
+				<li>Tzero Technology - Customized content management system http://www.tzerotech.com/site/</li>
+				<li>TZero Technology CMS: http://tzero-dev.netoasis.net/</li>
+				<li>Metrika - Customized content management system http://www.metrika.com/site/</li>
+				<li>Metrika CMS: http://met-dev.netoasis.net/</li>
+			</ul>
+		</section>
+		<section class="item">
+			<header>
+					<h3 class="name">Genetic Savings &amp; Clone</h3>
+			</header>
+			<span class="position">
+				VP Engineering
+			</span>
+
+			<span class="startDate">
+				Jun 2004
+			</span>
+			<span class="endDate">
+				- Apr 2006
+			</span>
+
+			<div class="summary">
+				<p><p>Genetic Savings & Clone was a genetic services company that offered commercial pet gene banking and cloning. Mr. Robison was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery.</p></p>
+			</div>
+			<ul class="highlights">
+				<li>Cloned a cat and delivered it to customer</li>
+				<li>Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business and automated many processes.</li>
+				<li>CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with various genetic analysis hardware including the Applied Biosystem Genetic Analyser 3130</li>
+				<li>Integration of genetic analysis hardware</li>
+				<li>Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time&#x27;s bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</li>
+			</ul>
+		</section>
+		<section class="item">
+			<header>
+					<h3 class="name">Inter@ctivate, Inc.</h3>
+			</header>
+			<span class="position">
+				Technical Director
+			</span>
+
+			<span class="startDate">
+				Dec 2001
+			</span>
+			<span class="endDate">
+				- Jun 2004
+			</span>
+
+			<div class="summary">
+				<p><p>As Technical Director for Interactivate, Inc., Mr. Robison's responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. </p></p>
+			</div>
+			<ul class="highlights">
+				<li>Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</li>
+				<li>Designed and implemented web-based network management, monitoring &amp; systems analysis tools</li>
+				<li>Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
+				<li>Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.</li>
+				<li>Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.</li>
+				<li>Installation &amp; administration of Solaris, FreeBSD &amp; Windows NT in a heterogeneous environment</li>
+				<li>Design, implementation, migration and maintenance for Interactivate&#x27;s internal and external network infrastructure.</li>
+				<li>Working with vendors, developers &amp; 3rd party integrators.</li>
+				<li>Maintain and monitor over 50 hosted client web sites and dozens of web applications</li>
+				<li>Identifying &amp; resolving network related problems</li>
+				<li>Responsible for backup implementation and recovery strategy &amp; procedures</li>
+				<li>Required to support high volume access &amp; availability characteristics as well as identifying &amp; resolving system hardware &amp; software problems</li>
+				<li>Responsible for the full availability of DNS, SMTP, HTTP, POP &amp; IMAP servers</li>
+				<li>Maintaining security for all Interactivate networks</li>
+			</ul>
+		</section>
+	</section>
+
+	<section class="experience">
+		<h2>Volunteering</h2>
+		<div class="item">
+			<header>
+					<h3 class="name">San Francisco Elks Lodge #3</h3>
+			</header>
+			<span class="position">
+				Esteemed Leading Knight / House Committee Chair
+			</span>
+
+			<span class="startDate">
+				Apr 2010
+			</span>
+			<span class="endDate">
+				- Apr 2011
+			</span>
+
+			<div class="summary">
+				<p>As Leading Knight and House Committee Chair I was responsible for the day-to-day operations of the Lodge restaurant and bar as well as organizing and holding events to raise money for local underprivileged children.  During my tenure as House Committee Chair, with the help of the SFPD, we were able to build 100 bicycles to give as Christmas presents to children which were very well received.  We raised over $34,000 for the children in that year.</p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="education">
+		<h2>Education</h2>
+		<div class="item">
+			<header>
+					<h3 class="name">City College of San Francisco</h3>
+			</header>
+
+			<div class="dates">
+				<span class="startDate">
+					Jan 2009
+				</span>
+				<span class="endDate">
+					- Jan 2010
+				</span>
+			</div>
+
+			<div class="qualification">
+
+				<span class="area">
+					- Japanese, Business
+				</span>
+
+			</div>
+
+		</div>
+		<div class="item">
+			<header>
+					<h3 class="name">California State University-Chico</h3>
+			</header>
+
+			<div class="dates">
+				<span class="startDate">
+					Jan 1988
+				</span>
+				<span class="endDate">
+					- Jan 1991
+				</span>
+			</div>
+
+			<div class="qualification">
+
+				<span class="area">
+					- Computer Science
+				</span>
+
+			</div>
+
+		</div>
+		<div class="item">
+			<header>
+					<h3 class="name">Butte College</h3>
+			</header>
+
+			<div class="dates">
+				<span class="startDate">
+					Jan 1988
+				</span>
+				<span class="endDate">
+					- Jan 1990
+				</span>
+			</div>
+
+			<div class="qualification">
+
+				<span class="area">
+					- Computer Science, General Education
+				</span>
+
+			</div>
+
+		</div>
+		<div class="item">
+			<header>
+					<h3 class="name">Paradise High School</h3>
+			</header>
+
+			<div class="dates">
+				<span class="startDate">
+					Jan 1984
+				</span>
+				<span class="endDate">
+					- Jan 1988
+				</span>
+			</div>
+
+			<div class="qualification">
+
+				<span class="area">
+					- General Studies
+				</span>
+
+			</div>
+
+		</div>
+	</section>
+	
+	<section id="awards">
+		<h2>Awards</h2>
+		<div class="item">
+			<div class="title">
+				Computer Science Award
+			</div>
+			<div class="date">
+				undefined NaN
+			</div>
+			<div class="awarder">
+				Paradise High School
+			</div>
+			<div class="summary">
+				<p>First recipient of the Paradise High School &quot;Computer Science Award&quot; for developing a data application to track school resources that ran on an Apple IIe.  </p>
+			</div>
+		</div>
+	</section>
+	
+
+	<section id="languages">
+		<h2>Languages</h2>
+		<div class="item">
+			<div class="language">
+				English
+			</div>
+			<div class="fluency">
+				<em>Native or bilingual</em>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests">
+		<h2>Interests</h2>
+		<div class="item">
+			<div class="name">
+				Hobbies
+			</div>
+			<ul class="keywords">
+				<li>3D Printing</li>
+				<li>Raspberry Pi</li>
+				<li>Arduino</li>
+				<li>Laser engraving</li>
+				<li>Electronics</li>
+			</ul>
+		</div>
+		<div class="item">
+			<div class="name">
+				Recreation
+			</div>
+			<ul class="keywords">
+				<li>Golf</li>
+				<li>Recreational Programming</li>
+				<li>Karaoke</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section id="references">
+		<h2>References</h2>
+		<div class="item">
+			<blockquote class="reference">
+				Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs.
+			</blockquote>
+			<div class="name">
+				— Kevin Ready (Software Developer and Consultant)
+			</div>
+		</div>
+		<div class="item">
+			<blockquote class="reference">
+				This guy has some seriously mad coding skills.
+			</blockquote>
+			<div class="name">
+				— Thomas Weaver (Network Provisioner at Twitch)
+			</div>
+		</div>
+		<div class="item">
+			<blockquote class="reference">
+				His system is well oil; all my web services are working with no down time.  He offers all the greatest gadgets, ideal environment for a programmer like me.
+			</blockquote>
+			<div class="name">
+				— Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)
+			</div>
+		</div>
+		<div class="item">
+			<blockquote class="reference">
+				Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager.
+			</blockquote>
+			<div class="name">
+				— Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)
+			</div>
+		</div>
+	</section>
+	
+	</div>
+	
+	</body>
+</html>

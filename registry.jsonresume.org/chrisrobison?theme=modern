@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> </title>
+    <link href="http://bootswatch.com/lumen/bootstrap.min.css" rel="stylesheet" />
+   <style>
+    </style>
+
+  
+  </head>
+  <body>
+    <div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+        <h1>Christopher Robison<h1>
+
+        <h2>San Francisco</h2>
+        </div>
+        <div class="col-md-6 col-sm-12">
+        <img class="media-object img-circle pull-right" data-src="holder.js/64x64" alt="64x64" src="https://www.gravatar.com/avatar/4e7767674dc7693940691b683d6df9d2?s=100&amp;r=pg&amp;d=mm" style="width: 100px; height: 100px; margin-top: 20px;">
+
+        </div>
+        </div>
+      <hr style="color: #ccc; height: 4px;" />
+      <section class="row">
+        <header class="col-md-3">
+          <h3>About</h3>
+        </header>
+        <div class="col-md-9">
+        <p>Getting the job done from Apache to z-index.</p>
+        <strong>Phone:</strong> (415) 810-6991 <br />
+        <strong>Email:</strong> cdr@cdr2.com<br />
+        <strong>Twitter:</strong> <a href="http://twitter.com/thechrisrobison">thechrisrobison</a><br />
+        <strong>Github:</strong> <a href="http://github.com/chrisrobison">chrisrobison</a><br />
+
+        </div>
+      </section>
+      <section class="row">
+        <header class="col-md-3">
+          <h3>Work Experience</h3>
+        </header>
+        <div class="col-md-9">
+          <div class="skills">
+            <h3>D. Harris Tours, Inc.</h3>
+            <strong>CTO</strong>
+            <p>2020 - Pres</p>
+            <p>D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire. The majority of their business is derived from schools (student event transportation) and local tours. Mr. Robison developed and implemented software that allowed D Harris to grow from 2 buses to 12 ten years ago. As the current CTO, he updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. He developed an algorithm to identify idle times for drivers and match them with jobs, resulting in a nearly doubled daily revenue until the COVID-19 shutdown.</p>
+            <ul>
+              <li>Automated notifications for trips, bus maintenance</li>
+              <li>Automated billing and invoicing</li>
+              <li>Migrated driver logs to digital format</li>
+              <li>Increased daily revenue with better trip optimization</li>
+            </ul>
+            <hr />            <h3>Conversant, Inc. (formerly Mediaplex)</h3>
+            <strong>Manager, Software Engineering</strong>
+            <p>2010 - 2020</p>
+            <p>Mr. Robison was responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. He led the Rich Media effort and helped modernize their ad serving infrastructure and metric collection. He was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure. Mr. Robison contributed to IAB MRAID 2.0 standard, implemented MRAID SDK&#39;s on iOS and Android platforms, and developed and deployed mobile ad solutions for multiple platforms. He designed and deployed &#39;Rich Media&#39; ad delivery and reporting infrastructure, architected and deployed RESTful API for ad serving, tracking metrics and reporting, and developed client-side Javascript &#39;ad controller&#39; for mobile and web.</p>
+            <ul>
+              <li>Contributed to IAB MRAID 2.0 standard</li>
+              <li>Implemented MRAID SDK&#39;s on iOS and Android platforms</li>
+              <li>Developed and deployed mobile ad solutions for multiple platforms.</li>
+              <li>Designed and deployed &#39;Rich Media&#39; ad delivery and reporting infrastructure.</li>
+              <li>Architected and deployed RESTful API for ad serving, tracking metrics and reporting.</li>
+              <li>Developed client-side Javascript &#39;ad controller&#39; for mobile and web</li>
+              <li>Developed flexible metrics tracking with non-blocking endpoints</li>
+              <li>10 years</li>
+            </ul>
+            <hr />            <h3>Mindjet</h3>
+            <strong>Web Architect</strong>
+            <p>2007 - 2010</p>
+            <p>Mr. Robison migrated the Mindjet website from PHP to an ASP.Net solution and headed up Mindjet&#39;s foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst. The Catalyst client canvas was originally written in Flash and his team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.</p>
+            <ul>
+            </ul>
+            <hr />            <h3>Simple Software, Inc.</h3>
+            <strong>CEO &#x2F; Founder</strong>
+            <p>2006 - 2007</p>
+            <p>Mr. Robison provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p>
+            <ul>
+              <li>GC Homes - Contractor documents and blueprints online. [http:&#x2F;&#x2F;gch-dev.netoasis.net&#x2F;app&#x2F;]</li>
+              <li>Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</li>
+              <li>Lender Tool: http:&#x2F;&#x2F;bay-dev.netoasis.net&#x2F;lenders.php</li>
+              <li>Form Definition Tool: http:&#x2F;&#x2F;bay-dev.netoasis.net&#x2F;fields.php?id=50</li>
+              <li>HUD Calculator - calculates potential reverse mortgage values: http:&#x2F;&#x2F;bay-dev.netoasis.net&#x2F;HUD&#x2F;calc.html</li>
+              <li>DB Tool: http:&#x2F;&#x2F;bay-dev.netoasis.net&#x2F;admin&#x2F;dbedit&#x2F;</li>
+              <li>Tzero Technology - Customized content management system http:&#x2F;&#x2F;www.tzerotech.com&#x2F;site&#x2F;</li>
+              <li>TZero Technology CMS: http:&#x2F;&#x2F;tzero-dev.netoasis.net&#x2F;</li>
+              <li>Metrika - Customized content management system http:&#x2F;&#x2F;www.metrika.com&#x2F;site&#x2F;</li>
+              <li>Metrika CMS: http:&#x2F;&#x2F;met-dev.netoasis.net&#x2F;</li>
+            </ul>
+            <hr />            <h3>Genetic Savings &amp; Clone</h3>
+            <strong>VP Engineering</strong>
+            <p>2004 - 2006</p>
+            <p>Genetic Savings &amp; Clone was a genetic services company that offered commercial pet gene banking and cloning. Mr. Robison was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery.</p>
+            <ul>
+              <li>Cloned a cat and delivered it to customer</li>
+              <li>Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business and automated many processes.</li>
+              <li>CatBank - http:&#x2F;&#x2F;www.catbank.org&#x2F; Designed and developed database driven feline DNA identification website. Back-end requirements included integration with various genetic analysis hardware including the Applied Biosystem Genetic Analyser 3130</li>
+              <li>Integration of genetic analysis hardware</li>
+              <li>Retro vs. Metro - http:&#x2F;&#x2F;www.retrovsmetro.org&#x2F; Implemented all backend code for this online companion website to the New York Time&#39;s bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</li>
+            </ul>
+            <hr />            <h3>Inter@ctivate, Inc.</h3>
+            <strong>Technical Director</strong>
+            <p>2001 - 2004</p>
+            <p>As Technical Director for Interactivate, Inc., Mr. Robison&#39;s responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. </p>
+            <ul>
+              <li>Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</li>
+              <li>Designed and implemented web-based network management, monitoring &amp; systems analysis tools</li>
+              <li>Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
+              <li>Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.</li>
+              <li>Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.</li>
+              <li>Installation &amp; administration of Solaris, FreeBSD &amp; Windows NT in a heterogeneous environment</li>
+              <li>Design, implementation, migration and maintenance for Interactivate&#39;s internal and external network infrastructure.</li>
+              <li>Working with vendors, developers &amp; 3rd party integrators.</li>
+              <li>Maintain and monitor over 50 hosted client web sites and dozens of web applications</li>
+              <li>Identifying &amp; resolving network related problems</li>
+              <li>Responsible for backup implementation and recovery strategy &amp; procedures</li>
+              <li>Required to support high volume access &amp; availability characteristics as well as identifying &amp; resolving system hardware &amp; software problems</li>
+              <li>Responsible for the full availability of DNS, SMTP, HTTP, POP &amp; IMAP servers</li>
+              <li>Maintaining security for all Interactivate networks</li>
+            </ul>
+            <hr />
+          </div>
+        </div>
+      </section>
+
+      <section class="row">
+        <header class="col-md-3">
+          <h3>Education</h3>
+        </header>
+        <div class="col-md-9">
+          <div class="skills">
+            <h3>City College of San Francisco</h3>
+            <h4>Japanese, Business</h4>
+            <p>2009 - 2010</p>
+            <p></p>
+            <ul>
+            </ul>
+            <hr />
+            <h3>California State University-Chico</h3>
+            <h4>Computer Science</h4>
+            <p>1988 - 1991</p>
+            <p></p>
+            <ul>
+            </ul>
+            <hr />
+            <h3>Butte College</h3>
+            <h4>Computer Science, General Education</h4>
+            <p>1988 - 1990</p>
+            <p></p>
+            <ul>
+            </ul>
+            <hr />
+            <h3>Paradise High School</h3>
+            <h4>General Studies</h4>
+            <p>1984 - 1988</p>
+            <p></p>
+            <ul>
+            </ul>
+            <hr />
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <header class="col-md-3">
+          <h3>Skills</h3>
+        </header>
+        <div class="col-md-9">
+          <div class="row-fluid skills">
+            <ul class="col-md-6">
+
+              <li>
+                <h4>Programming Languages</h4>
+                <ul>
+                  <li>Javascript [node.js]</li>
+                  <li>Javascript [browser]</li>
+                  <li>C</li>
+                  <li>C++</li>
+                  <li>Java</li>
+                  <li>Kotlin</li>
+                  <li>Objective-C</li>
+                  <li>Swift</li>
+                  <li>PHP</li>
+                  <li>Python</li>
+                  <li>Perl</li>
+                  <li>Go</li>
+                  <li>C#</li>
+                  <li>Bash</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="col-md-6">
+
+              <li>
+                <h4>Leadership</h4>
+                <ul>
+                  <li>Strategic Planning</li>
+                  <li>Team Building</li>
+                  <li>Team Leadership</li>
+                  <li>Procedure Development</li>
+                  <li>Process Improvement</li>
+                  <li>Product Development</li>
+                  <li>Entrepreneurship</li>
+                  <li>Budgeting &#x2F; Financial Planning</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="col-md-6">
+
+              <li>
+                <h4>Software Engineering</h4>
+                <ul>
+                  <li>Best Practices</li>
+                  <li>Entrepreneurship</li>
+                  <li>Software Development</li>
+                  <li>Microservices Architecture</li>
+                  <li>Scrum &#x2F; Agile</li>
+                  <li>Mobile Application Development</li>
+                  <li>Cloud Services</li>
+                  <li>Service Integration</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="row">
+        <header class="col-md-3">
+          <h3>References</h3>
+        </header>
+        <div class="col-md-9">
+          <div class="row-fluid skills">
+
+            <p>Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs. -
+              <strong>Kevin Ready (Software Developer and Consultant)</strong>
+            </p>
+
+            <p>This guy has some seriously mad coding skills. -
+              <strong>Thomas Weaver (Network Provisioner at Twitch)</strong>
+            </p>
+
+            <p>His system is well oil; all my web services are working with no down time.  He offers all the greatest gadgets, ideal environment for a programmer like me. -
+              <strong>Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</strong>
+            </p>
+
+            <p>Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager. -
+              <strong>Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  </body>
+</html>

@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 *.sw?
 php_error.log
+themes/*
+themes/jsonresume-theme-jacrys

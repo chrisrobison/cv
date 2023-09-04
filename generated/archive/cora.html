@@ -1,0 +1,512 @@
+
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christopher Robison</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+	       body {
+            font-family: Montserrat;
+            font-size: 1em;
+            color: #333333;
+        }
+
+        .picture {
+            border-radius: 3%;
+            margin: 20px;
+            width: 100px;
+            height: 100px;
+        }
+
+        a {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #4e4e4e;
+        }
+
+        a:hover {
+            color: #4e4e4e;
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.2em;
+        }
+
+        h2 {
+            font-size: 1.7em;
+            margin-top: 2em;
+            margin-bottom: 0.2em;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        h4 {
+            color: #4e4e4e;
+            font-size: 1.1em;
+            margin-top: 0;
+        }
+
+        .profile {
+            font-family: Montserrat;
+            white-space: nowrap;
+            margin: 0.5em;
+        }
+
+        .contact-header {
+            font-weight: bold;
+            color: #4e4e4e;
+            margin: 1em;
+        }
+
+        .contact-header .fa {
+            font-size: 1.5em;
+        }
+
+        .profile .fa {
+            font-size: 1.5em;
+        }
+
+        .label {
+            margin-top: 0;
+            margin-bottom: 0.5em;
+        }
+
+        .fa {
+            font-size: 2em;
+        }
+
+        .left {
+            font-size: 1em;
+        }
+
+        .main {
+            margin: 0 auto;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 50px;
+        }
+
+        .skills {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: &#x27;
+            Open Sans&#x27;
+            ;
+        }
+
+        li {
+            font-family: &#x27;
+            Open Sans&#x27;
+            ;
+        }
+
+        .keywords {
+            background-color: #333333;
+            color: #fff;
+            padding: 6px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        blockquote {
+            margin: 2em 10px;
+            padding: 1em 10px;
+            border-left: 10px solid #edf0f5;
+            font-family: &#x27;
+            Open Sans&#x27;
+            ;
+            font-size: 1.5em;
+        }
+
+        blockquote .name {
+            font-weight: bold;
+            font-family: &quot;
+            Montserrat&quot;
+            ;
+        }
+
+        .responsive-show {
+            display: none;
+        }
+
+        .address {
+            display: block
+        }
+
+        section.skills {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 1000px) {
+            header {
+                font-size: 1.66em;
+            }
+
+            h2 {
+                font-size: 3em;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            p {
+                font-size: 1.2em;
+            }
+
+            li {
+                font-size: 1.2em;
+            }
+
+            blockquote {
+                font-size: 1.2em;
+            }
+
+            h2 {
+                font-size: 2.3em;
+            }
+
+            .responsive-hidden {
+                display: none;
+                visibility: hidden;
+            }
+
+            .responsive-show {
+                display: inline;
+                visibility: visible;
+            }
+        }
+
+        @media print {
+
+            body {
+                font-size: 0.6em;
+            }
+
+            .address {
+                display: inline-block
+            }
+
+            .profile {
+                font-size: 1em;
+                display: inline-block
+            }
+
+            #profiles .contact-header {
+                display: none;
+            }
+
+            #languages,
+            #interests {
+                display: none;
+            }
+
+            section.skills section {
+                margin-right: 10em
+            }
+
+            .skills {
+                page-break-inside: avoid;
+            }
+
+            .main {
+                padding: 10px;
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+
+            section:not(#work) {
+                page-break-inside: avoid;
+            }
+
+            .job {
+                page-break-inside: avoid;
+            }
+
+            @page {
+                size: auto;
+                /* auto is the initial value */
+                /* this affects the margin in the printer settings */
+                margin: 25mm 10mm;
+            }
+        }	
+    </style>
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	</head>
+	<body>
+				<header>
+				<h1>Christopher Robison</h1>
+				<h3 class= "label"></h3>
+		
+					<img src= "data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAKAAD/7gAOQWRvYmUAZMAAAAAB/9sAhAAUEBAZEhknFxcnMiYfJjIuJiYmJi4+NTU1NTU+REFBQUFBQUREREREREREREREREREREREREREREREREREREREARUZGSAcICYYGCY2JiAmNkQ2Kys2REREQjVCRERERERERERERERERERERERERERERERERERERERERERERERERET/wAARCAD6APoDASIAAhEBAxEB/8QAjAAAAgMBAQEAAAAAAAAAAAAAAQIAAwQFBgcBAQEBAQEBAAAAAAAAAAAAAAABAgMEBRAAAgECBAQEAgYIBQUAAAAAAAECEQMhMRIEQVFhBXGRIhOBMqHRQpIUBsHhUmJygiMz8LHxojSy0uJTFREBAQACAgIDAQEAAAAAAAAAAAERAjEDIRJBUTJhcf/aAAwDAQACEQMRAD8A6gaihPQ8xgoAUEEYUYoIQBAIQBAIQBCCEAQCQFUiVXMCACAAEIACChAFAAQABgCxQAAICKFQVCKAKhAQAhAEBgoAUEEYUYoIQBAIQBAIRXJRVZOiOP3DuyXot18SXaTlddbtw6O431uwnV1aORe7xOb9CdPI5Wqd11pUZ2pfabqcLvb/AB6J1yf1pe9vSxbQ0N9JfPh1WRjlBLiVe6454oxmt4n07dvfuPFo32e5KWFzzPLq9ppTI0Qv1NTexm6SvXKSkqp1IcDZbxwnSTwOk+52lzO83ljhdLK2AMH/ANezXGtC6G+s3MnQvtL8s+tnw0AImnk6kKgMUZigAAQEAFGFCgQhACEAQGCgBQQRhRighAEAkclFVZDld03uhO3H/V/qJbiZXWZuGXf9wlcl7cDnKidfml9AKN4RzebEu3oWVRYs8ttty9kkkwuldbRTKb5+Zid+5deLouSNFixOeOIwJLUsirXX6joLZTkqIkNjV0kqMmWvW1zcaULrc2mupunsaFHsJOvIZLrYrV5xfxLIXXP0rMX8O3jRie3KOVaf5hMLJyphmxVecXnQpnJ5ZFevgXCOrY7lO3x8zt7XuMbypLBnkKcUWWrztusW1JG5tY57aSvcCnO7dv1eWmWazX1HRO8ufLz2Y8AAIAgCjChQIQgBCAIDBQAoIIwoxQQgCATye5k7l2T60R6m7LTB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" class= "picture">
+		
+				<div id= "contact">
+					<span class= "contact-header">
+						<a href="https://maps.google.com/?q=San Francisco, CA, "><i title="ADDRESS" class="fa fa-map-marker left"></i>&nbsp;San Francisco, CA, </a>
+					</span>
+					<br/><br/>
+					<span class= "contact-header">
+						<a href= "mailto:cdr@cdr2.com" target= "_blank"><i title="EMAIL" class="fa fa-envelope left"></i>&nbsp;cdr@cdr2.com</a>
+					</span>
+					<br/><br/>
+					<span class= "contact-header">
+						<a href= "tel:(415) 810-6991" target= "_blank"><i title="PHONE" class="fa fa-phone-square left"></i>&nbsp;(415) 810-6991</a>
+					</span>
+					<br/><br/>
+					<span class= "contact-header">
+						<a href= "https://www.cdr2.com/" target= "_blank"><i title="WEBSITE" class="fa fa-globe left"></i>&nbsp;https://www.cdr2.com/</a>
+					</span>
+					<br><br>
+				</div>
+				<br>
+				<div id= "profiles">
+					<span class= "profile"><a href= "https://www.linkedin.com/in/crobison" target= "_blank" class= "profile"><i class="fa fa-linkedin left"></i>&nbsp;crobison</a></span> 
+					<span class= "profile"><a href= "https://twitter.com/thechrisrobison" target= "_blank" class= "profile"><i class="fa fa-twitter left"></i>&nbsp;thechrisrobison</a></span> 
+					<span class= "profile"><a href= "https://github.com/chrisrobison" target= "_blank" class= "profile"><i class="fa fa-github left"></i>&nbsp;chrisrobison</a></span> 
+				</div>		
+			</header>		<div class="main">
+			<section id="about">
+				<h2><i class="fa fa-user left"></i> ABOUT</h2>
+				<p>
+					Getting the job done from Apache to z-index.
+				</p>
+			</section>
+			<section id= "work">
+				<h2><i class= "fa fa-suitcase left"></i> WORK EXPERIENCE</h2>
+					<div class= "job">
+						<h3>CTO, D. Harris Tours, Inc.</h3>
+						<h4>2020-Feb 
+						<span class="endDate">
+							- 2023-May
+						</span>
+			</h4>
+						<p></p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Led the development and implemention of business processes and technology that allowed D Harris to grow from a fleet of two buses to 12 buses.</li>
+							<li>Updated and enhanced the company&#x27;s systems with modern tools to better manage the growing business, including real-time bus data, automated maintenance notifications, and automated trip confirmations and notifications via email and SMS.</li>
+							<li>Implemented route optimization algorithm to identify opportunities for one bus to handle multiple trips, increasing their daily revenue by 30%.</li>
+							<li>Implemented automated notifications for trips, bus maintenance, and billing and invoicing.</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Manager, Software Engineering, Conversant, Inc. (formerly Mediaplex)</h3>
+						<h4>2010-Jul 
+						<span class="endDate">
+							- 2020-Feb
+						</span>
+			</h4>
+						<p>Led the Rich Media Ad team and later the Mobile Ad team.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Designed, developed, and maintained the infrastructure and code-base that served many millions of mobile and rich media ads each day.</li>
+							<li>Led the Rich Media effort and helped modernize the ad serving infrastructure and metric collection.</li>
+							<li>Designed and implemented a RESTful API for serving rich media ads and built out scalable backend services to handle integration with existing servers and infrastructure.</li>
+							<li>Contributed to the IAB MRAID 2.0 standard, implemented MRAID SDKs on iOS and Android platforms, and developed and deployed mobile ad solutions for multiple platforms.</li>
+							<li>Architected and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure, RESTful API for ad serving, tracking metrics, and reporting, and developed client-side Javascript &#x27;ad controller&#x27; for mobile and web.</li>
+							<li>Developed flexible metrics tracking with non-blocking endpoints.</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Web Architect, Mindjet</h3>
+						<h4>2007-Sep 
+						<span class="endDate">
+							- 2010-Jul
+						</span>
+			</h4>
+						<p></p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Migrated the Mindjet website from PHP to an ASP.Net solution and headed up Mindjet&#x27;s foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.</li>
+							<li>Ported the Catalyst client canvas from Flash to a more standards-based implementation utilizing HTML canvas and Javascript.</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>CEO / Founder, Simple Software, Inc.</h3>
+						<h4>2006-Apr 
+						<span class="endDate">
+							- 2007-Sep
+						</span>
+			</h4>
+						<p>Provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Developed custom solutions for:</li>
+							<li>GC Homes (Contractor documents and blueprints online)</li>
+							<li>Bay Docs (Document preparation services and tools for generating documentation for reverse mortgages)</li>
+							<li>Tzero Technology</li>
+							<li>Metrika</li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>VP Engineering, Genetic Savings &amp; Clone</h3>
+						<h4>2004-Jun 
+						<span class="endDate">
+							- 2006-Apr
+						</span>
+			</h4>
+						<p>Genetic Savings &amp; Clone was a genetic services company that offered commercial pet gene banking and cloning where Mr. Robison led the Engineering department.</p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Architectured, developed, and deployed Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery.</li>
+							<li>Cloned a cat and delivered it to a customer.</li>
+							<li>Designed and developed a database-driven feline DNA identification website, CatBank.</li>
+							<li>Implemented all backend code for Retro vs. Metro, an online companion website to the New York Time&#x27;s bestseller: Retro vs. Metro - The Great Political Divide in America. </li>
+						</ul>
+					</div>
+					<div class= "job">
+						<h3>Technical Director, Inter@ctivate, Inc.</h3>
+						<h4>2001-Dec 
+						<span class="endDate">
+							- 2004-Jun
+						</span>
+			</h4>
+						<p></p>
+						<h4>HIGHLIGHTS</h4>
+						<ul class="highlights">
+							<li>Managed and maintained IT resources, including customer applications and websites, and helped grow the company from 10 to 65 employees.</li>
+							<li>Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes, built out server clusters, and managed a farm of over 60 machines including a SAN.</li>
+							<li>Designed and implemented web-based network management, monitoring &amp; systems analysis tools.</li>
+							<li>Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
+							<li>Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting</li>
+						</ul>
+					</div>
+			</section>
+			<section id="skills">
+				<h2><i class="fa fa-tasks left"></i> SKILLS</h2>
+				<section class="skills">
+				<section>
+				<h3 class="skills">Programming Languages</h3>
+				<span class="keywords">Javascript [node.js]</span> 
+				<span class="keywords">Javascript [browser]</span> 
+				<span class="keywords">C</span> 
+				<span class="keywords">C++</span> 
+				<span class="keywords">Java</span> 
+				<span class="keywords">Kotlin</span> 
+				<span class="keywords">Objective-C</span> 
+				<span class="keywords">Swift</span> 
+				<span class="keywords">PHP</span> 
+				<span class="keywords">Python</span> 
+				<span class="keywords">Perl</span> 
+				<span class="keywords">Go</span> 
+				<span class="keywords">C#</span> 
+				<span class="keywords">Bash</span> 
+				</section>
+				<section>
+				<h3 class="skills">Leadership</h3>
+				<span class="keywords">Strategic Planning</span> 
+				<span class="keywords">Team Building</span> 
+				<span class="keywords">Team Leadership</span> 
+				<span class="keywords">Procedure Development</span> 
+				<span class="keywords">Process Improvement</span> 
+				<span class="keywords">Product Development</span> 
+				<span class="keywords">Entrepreneurship</span> 
+				<span class="keywords">Budgeting / Financial Planning</span> 
+				</section>
+				<section>
+				<h3 class="skills">Software Engineering</h3>
+				<span class="keywords">Best Practices</span> 
+				<span class="keywords">Entrepreneurship</span> 
+				<span class="keywords">Software Development</span> 
+				<span class="keywords">Microservices Architecture</span> 
+				<span class="keywords">Scrum / Agile</span> 
+				<span class="keywords">Mobile Application Development</span> 
+				<span class="keywords">Cloud Services</span> 
+				<span class="keywords">Service Integration</span> 
+				</section>
+				</section>
+			</section>
+			<section id="education">
+				<h2><i class="fa fa-graduation-cap left"></i> EDUCATION</h2>
+				<h3>, Japanese, Business - City College of San Francisco</h3>
+				<h4>2009-Jan  - 2010-Jan  
+				</h4>
+			 	<h3>, Computer Science - California State University-Chico</h3>
+				<h4>1988-Jan  - 1991-Jan  
+				</h4>
+			 	<h3>, Computer Science, General Education - Butte Community College</h3>
+				<h4>1988-Jan  - 1990-Jan  
+				</h4>
+			 
+			</section>
+			<section id="awards">
+				<h2><i class="fa fa-trophy left"></i> AWARDS</h2>
+				<h3>Computer Science Award - Paradise High School</h3>
+				<h4>
+					May 08, 2023
+				</h4>
+				<p>First recipient of the Paradise High School &quot;Computer Science Award&quot; for developing a data application to track school resources that ran on an Apple IIe.  </p>
+			</section>
+			<section id="volunteer">
+				<h2><i class="fa fa-child left"></i> VOLUNTEER WORK</h2>
+					<h3>Esteemed Leading Knight / House Committee Chair, San Francisco Elks Lodge #3</h3>
+					<h4>2010-Apr 
+						<span class="endDate">
+								- 2011-Apr
+						</span> 
+					</h4>
+					<p>As Leading Knight and House Committee Chair I was responsible for the day-to-day operations of the Lodge restaurant and bar as well as organizing and holding events to raise money for local underprivileged children.  During my tenure as House Committee Chair, with the help of the SFPD, we were able to build 100 bicycles to give as Christmas presents to children which were very well received.  We raised over $34,000 for the children in that year.<br><a href="" target="_blank"></a></p>
+			</section>
+			<section id="languages">
+				<h2><i class="fa fa-language left"></i> LANGUAGES</h2>
+			
+				<h3>English</h3>
+				<h4>Fluency: Native or bilingual</h4>
+			</section>
+			<section id="interests">
+				<h2><i class="fa fa-star left"></i> INTERESTS</h2>
+				<h3 class="skills">Hobbies</h3>
+				 
+				<span class="keywords">3D Printing</span> 
+				<span class="keywords">Raspberry Pi</span> 
+				<span class="keywords">Arduino</span> 
+				<span class="keywords">Laser engraving</span> 
+				<span class="keywords">Electronics</span>   	<h3 class="skills">Recreation</h3>
+				 
+				<span class="keywords">Golf</span> 
+				<span class="keywords">Recreational Programming</span> 
+				<span class="keywords">Karaoke</span>   
+			</section>
+			<section id="references">
+				<h2><i class="fa fa-thumbs-up left"></i> REFERENCES</h2>
+				<blockquote>
+					Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs.
+					<div class="name"><br>- Kevin Ready (Software Developer and Consultant)</div>
+				</blockquote><br> 
+				<blockquote>
+					This guy has some seriously mad coding skills.
+					<div class="name"><br>- Thomas Weaver (Network Provisioner at Twitch)</div>
+				</blockquote><br> 
+				<blockquote>
+					His system is well oil; all my web services are working with no down time.  He offers all the greatest gadgets, ideal environment for a programmer like me.
+					<div class="name"><br>- Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</div>
+				</blockquote><br> 
+				<blockquote>
+					Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager.
+					<div class="name"><br>- Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</div>
+				</blockquote><br> 
+			</section>
+		</div>
+	</body>
+</html>

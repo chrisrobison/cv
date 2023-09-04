@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+	<title>Christopher Robison</title>
+
+	<style>
+	
+	</style>
+
+	</head>
+	<body>
+
+	<div class="page">
+			<h1>Christopher Robison</h1>
+			<section id="basics">
+						San Francisco
+					/
+					(415) 810-6991 /
+					cdr@cdr2.com
+			</section>
+		<section id="work">
+			<br />
+				<div>
+					<strong>
+						CTO - D. Harris Tours, Inc..
+					</strong>
+					  &nbsp;
+						San Francisco, CA,
+				<span class="startDate">
+					2020-02
+				</span>
+				<span class="endDate">
+					- Present
+				</span>
+				</div>
+				<p>D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire. The majority of their business is derived from schools (student event transportation) and local tours. Mr. Robison developed and implemented software that allowed D Harris to grow from 2 buses to 12 ten years ago. As the current CTO, he updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. He developed an algorithm to identify idle times for drivers and match them with jobs, resulting in a nearly doubled daily revenue until the COVID-19 shutdown.</p>
+				<!-- <div class="date">
+					<span class="startDate">
+						2020-02
+					</span>
+					<span class="endDate">
+						- Present
+					</span>
+				</div>
+				<div class="position">
+					CTO
+				</div>
+				<div class="website">
+					<a href="https://dharristours.com/">https://dharristours.com/</a>
+				</div>
+				<div class="summary">
+					<p>D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire. The majority of their business is derived from schools (student event transportation) and local tours. Mr. Robison developed and implemented software that allowed D Harris to grow from 2 buses to 12 ten years ago. As the current CTO, he updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. He developed an algorithm to identify idle times for drivers and match them with jobs, resulting in a nearly doubled daily revenue until the COVID-19 shutdown.</p>
+				</div>
+				<ul class="highlights">
+					<li>Automated notifications for trips, bus maintenance</li>
+					<li>Automated billing and invoicing</li>
+					<li>Migrated driver logs to digital format</li>
+					<li>Increased daily revenue with better trip optimization</li>
+				</ul>
+				 -->
+				<div>
+					<strong>
+						Manager, Software Engineering - Conversant, Inc. (formerly Mediaplex).
+					</strong>
+					  &nbsp;
+						San Francisco, CA,
+				<span class="startDate">
+					2010-07
+				</span>
+				<span class="endDate">
+					- 2020-02
+				</span>
+				</div>
+				<p>Mr. Robison was responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. He led the Rich Media effort and helped modernize their ad serving infrastructure and metric collection. He was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure. Mr. Robison contributed to IAB MRAID 2.0 standard, implemented MRAID SDK&#x27;s on iOS and Android platforms, and developed and deployed mobile ad solutions for multiple platforms. He designed and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure, architected and deployed RESTful API for ad serving, tracking metrics and reporting, and developed client-side Javascript &#x27;ad controller&#x27; for mobile and web.</p>
+				<!-- <div class="date">
+					<span class="startDate">
+						2010-07
+					</span>
+					<span class="endDate">
+						- 2020-02
+					</span>
+				</div>
+				<div class="position">
+					Manager, Software Engineering
+				</div>
+				<div class="website">
+					<a href="https://conversantmedia.com">https://conversantmedia.com</a>
+				</div>
+				<div class="summary">
+					<p>Mr. Robison was responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. He led the Rich Media effort and helped modernize their ad serving infrastructure and metric collection. He was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure. Mr. Robison contributed to IAB MRAID 2.0 standard, implemented MRAID SDK&#x27;s on iOS and Android platforms, and developed and deployed mobile ad solutions for multiple platforms. He designed and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure, architected and deployed RESTful API for ad serving, tracking metrics and reporting, and developed client-side Javascript &#x27;ad controller&#x27; for mobile and web.</p>
+				</div>
+				<ul class="highlights">
+					<li>Contributed to IAB MRAID 2.0 standard</li>
+					<li>Implemented MRAID SDK&#x27;s on iOS and Android platforms</li>
+					<li>Developed and deployed mobile ad solutions for multiple platforms.</li>
+					<li>Designed and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure.</li>
+					<li>Architected and deployed RESTful API for ad serving, tracking metrics and reporting.</li>
+					<li>Developed client-side Javascript &#x27;ad controller&#x27; for mobile and web</li>
+					<li>Developed flexible metrics tracking with non-blocking endpoints</li>
+					<li>10 years</li>
+				</ul>
+				 -->
+				<div>
+					<strong>
+						Web Architect - Mindjet.
+					</strong>
+					  &nbsp;
+						San Francisco, CA,
+				<span class="startDate">
+					2007-09
+				</span>
+				<span class="endDate">
+					- 2010-07
+				</span>
+				</div>
+				<p>Mr. Robison migrated the Mindjet website from PHP to an ASP.Net solution and headed up Mindjet&#x27;s foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst. The Catalyst client canvas was originally written in Flash and his team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.</p>
+				<!-- <div class="date">
+					<span class="startDate">
+						2007-09
+					</span>
+					<span class="endDate">
+						- 2010-07
+					</span>
+				</div>
+				<div class="position">
+					Web Architect
+				</div>
+				<div class="website">
+					<a href="https://www.mindjet.com">https://www.mindjet.com</a>
+				</div>
+				<div class="summary">
+					<p>Mr. Robison migrated the Mindjet website from PHP to an ASP.Net solution and headed up Mindjet&#x27;s foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst. The Catalyst client canvas was originally written in Flash and his team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.</p>
+				</div>
+		 -->
+				<div>
+					<strong>
+						CEO / Founder - Simple Software, Inc..
+					</strong>
+					  &nbsp;
+						San Francisco, CA,
+				<span class="startDate">
+					2006-04
+				</span>
+				<span class="endDate">
+					- 2007-09
+				</span>
+				</div>
+				<p>Mr. Robison provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p>
+				<!-- <div class="date">
+					<span class="startDate">
+						2006-04
+					</span>
+					<span class="endDate">
+						- 2007-09
+					</span>
+				</div>
+				<div class="position">
+					CEO / Founder
+				</div>
+				<div class="website">
+					<a href="http://simplesoftwaresf.com">http://simplesoftwaresf.com</a>
+				</div>
+				<div class="summary">
+					<p>Mr. Robison provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p>
+				</div>
+				<ul class="highlights">
+					<li>GC Homes - Contractor documents and blueprints online. [http://gch-dev.netoasis.net/app/]</li>
+					<li>Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</li>
+					<li>Lender Tool: http://bay-dev.netoasis.net/lenders.php</li>
+					<li>Form Definition Tool: http://bay-dev.netoasis.net/fields.php?id&#x3D;50</li>
+					<li>HUD Calculator - calculates potential reverse mortgage values: http://bay-dev.netoasis.net/HUD/calc.html</li>
+					<li>DB Tool: http://bay-dev.netoasis.net/admin/dbedit/</li>
+					<li>Tzero Technology - Customized content management system http://www.tzerotech.com/site/</li>
+					<li>TZero Technology CMS: http://tzero-dev.netoasis.net/</li>
+					<li>Metrika - Customized content management system http://www.metrika.com/site/</li>
+					<li>Metrika CMS: http://met-dev.netoasis.net/</li>
+				</ul>
+				 -->
+				<div>
+					<strong>
+						VP Engineering - Genetic Savings &amp; Clone.
+					</strong>
+					  &nbsp;
+						Sausalito, CA,
+				<span class="startDate">
+					2004-06
+				</span>
+				<span class="endDate">
+					- 2006-04
+				</span>
+				</div>
+				<p>Genetic Savings &amp; Clone was a genetic services company that offered commercial pet gene banking and cloning. Mr. Robison was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery.</p>
+				<!-- <div class="date">
+					<span class="startDate">
+						2004-06
+					</span>
+					<span class="endDate">
+						- 2006-04
+					</span>
+				</div>
+				<div class="position">
+					VP Engineering
+				</div>
+				<div class="summary">
+					<p>Genetic Savings &amp; Clone was a genetic services company that offered commercial pet gene banking and cloning. Mr. Robison was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery.</p>
+				</div>
+				<ul class="highlights">
+					<li>Cloned a cat and delivered it to customer</li>
+					<li>Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business and automated many processes.</li>
+					<li>CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with various genetic analysis hardware including the Applied Biosystem Genetic Analyser 3130</li>
+					<li>Integration of genetic analysis hardware</li>
+					<li>Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time&#x27;s bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</li>
+				</ul>
+				 -->
+				<div>
+					<strong>
+						Technical Director - Inter@ctivate, Inc..
+					</strong>
+					  &nbsp;
+						San Diego, CA,
+				<span class="startDate">
+					2001-12
+				</span>
+				<span class="endDate">
+					- 2004-06
+				</span>
+				</div>
+				<p>As Technical Director for Interactivate, Inc., Mr. Robison&#x27;s responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. </p>
+				<!-- <div class="date">
+					<span class="startDate">
+						2001-12
+					</span>
+					<span class="endDate">
+						- 2004-06
+					</span>
+				</div>
+				<div class="position">
+					Technical Director
+				</div>
+				<div class="summary">
+					<p>As Technical Director for Interactivate, Inc., Mr. Robison&#x27;s responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. </p>
+				</div>
+				<ul class="highlights">
+					<li>Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</li>
+					<li>Designed and implemented web-based network management, monitoring &amp; systems analysis tools</li>
+					<li>Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
+					<li>Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.</li>
+					<li>Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.</li>
+					<li>Installation &amp; administration of Solaris, FreeBSD &amp; Windows NT in a heterogeneous environment</li>
+					<li>Design, implementation, migration and maintenance for Interactivate&#x27;s internal and external network infrastructure.</li>
+					<li>Working with vendors, developers &amp; 3rd party integrators.</li>
+					<li>Maintain and monitor over 50 hosted client web sites and dozens of web applications</li>
+					<li>Identifying &amp; resolving network related problems</li>
+					<li>Responsible for backup implementation and recovery strategy &amp; procedures</li>
+					<li>Required to support high volume access &amp; availability characteristics as well as identifying &amp; resolving system hardware &amp; software problems</li>
+					<li>Responsible for the full availability of DNS, SMTP, HTTP, POP &amp; IMAP servers</li>
+					<li>Maintaining security for all Interactivate networks</li>
+				</ul>
+				 -->
+		</section>
+		<section id="education">
+			<div class="title">EDUCATION</div>
+				<div>
+					<strong>City College of San Francisco,</strong>
+					<span class="startDate">
+						2009-01-01
+					</span>
+					<span class="endDate">
+						- 2010-01-01
+					</span>
+				</div>
+				
+				<div>
+					<strong>California State University-Chico,</strong>
+					<span class="startDate">
+						1988-01-01
+					</span>
+					<span class="endDate">
+						- 1991-01-01
+					</span>
+				</div>
+				
+				<div>
+					<strong>Butte College,</strong>
+					<span class="startDate">
+						1988-01-01
+					</span>
+					<span class="endDate">
+						- 1990-01-01
+					</span>
+				</div>
+				
+				<div>
+					<strong>Paradise High School,</strong>
+					<span class="startDate">
+						1984-01-01
+					</span>
+					<span class="endDate">
+						- 1988-01-01
+					</span>
+				</div>
+				
+		</section>
+		<section id="awards">
+			<div class="title">AWARDS</div>
+			<div class="item">
+					Computer Science Award (Paradise High School)
+			</div>
+		</section>
+		<section id="interests">
+			<div class="title">HOBBIES</div>
+					Hobbies,
+					Recreation
+		</section>
+	</body>
+</html>

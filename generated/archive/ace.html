@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>          Christopher Robison
+</title>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" />
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <style type="text/css"></style>
+</head>
+<body>
+<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top" role = "navigation">
+    <div class="container-fluid">
+              <div id="profile-pic" class="pull-left hidden-print">
+            <img data-src="holder.js/100x100" alt="Christopher Robison" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAKAAD/7gAOQWRvYmUAZMAAAAAB/9sAhAAUEBAZEhknFxcnMiYfJjIuJiYmJi4+NTU1NTU+REFBQUFBQUREREREREREREREREREREREREREREREREREREREARUZGSAcICYYGCY2JiAmNkQ2Kys2REREQjVCRERERERERERERERERERERERERERERERERERERERERERERERERET/wAARCAD6APoDASIAAhEBAxEB/8QAjAAAAgMBAQEAAAAAAAAAAAAAAQIAAwQFBgcBAQEBAQEBAAAAAAAAAAAAAAABAgMEBRAAAgECBAQEAgYIBQUAAAAAAAECEQMhMRIEQVFhBXGRIhOBMqHRQpIUBsHhUmJygiMz8LHxojSy0uJTFREBAQACAgIDAQEAAAAAAAAAAAERAjEDIRJBUTJhcf/aAAwDAQACEQMRAD8A6gaihPQ8xgoAUEEYUYoIQBAIQBAIQBCCEAQCQFUiVXMCACAAEIACChAFAAQABgCxQAAICKFQVCKAKhAQAhAEBgoAUEEYUYoIQBAIQBAIRXJRVZOiOP3DuyXot18SXaTlddbtw6O431uwnV1aORe7xOb9CdPI5Wqd11pUZ2pfabqcLvb/AB6J1yf1pe9vSxbQ0N9JfPh1WRjlBLiVe6454oxmt4n07dvfuPFo32e5KWFzzPLq9ppTI0Qv1NTexm6SvXKSkqp1IcDZbxwnSTwOk+52lzO83ljhdLK2AMH/ANezXGtC6G+s3MnQvtL8s+tnw0AImnk6kKgMUZigAAQEAFGFCgQhACEAQGCgBQQRhRighAEAkclFVZDld03uhO3H/V/qJbiZXWZuGXf9wlcl7cDnKidfml9AKN4RzebEu3oWVRYs8ttty9kkkwuldbRTKb5+Zid+5deLouSNFixOeOIwJLUsirXX6joLZTkqIkNjV0kqMmWvW1zcaULrc2mupunsaFHsJOvIZLrYrV5xfxLIXXP0rMX8O3jRie3KOVaf5hMLJyphmxVecXnQpnJ5ZFevgXCOrY7lO3x8zt7XuMbypLBnkKcUWWrztusW1JG5tY57aSvcCnO7dv1eWmWazX1HRO8ufLz2Y8AAIAgCjChQIQgBCAIDBQAoIIwoxQQgCATye5k7l2T60R6m7LTB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" class="media-object img-circle">
+        </div>
+            <h2 id="basics-name">Christopher Robison</h2>
+        <div class="clearfix"></div>
+        <ul id="basics-profiles" class="nav navbar-nav hidden-print">
+              <li class="basics-profile">
+                  <a href="https://www.linkedin.com/in/crobison" rel="tooltip" title="crobison on linkedin">
+                      <i class="fa fa-linkedin fa-2x"></i>
+                  </a>
+              </li>
+              <li class="basics-profile">
+                  <a href="https://twitter.com/thechrisrobison" rel="tooltip" title="thechrisrobison on twitter">
+                      <i class="fa fa-twitter fa-2x"></i>
+                  </a>
+              </li>
+              <li class="basics-profile">
+                  <a href="https://github.com/chrisrobison" rel="tooltip" title="chrisrobison on github">
+                      <i class="fa fa-github fa-2x"></i>
+                  </a>
+              </li>
+        </ul>
+    <ul class="nav navbar-nav navbar-right hidden-print">
+          <li id="basics-website"><a href="https://www.cdr2.com/"><i class="fa fa-link basics-profile-link">https://www.cdr2.com/</i></a></li>
+          <li id="basics-email"><a href="mailto:cdr@cdr2.com"><i class="fa fa-envelope basics-profile-link">cdr@cdr2.com</i></a></li>
+          <li id="basics-location">
+              <a href="#">
+                  <i class="fa fa-map-marker">
+                          San Francisco, CA
+                  </i>
+              </a>
+          </li>
+          <li id="basics-phone"><a href="#">(415) 810-6991</a></li>
+    </ul>
+
+    </div><!-- /.container-fluid -->
+</nav>
+<main id="sections" class="container" role="main">
+      <section id="section-summary">
+              <article>
+          <div class="row">
+              <div class="col-xs-1 hidden-print">
+                  <i class="fa fa-user fa-2x fa-border fa-pull-left"></i>
+              </div>
+              <div class="col-xs-11 hidden-print">
+                  <header id="header-summary">
+                      <h4 class="title text-uppercase clearfix">Summary</h4>
+                  </header>
+                  <p class="summary">Getting the job done from Apache to z-index.</p>
+              </div>
+              <div class="col-xs-12 visible-print">
+                  <header id="header-summary">
+                      <h4 class="title text-uppercase clearfix">Summary</h4>
+                  </header>
+                  <p class="summary">Getting the job done from Apache to z-index.</p>
+              </div>
+          </div>
+      </article>
+
+      </section><!-- /#section-summary -->
+      <hr class="separator" />
+      <section id="section-experience">
+              <article>
+          <div class="row">
+              <div class="col-xs-1 hidden-print">
+                  <i class="fa fa-building fa-2x fa-border fa-pull-left"></i>
+              </div>
+              <div class="col-xs-11 hidden-print">
+                  <header id="header-skills">
+                      <h4 class="title text-uppercase clearfix">Experience</h4>
+                  </header>
+                    <ul id="experiences" class="list-unstyled">
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company pull-left"><a href="https://dharristours.com/">D. Harris Tours, Inc.</a></h4>
+                              <time class="date pull-left text-muted">
+                                February, 2020 - May, 2023
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                3 years, 3 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">CTO</h5>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Led the development and implemention of business processes and technology that allowed D Harris to grow from a fleet of two buses to 12 buses.</li>
+                                      <li class="experience-highlight">Updated and enhanced the company&#x27;s systems with modern tools to better manage the growing business, including real-time bus data, automated maintenance notifications, and automated trip confirmations and notifications via email and SMS.</li>
+                                      <li class="experience-highlight">Implemented route optimization algorithm to identify opportunities for one bus to handle multiple trips, increasing their daily revenue by 30%.</li>
+                                      <li class="experience-highlight">Implemented automated notifications for trips, bus maintenance, and billing and invoicing.</li>
+                                </ul>
+                          </li>
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company pull-left"><a href="https://conversantmedia.com">Conversant, Inc. (formerly Mediaplex)</a></h4>
+                              <time class="date pull-left text-muted">
+                                July, 2010 - February, 2020
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                9 years, 7 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">Manager, Software Engineering</h5>
+                                <div class="experience-summary">
+                                    <p>Led the Rich Media Ad team and later the Mobile Ad team.</p>
+                                </div>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Designed, developed, and maintained the infrastructure and code-base that served many millions of mobile and rich media ads each day.</li>
+                                      <li class="experience-highlight">Led the Rich Media effort and helped modernize the ad serving infrastructure and metric collection.</li>
+                                      <li class="experience-highlight">Designed and implemented a RESTful API for serving rich media ads and built out scalable backend services to handle integration with existing servers and infrastructure.</li>
+                                      <li class="experience-highlight">Contributed to the IAB MRAID 2.0 standard, implemented MRAID SDKs on iOS and Android platforms, and developed and deployed mobile ad solutions for multiple platforms.</li>
+                                      <li class="experience-highlight">Architected and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure, RESTful API for ad serving, tracking metrics, and reporting, and developed client-side Javascript &#x27;ad controller&#x27; for mobile and web.</li>
+                                      <li class="experience-highlight">Developed flexible metrics tracking with non-blocking endpoints.</li>
+                                </ul>
+                          </li>
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company pull-left"><a href="https://www.mindjet.com">Mindjet</a></h4>
+                              <time class="date pull-left text-muted">
+                                September, 2007 - July, 2010
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                2 years, 10 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">Web Architect</h5>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Migrated the Mindjet website from PHP to an ASP.Net solution and headed up Mindjet&#x27;s foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.</li>
+                                      <li class="experience-highlight">Ported the Catalyst client canvas from Flash to a more standards-based implementation utilizing HTML canvas and Javascript.</li>
+                                </ul>
+                          </li>
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company pull-left"><a href="http://simplesoftwaresf.com">Simple Software, Inc.</a></h4>
+                              <time class="date pull-left text-muted">
+                                April, 2006 - September, 2007
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                1 year, 5 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">CEO / Founder</h5>
+                                <div class="experience-summary">
+                                    <p>Provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p>
+                                </div>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Developed custom solutions for:</li>
+                                      <li class="experience-highlight">GC Homes (Contractor documents and blueprints online)</li>
+                                      <li class="experience-highlight">Bay Docs (Document preparation services and tools for generating documentation for reverse mortgages)</li>
+                                      <li class="experience-highlight">Tzero Technology</li>
+                                      <li class="experience-highlight">Metrika</li>
+                                </ul>
+                          </li>
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company text-primary pull-left">Genetic Savings &amp; Clone</h4>
+                              <time class="date pull-left text-muted">
+                                June, 2004 - April, 2006
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                1 year, 10 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">VP Engineering</h5>
+                                <div class="experience-summary">
+                                    <p>Genetic Savings &amp; Clone was a genetic services company that offered commercial pet gene banking and cloning where Mr. Robison led the Engineering department.</p>
+                                </div>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Architectured, developed, and deployed Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery.</li>
+                                      <li class="experience-highlight">Cloned a cat and delivered it to a customer.</li>
+                                      <li class="experience-highlight">Designed and developed a database-driven feline DNA identification website, CatBank.</li>
+                                      <li class="experience-highlight">Implemented all backend code for Retro vs. Metro, an online companion website to the New York Time&#x27;s bestseller: Retro vs. Metro - The Great Political Divide in America. </li>
+                                </ul>
+                          </li>
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company text-primary pull-left">Inter@ctivate, Inc.</h4>
+                              <time class="date pull-left text-muted">
+                                December, 2001 - June, 2004
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                2 years, 6 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">Technical Director</h5>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Managed and maintained IT resources, including customer applications and websites, and helped grow the company from 10 to 65 employees.</li>
+                                      <li class="experience-highlight">Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes, built out server clusters, and managed a farm of over 60 machines including a SAN.</li>
+                                      <li class="experience-highlight">Designed and implemented web-based network management, monitoring &amp; systems analysis tools.</li>
+                                      <li class="experience-highlight">Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
+                                      <li class="experience-highlight">Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting</li>
+                                </ul>
+                          </li>
+                    </ul>
+              </div>
+              <div class="col-xs-12 visible-print">
+                  <header id="header-skills">
+                      <h4 class="title text-uppercase clearfix">Experience</h4>
+                  </header>
+                    <ul id="experiences" class="list-unstyled">
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company pull-left"><a href="https://dharristours.com/">D. Harris Tours, Inc.</a></h4>
+                              <time class="date pull-left text-muted">
+                                February, 2020 - May, 2023
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                3 years, 3 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">CTO</h5>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Led the development and implemention of business processes and technology that allowed D Harris to grow from a fleet of two buses to 12 buses.</li>
+                                      <li class="experience-highlight">Updated and enhanced the company&#x27;s systems with modern tools to better manage the growing business, including real-time bus data, automated maintenance notifications, and automated trip confirmations and notifications via email and SMS.</li>
+                                      <li class="experience-highlight">Implemented route optimization algorithm to identify opportunities for one bus to handle multiple trips, increasing their daily revenue by 30%.</li>
+                                      <li class="experience-highlight">Implemented automated notifications for trips, bus maintenance, and billing and invoicing.</li>
+                                </ul>
+                          </li>
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company pull-left"><a href="https://conversantmedia.com">Conversant, Inc. (formerly Mediaplex)</a></h4>
+                              <time class="date pull-left text-muted">
+                                July, 2010 - February, 2020
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                9 years, 7 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">Manager, Software Engineering</h5>
+                                <div class="experience-summary">
+                                    <p>Led the Rich Media Ad team and later the Mobile Ad team.</p>
+                                </div>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Designed, developed, and maintained the infrastructure and code-base that served many millions of mobile and rich media ads each day.</li>
+                                      <li class="experience-highlight">Led the Rich Media effort and helped modernize the ad serving infrastructure and metric collection.</li>
+                                      <li class="experience-highlight">Designed and implemented a RESTful API for serving rich media ads and built out scalable backend services to handle integration with existing servers and infrastructure.</li>
+                                      <li class="experience-highlight">Contributed to the IAB MRAID 2.0 standard, implemented MRAID SDKs on iOS and Android platforms, and developed and deployed mobile ad solutions for multiple platforms.</li>
+                                      <li class="experience-highlight">Architected and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure, RESTful API for ad serving, tracking metrics, and reporting, and developed client-side Javascript &#x27;ad controller&#x27; for mobile and web.</li>
+                                      <li class="experience-highlight">Developed flexible metrics tracking with non-blocking endpoints.</li>
+                                </ul>
+                          </li>
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company pull-left"><a href="https://www.mindjet.com">Mindjet</a></h4>
+                              <time class="date pull-left text-muted">
+                                September, 2007 - July, 2010
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                2 years, 10 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">Web Architect</h5>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Migrated the Mindjet website from PHP to an ASP.Net solution and headed up Mindjet&#x27;s foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.</li>
+                                      <li class="experience-highlight">Ported the Catalyst client canvas from Flash to a more standards-based implementation utilizing HTML canvas and Javascript.</li>
+                                </ul>
+                          </li>
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company pull-left"><a href="http://simplesoftwaresf.com">Simple Software, Inc.</a></h4>
+                              <time class="date pull-left text-muted">
+                                April, 2006 - September, 2007
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                1 year, 5 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">CEO / Founder</h5>
+                                <div class="experience-summary">
+                                    <p>Provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p>
+                                </div>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Developed custom solutions for:</li>
+                                      <li class="experience-highlight">GC Homes (Contractor documents and blueprints online)</li>
+                                      <li class="experience-highlight">Bay Docs (Document preparation services and tools for generating documentation for reverse mortgages)</li>
+                                      <li class="experience-highlight">Tzero Technology</li>
+                                      <li class="experience-highlight">Metrika</li>
+                                </ul>
+                          </li>
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company text-primary pull-left">Genetic Savings &amp; Clone</h4>
+                              <time class="date pull-left text-muted">
+                                June, 2004 - April, 2006
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                1 year, 10 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">VP Engineering</h5>
+                                <div class="experience-summary">
+                                    <p>Genetic Savings &amp; Clone was a genetic services company that offered commercial pet gene banking and cloning where Mr. Robison led the Engineering department.</p>
+                                </div>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Architectured, developed, and deployed Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery.</li>
+                                      <li class="experience-highlight">Cloned a cat and delivered it to a customer.</li>
+                                      <li class="experience-highlight">Designed and developed a database-driven feline DNA identification website, CatBank.</li>
+                                      <li class="experience-highlight">Implemented all backend code for Retro vs. Metro, an online companion website to the New York Time&#x27;s bestseller: Retro vs. Metro - The Great Political Divide in America. </li>
+                                </ul>
+                          </li>
+                          <li class="experiences-experience card card-nested">
+                                <h4 class="experience-company text-primary pull-left">Inter@ctivate, Inc.</h4>
+                              <time class="date pull-left text-muted">
+                                December, 2001 - June, 2004
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                2 years, 6 months
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="experience-position list-name text-success">Technical Director</h5>
+                                <ul class="experience-highlights">
+                                      <li class="experience-highlight">Managed and maintained IT resources, including customer applications and websites, and helped grow the company from 10 to 65 employees.</li>
+                                      <li class="experience-highlight">Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes, built out server clusters, and managed a farm of over 60 machines including a SAN.</li>
+                                      <li class="experience-highlight">Designed and implemented web-based network management, monitoring &amp; systems analysis tools.</li>
+                                      <li class="experience-highlight">Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
+                                      <li class="experience-highlight">Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting</li>
+                                </ul>
+                          </li>
+                    </ul>
+              </div>
+          </div>
+      </article>
+
+      </section><!-- /#section-experience -->
+      <section id="section-skills">
+              <article>
+          <div class="row">
+              <div class="col-xs-1 hidden-print">
+                  <i class="fa fa-cog fa-2x fa-border fa-pull-left"></i>
+              </div>
+              <div class="col-xs-11 hidden-print">
+                  <header id="header-skills">
+                      <h4 class="title text-uppercase clearfix">Skills</h4>
+                  </header>
+                    <ul id="skills" class="list-unstyled">
+                          <li class="skills-skill card card-nested">
+                                <h4 id="skills-name">Programming Languages</h4>
+                                <ul class="keywords list-inline">
+                                      <li class="label label-primary keyword">Javascript [node.js]</li>
+                                      <li class="label label-primary keyword">Javascript [browser]</li>
+                                      <li class="label label-primary keyword">C</li>
+                                      <li class="label label-primary keyword">C++</li>
+                                      <li class="label label-primary keyword">Java</li>
+                                      <li class="label label-primary keyword">Kotlin</li>
+                                      <li class="label label-primary keyword">Objective-C</li>
+                                      <li class="label label-primary keyword">Swift</li>
+                                      <li class="label label-primary keyword">PHP</li>
+                                      <li class="label label-primary keyword">Python</li>
+                                      <li class="label label-primary keyword">Perl</li>
+                                      <li class="label label-primary keyword">Go</li>
+                                      <li class="label label-primary keyword">C#</li>
+                                      <li class="label label-primary keyword">Bash</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                          </li>
+                          <li class="skills-skill card card-nested">
+                                <h4 id="skills-name">Leadership</h4>
+                                <ul class="keywords list-inline">
+                                      <li class="label label-primary keyword">Strategic Planning</li>
+                                      <li class="label label-primary keyword">Team Building</li>
+                                      <li class="label label-primary keyword">Team Leadership</li>
+                                      <li class="label label-primary keyword">Procedure Development</li>
+                                      <li class="label label-primary keyword">Process Improvement</li>
+                                      <li class="label label-primary keyword">Product Development</li>
+                                      <li class="label label-primary keyword">Entrepreneurship</li>
+                                      <li class="label label-primary keyword">Budgeting / Financial Planning</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                          </li>
+                          <li class="skills-skill card card-nested">
+                                <h4 id="skills-name">Software Engineering</h4>
+                                <ul class="keywords list-inline">
+                                      <li class="label label-primary keyword">Best Practices</li>
+                                      <li class="label label-primary keyword">Entrepreneurship</li>
+                                      <li class="label label-primary keyword">Software Development</li>
+                                      <li class="label label-primary keyword">Microservices Architecture</li>
+                                      <li class="label label-primary keyword">Scrum / Agile</li>
+                                      <li class="label label-primary keyword">Mobile Application Development</li>
+                                      <li class="label label-primary keyword">Cloud Services</li>
+                                      <li class="label label-primary keyword">Service Integration</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                          </li>
+                    </ul>
+              </div>
+              <div class="col-xs-12 visible-print">
+                  <header id="header-skills">
+                      <h4 class="title text-uppercase clearfix">Skills</h4>
+                  </header>
+                    <ul id="skills" class="list-unstyled">
+                          <li class="skills-skill card card-nested">
+                                <h4 id="skills-name">Programming Languages</h4>
+                                <ul class="keywords list-inline">
+                                      <li class="label label-primary keyword">Javascript [node.js]</li>
+                                      <li class="label label-primary keyword">Javascript [browser]</li>
+                                      <li class="label label-primary keyword">C</li>
+                                      <li class="label label-primary keyword">C++</li>
+                                      <li class="label label-primary keyword">Java</li>
+                                      <li class="label label-primary keyword">Kotlin</li>
+                                      <li class="label label-primary keyword">Objective-C</li>
+                                      <li class="label label-primary keyword">Swift</li>
+                                      <li class="label label-primary keyword">PHP</li>
+                                      <li class="label label-primary keyword">Python</li>
+                                      <li class="label label-primary keyword">Perl</li>
+                                      <li class="label label-primary keyword">Go</li>
+                                      <li class="label label-primary keyword">C#</li>
+                                      <li class="label label-primary keyword">Bash</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                          </li>
+                          <li class="skills-skill card card-nested">
+                                <h4 id="skills-name">Leadership</h4>
+                                <ul class="keywords list-inline">
+                                      <li class="label label-primary keyword">Strategic Planning</li>
+                                      <li class="label label-primary keyword">Team Building</li>
+                                      <li class="label label-primary keyword">Team Leadership</li>
+                                      <li class="label label-primary keyword">Procedure Development</li>
+                                      <li class="label label-primary keyword">Process Improvement</li>
+                                      <li class="label label-primary keyword">Product Development</li>
+                                      <li class="label label-primary keyword">Entrepreneurship</li>
+                                      <li class="label label-primary keyword">Budgeting / Financial Planning</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                          </li>
+                          <li class="skills-skill card card-nested">
+                                <h4 id="skills-name">Software Engineering</h4>
+                                <ul class="keywords list-inline">
+                                      <li class="label label-primary keyword">Best Practices</li>
+                                      <li class="label label-primary keyword">Entrepreneurship</li>
+                                      <li class="label label-primary keyword">Software Development</li>
+                                      <li class="label label-primary keyword">Microservices Architecture</li>
+                                      <li class="label label-primary keyword">Scrum / Agile</li>
+                                      <li class="label label-primary keyword">Mobile Application Development</li>
+                                      <li class="label label-primary keyword">Cloud Services</li>
+                                      <li class="label label-primary keyword">Service Integration</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                          </li>
+                    </ul>
+              </div>
+          </div>
+      </article>
+
+      </section><!-- /#section-skills -->
+      <section id="section-education">
+              <article>
+          <div class="row">
+              <div class="col-xs-1 hidden-print">
+                  <i class="fa fa-book fa-2x fa-border fa-pull-left"></i>
+              </div>
+              <div class="col-xs-11 hidden-print">
+                  <header id="header-education">
+                      <h4 class="title text-uppercase clearfix">Education</h4>
+                  </header>
+                    <ul id="education" class="list-unstyled">
+                          <li class="education-education card card-nested">
+                                <h4 class="area pull-left">Japanese, Business </h4>
+                              <time class="date pull-left text-muted">
+                                January, 2009 - January, 2010
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                1 year
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="education-institution list-name text-success">City College of San Francisco</h5>
+                          </li>
+                          <li class="education-education card card-nested">
+                                <h4 class="area pull-left">Computer Science </h4>
+                              <time class="date pull-left text-muted">
+                                January, 1988 - January, 1991
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                3 years
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="education-institution list-name text-success">California State University-Chico</h5>
+                          </li>
+                          <li class="education-education card card-nested">
+                                <h4 class="area pull-left">Computer Science, General Education </h4>
+                              <time class="date pull-left text-muted">
+                                January, 1988 - January, 1990
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                2 years
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="education-institution list-name text-success">Butte Community College</h5>
+                          </li>
+                    </ul>
+              </div>
+              <div class="col-xs-12 visible-print">
+                  <header id="header-education">
+                      <h4 class="title text-uppercase clearfix">Education</h4>
+                  </header>
+                    <ul id="education" class="list-unstyled">
+                          <li class="education-education card card-nested">
+                                <h4 class="area pull-left">Japanese, Business </h4>
+                              <time class="date pull-left text-muted">
+                                January, 2009 - January, 2010
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                1 year
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="education-institution list-name text-success">City College of San Francisco</h5>
+                          </li>
+                          <li class="education-education card card-nested">
+                                <h4 class="area pull-left">Computer Science </h4>
+                              <time class="date pull-left text-muted">
+                                January, 1988 - January, 1991
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                3 years
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="education-institution list-name text-success">California State University-Chico</h5>
+                          </li>
+                          <li class="education-education card card-nested">
+                                <h4 class="area pull-left">Computer Science, General Education </h4>
+                              <time class="date pull-left text-muted">
+                                January, 1988 - January, 1990
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                2 years
+                              </time>
+                              <div class="clearfix"></div>
+                                <h5 class="education-institution list-name text-success">Butte Community College</h5>
+                          </li>
+                    </ul>
+              </div>
+          </div>
+      </article>
+
+      </section><!-- /#section-education -->
+      <section id="section-awards">
+              <article>
+          <div class="row">
+              <div class="col-xs-1 hidden-print">
+                  <i class="fa fa-trophy fa-2x fa-border fa-pull-left"></i>
+              </div>
+              <div class="col-xs-11 hidden-print">
+                  <header id="header-awards">
+                      <h4 class="title text-uppercase clearfix">Awards</h4>
+                  </header>
+                    <ul id="awards" class="list-unstyled">
+                          <li class="awards-award card card-nested">
+                                <h4 class="awards-title pull-left">Computer Science Award</h4>
+                                <time class="date pull-left text-muted">
+                                    <time class="awards-date" datetime="May 08, 2023">Awarded on: June 1, 1988</time>
+                                </time>
+                                <div class="clearfix"></div>
+                                <h5 class="awards-awarder list-name text-success">Paradise High School</h5>
+                                <div class="awards-summary">
+                                    <p>First recipient of the Paradise High School &quot;Computer Science Award&quot; for developing a data application to track school resources that ran on an Apple IIe.  </p>
+                                </div>
+                          </li>
+                    </ul>
+              </div>
+              <div class="col-xs-12 visible-print">
+                  <header id="header-awards">
+                      <h4 class="title text-uppercase clearfix">Awards</h4>
+                  </header>
+                    <ul id="awards" class="list-unstyled">
+                          <li class="awards-award card card-nested">
+                                <h4 class="awards-title pull-left">Computer Science Award</h4>
+                                <time class="date pull-left text-muted">
+                                    <time class="awards-date" datetime="May 08, 2023">Awarded on: June 1, 1988</time>
+                                </time>
+                                <div class="clearfix"></div>
+                                <h5 class="awards-awarder list-name text-success">Paradise High School</h5>
+                                <div class="awards-summary">
+                                    <p>First recipient of the Paradise High School &quot;Computer Science Award&quot; for developing a data application to track school resources that ran on an Apple IIe.  </p>
+                                </div>
+                          </li>
+                    </ul>
+              </div>
+          </div>
+      </article>
+
+      </section><!-- /#section-awards -->
+      <section id="section-volunteer">
+              <article>
+          <div class="row">
+              <div class="col-xs-1 hidden-print">
+                  <i class="fa fa-users fa-2x fa-border fa-pull-left"></i>
+              </div>
+              <div class="col-xs-11 hidden-print">
+                  <header id="header-volunteer">
+                      <h4 class="title text-uppercase clearfix">Volunteer Work</h4>
+                  </header>
+                    <ul id="volunteer" class="list-unstyled">
+                          <li class="volunteer-volunteer card card-nested">
+                                  <h4 class="volunteer-position pull-left">Esteemed Leading Knight / House Committee Chair, San Francisco Elks Lodge #3</h4>
+                              <time class="date pull-left text-muted">
+                                April, 2010 - April, 2011
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                1 year
+                              </time>
+                              <div class="clearfix"></div>
+                                <div class="volunteer-summary">
+                                    <p>As Leading Knight and House Committee Chair I was responsible for the day-to-day operations of the Lodge restaurant and bar as well as organizing and holding events to raise money for local underprivileged children.  During my tenure as House Committee Chair, with the help of the SFPD, we were able to build 100 bicycles to give as Christmas presents to children which were very well received.  We raised over $34,000 for the children in that year.</p>
+                                </div>
+                          </li>
+                    </ul>
+              </div>
+              <div class="col-xs-12 visible-print">
+                  <header id="header-volunteer">
+                      <h4 class="title text-uppercase clearfix">Volunteer Work</h4>
+                  </header>
+                    <ul id="volunteer" class="list-unstyled">
+                          <li class="volunteer-volunteer card card-nested">
+                                  <h4 class="volunteer-position pull-left">Esteemed Leading Knight / House Committee Chair, San Francisco Elks Lodge #3</h4>
+                              <time class="date pull-left text-muted">
+                                April, 2010 - April, 2011
+                              </time>
+                              <time class="date pull-left text-muted">
+                                  <i class="fa fa-clock-o fa-border fa-pull-left"></i>
+                                1 year
+                              </time>
+                              <div class="clearfix"></div>
+                                <div class="volunteer-summary">
+                                    <p>As Leading Knight and House Committee Chair I was responsible for the day-to-day operations of the Lodge restaurant and bar as well as organizing and holding events to raise money for local underprivileged children.  During my tenure as House Committee Chair, with the help of the SFPD, we were able to build 100 bicycles to give as Christmas presents to children which were very well received.  We raised over $34,000 for the children in that year.</p>
+                                </div>
+                          </li>
+                    </ul>
+              </div>
+          </div>
+      </article>
+
+      </section><!-- /#section-volunteer -->
+      <section id="section-interests">
+              <article>
+          <div class="row">
+              <div class="col-xs-1 hidden-print">
+                  <i class="fa fa-pencil fa-2x fa-border fa-pull-left"></i>
+              </div>
+              <div class="col-xs-11 hidden-print">
+                  <header id="header-interests">
+                      <h4 class="title text-uppercase clearfix">Interests</h4>
+                  </header>
+                    <ul id="interests" class="list-unstyled">
+                          <li class="interests-interest card card-nested">
+                                <h4 id="interests-name">Hobbies</h4>
+                                <ul class="keywords list-inline">
+                                      <li class="label label-primary keyword">3D Printing</li>
+                                      <li class="label label-primary keyword">Raspberry Pi</li>
+                                      <li class="label label-primary keyword">Arduino</li>
+                                      <li class="label label-primary keyword">Laser engraving</li>
+                                      <li class="label label-primary keyword">Electronics</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                          </li>
+                          <li class="interests-interest card card-nested">
+                                <h4 id="interests-name">Recreation</h4>
+                                <ul class="keywords list-inline">
+                                      <li class="label label-primary keyword">Golf</li>
+                                      <li class="label label-primary keyword">Recreational Programming</li>
+                                      <li class="label label-primary keyword">Karaoke</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                          </li>
+                    </ul>
+              </div>
+              <div class="col-xs-12 visible-print">
+                  <header id="header-interests">
+                      <h4 class="title text-uppercase clearfix">Interests</h4>
+                  </header>
+                    <ul id="interests" class="list-unstyled">
+                          <li class="interests-interest card card-nested">
+                                <h4 id="interests-name">Hobbies</h4>
+                                <ul class="keywords list-inline">
+                                      <li class="label label-primary keyword">3D Printing</li>
+                                      <li class="label label-primary keyword">Raspberry Pi</li>
+                                      <li class="label label-primary keyword">Arduino</li>
+                                      <li class="label label-primary keyword">Laser engraving</li>
+                                      <li class="label label-primary keyword">Electronics</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                          </li>
+                          <li class="interests-interest card card-nested">
+                                <h4 id="interests-name">Recreation</h4>
+                                <ul class="keywords list-inline">
+                                      <li class="label label-primary keyword">Golf</li>
+                                      <li class="label label-primary keyword">Recreational Programming</li>
+                                      <li class="label label-primary keyword">Karaoke</li>
+                                </ul>
+                                <div class="clearfix"></div>
+                          </li>
+                    </ul>
+              </div>
+          </div>
+      </article>
+
+      </section><!-- /#section-interests -->
+      <section id="section-references">
+              <article>
+          <div class="row">
+              <div class="col-xs-1 hidden-print">
+                  <i class="fa fa-thumbs-up fa-2x fa-border fa-pull-left"></i>
+              </div>
+              <div class="col-xs-11 hidden-print">
+                  <header id="header-references">
+                      <h4 class="title text-uppercase clearfix">References</h4>
+                  </header>
+                    <ul id="references" class="list-unstyled">
+                          <li class="references-reference card card-nested">
+                                <h4 id="references-name">Kevin Ready (Software Developer and Consultant)</h4>
+                                <blockquote class="reference-quote">
+                                    <p>Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs.</p>
+                                </blockquote>
+                          </li>
+                          <li class="references-reference card card-nested">
+                                <h4 id="references-name">Thomas Weaver (Network Provisioner at Twitch)</h4>
+                                <blockquote class="reference-quote">
+                                    <p>This guy has some seriously mad coding skills.</p>
+                                </blockquote>
+                          </li>
+                          <li class="references-reference card card-nested">
+                                <h4 id="references-name">Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</h4>
+                                <blockquote class="reference-quote">
+                                    <p>His system is well oil; all my web services are working with no down time.  He offers all the greatest gadgets, ideal environment for a programmer like me.</p>
+                                </blockquote>
+                          </li>
+                          <li class="references-reference card card-nested">
+                                <h4 id="references-name">Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</h4>
+                                <blockquote class="reference-quote">
+                                    <p>Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager.</p>
+                                </blockquote>
+                          </li>
+                    </ul>
+              </div>
+              <div class="col-xs-12 visible-print">
+                  <header id="header-references">
+                      <h4 class="title text-uppercase clearfix">References</h4>
+                  </header>
+                    <ul id="references" class="list-unstyled">
+                          <li class="references-reference card card-nested">
+                                <h4 id="references-name">Kevin Ready (Software Developer and Consultant)</h4>
+                                <blockquote class="reference-quote">
+                                    <p>Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs.</p>
+                                </blockquote>
+                          </li>
+                          <li class="references-reference card card-nested">
+                                <h4 id="references-name">Thomas Weaver (Network Provisioner at Twitch)</h4>
+                                <blockquote class="reference-quote">
+                                    <p>This guy has some seriously mad coding skills.</p>
+                                </blockquote>
+                          </li>
+                          <li class="references-reference card card-nested">
+                                <h4 id="references-name">Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</h4>
+                                <blockquote class="reference-quote">
+                                    <p>His system is well oil; all my web services are working with no down time.  He offers all the greatest gadgets, ideal environment for a programmer like me.</p>
+                                </blockquote>
+                          </li>
+                          <li class="references-reference card card-nested">
+                                <h4 id="references-name">Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</h4>
+                                <blockquote class="reference-quote">
+                                    <p>Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager.</p>
+                                </blockquote>
+                          </li>
+                    </ul>
+              </div>
+          </div>
+      </article>
+
+      </section><!-- /#section-references -->
+    <footer id="footer">
+      
+    </footer><!-- /#footer -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js" type="text/javascript"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+</main><!-- /#sections -->
+</body>
+</html>

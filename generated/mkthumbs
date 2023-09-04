@@ -1,0 +1,11 @@
+#!/usr/local/bin/php -q
+<?php
+    $exe = array_shift($argv);
+
+    while ($arg = array_shift($argv)) {
+        $parts = preg_split("/\./", $arg, 2);
+        $theme = $parts[0];
+
+        $results = `wkhtmltoimage --crop-h 1024 --crop-w 1280 -f png https://cdr2.com/cv/generated/{$theme}.html - | pngtopnm | pnmscale -xysize 250 250 | pnmtopng > {$theme}_thumb.png`;
+    }
+?>
