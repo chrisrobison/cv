@@ -1,8 +1,8 @@
 {
     "basics": {
         "name": "Christopher Robison",
-        "label": "Seasoned Software Innovator: Full Stack Expertise Meets Effective Engineering Leadership",
-        "summary": "Getting the job done from Apache to z-index.",
+        "label": "Full Stack Expertise Meets Effective Engineering Leadership",
+        "summary": "tl;dr: I architect, design, code, manage, implement and deploy the technology that will take your company to the next level. I am an accomplished software engineer excelling in the rapid development of solutions to manage complex technical environments for growing companies, ranging from startups to billion dollar industry leaders. With over 20 years experience in the industry, I can build, develop and lead high-performance technical teams and effectively manage people and resources in-person and remotely across multiple geographic locations. My extensive experience allows me to leverage my business acumen and technical expertise to translate a company's technology needs into innovative solutions and actionable plans. I am a programmer at heart so I am very hands-on, however, I also know how to manage and delegate. I am just as comfortable managing people and engineering resources as I am hacking away at code.  ",
         "location": {
             "city": "San Francisco",
             "region": "CA"
@@ -98,7 +98,7 @@
             "Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages",
             "HUD Calculator - calculates potential reverse mortgage values",
             "Tzero Technology - Custom content management system",
-            "Metrika - Custom content management system",
+            "Metrika - Custom content management system"
         ],
         "startDate": "2006-04",
         "endDate": "2007-09",
