@@ -12,7 +12,7 @@
             font-family: "Lexend", "Helvetica Neue", "Helvetica", sans-serif;
             margin: 0;
             padding: 0;
-            font-size: 12px;
+            font-size: 14px;
             display: flex;
             flex-direction: row;
             height: 100vh;
@@ -26,13 +26,12 @@
             height: 0vh;
         }
         nav {
-            width: 28vw;
             height: 100vh;
             overflow-y: scroll;
         }
         main {
             display: flex;
-            width: 72vw;
+            width: 74vw;
             height: 100vh;
             overflow-y: scroll;
         }
@@ -54,13 +53,17 @@ li {
   margin-left: 0.5em;
 margin-bottom: 0.5em;
   padding-left: 0px;
-    width:12vw;
+    width:11rem;
     display: flex;
     flex-direction: column;    
 text-align: center;
 position:relative;
+transition: all 150ms linear;
+transform: scale(1);
 }
-
+li:has(.thumb:hover) {
+    transform: scale(1.1);    
+}
 h2 {
   /* margin-left: -1em; */
   margin: 0;
@@ -74,6 +77,7 @@ padding-inline-start: 0px;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+justify-content: space-around;
 }
 
 .thumb {
@@ -81,15 +85,15 @@ flex-wrap: wrap;
     border: 1px solid #0006;
     padding: 3px;
     margin:3px;
-    transition: transform 100ms linear;
-    transform-origin: bottom center;
+    transition: transform 100ms linear 50ms;
+    transform-origin: center center;
     transform: scale(1);
     background: #fff;
     box-shadow: 3px 3px 3px #0006;
 }
 .thumb:hover {
     transform: scale(1.1);
-    transform-origin: bottom center;
+    transform-origin: center center;
 }
 h1 {
     text-align:center;
@@ -144,7 +148,7 @@ a.dot::before {
     height: 1em;
     width: 18px;
     transform: scale(1);
-    transition: transform 100ms;
+    transition: transform 200ms;
 }
 a.dot:hover::before, a.star:hover::before, a.halfstar:hover::before {
     content: "⭐";
@@ -154,8 +158,8 @@ a.dot:hover::before, a.star:hover::before, a.halfstar:hover::before {
     width: 18px;
     top:2px;
     margin-left:-0.5em;
-    transform: scale(1.1);
-    transition: transform 100ms;
+    transform: scale(1.5);
+    transition: transform 200ms;
 }
 .rating {
     position:relative;
@@ -255,10 +259,6 @@ $ignore = array("cora", "el-santo", "flat-fr", "kards", "modern", "one", "onepag
 ?>
     </ul>
 </nav>
-    <main>
-    <iframe src="<?php print $mostpopular.'.html'; ?>" onload="resizeIframe(this)" id="viewer"></iframe>
-    </main>
-
     <script>
         function resizeIframe(iframe) {
             if (iframe.src.match(/\.pdf/i)) {
@@ -280,11 +280,9 @@ $ignore = array("cora", "el-santo", "flat-fr", "kards", "modern", "one", "onepag
                     app.doSort('popular');
                 },
                 handleClick: function(evt, obj) {
-                    console.dir(evt);
-                    let tgt = ttgt = evt.target;
-                    while (!ttgt.classList.contains('theme')) {
-                        ttgt = ttgt.parentElement;
-                    } 
+                    if (evt.target.tagname = "UL") return;
+                    let tgt = evt.target.closest(".theme");
+
                     let theme = ttgt.id.replace(/^theme\-/, '');
 
                     app.selectTheme(theme);
@@ -294,16 +292,16 @@ $ignore = array("cora", "el-santo", "flat-fr", "kards", "modern", "one", "onepag
 
                     if ((tgt.classList.contains("framelink")) || (tgt.parentNode.classList.contains("framelink"))) {
                         if (tgt.nodeName === "A") {
-                            $("#viewer").src = tgt.href;
+                            parent.app.loadTab(tgt.href, tgt.innerText, tgt.href, true, evt);
                             return false;
                         } else if (tgt.parentNode.nodeName === "A") {
-                            $("#viewer").src = tgt.parentNode.href;
+                            parent.app.loadTab(tgt.parentNode.href, tgt.innerText, tgt.href, true, evt);
                             return false;
                         }
                     } 
                     
                     // if we get here, load html version as last resort
-                    $("#viewer").src = theme + '.html';
+                    parent.app.loadTab(`/cv/generated/${theme}.html`, theme, theme, true, evt);
 
                     return false;
                 },

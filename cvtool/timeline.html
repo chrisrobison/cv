@@ -128,7 +128,7 @@
                     resume: {}
                 },
                 loadResume: function() {
-                    fetch("resume.json").then(response => response.json()).then(data => {
+                    fetch("../resume.json").then(response => response.json()).then(data => {
                         app.state.resume = data;
                         console.log("resume");
                         console.dir(data);
