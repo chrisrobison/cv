@@ -1,0 +1,653 @@
+<!doctype html>
+<html>
+  <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+  <title>Christopher Robison</title>
+
+  <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/octicons/3.5.0/octicons.min.css" rel="stylesheet">
+
+  <style type="text/css">
+  
+html {
+  font-size: 18px;
+}
+
+body {
+  background: #fff;
+  font-family: "Georgia", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+  margin: 0 0 50px;
+  color: #444;
+  line-height: 1.7;
+}
+
+a {
+  color: #434344;
+}
+
+a:focus,
+a:hover {
+  color: #42b983;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0
+}
+
+section {
+  margin-top: 1.6rem;
+}
+
+li {
+  line-height: 1.8;
+  list-style: none;
+}
+
+li:before {
+  content: "\f052";
+  float: left;
+  font: 13px Octicons;
+  margin-top: 6px;
+  margin-left: -20px;
+  opacity: .1;
+  position: absolute;
+}
+
+h4 span:first-child {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 750px;
+  padding: 0 30px;
+}
+
+.col-sm-6 {
+  margin-bottom: 10px;
+}
+
+.col-sm-12 h4 {
+  margin-top: 12px;
+}
+
+.col-sm-12 + .col-sm-12 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+header {
+  padding: 40px 0 20px 0;
+  margin-bottom: 30px;
+}
+
+
+header h2 {
+  color: #787878;
+  font-size: 1.2rem;
+}
+
+main h3 {
+  font-size: 1.3rem;
+  text-align: right;
+  padding-right: 40px;
+}
+
+#profiles .network {
+  text-transform: capitalize;
+}
+
+#work .position,
+#volunteer .position {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#education .area {
+  font-weight: bold;
+}
+
+#education .area:before {
+  content: "\f0d7";
+  font: 16px Octicons;
+  margin-right: 6px;
+}
+
+#education .studyType {
+  margin-left: 25px;
+}
+
+#awards .summary,
+#publications .summary {
+  margin-top: 8px;
+}
+
+#publications .website a:before {
+  content: attr(href);
+}
+
+.strike-through {
+  border-top: 1px solid #f4f6f6;
+  height: 20px;
+  margin-top: 12px;
+  margin-bottom: -2px;
+  position: relative;
+}
+
+.strike-through span,
+.strike-through a {
+  background: #fff;
+  position: absolute;
+}
+
+.strike-through span:first-child {
+  padding-right: 20px;
+  margin-top: -12px;
+}
+
+.strike-through span + span {
+  font-size: 0.77rem;
+  margin-top: -10px;
+  padding-left: 20px;
+  right: 0;
+}
+
+
+@media screen and (max-width:768px) {
+  .col-sm-6:last-child {
+    margin-bottom: 0px;
+  }
+
+  main h3 {
+    margin-bottom: 20px;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  #publications .website a:before {
+    content: "View publication";
+  }
+
+}
+
+@media screen and (max-width:480px) {
+  html {
+    font-size: 75%;
+  }
+
+  .date {
+    margin-bottom: 5px;
+  }
+
+  .strike-through span:first-child {
+    margin-bottom: 7px;
+  }
+
+  .strike-through span {
+    display: block;
+  }
+
+  header {
+    margin-bottom: 10px;
+    padding: 40px 0 20px 0;
+  }
+
+}
+
+  </style>
+
+  <style media="print">
+  .col-sm-3,
+.col-sm-6,
+.col-sm-9 {
+  float: left;
+}
+
+.col-sm-3 {
+  width: 25%;
+}
+
+.col-sm-6 {
+  width: 50%;
+}
+
+.col-sm-9 {
+  width: 75%;
+}
+
+a[href]:after {
+  content: "";
+}
+
+  </style>
+
+  </head>
+  <body>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-sm-push-3">
+            <h1>Christopher Robison</h1>
+            <h2>Turning ideas into reality.</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="contact" class="row">
+      <aside class="col-sm-3">
+        <h3>Contact</h3>
+      </aside>
+      <div class="col-sm-9">
+        <div class="row">
+        <div class="col-sm-6">
+          <strong>Email</strong>
+          <div class="email">
+            <a href="mailto://cdr@cdr2.com">cdr@cdr2.com</a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <strong>Phone</strong>
+          <div class="phone">(415) 810-6991</div>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-sm-6">
+          <strong>Website</strong>
+          <div class="website">
+            <a href="https://www.cdr2.com/">https://www.cdr2.com/</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="row">
+      <aside class="col-sm-3">
+        <h3>About</h3>
+      </aside>
+      <div class="col-sm-9">
+        <p>Whether it’s leading a team of programmers, rapidly developing a new app, or aligning software development with strategic business objectives, I bring a blend of technical know-how, leadership skills, and business acumen to every project. I am looking forward to collaborating with you to turn your innovative ideas into reality. I have extensive experience in software engineering and leading groups of unruly programmers. Skilled in a wide range of programming languages, including JavaScript, C, C++, Java, Python, Swift, Kotlin and others. I have a proven track record of successfully leading teams, delivering finished product and driving strategic planning, process improvement, and product development initiatives. Recognized for implementing innovative solutions and modernizing systems to support business growth, as evidenced by transforming D. Harris Tours&#x27; operations, resulting in a fleet expansion from 2 to 12 buses. Strong expertise in microservices architecture, Agile methodologies, and cloud services. Committed to continuous learning and staying updated with emerging technologies. A collaborative and proactive problem-solver with a passion for delivering exceptional results. I could go on but I&#x27;m afraid I&#x27;ve said too much already &amp;#128513;</p>
+      </div>
+    </section>
+
+    <section id="profiles" class="row">
+      <aside class="col-sm-3">
+        <h3>Profiles</h3>
+      </aside>
+      <div class="col-sm-9">
+        <div class="row">
+          <div class="col-sm-6">
+            <strong class="network">
+              linkedin
+            </strong>
+            <div class="username">
+              <div class="url">
+                <a href="https://www.linkedin.com/in/crobison">crobison</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <strong class="network">
+              twitter
+            </strong>
+            <div class="username">
+              <div class="url">
+                <a href="https://twitter.com/thechrisrobison">thechrisrobison</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <strong class="network">
+              github
+            </strong>
+            <div class="username">
+              <div class="url">
+                <a href="https://github.com/chrisrobison">chrisrobison</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="row">
+      <aside class="col-sm-3">
+        <h3>Work</h3>
+      </aside>
+      <div class="col-sm-9">
+        <div class="row">
+        <div class="col-sm-12 work">
+          <h4 class="strike-through">
+            <span>D. Harris Tours, Inc.</span>
+            <span class="date">
+              2020-02 — 2024-03
+            </span>
+          </h4>
+          <div class="website pull-right">
+            <a href="https://dharristours.com/">https://dharristours.com/</a>
+          </div>
+          <div class="position">
+            CTO
+          </div>
+          <div class="summary">
+            <p>&lt;ul&gt;&lt;li&gt;Spearheaded technological transformation and business processes that allowed D Harris to grow from a fleet of two buses to 12 buses.&lt;/li&gt;&lt;li&gt;Updated and enhanced the company&#x27;s systems with modern tools to better manage the growing business, including real-time bus data, automated maintenance notifications, and automated trip confirmations and notifications via email and SMS.&lt;/li&gt;&lt;li&gt;Implemented route optimization algorithm to identify opportunities for one bus to handle multiple trips, increasing their daily revenue by 30%.&lt;/li&gt;&lt;li&gt;Implemented automated notifications for trips, bus maintenance, and billing and invoicing.&lt;/li&gt;&lt;/ul&gt;</p>
+          </div>
+          <h4>Highlights</h4>
+          <ul class="highlights">
+            <li class="bullet">Automated notifications for trips, bus maintenance</li>
+            <li class="bullet">Automated billing and invoicing</li>
+            <li class="bullet">Migrated driver logs to digital format</li>
+            <li class="bullet">Increased daily revenue with better trip optimization</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 work">
+          <h4 class="strike-through">
+            <span>Conversant, Inc.</span>
+            <span class="date">
+              2010-07 — 2020-02
+            </span>
+          </h4>
+          <div class="website pull-right">
+            <a href="https://conversantmedia.com">https://conversantmedia.com</a>
+          </div>
+          <div class="position">
+            Manager, Software Engineering
+          </div>
+          <div class="summary">
+            <p>Designed, developed, and maintained the infrastructure and code-base that served many millions of mobile and rich media ads each day.
+Led the Rich Media effort and helped modernize the ad serving infrastructure and metric collection.
+Designed and implemented a RESTful API for serving rich media ads and built out scalable backend services to handle integration with existing servers and infrastructure.</p>
+          </div>
+          <h4>Highlights</h4>
+          <ul class="highlights">
+            <li class="bullet">Contributed to IAB MRAID 2.0 standard</li>
+            <li class="bullet">Implemented MRAID SDK&#x27;s on iOS and Android platforms</li>
+            <li class="bullet">Developed and deployed mobile ad solutions for multiple platforms.</li>
+            <li class="bullet">Designed and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure.</li>
+            <li class="bullet">Architected and deployed RESTful API for ad serving, tracking metrics and reporting.</li>
+            <li class="bullet">Developed client-side Javascript &#x27;ad controller&#x27; for mobile and web</li>
+            <li class="bullet">Developed flexible metrics tracking with non-blocking endpoints</li>
+            <li class="bullet">10 years</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 work">
+          <h4 class="strike-through">
+            <span>Mindjet</span>
+            <span class="date">
+              2007-09 — 2010-07
+            </span>
+          </h4>
+          <div class="website pull-right">
+            <a href="https://www.mindjet.com">https://www.mindjet.com</a>
+          </div>
+          <div class="position">
+            Web Architect
+          </div>
+          <div class="summary">
+            <p>Led Mindjet&#x27;s initial Software as a Service (SaaS) product, Mindjet Catalyst. Transformed Mindjet&#x27;s business model with the new service nearly doubling monthly revenue.</p>
+          </div>
+          <h4>Highlights</h4>
+          <ul class="highlights">
+            <li class="bullet">Ported PHP website to ASP.NET</li>
+            <li class="bullet">Ported Catalyst Flash client to standards based HTML5/canvas</li>
+            <li class="bullet">Architected and led the team that implemented Mindjet Catalyst</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 work">
+          <h4 class="strike-through">
+            <span>Simple Software, Inc.</span>
+            <span class="date">
+              2006-04 — 2007-09
+            </span>
+          </h4>
+          <div class="website pull-right">
+            <a href="http://simplesoftwaresf.com">http://simplesoftwaresf.com</a>
+          </div>
+          <div class="position">
+            CEO / Founder
+          </div>
+          <div class="summary">
+            <p>Mr. Robison provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p>
+          </div>
+          <h4>Highlights</h4>
+          <ul class="highlights">
+            <li class="bullet">GC Homes - Contractor documents and blueprints online.</li>
+            <li class="bullet">Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</li>
+            <li class="bullet">HUD Calculator - calculates potential reverse mortgage values</li>
+            <li class="bullet">Tzero Technology - Custom content management system</li>
+            <li class="bullet">Metrika - Custom content management system</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 work">
+          <h4 class="strike-through">
+            <span>Genetic Savings &amp; Clone</span>
+            <span class="date">
+              2004-06 — 2006-04
+            </span>
+          </h4>
+          <div class="position">
+            VP Engineering
+          </div>
+          <div class="summary">
+            <p>Genetic Savings &amp; Clone was a genetic services company that offered commercial banking of genetic material as well as cloning services for cats. Responsible for architecting, developing and deploying Clonesoft, a bespoke business process automation software that ran every aspect of the company including employee and customer management, order tracking, tracking clone progress, and delivering the cloned pet to the customer.</p>
+          </div>
+          <h4>Highlights</h4>
+          <ul class="highlights">
+            <li class="bullet">Cloned a cat and delivered it to customer</li>
+            <li class="bullet">Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business and automated many processes.</li>
+            <li class="bullet">CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with specialized gene analysis hardware which included the Applied Biosystem Genetic Analyser 3130.</li>
+            <li class="bullet">Created and analized pet genotyping database, identifying 7 unique markers for traits such as Polycystic Kidney Disease (PKD), fur color, and polydactylism (6-toed cat).</li>
+            <li class="bullet">Integration with gene analysis and sequencing hardware.</li>
+            <li class="bullet">Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time&#x27;s bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 work">
+          <h4 class="strike-through">
+            <span>Inter@ctivate, Inc.</span>
+            <span class="date">
+              2001-12 — 2004-06
+            </span>
+          </h4>
+          <div class="position">
+            Technical Director
+          </div>
+          <div class="summary">
+            <p>As Technical Director for Interactivate, Inc., Mr. Robison&#x27;s responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. </p>
+          </div>
+          <h4>Highlights</h4>
+          <ul class="highlights">
+            <li class="bullet">Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</li>
+            <li class="bullet">Designed and implemented web-based network management, monitoring &amp; systems analysis tools</li>
+            <li class="bullet">Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
+            <li class="bullet">Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.</li>
+            <li class="bullet">Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.</li>
+            <li class="bullet">Installation &amp; administration of Solaris, FreeBSD &amp; Windows NT in a heterogeneous environment</li>
+            <li class="bullet">Design, implementation, migration and maintenance for Interactivate&#x27;s internal and external network infrastructure.</li>
+            <li class="bullet">Working with vendors, developers &amp; 3rd party integrators.</li>
+            <li class="bullet">Maintain and monitor over 50 hosted client web sites and dozens of web applications</li>
+            <li class="bullet">Identifying &amp; resolving network related problems</li>
+            <li class="bullet">Responsible for backup implementation and recovery strategy &amp; procedures</li>
+            <li class="bullet">Required to support high volume access &amp; availability characteristics as well as identifying &amp; resolving system hardware &amp; software problems</li>
+            <li class="bullet">Responsible for the full availability of DNS, SMTP, HTTP, POP &amp; IMAP servers</li>
+            <li class="bullet">Maintaining security for all Interactivate networks</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="education" class="row">
+      <aside class="col-sm-3">
+        <h3>Education</h3>
+      </aside>
+      <div class="col-sm-9">
+        <div class="row">
+        <div class="col-sm-12">
+          <h4 class="strike-through">
+            <span>City College of San Francisco</span>
+            <span class="date">
+              2009-01-01 — 2010-01-01
+            </span>
+          </h4>
+          <div class="area">
+            Japanese, Business
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <h4 class="strike-through">
+            <span>California State University-Chico</span>
+            <span class="date">
+              1988-01-01 — 1991-01-01
+            </span>
+          </h4>
+          <div class="area">
+            Computer Science
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <h4 class="strike-through">
+            <span>Butte Community College</span>
+            <span class="date">
+              1988-01-01 — 1990-01-01
+            </span>
+          </h4>
+          <div class="area">
+            Computer Science, General Education
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="skills" class="row">
+      <aside class="col-sm-3">
+        <h3>Skills</h3>
+      </aside>
+      <div class="col-sm-9">
+        <div class="row">
+        <div class="col-sm-6">
+          <div class="name">
+            <h4>Programming Languages</h4>
+          </div>
+          <ul class="keywords">
+            <li>Javascript [node.js]</li>
+            <li>Javascript [browser]</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Kotlin</li>
+            <li>Objective-C</li>
+            <li>Swift</li>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Perl</li>
+            <li>Go</li>
+            <li>C#</li>
+            <li>Bash</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <div class="name">
+            <h4>Leadership</h4>
+          </div>
+          <ul class="keywords">
+            <li>Strategic Planning</li>
+            <li>Team Building</li>
+            <li>Team Leadership</li>
+            <li>Procedure Development</li>
+            <li>Process Improvement</li>
+            <li>Product Development</li>
+            <li>Entrepreneurship</li>
+            <li>Budgeting / Financial Planning</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <div class="name">
+            <h4>Software Engineering</h4>
+          </div>
+          <ul class="keywords">
+            <li>Best Practices</li>
+            <li>Entrepreneurship</li>
+            <li>Software Development</li>
+            <li>Microservices Architecture</li>
+            <li>Scrum / Agile</li>
+            <li>Mobile Application Development</li>
+            <li>Cloud Services</li>
+            <li>Service Integration</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="languages" class="row">
+      <aside class="col-sm-3">
+        <h3>Languages</h3>
+      </aside>
+      <div class="col-sm-9">
+        <div class="row">
+        <div class="col-sm-6">
+          <div class="language">
+            <strong>English</strong>
+          </div>
+          <div class="fluency">
+            Native or bilingual
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests" class="row">
+      <aside class="col-sm-3">
+        <h3>Interests</h3>
+      </aside>
+      <div class="col-sm-9">
+        <div class="row">
+        <div class="col-sm-6">
+          <div class="name">
+            <h4>Hobbies</h4>
+          </div>
+          <ul class="keywords">
+            <li>3D Printing</li>
+            <li>Raspberry Pi</li>
+            <li>Arduino</li>
+            <li>Laser engraving</li>
+            <li>Electronics</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <div class="name">
+            <h4>Recreation</h4>
+          </div>
+          <ul class="keywords">
+            <li>Golf</li>
+            <li>Recreational Programming</li>
+            <li>Karaoke</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  </body>
+</html>

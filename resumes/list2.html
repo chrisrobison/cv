@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Lexend", "Helvetica Neue", "Helvetica", sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        header {
+            background-color: #999;
+            color: #eee;
+            height: 0vh;
+        }
+        nav {
+            height: 100vh;
+            overflow-y: scroll;
+        }
+        main {
+            display: flex;
+            width: 74vw;
+            height: 100vh;
+            overflow-y: scroll;
+        }
+        main > ul {
+            width: 25vw;
+        }
+        main > iframe {
+            width: 75vw;
+        }
+        footer {
+            background-color: #666;
+            color: #eee;
+            height: 0vh;
+        }
+li {
+    box-sizing: border-box;
+  list-style: none;
+  border: 1px solid #0006;
+  margin-left: 0.5em;
+margin-bottom: 0.5em;
+  padding-left: 0px;
+    width:11rem;
+    display: flex;
+    flex-direction: column;    
+text-align: center;
+position:relative;
+transition: all 150ms linear;
+transform: scale(1);
+}
+li:has(.thumb:hover) {
+    transform: scale(1.1);    
+}
+h2 {
+  /* margin-left: -1em; */
+  margin: 0;
+  display: inline-block;
+    background: #006699;
+    color:#fff;
+}
+
+ul {
+padding-inline-start: 0px; 
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.thumb {
+    box-shadow: 3px 3px 3px #0006;
+    border: 1px solid #0006;
+    padding: 3px;
+    margin:3px;
+    transition: transform 100ms linear 50ms;
+    transform-origin: center center;
+    transform: scale(1);
+    background: #fff;
+    box-shadow: 3px 3px 3px #0006;
+}
+.thumb:hover {
+    transform: scale(1.1);
+    transform-origin: center center;
+}
+h1 {
+    text-align:center;
+    background: #333;
+color:#fff;
+text-transform:uppercase;
+margin:0px;
+padding: 0.5em;
+}
+
+a.rating {
+    text-decoration:none;
+    color:#666;
+    display: inline-block;
+    width: 18px;
+    height: 2em;
+    text-align: left;
+}
+.star {
+}
+a.star::before {
+    display: inline-block;
+    position: absolute;
+    top: 2px; 
+    margin-left: -0.5em;
+    content: "⭐";
+    height: 2em;
+    width: 18px;
+    transform: scale(1);
+    transition: transform 200ms;
+    filter: drop-shadow(1px 1px 0px #0008);
+
+}
+a.halfstar::before {
+    display: inline-block;
+    position: absolute;
+    top: 2px; 
+    margin-left: -0.5em;
+    content: "⭐";
+    height: 2em;
+    width: 8px;
+    transform: scale(1);
+    transition: transform 200ms;
+    filter: drop-shadow(1px 1px 0px #0008);
+    overflow: hidden;
+}
+a.dot::before {
+    display: inline-block;
+    position: absolute;
+    top: 2px; 
+    content: "⚬";
+    height: 1em;
+    width: 18px;
+    transform: scale(1);
+    transition: transform 200ms;
+}
+a.dot:hover::before, a.star:hover::before, a.halfstar:hover::before {
+    content: "⭐";
+    display: inline-block;
+    position:absolute;
+    height: 1em;
+    width: 18px;
+    top:2px;
+    margin-left:-0.5em;
+    transform: scale(1.5);
+    transition: transform 200ms;
+}
+.rating {
+    position:relative;
+    background:#ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rating_votes {
+    font-family: "Lexend","HelveticaNeue",sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+
+}
+.rating_avg {
+    padding-right: 0.5em;
+    font-family: "Lexend","HelveticaNeue",sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+#toolbar {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+.selected {
+    background-color: #ff06;
+}
+@media print {
+    nav { display: none; }
+    main { width: 100vw; }
+}
+    </style>
+</head>
+
+<body>
+<nav>
+<h1>Resume Themes</h1>
+<div id='toolbar'>
+    <label for='sort'>Sort</label> 
+    <select id='sort' onchange="app.doSort(this.options[this.selectedIndex].value)">
+        <option>Alphabetically</option>
+        <option value='popular' SELECTED>Popularity</option>
+        <option value='none'>None</option>
+    </select>
+</div>
+<ul id='themes' onclick="return app.handleClick(event, this)">
+<li id='theme-ace' data-theme='ace' data-rating='3.3' data-votes='11' class='theme'><h2>Ace</h2><span><a href="ace.html" class='framelink'><img src="ace_thumb.png" width="100" height="100" class='thumb'></a><br><a href="ace.html" class='framelink'>HTML</a>  | <a class='framelink' href="ace.pdf">PDF</a> | <a class="framelink" href="ace.docx">DOCX</a></span><div class='rating' data-rating='3.3' data-theme='ace' id='rating_ace'> <a href='#' id='rating-ace-1' class='star rating' data-theme="ace" data-rating="1"></a>
+<a href='#' id='rating-ace-2' class='star rating' data-theme="ace" data-rating="2"></a>
+<a href='#' id='rating-ace-3' class='star rating' data-theme="ace" data-rating="3"></a>
+<a href='#' id='rating-ace-4' class='halfstar rating' data-theme="ace" data-rating="4"></a>
+<a href='#' id='rating-ace-5' class='dot rating' data-theme="ace" data-rating="5"></a>
+<span id='rating_avg_ace' class='rating_avg'>3.3</span><span class='rating_votes'>(<span id='rating_votes_ace'>11</span>)</span></div></li>
+<li id='theme-caffeine' data-theme='caffeine' data-rating='2.7' data-votes='11' class='theme'><h2>Caffeine</h2><span><a href="caffeine.html" class='framelink'><img src="caffeine_thumb.png" width="100" height="100" class='thumb'></a><br><a href="caffeine.html" class='framelink'>HTML</a>  | <a class='framelink' href="caffeine.pdf">PDF</a> | <a class="framelink" href="caffeine.docx">DOCX</a></span><div class='rating' data-rating='2.7' data-theme='caffeine' id='rating_caffeine'> <a href='#' id='rating-caffeine-1' class='star rating' data-theme="caffeine" data-rating="1"></a>
+<a href='#' id='rating-caffeine-2' class='star rating' data-theme="caffeine" data-rating="2"></a>
+<a href='#' id='rating-caffeine-3' class='halfstar rating' data-theme="caffeine" data-rating="3"></a>
+<a href='#' id='rating-caffeine-4' class='dot rating' data-theme="caffeine" data-rating="4"></a>
+<a href='#' id='rating-caffeine-5' class='dot rating' data-theme="caffeine" data-rating="5"></a>
+<span id='rating_avg_caffeine' class='rating_avg'>2.7</span><span class='rating_votes'>(<span id='rating_votes_caffeine'>11</span>)</span></div></li>
+<li id='theme-class' data-theme='class' data-rating='3.7' data-votes='9' class='theme'><h2>Class</h2><span><a href="class.html" class='framelink'><img src="class_thumb.png" width="100" height="100" class='thumb'></a><br><a href="class.html" class='framelink'>HTML</a>  | <a class='framelink' href="class.pdf">PDF</a> | <a class="framelink" href="class.docx">DOCX</a></span><div class='rating' data-rating='3.7' data-theme='class' id='rating_class'> <a href='#' id='rating-class-1' class='star rating' data-theme="class" data-rating="1"></a>
+<a href='#' id='rating-class-2' class='star rating' data-theme="class" data-rating="2"></a>
+<a href='#' id='rating-class-3' class='star rating' data-theme="class" data-rating="3"></a>
+<a href='#' id='rating-class-4' class='halfstar rating' data-theme="class" data-rating="4"></a>
+<a href='#' id='rating-class-5' class='dot rating' data-theme="class" data-rating="5"></a>
+<span id='rating_avg_class' class='rating_avg'>3.7</span><span class='rating_votes'>(<span id='rating_votes_class'>9</span>)</span></div></li>
+<li id='theme-classy' data-theme='classy' data-rating='3.5' data-votes='10' class='theme'><h2>Classy</h2><span><a href="classy.html" class='framelink'><img src="classy_thumb.png" width="100" height="100" class='thumb'></a><br><a href="classy.html" class='framelink'>HTML</a>  | <a class='framelink' href="classy.pdf">PDF</a> | <a class="framelink" href="classy.docx">DOCX</a></span><div class='rating' data-rating='3.5' data-theme='classy' id='rating_classy'> <a href='#' id='rating-classy-1' class='star rating' data-theme="classy" data-rating="1"></a>
+<a href='#' id='rating-classy-2' class='star rating' data-theme="classy" data-rating="2"></a>
+<a href='#' id='rating-classy-3' class='star rating' data-theme="classy" data-rating="3"></a>
+<a href='#' id='rating-classy-4' class='halfstar rating' data-theme="classy" data-rating="4"></a>
+<a href='#' id='rating-classy-5' class='dot rating' data-theme="classy" data-rating="5"></a>
+<span id='rating_avg_classy' class='rating_avg'>3.5</span><span class='rating_votes'>(<span id='rating_votes_classy'>10</span>)</span></div></li>
+<li id='theme-compact' data-theme='compact' data-rating='2.3' data-votes='11' class='theme'><h2>Compact</h2><span><a href="compact.html" class='framelink'><img src="compact_thumb.png" width="100" height="100" class='thumb'></a><br><a href="compact.html" class='framelink'>HTML</a>  | <a class='framelink' href="compact.pdf">PDF</a> | <a class="framelink" href="compact.docx">DOCX</a></span><div class='rating' data-rating='2.3' data-theme='compact' id='rating_compact'> <a href='#' id='rating-compact-1' class='star rating' data-theme="compact" data-rating="1"></a>
+<a href='#' id='rating-compact-2' class='star rating' data-theme="compact" data-rating="2"></a>
+<a href='#' id='rating-compact-3' class='halfstar rating' data-theme="compact" data-rating="3"></a>
+<a href='#' id='rating-compact-4' class='dot rating' data-theme="compact" data-rating="4"></a>
+<a href='#' id='rating-compact-5' class='dot rating' data-theme="compact" data-rating="5"></a>
+<span id='rating_avg_compact' class='rating_avg'>2.3</span><span class='rating_votes'>(<span id='rating_votes_compact'>11</span>)</span></div></li>
+<li id='theme-contempo' data-theme='contempo' data-rating='4.2' data-votes='9' class='theme'><h2>Contempo</h2><span><a href="contempo.html" class='framelink'><img src="contempo_thumb.png" width="100" height="100" class='thumb'></a><br><a href="contempo.html" class='framelink'>HTML</a>  | <a class='framelink' href="contempo.pdf">PDF</a> | <a class="framelink" href="contempo.docx">DOCX</a></span><div class='rating' data-rating='4.2' data-theme='contempo' id='rating_contempo'> <a href='#' id='rating-contempo-1' class='star rating' data-theme="contempo" data-rating="1"></a>
+<a href='#' id='rating-contempo-2' class='star rating' data-theme="contempo" data-rating="2"></a>
+<a href='#' id='rating-contempo-3' class='star rating' data-theme="contempo" data-rating="3"></a>
+<a href='#' id='rating-contempo-4' class='star rating' data-theme="contempo" data-rating="4"></a>
+<a href='#' id='rating-contempo-5' class='halfstar rating' data-theme="contempo" data-rating="5"></a>
+<span id='rating_avg_contempo' class='rating_avg'>4.2</span><span class='rating_votes'>(<span id='rating_votes_contempo'>9</span>)</span></div></li>
+<li id='theme-dave' data-theme='dave' data-rating='3.1' data-votes='8' class='theme'><h2>Dave</h2><span><a href="dave.html" class='framelink'><img src="dave_thumb.png" width="100" height="100" class='thumb'></a><br><a href="dave.html" class='framelink'>HTML</a>  | <a class='framelink' href="dave.pdf">PDF</a> | <a class="framelink" href="dave.docx">DOCX</a></span><div class='rating' data-rating='3.1' data-theme='dave' id='rating_dave'> <a href='#' id='rating-dave-1' class='star rating' data-theme="dave" data-rating="1"></a>
+<a href='#' id='rating-dave-2' class='star rating' data-theme="dave" data-rating="2"></a>
+<a href='#' id='rating-dave-3' class='star rating' data-theme="dave" data-rating="3"></a>
+<a href='#' id='rating-dave-4' class='halfstar rating' data-theme="dave" data-rating="4"></a>
+<a href='#' id='rating-dave-5' class='dot rating' data-theme="dave" data-rating="5"></a>
+<span id='rating_avg_dave' class='rating_avg'>3.1</span><span class='rating_votes'>(<span id='rating_votes_dave'>8</span>)</span></div></li>
+<li id='theme-dinesh' data-theme='dinesh' data-rating='3.2' data-votes='9' class='theme'><h2>Dinesh</h2><span><a href="dinesh.html" class='framelink'><img src="dinesh_thumb.png" width="100" height="100" class='thumb'></a><br><a href="dinesh.html" class='framelink'>HTML</a>  | <a class='framelink' href="dinesh.pdf">PDF</a> | <a class="framelink" href="dinesh.docx">DOCX</a></span><div class='rating' data-rating='3.2' data-theme='dinesh' id='rating_dinesh'> <a href='#' id='rating-dinesh-1' class='star rating' data-theme="dinesh" data-rating="1"></a>
+<a href='#' id='rating-dinesh-2' class='star rating' data-theme="dinesh" data-rating="2"></a>
+<a href='#' id='rating-dinesh-3' class='star rating' data-theme="dinesh" data-rating="3"></a>
+<a href='#' id='rating-dinesh-4' class='halfstar rating' data-theme="dinesh" data-rating="4"></a>
+<a href='#' id='rating-dinesh-5' class='dot rating' data-theme="dinesh" data-rating="5"></a>
+<span id='rating_avg_dinesh' class='rating_avg'>3.2</span><span class='rating_votes'>(<span id='rating_votes_dinesh'>9</span>)</span></div></li>
+<li id='theme-direct' data-theme='direct' data-rating='3.5' data-votes='11' class='theme'><h2>Direct</h2><span><a href="direct.html" class='framelink'><img src="direct_thumb.png" width="100" height="100" class='thumb'></a><br><a href="direct.html" class='framelink'>HTML</a>  | <a class='framelink' href="direct.pdf">PDF</a> | <a class="framelink" href="direct.docx">DOCX</a></span><div class='rating' data-rating='3.5' data-theme='direct' id='rating_direct'> <a href='#' id='rating-direct-1' class='star rating' data-theme="direct" data-rating="1"></a>
+<a href='#' id='rating-direct-2' class='star rating' data-theme="direct" data-rating="2"></a>
+<a href='#' id='rating-direct-3' class='star rating' data-theme="direct" data-rating="3"></a>
+<a href='#' id='rating-direct-4' class='halfstar rating' data-theme="direct" data-rating="4"></a>
+<a href='#' id='rating-direct-5' class='dot rating' data-theme="direct" data-rating="5"></a>
+<span id='rating_avg_direct' class='rating_avg'>3.5</span><span class='rating_votes'>(<span id='rating_votes_direct'>11</span>)</span></div></li>
+<li id='theme-elegant' data-theme='elegant' data-rating='3.8' data-votes='8' class='theme'><h2>Elegant</h2><span><a href="elegant.html" class='framelink'><img src="elegant_thumb.png" width="100" height="100" class='thumb'></a><br><a href="elegant.html" class='framelink'>HTML</a>  | <a class='framelink' href="elegant.pdf">PDF</a> | <a class="framelink" href="elegant.docx">DOCX</a></span><div class='rating' data-rating='3.8' data-theme='elegant' id='rating_elegant'> <a href='#' id='rating-elegant-1' class='star rating' data-theme="elegant" data-rating="1"></a>
+<a href='#' id='rating-elegant-2' class='star rating' data-theme="elegant" data-rating="2"></a>
+<a href='#' id='rating-elegant-3' class='star rating' data-theme="elegant" data-rating="3"></a>
+<a href='#' id='rating-elegant-4' class='halfstar rating' data-theme="elegant" data-rating="4"></a>
+<a href='#' id='rating-elegant-5' class='dot rating' data-theme="elegant" data-rating="5"></a>
+<span id='rating_avg_elegant' class='rating_avg'>3.8</span><span class='rating_votes'>(<span id='rating_votes_elegant'>8</span>)</span></div></li>
+<li id='theme-even' data-theme='even' data-rating='3.6' data-votes='10' class='theme'><h2>Even</h2><span><a href="even.html" class='framelink'><img src="even_thumb.png" width="100" height="100" class='thumb'></a><br><a href="even.html" class='framelink'>HTML</a>  | <a class='framelink' href="even.pdf">PDF</a> | <a class="framelink" href="even.docx">DOCX</a></span><div class='rating' data-rating='3.6' data-theme='even' id='rating_even'> <a href='#' id='rating-even-1' class='star rating' data-theme="even" data-rating="1"></a>
+<a href='#' id='rating-even-2' class='star rating' data-theme="even" data-rating="2"></a>
+<a href='#' id='rating-even-3' class='star rating' data-theme="even" data-rating="3"></a>
+<a href='#' id='rating-even-4' class='halfstar rating' data-theme="even" data-rating="4"></a>
+<a href='#' id='rating-even-5' class='dot rating' data-theme="even" data-rating="5"></a>
+<span id='rating_avg_even' class='rating_avg'>3.6</span><span class='rating_votes'>(<span id='rating_votes_even'>10</span>)</span></div></li>
+<li id='theme-flat' data-theme='flat' data-rating='4.0' data-votes='9' class='theme'><h2>Flat</h2><span><a href="flat.html" class='framelink'><img src="flat_thumb.png" width="100" height="100" class='thumb'></a><br><a href="flat.html" class='framelink'>HTML</a>  | <a class='framelink' href="flat.pdf">PDF</a> | <a class="framelink" href="flat.docx">DOCX</a></span><div class='rating' data-rating='4.0' data-theme='flat' id='rating_flat'> <a href='#' id='rating-flat-1' class='star rating' data-theme="flat" data-rating="1"></a>
+<a href='#' id='rating-flat-2' class='star rating' data-theme="flat" data-rating="2"></a>
+<a href='#' id='rating-flat-3' class='star rating' data-theme="flat" data-rating="3"></a>
+<a href='#' id='rating-flat-4' class='star rating' data-theme="flat" data-rating="4"></a>
+<a href='#' id='rating-flat-5' class='dot rating' data-theme="flat" data-rating="5"></a>
+<span id='rating_avg_flat' class='rating_avg'>4.0</span><span class='rating_votes'>(<span id='rating_votes_flat'>9</span>)</span></div></li>
+<li id='theme-fresh' data-theme='fresh' data-rating='4.2' data-votes='12' class='theme'><h2>Fresh</h2><span><a href="fresh.html" class='framelink'><img src="fresh_thumb.png" width="100" height="100" class='thumb'></a><br><a href="fresh.html" class='framelink'>HTML</a>  | <a class='framelink' href="fresh.pdf">PDF</a> | <a class="framelink" href="fresh.docx">DOCX</a></span><div class='rating' data-rating='4.2' data-theme='fresh' id='rating_fresh'> <a href='#' id='rating-fresh-1' class='star rating' data-theme="fresh" data-rating="1"></a>
+<a href='#' id='rating-fresh-2' class='star rating' data-theme="fresh" data-rating="2"></a>
+<a href='#' id='rating-fresh-3' class='star rating' data-theme="fresh" data-rating="3"></a>
+<a href='#' id='rating-fresh-4' class='star rating' data-theme="fresh" data-rating="4"></a>
+<a href='#' id='rating-fresh-5' class='halfstar rating' data-theme="fresh" data-rating="5"></a>
+<span id='rating_avg_fresh' class='rating_avg'>4.2</span><span class='rating_votes'>(<span id='rating_votes_fresh'>12</span>)</span></div></li>
+<li id='theme-full' data-theme='full' data-rating='3.6' data-votes='13' class='theme'><h2>Full</h2><span><a href="full.html" class='framelink'><img src="full_thumb.png" width="100" height="100" class='thumb'></a><br><a href="full.html" class='framelink'>HTML</a>  | <a class='framelink' href="full.pdf">PDF</a> | <a class="framelink" href="full.docx">DOCX</a></span><div class='rating' data-rating='3.6' data-theme='full' id='rating_full'> <a href='#' id='rating-full-1' class='star rating' data-theme="full" data-rating="1"></a>
+<a href='#' id='rating-full-2' class='star rating' data-theme="full" data-rating="2"></a>
+<a href='#' id='rating-full-3' class='star rating' data-theme="full" data-rating="3"></a>
+<a href='#' id='rating-full-4' class='halfstar rating' data-theme="full" data-rating="4"></a>
+<a href='#' id='rating-full-5' class='dot rating' data-theme="full" data-rating="5"></a>
+<span id='rating_avg_full' class='rating_avg'>3.6</span><span class='rating_votes'>(<span id='rating_votes_full'>13</span>)</span></div></li>
+<li id='theme-jacrys' data-theme='jacrys' data-rating='4.1' data-votes='8' class='theme'><h2>Jacrys</h2><span><a href="jacrys.html" class='framelink'><img src="jacrys_thumb.png" width="100" height="100" class='thumb'></a><br><a href="jacrys.html" class='framelink'>HTML</a>  | <a class='framelink' href="jacrys.pdf">PDF</a> | <a class="framelink" href="jacrys.docx">DOCX</a></span><div class='rating' data-rating='4.1' data-theme='jacrys' id='rating_jacrys'> <a href='#' id='rating-jacrys-1' class='star rating' data-theme="jacrys" data-rating="1"></a>
+<a href='#' id='rating-jacrys-2' class='star rating' data-theme="jacrys" data-rating="2"></a>
+<a href='#' id='rating-jacrys-3' class='star rating' data-theme="jacrys" data-rating="3"></a>
+<a href='#' id='rating-jacrys-4' class='star rating' data-theme="jacrys" data-rating="4"></a>
+<a href='#' id='rating-jacrys-5' class='halfstar rating' data-theme="jacrys" data-rating="5"></a>
+<span id='rating_avg_jacrys' class='rating_avg'>4.1</span><span class='rating_votes'>(<span id='rating_votes_jacrys'>8</span>)</span></div></li>
+<li id='theme-joeytall' data-theme='joeytall' data-rating='4.2' data-votes='8' class='theme'><h2>Joeytall</h2><span><a href="joeytall.html" class='framelink'><img src="joeytall_thumb.png" width="100" height="100" class='thumb'></a><br><a href="joeytall.html" class='framelink'>HTML</a>  | <a class='framelink' href="joeytall.pdf">PDF</a> | <a class="framelink" href="joeytall.docx">DOCX</a></span><div class='rating' data-rating='4.2' data-theme='joeytall' id='rating_joeytall'> <a href='#' id='rating-joeytall-1' class='star rating' data-theme="joeytall" data-rating="1"></a>
+<a href='#' id='rating-joeytall-2' class='star rating' data-theme="joeytall" data-rating="2"></a>
+<a href='#' id='rating-joeytall-3' class='star rating' data-theme="joeytall" data-rating="3"></a>
+<a href='#' id='rating-joeytall-4' class='star rating' data-theme="joeytall" data-rating="4"></a>
+<a href='#' id='rating-joeytall-5' class='halfstar rating' data-theme="joeytall" data-rating="5"></a>
+<span id='rating_avg_joeytall' class='rating_avg'>4.2</span><span class='rating_votes'>(<span id='rating_votes_joeytall'>8</span>)</span></div></li>
+<li id='theme-keloran' data-theme='keloran' data-rating='3.8' data-votes='12' class='theme'><h2>Keloran</h2><span><a href="keloran.html" class='framelink'><img src="keloran_thumb.png" width="100" height="100" class='thumb'></a><br><a href="keloran.html" class='framelink'>HTML</a>  | <a class='framelink' href="keloran.pdf">PDF</a> | <a class="framelink" href="keloran.docx">DOCX</a></span><div class='rating' data-rating='3.8' data-theme='keloran' id='rating_keloran'> <a href='#' id='rating-keloran-1' class='star rating' data-theme="keloran" data-rating="1"></a>
+<a href='#' id='rating-keloran-2' class='star rating' data-theme="keloran" data-rating="2"></a>
+<a href='#' id='rating-keloran-3' class='star rating' data-theme="keloran" data-rating="3"></a>
+<a href='#' id='rating-keloran-4' class='halfstar rating' data-theme="keloran" data-rating="4"></a>
+<a href='#' id='rating-keloran-5' class='dot rating' data-theme="keloran" data-rating="5"></a>
+<span id='rating_avg_keloran' class='rating_avg'>3.8</span><span class='rating_votes'>(<span id='rating_votes_keloran'>12</span>)</span></div></li>
+<li id='theme-kendall' data-theme='kendall' data-rating='2.7' data-votes='9' class='theme'><h2>Kendall</h2><span><a href="kendall.html" class='framelink'><img src="kendall_thumb.png" width="100" height="100" class='thumb'></a><br><a href="kendall.html" class='framelink'>HTML</a>  | <a class='framelink' href="kendall.pdf">PDF</a> | <a class="framelink" href="kendall.docx">DOCX</a></span><div class='rating' data-rating='2.7' data-theme='kendall' id='rating_kendall'> <a href='#' id='rating-kendall-1' class='star rating' data-theme="kendall" data-rating="1"></a>
+<a href='#' id='rating-kendall-2' class='star rating' data-theme="kendall" data-rating="2"></a>
+<a href='#' id='rating-kendall-3' class='halfstar rating' data-theme="kendall" data-rating="3"></a>
+<a href='#' id='rating-kendall-4' class='dot rating' data-theme="kendall" data-rating="4"></a>
+<a href='#' id='rating-kendall-5' class='dot rating' data-theme="kendall" data-rating="5"></a>
+<span id='rating_avg_kendall' class='rating_avg'>2.7</span><span class='rating_votes'>(<span id='rating_votes_kendall'>9</span>)</span></div></li>
+<li id='theme-macchiato' data-theme='macchiato' data-rating='4.2' data-votes='12' class='theme'><h2>Macchiato</h2><span><a href="macchiato.html" class='framelink'><img src="macchiato_thumb.png" width="100" height="100" class='thumb'></a><br><a href="macchiato.html" class='framelink'>HTML</a>  | <a class='framelink' href="macchiato.pdf">PDF</a> | <a class="framelink" href="macchiato.docx">DOCX</a></span><div class='rating' data-rating='4.2' data-theme='macchiato' id='rating_macchiato'> <a href='#' id='rating-macchiato-1' class='star rating' data-theme="macchiato" data-rating="1"></a>
+<a href='#' id='rating-macchiato-2' class='star rating' data-theme="macchiato" data-rating="2"></a>
+<a href='#' id='rating-macchiato-3' class='star rating' data-theme="macchiato" data-rating="3"></a>
+<a href='#' id='rating-macchiato-4' class='star rating' data-theme="macchiato" data-rating="4"></a>
+<a href='#' id='rating-macchiato-5' class='halfstar rating' data-theme="macchiato" data-rating="5"></a>
+<span id='rating_avg_macchiato' class='rating_avg'>4.2</span><span class='rating_votes'>(<span id='rating_votes_macchiato'>12</span>)</span></div></li>
+<li id='theme-mantra' data-theme='mantra' data-rating='2.4' data-votes='13' class='theme'><h2>Mantra</h2><span><a href="mantra.html" class='framelink'><img src="mantra_thumb.png" width="100" height="100" class='thumb'></a><br><a href="mantra.html" class='framelink'>HTML</a>  | <a class='framelink' href="mantra.pdf">PDF</a> | <a class="framelink" href="mantra.docx">DOCX</a></span><div class='rating' data-rating='2.4' data-theme='mantra' id='rating_mantra'> <a href='#' id='rating-mantra-1' class='star rating' data-theme="mantra" data-rating="1"></a>
+<a href='#' id='rating-mantra-2' class='star rating' data-theme="mantra" data-rating="2"></a>
+<a href='#' id='rating-mantra-3' class='halfstar rating' data-theme="mantra" data-rating="3"></a>
+<a href='#' id='rating-mantra-4' class='dot rating' data-theme="mantra" data-rating="4"></a>
+<a href='#' id='rating-mantra-5' class='dot rating' data-theme="mantra" data-rating="5"></a>
+<span id='rating_avg_mantra' class='rating_avg'>2.4</span><span class='rating_votes'>(<span id='rating_votes_mantra'>13</span>)</span></div></li>
+<li id='theme-moon' data-theme='moon' data-rating='0.0' data-votes='0' class='theme'><h2>Moon</h2><span><a href="moon.html" class='framelink'><img src="moon_thumb.png" width="100" height="100" class='thumb'></a><br><a href="moon.html" class='framelink'>HTML</a>  | <a class='framelink' href="moon.pdf">PDF</a> | <a class="framelink" href="moon.docx">DOCX</a></span><div class='rating' data-rating='0.0' data-theme='moon' id='rating_moon'> <a href='#' id='rating-moon-1' class='dot rating' data-theme="moon" data-rating="1"></a>
+<a href='#' id='rating-moon-2' class='dot rating' data-theme="moon" data-rating="2"></a>
+<a href='#' id='rating-moon-3' class='dot rating' data-theme="moon" data-rating="3"></a>
+<a href='#' id='rating-moon-4' class='dot rating' data-theme="moon" data-rating="4"></a>
+<a href='#' id='rating-moon-5' class='dot rating' data-theme="moon" data-rating="5"></a>
+<span id='rating_avg_moon' class='rating_avg'>0.0</span><span class='rating_votes'>(<span id='rating_votes_moon'>0</span>)</span></div></li>
+<li id='theme-onepage-efficient' data-theme='onepage-efficient' data-rating='3.0' data-votes='9' class='theme'><h2>Onepage-efficient</h2><span><a href="onepage-efficient.html" class='framelink'><img src="onepage-efficient_thumb.png" width="100" height="100" class='thumb'></a><br><a href="onepage-efficient.html" class='framelink'>HTML</a>  | <a class='framelink' href="onepage-efficient.pdf">PDF</a> | <a class="framelink" href="onepage-efficient.docx">DOCX</a></span><div class='rating' data-rating='3.0' data-theme='onepage-efficient' id='rating_onepage-efficient'> <a href='#' id='rating-onepage-efficient-1' class='star rating' data-theme="onepage-efficient" data-rating="1"></a>
+<a href='#' id='rating-onepage-efficient-2' class='star rating' data-theme="onepage-efficient" data-rating="2"></a>
+<a href='#' id='rating-onepage-efficient-3' class='star rating' data-theme="onepage-efficient" data-rating="3"></a>
+<a href='#' id='rating-onepage-efficient-4' class='dot rating' data-theme="onepage-efficient" data-rating="4"></a>
+<a href='#' id='rating-onepage-efficient-5' class='dot rating' data-theme="onepage-efficient" data-rating="5"></a>
+<span id='rating_avg_onepage-efficient' class='rating_avg'>3.0</span><span class='rating_votes'>(<span id='rating_votes_onepage-efficient'>9</span>)</span></div></li>
+<li id='theme-onepage-plus' data-theme='onepage-plus' data-rating='3.4' data-votes='12' class='theme'><h2>Onepage-plus</h2><span><a href="onepage-plus.html" class='framelink'><img src="onepage-plus_thumb.png" width="100" height="100" class='thumb'></a><br><a href="onepage-plus.html" class='framelink'>HTML</a>  | <a class='framelink' href="onepage-plus.pdf">PDF</a> | <a class="framelink" href="onepage-plus.docx">DOCX</a></span><div class='rating' data-rating='3.4' data-theme='onepage-plus' id='rating_onepage-plus'> <a href='#' id='rating-onepage-plus-1' class='star rating' data-theme="onepage-plus" data-rating="1"></a>
+<a href='#' id='rating-onepage-plus-2' class='star rating' data-theme="onepage-plus" data-rating="2"></a>
+<a href='#' id='rating-onepage-plus-3' class='star rating' data-theme="onepage-plus" data-rating="3"></a>
+<a href='#' id='rating-onepage-plus-4' class='halfstar rating' data-theme="onepage-plus" data-rating="4"></a>
+<a href='#' id='rating-onepage-plus-5' class='dot rating' data-theme="onepage-plus" data-rating="5"></a>
+<span id='rating_avg_onepage-plus' class='rating_avg'>3.4</span><span class='rating_votes'>(<span id='rating_votes_onepage-plus'>12</span>)</span></div></li>
+<li id='theme-onepage' data-theme='onepage' data-rating='2.5' data-votes='10' class='theme'><h2>Onepage</h2><span><a href="onepage.html" class='framelink'><img src="onepage_thumb.png" width="100" height="100" class='thumb'></a><br><a href="onepage.html" class='framelink'>HTML</a>  | <a class='framelink' href="onepage.pdf">PDF</a> | <a class="framelink" href="onepage.docx">DOCX</a></span><div class='rating' data-rating='2.5' data-theme='onepage' id='rating_onepage'> <a href='#' id='rating-onepage-1' class='star rating' data-theme="onepage" data-rating="1"></a>
+<a href='#' id='rating-onepage-2' class='star rating' data-theme="onepage" data-rating="2"></a>
+<a href='#' id='rating-onepage-3' class='halfstar rating' data-theme="onepage" data-rating="3"></a>
+<a href='#' id='rating-onepage-4' class='dot rating' data-theme="onepage" data-rating="4"></a>
+<a href='#' id='rating-onepage-5' class='dot rating' data-theme="onepage" data-rating="5"></a>
+<span id='rating_avg_onepage' class='rating_avg'>2.5</span><span class='rating_votes'>(<span id='rating_votes_onepage'>10</span>)</span></div></li>
+<li id='theme-paper-plus-plus' data-theme='paper-plus-plus' data-rating='3.4' data-votes='9' class='theme'><h2>Paper-plus-plus</h2><span><a href="paper-plus-plus.html" class='framelink'><img src="paper-plus-plus_thumb.png" width="100" height="100" class='thumb'></a><br><a href="paper-plus-plus.html" class='framelink'>HTML</a>  | <a class='framelink' href="paper-plus-plus.pdf">PDF</a> | <a class="framelink" href="paper-plus-plus.docx">DOCX</a></span><div class='rating' data-rating='3.4' data-theme='paper-plus-plus' id='rating_paper-plus-plus'> <a href='#' id='rating-paper-plus-plus-1' class='star rating' data-theme="paper-plus-plus" data-rating="1"></a>
+<a href='#' id='rating-paper-plus-plus-2' class='star rating' data-theme="paper-plus-plus" data-rating="2"></a>
+<a href='#' id='rating-paper-plus-plus-3' class='star rating' data-theme="paper-plus-plus" data-rating="3"></a>
+<a href='#' id='rating-paper-plus-plus-4' class='halfstar rating' data-theme="paper-plus-plus" data-rating="4"></a>
+<a href='#' id='rating-paper-plus-plus-5' class='dot rating' data-theme="paper-plus-plus" data-rating="5"></a>
+<span id='rating_avg_paper-plus-plus' class='rating_avg'>3.4</span><span class='rating_votes'>(<span id='rating_votes_paper-plus-plus'>9</span>)</span></div></li>
+<li id='theme-papirus' data-theme='papirus' data-rating='4.1' data-votes='11' class='theme'><h2>Papirus</h2><span><a href="papirus.html" class='framelink'><img src="papirus_thumb.png" width="100" height="100" class='thumb'></a><br><a href="papirus.html" class='framelink'>HTML</a>  | <a class='framelink' href="papirus.pdf">PDF</a> | <a class="framelink" href="papirus.docx">DOCX</a></span><div class='rating' data-rating='4.1' data-theme='papirus' id='rating_papirus'> <a href='#' id='rating-papirus-1' class='star rating' data-theme="papirus" data-rating="1"></a>
+<a href='#' id='rating-papirus-2' class='star rating' data-theme="papirus" data-rating="2"></a>
+<a href='#' id='rating-papirus-3' class='star rating' data-theme="papirus" data-rating="3"></a>
+<a href='#' id='rating-papirus-4' class='star rating' data-theme="papirus" data-rating="4"></a>
+<a href='#' id='rating-papirus-5' class='halfstar rating' data-theme="papirus" data-rating="5"></a>
+<span id='rating_avg_papirus' class='rating_avg'>4.1</span><span class='rating_votes'>(<span id='rating_votes_papirus'>11</span>)</span></div></li>
+<li id='theme-pumpkin' data-theme='pumpkin' data-rating='4.2' data-votes='9' class='theme'><h2>Pumpkin</h2><span><a href="pumpkin.html" class='framelink'><img src="pumpkin_thumb.png" width="100" height="100" class='thumb'></a><br><a href="pumpkin.html" class='framelink'>HTML</a>  | <a class='framelink' href="pumpkin.pdf">PDF</a> | <a class="framelink" href="pumpkin.docx">DOCX</a></span><div class='rating' data-rating='4.2' data-theme='pumpkin' id='rating_pumpkin'> <a href='#' id='rating-pumpkin-1' class='star rating' data-theme="pumpkin" data-rating="1"></a>
+<a href='#' id='rating-pumpkin-2' class='star rating' data-theme="pumpkin" data-rating="2"></a>
+<a href='#' id='rating-pumpkin-3' class='star rating' data-theme="pumpkin" data-rating="3"></a>
+<a href='#' id='rating-pumpkin-4' class='star rating' data-theme="pumpkin" data-rating="4"></a>
+<a href='#' id='rating-pumpkin-5' class='halfstar rating' data-theme="pumpkin" data-rating="5"></a>
+<span id='rating_avg_pumpkin' class='rating_avg'>4.2</span><span class='rating_votes'>(<span id='rating_votes_pumpkin'>9</span>)</span></div></li>
+<li id='theme-resu' data-theme='resu' data-rating='3.9' data-votes='7' class='theme'><h2>Resu</h2><span><a href="resu.html" class='framelink'><img src="resu_thumb.png" width="100" height="100" class='thumb'></a><br><a href="resu.html" class='framelink'>HTML</a>  | <a class='framelink' href="resu.pdf">PDF</a> | <a class="framelink" href="resu.docx">DOCX</a></span><div class='rating' data-rating='3.9' data-theme='resu' id='rating_resu'> <a href='#' id='rating-resu-1' class='star rating' data-theme="resu" data-rating="1"></a>
+<a href='#' id='rating-resu-2' class='star rating' data-theme="resu" data-rating="2"></a>
+<a href='#' id='rating-resu-3' class='star rating' data-theme="resu" data-rating="3"></a>
+<a href='#' id='rating-resu-4' class='halfstar rating' data-theme="resu" data-rating="4"></a>
+<a href='#' id='rating-resu-5' class='dot rating' data-theme="resu" data-rating="5"></a>
+<span id='rating_avg_resu' class='rating_avg'>3.9</span><span class='rating_votes'>(<span id='rating_votes_resu'>7</span>)</span></div></li>
+<li id='theme-rickosborne' data-theme='rickosborne' data-rating='2.5' data-votes='13' class='theme'><h2>Rickosborne</h2><span><a href="rickosborne.html" class='framelink'><img src="rickosborne_thumb.png" width="100" height="100" class='thumb'></a><br><a href="rickosborne.html" class='framelink'>HTML</a>  | <a class='framelink' href="rickosborne.pdf">PDF</a> | <a class="framelink" href="rickosborne.docx">DOCX</a></span><div class='rating' data-rating='2.5' data-theme='rickosborne' id='rating_rickosborne'> <a href='#' id='rating-rickosborne-1' class='star rating' data-theme="rickosborne" data-rating="1"></a>
+<a href='#' id='rating-rickosborne-2' class='star rating' data-theme="rickosborne" data-rating="2"></a>
+<a href='#' id='rating-rickosborne-3' class='halfstar rating' data-theme="rickosborne" data-rating="3"></a>
+<a href='#' id='rating-rickosborne-4' class='dot rating' data-theme="rickosborne" data-rating="4"></a>
+<a href='#' id='rating-rickosborne-5' class='dot rating' data-theme="rickosborne" data-rating="5"></a>
+<span id='rating_avg_rickosborne' class='rating_avg'>2.5</span><span class='rating_votes'>(<span id='rating_votes_rickosborne'>13</span>)</span></div></li>
+<li id='theme-riga' data-theme='riga' data-rating='3.2' data-votes='9' class='theme'><h2>Riga</h2><span><a href="riga.html" class='framelink'><img src="riga_thumb.png" width="100" height="100" class='thumb'></a><br><a href="riga.html" class='framelink'>HTML</a>  | <a class='framelink' href="riga.pdf">PDF</a> | <a class="framelink" href="riga.docx">DOCX</a></span><div class='rating' data-rating='3.2' data-theme='riga' id='rating_riga'> <a href='#' id='rating-riga-1' class='star rating' data-theme="riga" data-rating="1"></a>
+<a href='#' id='rating-riga-2' class='star rating' data-theme="riga" data-rating="2"></a>
+<a href='#' id='rating-riga-3' class='star rating' data-theme="riga" data-rating="3"></a>
+<a href='#' id='rating-riga-4' class='halfstar rating' data-theme="riga" data-rating="4"></a>
+<a href='#' id='rating-riga-5' class='dot rating' data-theme="riga" data-rating="5"></a>
+<span id='rating_avg_riga' class='rating_avg'>3.2</span><span class='rating_votes'>(<span id='rating_votes_riga'>9</span>)</span></div></li>
+<li id='theme-rocketspacer' data-theme='rocketspacer' data-rating='0.0' data-votes='0' class='theme'><h2>Rocketspacer</h2><span><a href="rocketspacer.html" class='framelink'><img src="rocketspacer_thumb.png" width="100" height="100" class='thumb'></a><br><a href="rocketspacer.html" class='framelink'>HTML</a>  | <a class='framelink' href="rocketspacer.pdf">PDF</a> | <a class="framelink" href="rocketspacer.docx">DOCX</a></span><div class='rating' data-rating='0.0' data-theme='rocketspacer' id='rating_rocketspacer'> <a href='#' id='rating-rocketspacer-1' class='dot rating' data-theme="rocketspacer" data-rating="1"></a>
+<a href='#' id='rating-rocketspacer-2' class='dot rating' data-theme="rocketspacer" data-rating="2"></a>
+<a href='#' id='rating-rocketspacer-3' class='dot rating' data-theme="rocketspacer" data-rating="3"></a>
+<a href='#' id='rating-rocketspacer-4' class='dot rating' data-theme="rocketspacer" data-rating="4"></a>
+<a href='#' id='rating-rocketspacer-5' class='dot rating' data-theme="rocketspacer" data-rating="5"></a>
+<span id='rating_avg_rocketspacer' class='rating_avg'>0.0</span><span class='rating_votes'>(<span id='rating_votes_rocketspacer'>0</span>)</span></div></li>
+<li id='theme-sceptile' data-theme='sceptile' data-rating='3.3' data-votes='9' class='theme'><h2>Sceptile</h2><span><a href="sceptile.html" class='framelink'><img src="sceptile_thumb.png" width="100" height="100" class='thumb'></a><br><a href="sceptile.html" class='framelink'>HTML</a>  | <a class='framelink' href="sceptile.pdf">PDF</a> | <a class="framelink" href="sceptile.docx">DOCX</a></span><div class='rating' data-rating='3.3' data-theme='sceptile' id='rating_sceptile'> <a href='#' id='rating-sceptile-1' class='star rating' data-theme="sceptile" data-rating="1"></a>
+<a href='#' id='rating-sceptile-2' class='star rating' data-theme="sceptile" data-rating="2"></a>
+<a href='#' id='rating-sceptile-3' class='star rating' data-theme="sceptile" data-rating="3"></a>
+<a href='#' id='rating-sceptile-4' class='halfstar rating' data-theme="sceptile" data-rating="4"></a>
+<a href='#' id='rating-sceptile-5' class='dot rating' data-theme="sceptile" data-rating="5"></a>
+<span id='rating_avg_sceptile' class='rating_avg'>3.3</span><span class='rating_votes'>(<span id='rating_votes_sceptile'>9</span>)</span></div></li>
+<li id='theme-short' data-theme='short' data-rating='3.4' data-votes='10' class='theme'><h2>Short</h2><span><a href="short.html" class='framelink'><img src="short_thumb.png" width="100" height="100" class='thumb'></a><br><a href="short.html" class='framelink'>HTML</a>  | <a class='framelink' href="short.pdf">PDF</a> | <a class="framelink" href="short.docx">DOCX</a></span><div class='rating' data-rating='3.4' data-theme='short' id='rating_short'> <a href='#' id='rating-short-1' class='star rating' data-theme="short" data-rating="1"></a>
+<a href='#' id='rating-short-2' class='star rating' data-theme="short" data-rating="2"></a>
+<a href='#' id='rating-short-3' class='star rating' data-theme="short" data-rating="3"></a>
+<a href='#' id='rating-short-4' class='halfstar rating' data-theme="short" data-rating="4"></a>
+<a href='#' id='rating-short-5' class='dot rating' data-theme="short" data-rating="5"></a>
+<span id='rating_avg_short' class='rating_avg'>3.4</span><span class='rating_votes'>(<span id='rating_votes_short'>10</span>)</span></div></li>
+<li id='theme-simple' data-theme='simple' data-rating='4.2' data-votes='9' class='theme'><h2>Simple</h2><span><a href="simple.html" class='framelink'><img src="simple_thumb.png" width="100" height="100" class='thumb'></a><br><a href="simple.html" class='framelink'>HTML</a>  | <a class='framelink' href="simple.pdf">PDF</a> | <a class="framelink" href="simple.docx">DOCX</a></span><div class='rating' data-rating='4.2' data-theme='simple' id='rating_simple'> <a href='#' id='rating-simple-1' class='star rating' data-theme="simple" data-rating="1"></a>
+<a href='#' id='rating-simple-2' class='star rating' data-theme="simple" data-rating="2"></a>
+<a href='#' id='rating-simple-3' class='star rating' data-theme="simple" data-rating="3"></a>
+<a href='#' id='rating-simple-4' class='star rating' data-theme="simple" data-rating="4"></a>
+<a href='#' id='rating-simple-5' class='halfstar rating' data-theme="simple" data-rating="5"></a>
+<span id='rating_avg_simple' class='rating_avg'>4.2</span><span class='rating_votes'>(<span id='rating_votes_simple'>9</span>)</span></div></li>
+<li id='theme-spartacus' data-theme='spartacus' data-rating='4.3' data-votes='14' class='theme'><h2>Spartacus</h2><span><a href="spartacus.html" class='framelink'><img src="spartacus_thumb.png" width="100" height="100" class='thumb'></a><br><a href="spartacus.html" class='framelink'>HTML</a>  | <a class='framelink' href="spartacus.pdf">PDF</a> | <a class="framelink" href="spartacus.docx">DOCX</a></span><div class='rating' data-rating='4.3' data-theme='spartacus' id='rating_spartacus'> <a href='#' id='rating-spartacus-1' class='star rating' data-theme="spartacus" data-rating="1"></a>
+<a href='#' id='rating-spartacus-2' class='star rating' data-theme="spartacus" data-rating="2"></a>
+<a href='#' id='rating-spartacus-3' class='star rating' data-theme="spartacus" data-rating="3"></a>
+<a href='#' id='rating-spartacus-4' class='star rating' data-theme="spartacus" data-rating="4"></a>
+<a href='#' id='rating-spartacus-5' class='halfstar rating' data-theme="spartacus" data-rating="5"></a>
+<span id='rating_avg_spartacus' class='rating_avg'>4.3</span><span class='rating_votes'>(<span id='rating_votes_spartacus'>14</span>)</span></div></li>
+<li id='theme-stackoverflow-roboto' data-theme='stackoverflow-roboto' data-rating='0.0' data-votes='0' class='theme'><h2>Stackoverflow-roboto</h2><span><a href="stackoverflow-roboto.html" class='framelink'><img src="stackoverflow-roboto_thumb.png" width="100" height="100" class='thumb'></a><br><a href="stackoverflow-roboto.html" class='framelink'>HTML</a>  | <a class='framelink' href="stackoverflow-roboto.pdf">PDF</a> | <a class="framelink" href="stackoverflow-roboto.docx">DOCX</a></span><div class='rating' data-rating='0.0' data-theme='stackoverflow-roboto' id='rating_stackoverflow-roboto'> <a href='#' id='rating-stackoverflow-roboto-1' class='dot rating' data-theme="stackoverflow-roboto" data-rating="1"></a>
+<a href='#' id='rating-stackoverflow-roboto-2' class='dot rating' data-theme="stackoverflow-roboto" data-rating="2"></a>
+<a href='#' id='rating-stackoverflow-roboto-3' class='dot rating' data-theme="stackoverflow-roboto" data-rating="3"></a>
+<a href='#' id='rating-stackoverflow-roboto-4' class='dot rating' data-theme="stackoverflow-roboto" data-rating="4"></a>
+<a href='#' id='rating-stackoverflow-roboto-5' class='dot rating' data-theme="stackoverflow-roboto" data-rating="5"></a>
+<span id='rating_avg_stackoverflow-roboto' class='rating_avg'>0.0</span><span class='rating_votes'>(<span id='rating_votes_stackoverflow-roboto'>0</span>)</span></div></li>
+<li id='theme-stackoverflow' data-theme='stackoverflow' data-rating='4.5' data-votes='11' class='theme'><h2>Stackoverflow</h2><span><a href="stackoverflow.html" class='framelink'><img src="stackoverflow_thumb.png" width="100" height="100" class='thumb'></a><br><a href="stackoverflow.html" class='framelink'>HTML</a>  | <a class='framelink' href="stackoverflow.pdf">PDF</a> | <a class="framelink" href="stackoverflow.docx">DOCX</a></span><div class='rating' data-rating='4.5' data-theme='stackoverflow' id='rating_stackoverflow'> <a href='#' id='rating-stackoverflow-1' class='star rating' data-theme="stackoverflow" data-rating="1"></a>
+<a href='#' id='rating-stackoverflow-2' class='star rating' data-theme="stackoverflow" data-rating="2"></a>
+<a href='#' id='rating-stackoverflow-3' class='star rating' data-theme="stackoverflow" data-rating="3"></a>
+<a href='#' id='rating-stackoverflow-4' class='star rating' data-theme="stackoverflow" data-rating="4"></a>
+<a href='#' id='rating-stackoverflow-5' class='halfstar rating' data-theme="stackoverflow" data-rating="5"></a>
+<span id='rating_avg_stackoverflow' class='rating_avg'>4.5</span><span class='rating_votes'>(<span id='rating_votes_stackoverflow'>11</span>)</span></div></li>
+<li id='theme-standard-resume' data-theme='standard-resume' data-rating='2.4' data-votes='10' class='theme'><h2>Standard</h2><span><a href="standard-resume.html" class='framelink'><img src="standard-resume_thumb.png" width="100" height="100" class='thumb'></a><br><a href="standard-resume.html" class='framelink'>HTML</a>  | <a class='framelink' href="standard-resume.pdf">PDF</a> | <a class="framelink" href="standard-resume.docx">DOCX</a></span><div class='rating' data-rating='2.4' data-theme='standard-resume' id='rating_standard-resume'> <a href='#' id='rating-standard-resume-1' class='star rating' data-theme="standard-resume" data-rating="1"></a>
+<a href='#' id='rating-standard-resume-2' class='star rating' data-theme="standard-resume" data-rating="2"></a>
+<a href='#' id='rating-standard-resume-3' class='halfstar rating' data-theme="standard-resume" data-rating="3"></a>
+<a href='#' id='rating-standard-resume-4' class='dot rating' data-theme="standard-resume" data-rating="4"></a>
+<a href='#' id='rating-standard-resume-5' class='dot rating' data-theme="standard-resume" data-rating="5"></a>
+<span id='rating_avg_standard-resume' class='rating_avg'>2.4</span><span class='rating_votes'>(<span id='rating_votes_standard-resume'>10</span>)</span></div></li>
+<li id='theme-tachyons-clean' data-theme='tachyons-clean' data-rating='2.6' data-votes='9' class='theme'><h2>Tachyons</h2><span><a href="tachyons-clean.html" class='framelink'><img src="tachyons-clean_thumb.png" width="100" height="100" class='thumb'></a><br><a href="tachyons-clean.html" class='framelink'>HTML</a>  | <a class='framelink' href="tachyons-clean.pdf">PDF</a> | <a class="framelink" href="tachyons-clean.docx">DOCX</a></span><div class='rating' data-rating='2.6' data-theme='tachyons-clean' id='rating_tachyons-clean'> <a href='#' id='rating-tachyons-clean-1' class='star rating' data-theme="tachyons-clean" data-rating="1"></a>
+<a href='#' id='rating-tachyons-clean-2' class='star rating' data-theme="tachyons-clean" data-rating="2"></a>
+<a href='#' id='rating-tachyons-clean-3' class='halfstar rating' data-theme="tachyons-clean" data-rating="3"></a>
+<a href='#' id='rating-tachyons-clean-4' class='dot rating' data-theme="tachyons-clean" data-rating="4"></a>
+<a href='#' id='rating-tachyons-clean-5' class='dot rating' data-theme="tachyons-clean" data-rating="5"></a>
+<span id='rating_avg_tachyons-clean' class='rating_avg'>2.6</span><span class='rating_votes'>(<span id='rating_votes_tachyons-clean'>9</span>)</span></div></li>
+<li id='theme-tan-responsive' data-theme='tan-responsive' data-rating='3.5' data-votes='10' class='theme'><h2>Responsive</h2><span><a href="tan-responsive.html" class='framelink'><img src="tan-responsive_thumb.png" width="100" height="100" class='thumb'></a><br><a href="tan-responsive.html" class='framelink'>HTML</a>  | <a class='framelink' href="tan-responsive.pdf">PDF</a> | <a class="framelink" href="tan-responsive.docx">DOCX</a></span><div class='rating' data-rating='3.5' data-theme='tan-responsive' id='rating_tan-responsive'> <a href='#' id='rating-tan-responsive-1' class='star rating' data-theme="tan-responsive" data-rating="1"></a>
+<a href='#' id='rating-tan-responsive-2' class='star rating' data-theme="tan-responsive" data-rating="2"></a>
+<a href='#' id='rating-tan-responsive-3' class='star rating' data-theme="tan-responsive" data-rating="3"></a>
+<a href='#' id='rating-tan-responsive-4' class='halfstar rating' data-theme="tan-responsive" data-rating="4"></a>
+<a href='#' id='rating-tan-responsive-5' class='dot rating' data-theme="tan-responsive" data-rating="5"></a>
+<span id='rating_avg_tan-responsive' class='rating_avg'>3.5</span><span class='rating_votes'>(<span id='rating_votes_tan-responsive'>10</span>)</span></div></li>
+<li id='theme-verbum' data-theme='verbum' data-rating='4.1' data-votes='15' class='theme'><h2>Verbum</h2><span><a href="verbum.html" class='framelink'><img src="verbum_thumb.png" width="100" height="100" class='thumb'></a><br><a href="verbum.html" class='framelink'>HTML</a>  | <a class='framelink' href="verbum.pdf">PDF</a> | <a class="framelink" href="verbum.docx">DOCX</a></span><div class='rating' data-rating='4.1' data-theme='verbum' id='rating_verbum'> <a href='#' id='rating-verbum-1' class='star rating' data-theme="verbum" data-rating="1"></a>
+<a href='#' id='rating-verbum-2' class='star rating' data-theme="verbum" data-rating="2"></a>
+<a href='#' id='rating-verbum-3' class='star rating' data-theme="verbum" data-rating="3"></a>
+<a href='#' id='rating-verbum-4' class='star rating' data-theme="verbum" data-rating="4"></a>
+<a href='#' id='rating-verbum-5' class='halfstar rating' data-theme="verbum" data-rating="5"></a>
+<span id='rating_avg_verbum' class='rating_avg'>4.1</span><span class='rating_votes'>(<span id='rating_votes_verbum'>15</span>)</span></div></li>
+<li id='theme-wraypro' data-theme='wraypro' data-rating='2.6' data-votes='8' class='theme'><h2>Wraypro</h2><span><a href="wraypro.html" class='framelink'><img src="wraypro_thumb.png" width="100" height="100" class='thumb'></a><br><a href="wraypro.html" class='framelink'>HTML</a>  | <a class='framelink' href="wraypro.pdf">PDF</a> | <a class="framelink" href="wraypro.docx">DOCX</a></span><div class='rating' data-rating='2.6' data-theme='wraypro' id='rating_wraypro'> <a href='#' id='rating-wraypro-1' class='star rating' data-theme="wraypro" data-rating="1"></a>
+<a href='#' id='rating-wraypro-2' class='star rating' data-theme="wraypro" data-rating="2"></a>
+<a href='#' id='rating-wraypro-3' class='halfstar rating' data-theme="wraypro" data-rating="3"></a>
+<a href='#' id='rating-wraypro-4' class='dot rating' data-theme="wraypro" data-rating="4"></a>
+<a href='#' id='rating-wraypro-5' class='dot rating' data-theme="wraypro" data-rating="5"></a>
+<span id='rating_avg_wraypro' class='rating_avg'>2.6</span><span class='rating_votes'>(<span id='rating_votes_wraypro'>8</span>)</span></div></li>
+    </ul>
+</nav>
+    <script>
+        function resizeIframe(iframe) {
+            if (iframe.src.match(/\.pdf/i)) {
+                iframe.height = "100%";
+                iframe.style.height = "100vh";
+            } else {
+                iframe.height = iframe.contentWindow.document.body.scrollHeight + "px"; 
+            }
+        }
+        const $ = str => document.querySelector(str);
+        const $$ = str => document.querySelectorAll(str);
+
+        (function() {
+            const app = {
+                init() {
+                    app.state.loaded = true;
+                    console.info("Loaded.");
+                    app.themes = [{"theme":"ace","rating":"3.3","url":"ace.html","pdf":"ace.pdf","docx":"ace.docx"},{"theme":"caffeine","rating":"2.7","url":"caffeine.html","pdf":"caffeine.pdf","docx":"caffeine.docx"},{"theme":"class","rating":"3.7","url":"class.html","pdf":"class.pdf","docx":"class.docx"},{"theme":"classy","rating":"3.5","url":"classy.html","pdf":"classy.pdf","docx":"classy.docx"},{"theme":"compact","rating":"2.3","url":"compact.html","pdf":"compact.pdf","docx":"compact.docx"},{"theme":"contempo","rating":"4.2","url":"contempo.html","pdf":"contempo.pdf","docx":"contempo.docx"},{"theme":"dave","rating":"3.1","url":"dave.html","pdf":"dave.pdf","docx":"dave.docx"},{"theme":"dinesh","rating":"3.2","url":"dinesh.html","pdf":"dinesh.pdf","docx":"dinesh.docx"},{"theme":"direct","rating":"3.5","url":"direct.html","pdf":"direct.pdf","docx":"direct.docx"},{"theme":"elegant","rating":"3.8","url":"elegant.html","pdf":"elegant.pdf","docx":"elegant.docx"},{"theme":"even","rating":"3.6","url":"even.html","pdf":"even.pdf","docx":"even.docx"},{"theme":"flat","rating":"4.0","url":"flat.html","pdf":"flat.pdf","docx":"flat.docx"},{"theme":"fresh","rating":"4.2","url":"fresh.html","pdf":"fresh.pdf","docx":"fresh.docx"},{"theme":"full","rating":"3.6","url":"full.html","pdf":"full.pdf","docx":"full.docx"},{"theme":"jacrys","rating":"4.1","url":"jacrys.html","pdf":"jacrys.pdf","docx":"jacrys.docx"},{"theme":"joeytall","rating":"4.2","url":"joeytall.html","pdf":"joeytall.pdf","docx":"joeytall.docx"},{"theme":"keloran","rating":"3.8","url":"keloran.html","pdf":"keloran.pdf","docx":"keloran.docx"},{"theme":"kendall","rating":"2.7","url":"kendall.html","pdf":"kendall.pdf","docx":"kendall.docx"},{"theme":"macchiato","rating":"4.2","url":"macchiato.html","pdf":"macchiato.pdf","docx":"macchiato.docx"},{"theme":"mantra","rating":"2.4","url":"mantra.html","pdf":"mantra.pdf","docx":"mantra.docx"},{"theme":"material","rating":"0.0","url":"material.html","pdf":"material.pdf","docx":"material.docx"},{"theme":"moon","rating":"0.0","url":"moon.html","pdf":"moon.pdf","docx":"moon.docx"},{"theme":"onepage-efficient","rating":"3.0","url":"onepage-efficient.html","pdf":"onepage-efficient.pdf","docx":"onepage-efficient.docx"},{"theme":"onepage-plus","rating":"3.4","url":"onepage-plus.html","pdf":"onepage-plus.pdf","docx":"onepage-plus.docx"},{"theme":"onepage","rating":"2.5","url":"onepage.html","pdf":"onepage.pdf","docx":"onepage.docx"},{"theme":"paper-plus-plus","rating":"3.4","url":"paper-plus-plus.html","pdf":"paper-plus-plus.pdf","docx":"paper-plus-plus.docx"},{"theme":"papirus","rating":"4.1","url":"papirus.html","pdf":"papirus.pdf","docx":"papirus.docx"},{"theme":"pumpkin","rating":"4.2","url":"pumpkin.html","pdf":"pumpkin.pdf","docx":"pumpkin.docx"},{"theme":"resu","rating":"3.9","url":"resu.html","pdf":"resu.pdf","docx":"resu.docx"},{"theme":"rickosborne","rating":"2.5","url":"rickosborne.html","pdf":"rickosborne.pdf","docx":"rickosborne.docx"},{"theme":"riga","rating":"3.2","url":"riga.html","pdf":"riga.pdf","docx":"riga.docx"},{"theme":"rocketspacer","rating":"0.0","url":"rocketspacer.html","pdf":"rocketspacer.pdf","docx":"rocketspacer.docx"},{"theme":"sceptile","rating":"3.3","url":"sceptile.html","pdf":"sceptile.pdf","docx":"sceptile.docx"},{"theme":"short","rating":"3.4","url":"short.html","pdf":"short.pdf","docx":"short.docx"},{"theme":"simple","rating":"4.2","url":"simple.html","pdf":"simple.pdf","docx":"simple.docx"},{"theme":"spartacus","rating":"4.3","url":"spartacus.html","pdf":"spartacus.pdf","docx":"spartacus.docx"},{"theme":"stackoverflow-roboto","rating":"0.0","url":"stackoverflow-roboto.html","pdf":"stackoverflow-roboto.pdf","docx":"stackoverflow-roboto.docx"},{"theme":"stackoverflow","rating":"4.5","url":"stackoverflow.html","pdf":"stackoverflow.pdf","docx":"stackoverflow.docx"},{"theme":"standard-resume","rating":"2.4","url":"standard-resume.html","pdf":"standard-resume.pdf","docx":"standard-resume.docx"},{"theme":"tachyons-clean","rating":"2.6","url":"tachyons-clean.html","pdf":"tachyons-clean.pdf","docx":"tachyons-clean.docx"},{"theme":"tan-responsive","rating":"3.5","url":"tan-responsive.html","pdf":"tan-responsive.pdf","docx":"tan-responsive.docx"},{"theme":"verbum","rating":"4.1","url":"verbum.html","pdf":"verbum.pdf","docx":"verbum.docx"},{"theme":"wraypro","rating":"2.6","url":"wraypro.html","pdf":"wraypro.pdf","docx":"wraypro.docx"}];
+                    app.doSort('popular');
+                },
+                handleClick: function(evt, obj) {
+                    // if (evt.target.localName = "ul") return;
+                    let tgt = evt.target.closest(".theme");
+
+                    let theme = tgt.id.replace(/^theme\-/, '');
+
+                    app.selectTheme(theme);
+                    if ((evt.target.classList.contains("rating")) || (evt.target.parentNode.classList.contains("rating"))) { 
+                        app.rateResume(tgt.dataset.theme, evt.target.dataset.rating);
+                        evt.preventDefault();
+                        evt.stopPropagation();
+                        return false;
+                    }
+
+                    if ((evt.target.classList.contains("framelink")) || (evt.target.parentNode.classList.contains("framelink"))) {
+console.log("someone has a framelink");
+                        if (evt.target.nodeName === "A") {
+console.log("we have an A node");
+                            parent.app.loadTab(evt.target.href, tgt.querySelector("h2").innerText, tgt.querySelector("h2").innerText.replace(/\W/g, ''), true, evt);
+                            return false;
+                        } else if (evt.target.parentNode.nodeName === "A") {
+console.log("our parent is an A node");
+                            if (parent && parent.app && parent.app.loadTab) {
+                                parent.app.loadTab(evt.target.parentNode.href, tgt.querySelector("h2").innerText, tgt.querySelector("h2").innerText.replace(/\W/g, ''), true, evt);
+                            } else {
+                                window.open(evt.target.parentNode.href, "_blank");
+                            }
+                            return false;
+                        } else {
+                            console.log("Must've clicked on the thumbnail");
+                        }
+                    } 
+                    if ((evt.target.nodeName === "IMG") && (evt.target.className==="thumb")) {
+console.log("We have an image!");
+                        let li = evt.target.closest(".theme");
+console.log("closest theme el:");
+console.dir(li);
+                        if (li) {
+                            let theme = li.dataset.theme;
+                            let title = li.querySelector("h2").innerText;
+                            
+                            parent.app.loadTab(`${theme}.html`, title.replace(/^([a-z])/, function(str) { return str.toUpperCase(); }), title.replace(/\W/g, ''), true, evt);
+
+                        }
+                    }
+                    // if we get here, load html version as last resort
+                    parent.app.loadTab(`/cv/resumes/${theme}.html`, theme, theme, true, evt);
+
+                    return false;
+                },
+                selectTheme: function(theme) {
+                    $$(".selected").forEach((el) => { el.classList.remove('selected'); });
+                    $(`#theme-${theme}`).classList.add('selected');
+                },
+                state: {
+                    loaded: false
+                },
+                doSort: function(sortBy) {
+                    console.log(`doSort( ${sortBy} )`);
+                    let themes = [...$$(".theme")];
+                    let outhtml = "";
+
+                    if (sortBy == "popular") {
+                        themes.sort(function(a, b) {
+                            let aRating = a.dataset.rating;
+                            let bRating = b.dataset.rating;
+                            return Number(bRating) - Number(aRating);
+                        });
+                        outhtml = themes.reduce((a, el) => a + el.outerHTML, "");
+                    } else {
+                        themes.sort(function(a, b) {
+                            let aRating = a.dataset.theme;
+                            let bRating = b.dataset.theme;
+                            if (aRating < bRating) {
+                                return -1;
+                            } else if (aRating > bRating) {
+                                return 1;
+                            } else {
+                                return 0;
+                            }
+                        });
+                        outhtml = themes.reduce((a, el) => a + el.outerHTML, "");
+                    }
+                    $("#themes").innerHTML = outhtml;
+                },
+                rateResume: function(theme, rating) {
+                    fetch(`rate.php?x=rate&theme=${theme}&rating=${rating}`).then(resp=>resp.json()).then(data=>{
+
+                        console.log("rateResume results");
+                        console.dir(data);
+
+                        let themeWrap = $(`#theme-${theme}`);
+                        if (themeWrap) {
+                            themeWrap.dataset.rating = data.ratings[theme];
+                            themeWrap.dataset.votes = data.ratings[theme+'_votes'];
+                        }
+                        let rateWrap = $(`#rating_${theme}`);
+                        if (data.ratings[theme]) {
+                            rateWrap.dataset.rating = data.ratings[theme];
+                            rateWrap.dataset.votes = data.ratings[theme+'_votes'];
+                            console.log(`Set rating to ${data.ratings[theme]} (${data.ratings[theme+'_votes']}) for ${theme}`);
+                            app.updateRatings(rateWrap, theme);
+                            let mysort = $("#sort").options[$("#sort").selectedIndex].value;
+                            console.log("Sorting by " + mysort);
+                            app.doSort(mysort);
+                        }
+                    });
+                    return false;
+                },
+                updateRatings: function(el, theme) {
+                    let rating = el.dataset.rating;
+                    let votes = el.dataset.votes;
+                    let cls = '';
+
+                    for (let i=1; i<6; i++) {
+                        cls = (i <= rating) ? 'star' : 'dot';
+                        if ((i > rating) && ((i - 1) < rating)) {
+                           cls = 'halfstar';
+                        }
+                        $(`#rating-${theme}-${i}`).className = "rating " + cls;
+                    }
+                    $(`#rating_avg_${theme}`).innerHTML = rating;
+                    $(`#rating_votes_${theme}`).innerHTML = votes;
+                }
+            }
+            window.app = app;
+            app.init();
+        })();
+    </script>
+</body>
+
+</html>
+

@@ -1,0 +1,950 @@
+<!doctype html>
+<html>
+  <head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+  <title>Christopher Robison &sdot; Turning ideas into reality.</title>
+
+  <style>
+  /*===========================================================
+  CSS Reset
+
+  http://meyerweb.com/eric/tools/css/reset/
+  v2.0 | 20110126
+  License: none (public domain)
+============================================================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+
+  vertical-align: baseline;
+
+  border: 0;
+
+  font: inherit;
+  font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-spacing: 0;
+
+  border-collapse: collapse;
+}
+
+/*===========================================================
+  JSON Resume - Theme styles
+============================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px 0;
+
+  color: #252525;
+  background: #F6F9FC;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+h1 {
+  letter-spacing: 0.2px;
+
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  margin-bottom: 1.4rem;
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: rgba(36,36,36,0.80);
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin-bottom: 0.4rem;
+
+  color: #252525;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+h4 {
+  margin-bottom: 0.4rem;
+
+  letter-spacing: 0.5px;
+
+  color: rgba(36,36,36,0.80);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+
+  color: rgba(36,36,36,0.40);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.8;
+}
+
+em {
+  color: rgba(36,36,36,0.40);
+
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+strong {
+  color: rgba(37,37,37,0.80);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+blockquote {
+  position: relative;
+
+  padding-top: 0.2rem;
+  padding-left: 1.4rem;
+}
+
+blockquote:before {
+  position: absolute;
+  top: -10px;
+  left: 0;
+
+  content: '“';
+
+  color: #D1D5D8;
+
+  font-family: 'Garamond', 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+li {
+  padding: 0.4rem 0 0.4rem 1rem;
+
+  line-height: 1.8;
+}
+
+li:before {
+  display: inline-block;
+
+  width: 1em;
+  margin-left: -1em;
+
+  content: '•';
+
+  color: #D1D5D8;
+}
+
+ul.inline {
+  display: inline-block;
+
+  list-style-type: none;
+}
+
+ul.inline li {
+  display: inline-block;
+
+  margin-right: 0.6rem;
+  padding: 0;
+
+  line-height: 1;
+}
+
+ul.inline em {
+  margin-left: 0.1rem;
+}
+
+ul.inline li:before {
+  content: '';
+  content: none;
+}
+
+ul.comma li {
+  margin: 0;
+}
+
+ul.comma li:not(:last-of-type):after {
+  content: ',';
+}
+
+section {
+  clear: both;
+
+  padding: 2rem 0;
+
+  border-bottom: 1px solid #F1F2FB;
+}
+
+#resume {
+  position: relative;
+
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0;
+
+  border-radius: 4px;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 10px 0 rgba(0,0,0,0.05);
+}
+
+.left {
+  position: absolute;
+  left: 0;
+
+  padding: 0 40px 0 80px;
+  padding-top: 0.1rem;
+}
+
+.left h2 {
+  color: #20476A;
+
+  font-size: 1rem;
+}
+
+.right {
+  padding: 0 80px 0 250px;
+}
+
+.date, .releaseDate {
+  margin-bottom: 0.6rem;
+
+  color: rgba(36,36,36,0.40);
+
+  font-size: 0.9rem;
+}
+
+#basics {
+  border-bottom: 2px solid #F1F2FB;
+}
+
+#basics img.picture {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+}
+
+#location {
+  margin-bottom: 0.4rem;
+}
+
+#basics .contact {
+  color: rgba(36,36,36,0.40);
+
+  font-size: 0.9rem;
+}
+
+#basics .contact span {
+  display: inline-block;
+
+  padding-bottom: 0.4rem;
+}
+
+#basics .contact a {
+  margin-right: 1rem;
+}
+
+#profiles li a {
+  color: rgba(36,36,36,0.60);
+}
+
+#profiles .network {
+  margin: 30px 30px 0 0;
+  padding: 0 0 0 40px;
+
+  background-size: 30px 30px;
+
+  line-height: 30px;
+}
+
+#work .item,
+#volunteer .item,
+#awards .item,
+#publications .item {
+  margin-bottom: 4rem;
+}
+
+#work .item:last-child,
+#volunteer .item:last-child,
+#awards .item:last-child,
+#publications .item:last-child {
+  margin-bottom: 0;
+}
+
+#work .website,
+#volunteer .website,
+#awards .website,
+#publications .website {
+  margin-bottom: 1.4rem;
+}
+
+#work .summary,
+#volunteer .summary,
+#awards .summary,
+#publications .summary {
+  margin-bottom: 1.2rem;
+}
+
+#skills .name,
+#interests .name {
+  display: inline-block;
+
+  width: 150px;
+  margin: 0 1.4rem 1.4rem 0;
+
+  vertical-align: top;
+  letter-spacing: 0.5px;
+
+  color: rgba(36,36,36,0.80);
+
+  font-weight: 600;
+}
+
+#skills .keywords {
+  max-width: 470px;
+}
+
+#education .studyType {
+  margin-bottom: 1.4rem;
+}
+
+#references .name {
+  padding: 1.2rem 1.2rem 0 0;
+
+  text-align: right;
+}
+
+.copy {
+  margin: 1.4rem auto 4rem auto;
+
+  text-align: center;
+
+  color: #C2C6C9;
+
+  font-size: 0.8rem;
+}
+
+.copy a {
+  text-decoration: underline;
+
+  color: #C2C6C9;
+}
+
+/*===========================================================
+  Responsiveness
+============================================================*/
+
+@media (max-width: 980px) {
+  #resume {
+    max-width: none;
+    margin: 1.4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .left {
+    position: static;
+
+    padding: 0 40px;
+  }
+  .right {
+    padding: 0 40px;
+  }
+  .contact {
+    margin-bottom: 1.2rem;
+  }
+  #basics .left, #basics .right {
+    text-align: center;
+  }
+}
+
+/*===========================================================
+  Social icons
+============================================================*/
+
+#profiles .network.Twitter {
+  background: url("data:image/svg+xml;utf8,<svg enable-background='new 0 0 550 550' viewBox='0 0 550 550' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><g><circle cx='275' cy='275' fill='#2CBDE2' r='256'/><path d='M161.9,181.2c0,0,40.6,45.9,107.8,53.4c0,0-3.2-38.4,30.9-59.8c0,0,35.2-23.5,61.9,10.7     c0,0,25.6-5.3,35.2-11.7c0,0-7.5,14.5-20.3,27l28.8-5.7l-26.7,28.8c0,0,10.7,97.1-95.5,148.3c0,0-82.7,29.9-140.3-9.6     c0,0,70.4-10.7,77.9-26.7c0,0-37.4-4.3-47-36.3l20.3-1.1c0,0-35.2-3.2-39.5-53.4l23.5,3.2C179,248.4,141.6,237.8,161.9,181.2z' fill='#FFFFFF'/></g></g></svg>") no-repeat left top;
+}
+
+#profiles .network.SoundCloud {
+  background: url("data:image/svg+xml;utf8,<svg style='enable-background:new 0 0 112.196 112.196;' viewBox='0 0 112.196 112.196' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><circle cx='56.098' cy='56.098' r='56.098' style='fill:#FF6A22;'/><g><path d='M16.707,68.833c-0.027,0.182-0.157,0.312-0.326,0.312c-0.169,0-0.299-0.13-0.325-0.316    l-0.593-4.438l0.593-4.512c0.025-0.188,0.155-0.318,0.325-0.318c0.168,0,0.298,0.13,0.326,0.318l0.706,4.517L16.707,68.833z     M19.728,71.529c-0.028,0.193-0.168,0.328-0.341,0.328c-0.168,0-0.315-0.135-0.338-0.328l-0.798-7.139l0.798-7.299    c0.024-0.188,0.17-0.328,0.338-0.328c0.173,0,0.313,0.137,0.341,0.328l0.908,7.299L19.728,71.529z M22.988,72.738    c-0.023,0.232-0.197,0.397-0.406,0.397c-0.216,0-0.387-0.165-0.408-0.397l-0.757-8.342l0.757-8.659    c0.019-0.235,0.192-0.403,0.408-0.403c0.209,0,0.382,0.168,0.406,0.403l0.859,8.659L22.988,72.738z M26.28,73.003    c-0.024,0.266-0.232,0.467-0.479,0.467c-0.253,0-0.46-0.201-0.481-0.467l-0.715-8.607l0.715-8.897    c0.021-0.268,0.228-0.469,0.481-0.469c0.247,0,0.455,0.201,0.479,0.469l0.811,8.897L26.28,73.003z M29.59,73.072    c-0.017,0.309-0.258,0.538-0.543,0.538c-0.294,0-0.527-0.229-0.547-0.538l-0.676-8.677l0.676-8.254    c0.021-0.307,0.253-0.536,0.547-0.536c0.29,0,0.526,0.229,0.543,0.532l0.766,8.258L29.59,73.072z M32.932,73.077v-0.005    c-0.02,0.342-0.291,0.612-0.617,0.612c-0.327,0-0.598-0.271-0.617-0.607l-0.631-8.677l0.631-13.429    c0.019-0.342,0.29-0.612,0.617-0.612c0.327,0,0.598,0.271,0.617,0.607l0.715,13.434L32.932,73.077z M36.249,73.072v-0.005    c-0.02,0.378-0.319,0.679-0.689,0.679c-0.363,0-0.663-0.301-0.681-0.679l-0.596-8.621l0.596-16.501    c0.018-0.378,0.318-0.677,0.681-0.677c0.37,0,0.669,0.299,0.689,0.677l0.671,16.501L36.249,73.072z M39.69,72.939v-0.005    c-0.015,0.421-0.346,0.748-0.753,0.748c-0.407,0-0.738-0.327-0.753-0.743l-0.553-8.533c0,0,0.553-17.876,0.553-17.881    c0.016-0.416,0.346-0.749,0.753-0.749c0.407,0,0.739,0.333,0.753,0.749l0.625,17.881L39.69,72.939z M43.111,72.882    c-0.016,0.458-0.375,0.817-0.822,0.817c-0.448,0-0.807-0.359-0.823-0.813l-0.516-8.482l0.516-18.478    c0.016-0.46,0.375-0.818,0.823-0.818c0.447,0,0.807,0.358,0.822,0.818l0.573,18.478L43.111,72.882z M46.554,72.807v-0.005    c-0.016,0.495-0.403,0.888-0.894,0.888c-0.484,0-0.879-0.393-0.888-0.883l-0.474-8.401L44.767,46.4    c0.014-0.502,0.408-0.89,0.893-0.89c0.491,0,0.878,0.388,0.894,0.89l0.532,18.006L46.554,72.807z M50.025,72.757V72.75    c-0.008,0.539-0.434,0.954-0.96,0.954c-0.53,0-0.95-0.415-0.966-0.947l-0.428-8.352L48.1,47.058    c0.016-0.538,0.436-0.959,0.966-0.959c0.526,0,0.952,0.421,0.96,0.959l0.485,17.352L50.025,72.757z M53.566,71.876l-0.043,0.818    c-0.005,0.285-0.125,0.543-0.308,0.729c-0.188,0.183-0.446,0.3-0.719,0.3c-0.318,0-0.598-0.146-0.79-0.376    c-0.142-0.167-0.23-0.383-0.24-0.61c-0.003-0.01-0.003-0.023-0.003-0.037c0,0-0.395-8.286-0.395-8.3l0.39-20.443l0.005-0.196    c0.003-0.358,0.193-0.677,0.477-0.86c0.159-0.106,0.347-0.168,0.557-0.168c0.206,0,0.401,0.064,0.564,0.177    c0.277,0.185,0.458,0.496,0.463,0.852l0.434,20.648L53.566,71.876z M57.007,72.587v-0.01c-0.007,0.604-0.502,1.096-1.1,1.096    c-0.6,0-1.094-0.492-1.1-1.091l-0.227-4.03l-0.223-4.138l0.45-22.406v-0.113c0.001-0.34,0.161-0.644,0.408-0.849    c0.189-0.155,0.432-0.249,0.692-0.249c0.207,0,0.399,0.057,0.563,0.153c0.313,0.196,0.532,0.543,0.542,0.94l0.487,22.523    L57.007,72.587z M86.74,73.695c0,0-27.683,0-27.712,0c-0.598-0.061-1.071-0.537-1.081-1.15V40.821    c0.01-0.584,0.211-0.885,0.963-1.174c1.941-0.752,4.139-1.196,6.398-1.196c9.215,0,16.766,7.069,17.567,16.074    c1.186-0.495,2.496-0.777,3.865-0.777c5.518,0,9.992,4.476,9.992,9.998C96.732,69.267,92.258,73.695,86.74,73.695L86.74,73.695z' style='fill:#F1F2F2;'/></g></g><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/><g/></svg>") no-repeat left top;
+}
+
+#profiles .network.Facebook {
+  background: url("data:image/svg+xml;utf8,<svg enable-background='new 0 0 550 550' viewBox='0 0 550 550' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><g><circle cx='275' cy='275' fill='#3F65A6' r='256'/><path d='M236.1,190.8c0,7.4,0,40.4,0,40.4h-29.6v49.4h29.6V416h60.8V280.5h40.8     c0,0,3.8-23.7,5.7-49.6c-5.3,0-46.2,0-46.2,0s0-28.7,0-33.8c0-5,6.6-11.8,13.2-11.8c6.5,0,20.3,0,33.1,0c0-6.7,0-30,0-51.4     c-17.1,0-36.5,0-45,0C234.6,134,236.1,183.4,236.1,190.8z' fill='#FFFFFF' /></g></g></svg>") no-repeat left top;
+}
+
+#profiles .network.Skype {
+  background: url("data:image/svg+xml;utf8,<svg enable-background='new 0 0 550 550' viewBox='0 0 550 550' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><g><circle cx='275' cy='275' fill='#2CBDE2' r='256'/><g><path d='M380,299c1.6-7.4,2.5-15,2.5-22.8c0-58.7-47.6-106.3-106.3-106.3c-6.2,0-12.3,0.5-18.2,1.5      c-9.5-6-20.7-9.5-32.8-9.5c-34.1,0-61.7,27.6-61.7,61.7c0,11.4,3.1,22,8.5,31.2c-1.4,6.9-2.1,14.1-2.1,21.4      c0,58.7,47.6,106.3,106.3,106.3c6.6,0,13.1-0.6,19.5-1.8c8.7,4.7,18.6,7.3,29.1,7.3c34.1,0,61.7-27.6,61.7-61.6      C386.4,316.5,384.1,307.3,380,299z' fill='#31A5DD'/><path d='M244.3,206.3L244.3,206.3c-8.9,3.3-15.9,8.1-20.6,14.3c-4.8,6.3-7.2,13.5-7.2,21.5      c0,8.4,2.3,15.6,6.9,21.3c4.5,5.6,10.6,10.1,18.3,13.4c7.5,3.2,16.8,6,27.9,8.3c8.1,1.7,14.7,3.3,19.5,4.8      c4.6,1.4,8.4,3.6,11.3,6.3c2.8,2.6,4.1,5.9,4.1,10.1c0,5.3-2.6,9.7-7.9,13.3c-5.4,3.7-12.6,5.6-21.4,5.6      c-6.4,0-11.6-0.9-15.5-2.8c-3.8-1.8-6.8-4.1-8.9-6.9c-2.2-2.9-4.2-6.5-6.1-10.8c-1.7-4-3.8-7-6.2-9.1c-2.6-2.2-5.7-3.3-9.4-3.3      c-4.5,0-8.2,1.4-11.1,4.1c-2.9,2.8-4.4,6.2-4.4,10c0,6.2,2.3,12.7,6.8,19.2c4.5,6.4,10.4,11.7,17.5,15.5c10,5.3,22.8,8,38.1,8      c12.7,0,23.9-2,33.2-5.8c9.4-3.9,16.7-9.4,21.6-16.4c4.9-7,7.4-15,7.4-23.7c0-7.3-1.4-13.6-4.3-18.7c-2.9-5.1-6.9-9.4-12-12.7      c-5-3.2-11.1-6-18.2-8.3c-7-2.2-14.9-4.3-23.5-6.2c-6.8-1.6-11.8-2.8-14.7-3.6c-2.9-0.8-5.8-1.9-8.6-3.3c-2.7-1.3-4.8-3-6.3-4.8      c-1.4-1.8-2.1-3.8-2.1-6.2c0-4,2.2-7.3,6.6-10.2c4.6-3,10.8-4.5,18.4-4.5c8.2,0,14.2,1.4,17.7,4.1c3.7,2.8,6.9,6.8,9.5,11.8      c2.3,4,4.4,6.7,6.3,8.5c2.1,1.9,5.2,2.9,9.2,2.9c4.3,0,8-1.5,10.9-4.6c2.9-3,4.3-6.5,4.3-10.3c0-4-1.1-8-3.3-12.1      c-2.2-4-5.7-7.9-10.3-11.6c-4.6-3.6-10.6-6.6-17.6-8.7c-7-2.2-15.3-3.3-24.8-3.3C263.6,201.4,253.1,203,244.3,206.3z' fill='#FFFFFF'/></g></g></g></svg>") no-repeat left top;
+}
+
+#profiles .network.LinkedIn {
+  background: url("data:image/svg+xml;utf8,<svg enable-background='new 0 0 550 550' viewBox='0 0 550 550' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><g><circle cx='275' cy='275' fill='#04689B' r='256'/><path d='M219.2,366.5h-38.8V242.2h38.8V366.5z M198.8,226.6h-0.3c-14.1,0-23.2-9.5-23.2-21.6     c0-12.3,9.4-21.6,23.7-21.6c14.3,0,23.1,9.3,23.4,21.5C222.5,217.1,213.4,226.6,198.8,226.6z M374.6,366.5h-44v-64.3     c0-16.8-6.9-28.3-22-28.3c-11.6,0-18,7.7-21,15.2c-1.1,2.7-0.9,6.4-0.9,10.2v67.3H243c0,0,0.6-113.9,0-124.3h43.6v19.5     c2.6-8.5,16.5-20.7,38.8-20.7c27.6,0,49.3,17.9,49.3,56.4V366.5z' fill='#FFFFFF'/></g></g></svg>") no-repeat left top;
+}
+
+#profiles .network.GitHub {
+  background: url("data:image/svg+xml;utf8,<svg enable-background='new 0 0 550 550' viewBox='0 0 550 550' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g><g><circle cx='275' cy='275' fill='#BF5B94' r='256'/><path d='M484.7,292.1c0.1,0,0.3,0.1,0.4,0.2c0,0,0.1,0,0.1,0.1c0.1,0,0.2,0.1,0.3,0.2c0,0,0.1,0.1,0.1,0.1     c0.1,0.1,0.2,0.1,0.3,0.2c0,0,0.1,0.1,0.1,0.1c0.1,0.1,0.2,0.2,0.4,0.3c0,0,0,0,0.1,0c0.1,0.1,0.3,0.2,0.4,0.4     c0,0,0.1,0.1,0.1,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0,0,0.1,0.1,0.1,0.1c0.1,0.1,0.2,0.2,0.3,0.3c0,0,0.1,0.1,0.1,0.1     c0.1,0.1,0.3,0.3,0.4,0.4v-9.1c-20.6,0-40.6,0-61,0c0.6-9.2,2-18.7,1.6-28.1c-0.8-20.4-8.1-38.6-19.5-55.5     c-2.2-3.3-2.6-8.6-2.3-12.8c1.1-16,4.3-31.9,3.9-47.8c-0.4-17.6-7.4-21.7-24.6-17.7c-2.7,0.6-5.4,1.4-8,2.2     c-12.1,4-23,10.3-32.1,19.6c-4.4,4.5-8.5,5.1-14.6,3.3c-30.9-9.6-62.1-10.1-93.1-0.9c-8.2,2.4-13.2,0.8-19-4.6     c-12.9-12.1-28.3-18.5-45.9-20.8c-9.2-1.2-13.9,3.2-14.4,10.3c-1.1,14.5-2.4,29.5,0.3,43.6c2.5,13.1,0.8,22.8-6.5,33.9     c-13.5,20.4-18,43.4-13.5,67.8c0.4,2,0.2,4.1,0.4,7.8c-8.2-0.5-15.3-1.5-22.4-1.3c-17.4,0.5-34.8,1.2-52.1,2.6     c-1.5,0.1-2.8,0.2-4,0.2v6c25.2-7.8,76.3-6.3,82.4,4c-27.7-2.5-54.7-3.4-80.4,9.3c0.2,1.3,0.5,2.6,0.7,3.9     c11.9-3.1,24-6.5,36.2-9.1c5.3-1.1,11,0,16.4-0.4c17.9-1.5,30.8,2.4,42.2,19.8c10.2,15.6,24.6,25.2,40.8,31.7     c11.9,4.7,24.7,7.8,37.6,10.3c1.6,0.3,3.1,0.6,4.5,0.8C229,389.7,207,395.9,181,394.2c-4.3-0.3-8.1-1.2-11.6-2.7     c-9.3-3.8-16.2-11.2-22.5-19.5c-7.7-10.2-16.9-18-30-19.6c-3.1-0.4-6.2,0.4-7.4,0.5c12.8,18.2,25.2,36.4,38.1,54.2     c1.6,2.2,3.3,4.1,5.2,5.7c8.8,7.7,20.3,9.6,32.2,10.1c9.2,0.3,18.3,0.1,27.4,0.1c0,14.4,0,27.9,0,41.3h20.5     c-0.3-5.9-0.1-11.9,0.3-17.8c0.4-6.4,3.8-12.3,10.7-10.5c3.8,1,8.6,6.7,9.1,10.8c0.7,5.7,0.8,11.5,0.7,17.5h19.9     c-0.1-10.5-0.2-21,0.6-31.4c0.2-3.4,6.9-9.6,9.5-9c4,0.9,9.8,6.1,10.1,9.9c0.8,10,0.7,20,0.6,30.5h20c-0.1-6.7-0.2-12.9,0.6-19.1     c0.5-3.6,6.1-9,9.4-9c3.3,0,8.6,5.2,9.5,9c1.4,6.1,1.7,12.8,0.7,19.1h18.3c1.1-0.4,2.2-0.8,3.3-1.3c-1.5-18.3-1.7-35.6-4.7-52.5     c-3.1-17.9-13.3-32.6-26.6-44.9c14.9-4.7,29.6-8.4,43.7-14c22-8.7,39.1-23.4,50.5-44.6c1.5-2.8,5.2-6,8.1-6.3     c0.6-0.1,1.2-0.1,1.9-0.2c0.3,0,0.5,0,0.8-0.1c0.3,0,0.7-0.1,1-0.1c0.3,0,0.7-0.1,1-0.1c0.3,0,0.5,0,0.8-0.1     c0.4,0,0.8-0.1,1.2-0.1c0.2,0,0.4,0,0.7,0c0.4,0,0.9-0.1,1.3-0.1c0.2,0,0.4,0,0.6,0c0.4,0,0.9-0.1,1.3-0.1c0.2,0,0.3,0,0.5,0     c0.5,0,0.9-0.1,1.4-0.1c0.2,0,0.3,0,0.5,0c0.5,0,1,0,1.4-0.1c0.1,0,0.3,0,0.4,0c0.5,0,1,0,1.5-0.1c0.1,0,0.3,0,0.4,0     c0.5,0,1,0,1.5,0c0.1,0,0.2,0,0.4,0c0.5,0,1,0,1.5,0c0.1,0,0.2,0,0.3,0c0.5,0,1,0,1.5,0c0.1,0,0.2,0,0.3,0c0.5,0,1,0,1.6,0     c0.1,0,0.2,0,0.3,0c0.5,0,1.1,0,1.6,0c0.1,0,0.2,0,0.3,0c0.5,0,1.1,0,1.6,0c0.1,0,0.2,0,0.3,0c0.5,0,1.1,0,1.6,0.1     c0.1,0,0.2,0,0.2,0c0.5,0,1.1,0.1,1.6,0.1c0.1,0,0.2,0,0.2,0c0.6,0,1.1,0.1,1.7,0.1c0.1,0,0.1,0,0.2,0c0.6,0,1.1,0.1,1.7,0.1     c0.1,0,0.1,0,0.2,0c0.6,0,1.1,0.1,1.7,0.2c0.1,0,0.1,0,0.2,0c0.6,0.1,1.1,0.1,1.7,0.2c0.1,0,0.1,0,0.2,0c0.6,0.1,1.1,0.1,1.7,0.2     c0.1,0,0.1,0,0.2,0c0.6,0.1,1.2,0.2,1.7,0.2c0,0,0.1,0,0.1,0c0.6,0.1,1.2,0.2,1.8,0.3c0,0,0.1,0,0.1,0c0.6,0.1,1.2,0.2,1.8,0.3     c0,0,0.1,0,0.1,0c0.6,0.1,1.2,0.2,1.8,0.3c0,0,0.1,0,0.1,0c0.6,0.1,1.2,0.2,1.8,0.4c0,0,0.1,0,0.1,0c0.6,0.1,1.2,0.3,1.8,0.4     c0,0,0.1,0,0.1,0c0.6,0.1,1.2,0.3,1.9,0.5c0,0,0,0,0.1,0c0.6,0.2,1.2,0.3,1.9,0.5c0,0,0,0,0,0c0.6,0.2,1.3,0.4,1.9,0.5     c0,0,0,0,0,0c0.6,0.2,1.3,0.4,1.9,0.6c0.4-2.4,0.8-4.9,1.2-7.3c-0.2,0-0.4,0-0.6,0c-21-1.1-39.7-2.1-57.5-3.1     c-1.1-0.1-2.3-0.1-3.4-0.2C432,288.9,468.4,286.8,484.7,292.1z' fill='#FFFFFF'/></g></g></svg>") no-repeat left top;
+}
+
+  </style>
+
+  </head>
+  <body>
+
+  <div id="resume">
+      <section id="basics">
+        <div class="left">
+            <img class="picture" src="data:image/jpeg;base64,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" alt="Christopher Robison avatar"/>
+        </div>
+    
+    
+        <div class="right">
+          <h1>Christopher Robison</h1>
+          <h2>Turning ideas into reality.</h2>
+    
+          <div class="contact">
+            <ul class="inline comma" id="location">
+              <li class="city">San Francisco</li>
+              <li class="region">CA</li>
+            </ul>
+          </div>
+    
+          <div class="contact">
+            <span class="website">
+              <strong>Website: </strong>
+              <a href="https://www.cdr2.com/" target="_blank">https://www.cdr2.com/</a>
+            </span>
+    
+            <span class="email">
+              <strong>Email: </strong>
+              <a href="mailto:cdr@cdr2.com" target="_blank">cdr@cdr2.com</a>
+            </span>
+    
+            <span class="phone">
+              <strong>Phone: </strong>
+              <a href="tel:(415) 810-6991" target="_blank">(415) 810-6991</a>
+            </span>
+          </div>
+    
+          <ul class="inline" id="profiles">
+              <li class="network linkedin">
+                <a href="https://www.linkedin.com/in/crobison" target="_blank">crobison</a>
+              </li>
+              <li class="network twitter">
+                <a href="https://twitter.com/thechrisrobison" target="_blank">thechrisrobison</a>
+              </li>
+              <li class="network github">
+                <a href="https://github.com/chrisrobison" target="_blank">chrisrobison</a>
+              </li>
+          </ul>
+        </div>
+      </section>
+    
+      <section id="summary">
+        <div class="left">
+          <h2>Summary</h2>
+        </div>
+        <div class="right">
+          <p>Whether it’s leading a team of programmers, rapidly developing a new app, or aligning software development with strategic business objectives, I bring a blend of technical know-how, leadership skills, and business acumen to every project. I am looking forward to collaborating with you to turn your innovative ideas into reality. I have extensive experience in software engineering and leading groups of unruly programmers. Skilled in a wide range of programming languages, including JavaScript, C, C++, Java, Python, Swift, Kotlin and others. I have a proven track record of successfully leading teams, delivering finished product and driving strategic planning, process improvement, and product development initiatives. Recognized for implementing innovative solutions and modernizing systems to support business growth, as evidenced by transforming D. Harris Tours&#x27; operations, resulting in a fleet expansion from 2 to 12 buses. Strong expertise in microservices architecture, Agile methodologies, and cloud services. Committed to continuous learning and staying updated with emerging technologies. A collaborative and proactive problem-solver with a passion for delivering exceptional results. I could go on but I&#x27;m afraid I&#x27;ve said too much already &amp;#128513;</p>
+        </div>
+      </section>
+    <section id="work">
+      <div class="left">
+        <h2>Work</h2>
+      </div>
+    
+      <div class="right">
+        <div class="item">
+          <div class="date">
+            <span class="startDate">
+              2020-02
+            </span>
+            <span class="endDate">
+              - 2024-03
+            </span>
+          </div>
+          <h3 class="name">
+            D. Harris Tours, Inc.
+          </h3>
+          <h4 class="position">
+            CTO
+          </h4>
+          <div class="website">
+            <a href="https://dharristours.com/">https://dharristours.com/</a>
+          </div>
+          <div class="summary">
+            <p>&lt;ul&gt;&lt;li&gt;Spearheaded technological transformation and business processes that allowed D Harris to grow from a fleet of two buses to 12 buses.&lt;/li&gt;&lt;li&gt;Updated and enhanced the company&#x27;s systems with modern tools to better manage the growing business, including real-time bus data, automated maintenance notifications, and automated trip confirmations and notifications via email and SMS.&lt;/li&gt;&lt;li&gt;Implemented route optimization algorithm to identify opportunities for one bus to handle multiple trips, increasing their daily revenue by 30%.&lt;/li&gt;&lt;li&gt;Implemented automated notifications for trips, bus maintenance, and billing and invoicing.&lt;/li&gt;&lt;/ul&gt;</p>
+          </div>
+          <ul class="highlights">
+            <li>Automated notifications for trips, bus maintenance</li>
+            <li>Automated billing and invoicing</li>
+            <li>Migrated driver logs to digital format</li>
+            <li>Increased daily revenue with better trip optimization</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="date">
+            <span class="startDate">
+              2010-07
+            </span>
+            <span class="endDate">
+              - 2020-02
+            </span>
+          </div>
+          <h3 class="name">
+            Conversant, Inc.
+          </h3>
+          <h4 class="position">
+            Manager, Software Engineering
+          </h4>
+          <div class="website">
+            <a href="https://conversantmedia.com">https://conversantmedia.com</a>
+          </div>
+          <div class="summary">
+            <p>Designed, developed, and maintained the infrastructure and code-base that served many millions of mobile and rich media ads each day.
+    Led the Rich Media effort and helped modernize the ad serving infrastructure and metric collection.
+    Designed and implemented a RESTful API for serving rich media ads and built out scalable backend services to handle integration with existing servers and infrastructure.</p>
+          </div>
+          <ul class="highlights">
+            <li>Contributed to IAB MRAID 2.0 standard</li>
+            <li>Implemented MRAID SDK&#x27;s on iOS and Android platforms</li>
+            <li>Developed and deployed mobile ad solutions for multiple platforms.</li>
+            <li>Designed and deployed &#x27;Rich Media&#x27; ad delivery and reporting infrastructure.</li>
+            <li>Architected and deployed RESTful API for ad serving, tracking metrics and reporting.</li>
+            <li>Developed client-side Javascript &#x27;ad controller&#x27; for mobile and web</li>
+            <li>Developed flexible metrics tracking with non-blocking endpoints</li>
+            <li>10 years</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="date">
+            <span class="startDate">
+              2007-09
+            </span>
+            <span class="endDate">
+              - 2010-07
+            </span>
+          </div>
+          <h3 class="name">
+            Mindjet
+          </h3>
+          <h4 class="position">
+            Web Architect
+          </h4>
+          <div class="website">
+            <a href="https://www.mindjet.com">https://www.mindjet.com</a>
+          </div>
+          <div class="summary">
+            <p>Led Mindjet&#x27;s initial Software as a Service (SaaS) product, Mindjet Catalyst. Transformed Mindjet&#x27;s business model with the new service nearly doubling monthly revenue.</p>
+          </div>
+          <ul class="highlights">
+            <li>Ported PHP website to ASP.NET</li>
+            <li>Ported Catalyst Flash client to standards based HTML5/canvas</li>
+            <li>Architected and led the team that implemented Mindjet Catalyst</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="date">
+            <span class="startDate">
+              2006-04
+            </span>
+            <span class="endDate">
+              - 2007-09
+            </span>
+          </div>
+          <h3 class="name">
+            Simple Software, Inc.
+          </h3>
+          <h4 class="position">
+            CEO / Founder
+          </h4>
+          <div class="website">
+            <a href="http://simplesoftwaresf.com">http://simplesoftwaresf.com</a>
+          </div>
+          <div class="summary">
+            <p>Mr. Robison provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p>
+          </div>
+          <ul class="highlights">
+            <li>GC Homes - Contractor documents and blueprints online.</li>
+            <li>Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</li>
+            <li>HUD Calculator - calculates potential reverse mortgage values</li>
+            <li>Tzero Technology - Custom content management system</li>
+            <li>Metrika - Custom content management system</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="date">
+            <span class="startDate">
+              2004-06
+            </span>
+            <span class="endDate">
+              - 2006-04
+            </span>
+          </div>
+          <h3 class="name">
+            Genetic Savings &amp; Clone
+          </h3>
+          <h4 class="position">
+            VP Engineering
+          </h4>
+          <div class="summary">
+            <p>Genetic Savings &amp; Clone was a genetic services company that offered commercial banking of genetic material as well as cloning services for cats. Responsible for architecting, developing and deploying Clonesoft, a bespoke business process automation software that ran every aspect of the company including employee and customer management, order tracking, tracking clone progress, and delivering the cloned pet to the customer.</p>
+          </div>
+          <ul class="highlights">
+            <li>Cloned a cat and delivered it to customer</li>
+            <li>Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business and automated many processes.</li>
+            <li>CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with specialized gene analysis hardware which included the Applied Biosystem Genetic Analyser 3130.</li>
+            <li>Created and analized pet genotyping database, identifying 7 unique markers for traits such as Polycystic Kidney Disease (PKD), fur color, and polydactylism (6-toed cat).</li>
+            <li>Integration with gene analysis and sequencing hardware.</li>
+            <li>Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time&#x27;s bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="date">
+            <span class="startDate">
+              2001-12
+            </span>
+            <span class="endDate">
+              - 2004-06
+            </span>
+          </div>
+          <h3 class="name">
+            Inter@ctivate, Inc.
+          </h3>
+          <h4 class="position">
+            Technical Director
+          </h4>
+          <div class="summary">
+            <p>As Technical Director for Interactivate, Inc., Mr. Robison&#x27;s responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. </p>
+          </div>
+          <ul class="highlights">
+            <li>Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</li>
+            <li>Designed and implemented web-based network management, monitoring &amp; systems analysis tools</li>
+            <li>Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
+            <li>Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.</li>
+            <li>Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.</li>
+            <li>Installation &amp; administration of Solaris, FreeBSD &amp; Windows NT in a heterogeneous environment</li>
+            <li>Design, implementation, migration and maintenance for Interactivate&#x27;s internal and external network infrastructure.</li>
+            <li>Working with vendors, developers &amp; 3rd party integrators.</li>
+            <li>Maintain and monitor over 50 hosted client web sites and dozens of web applications</li>
+            <li>Identifying &amp; resolving network related problems</li>
+            <li>Responsible for backup implementation and recovery strategy &amp; procedures</li>
+            <li>Required to support high volume access &amp; availability characteristics as well as identifying &amp; resolving system hardware &amp; software problems</li>
+            <li>Responsible for the full availability of DNS, SMTP, HTTP, POP &amp; IMAP servers</li>
+            <li>Maintaining security for all Interactivate networks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="volunteer">
+      <div class="left">
+        <h2>Volunteer</h2>
+      </div>
+    
+      <div class="right">
+        <div class="item">
+          <div class="date">
+            <span class="startDate">
+              2010-04-01
+            </span>
+            <span class="endDate">
+              - 2011-04-01
+            </span>
+          </div>
+          <h3 class="company">
+            San Francisco Elks Lodge #3
+          </h3>
+          <h4 class="position">
+            Esteemed Leading Knight / House Committee Chair
+          </h4>
+          <div class="summary">
+            <p>As Leading Knight and House Committee Chair I was responsible for the day-to-day operations of the Lodge restaurant and bar as well as organizing and holding events to raise money for local underprivileged children.  During my tenure as House Committee Chair, with the help of the SFPD, we were able to build 100 bicycles to give as Christmas presents to children which were very well received.  We raised over $34,000 for the children in that year.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <div class="left">
+        <h2>Education</h2>
+      </div>
+    
+      <div class="right">
+        <div class="item">
+          <div class="date">
+            <span class="startDate">
+              2009-01-01
+            </span>
+            <span class="endDate">
+              - 2010-01-01
+            </span>
+          </div>
+          <h3 class="institution">
+            City College of San Francisco
+          </h3>
+          <h4 class="area">
+            Japanese, Business
+          </h4>
+        </div>
+        <div class="item">
+          <div class="date">
+            <span class="startDate">
+              1988-01-01
+            </span>
+            <span class="endDate">
+              - 1991-01-01
+            </span>
+          </div>
+          <h3 class="institution">
+            California State University-Chico
+          </h3>
+          <h4 class="area">
+            Computer Science
+          </h4>
+        </div>
+        <div class="item">
+          <div class="date">
+            <span class="startDate">
+              1988-01-01
+            </span>
+            <span class="endDate">
+              - 1990-01-01
+            </span>
+          </div>
+          <h3 class="institution">
+            Butte Community College
+          </h3>
+          <h4 class="area">
+            Computer Science, General Education
+          </h4>
+        </div>
+      </div>
+    </section>
+    <section id="awards">
+      <div class="left">
+        <h2>Awards</h2>
+      </div>
+    
+      <div class="right">
+        <div class="item">
+          <div class="date">
+            1988-06-01
+          </div>
+          <h3 class="title">
+            Computer Science Award
+          </h3>
+          <h4 class="awarder">
+            Paradise High School
+          </h4>
+          <div class="summary">
+            <p>First recipient of the Paradise High School &quot;Computer Science Award&quot; for developing a data application to track school resources that ran on an Apple IIe.  </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="left">
+        <h2>Skills</h2>
+      </div>
+    
+      <div class="right">
+        <div class="item">
+          <span class="name">
+            Programming Languages
+          </span>
+          <ul class="keywords inline comma">
+            <li>Javascript [node.js]</li>
+            <li>Javascript [browser]</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Kotlin</li>
+            <li>Objective-C</li>
+            <li>Swift</li>
+            <li>PHP</li>
+            <li>Python</li>
+            <li>Perl</li>
+            <li>Go</li>
+            <li>C#</li>
+            <li>Bash</li>
+          </ul>
+        </div>
+        <div class="item">
+          <span class="name">
+            Leadership
+          </span>
+          <ul class="keywords inline comma">
+            <li>Strategic Planning</li>
+            <li>Team Building</li>
+            <li>Team Leadership</li>
+            <li>Procedure Development</li>
+            <li>Process Improvement</li>
+            <li>Product Development</li>
+            <li>Entrepreneurship</li>
+            <li>Budgeting / Financial Planning</li>
+          </ul>
+        </div>
+        <div class="item">
+          <span class="name">
+            Software Engineering
+          </span>
+          <ul class="keywords inline comma">
+            <li>Best Practices</li>
+            <li>Entrepreneurship</li>
+            <li>Software Development</li>
+            <li>Microservices Architecture</li>
+            <li>Scrum / Agile</li>
+            <li>Mobile Application Development</li>
+            <li>Cloud Services</li>
+            <li>Service Integration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="languages">
+      <div class="left">
+        <h2>Languages</h2>
+      </div>
+    
+      <div class="right">
+        <ul class="language inline">
+          <li>
+            English
+            <em>Native or bilingual</em>
+          <li>
+        </ul>
+      </div>
+    </section>
+    <section id="interests">
+      <div class="left">
+        <h2>Interests</h2>
+      </div>
+    
+      <div class="right">
+        <div class="item">
+          <span class="name">
+            Hobbies
+          </span>
+          <ul class="keywords inline comma">
+            <li>3D Printing</li>
+            <li>Raspberry Pi</li>
+            <li>Arduino</li>
+            <li>Laser engraving</li>
+            <li>Electronics</li>
+          </ul>
+        </div>
+        <div class="item">
+          <span class="name">
+            Recreation
+          </span>
+          <ul class="keywords inline comma">
+            <li>Golf</li>
+            <li>Recreational Programming</li>
+            <li>Karaoke</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="references">
+      <div class="left">
+        <h2>References</h2>
+      </div>
+    
+      <div class="right">
+        <div class="item">
+          <blockquote class="reference">
+            Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs.
+          </blockquote>
+          <h4 class="name">
+            Kevin Ready (Software Developer and Consultant)
+          </h4>
+        </div>
+        <div class="item">
+          <blockquote class="reference">
+            This guy has some seriously mad coding skills.
+          </blockquote>
+          <h4 class="name">
+            Thomas Weaver (Network Provisioner at Twitch)
+          </h4>
+        </div>
+        <div class="item">
+          <blockquote class="reference">
+            His system is well oil; all my web services are working with no down time.  He offers all the greatest gadgets, ideal environment for a programmer like me.
+          </blockquote>
+          <h4 class="name">
+            Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)
+          </h4>
+        </div>
+        <div class="item">
+          <blockquote class="reference">
+            Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager.
+          </blockquote>
+          <h4 class="name">
+            Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)
+          </h4>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="copy">
+    Powered by <a href="https://jsonresume.org" target="_blank">JSON Resume</a> &sdot;
+    Theme by <a href="https://github.com/assimovt">Tair Assimov</a>
+  </div>
+  </body>
+</html>

@@ -769,10 +769,6 @@ ul.courses li:hover {
         opacity: 1 !important;
     }
 }
-section.education-item {
-    clear: both;
-}
-section { clear: left; }
 
   </style>
   
@@ -781,10 +777,10 @@ section { clear: left; }
   
   <div id="resume">
     	<header id="header" class="clear">
-    		<img class="picture" src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAAKAAD/4QN2aHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0OCA3OS4xNjQwMzYsIDIwMTkvMDgvMTMtMDE6MDY6NTcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MDE0QjQyODgzMDkyMTFFQkIwMjRFQUVFNEYwMUQ2RTgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTk5MDIxRjc0QzE1MTFFQkI2MzA4RDgyNzRBQjk4ODgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTk5MDIxRjY0QzE1MTFFQkI2MzA4RDgyNzRBQjk4ODgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Y2E2NTExYy1jMTEyLTQ5ZTMtOTk3OS05MTBmNGRmNTg2NzkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDE0QjQyODgzMDkyMTFFQkIwMjRFQUVFNEYwMUQ2RTgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJE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" alt="Christopher Robison" />
+    		<img class="picture" src="data:image/jpeg;base64,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" alt="Christopher Robison" />
     		<div class="middle">
     			<h1 class="name">Christopher Robison</h1>
-    			<h2 class="label">Award-winning technology leader</h2>
+    			<h2 class="label">Turning ideas into reality.</h2>
     		</div>
     		
     		<span class="location">
@@ -838,7 +834,7 @@ section { clear: left; }
     
     	<section class="section main-summary">
     		<section>
-    			<div><p>Skilled technology leader excelling in the rapid development of solutions to manage complex technical environments for growing companies, ranging from startups to billion dollar industry leaders. With over 20 years experience in the industry, I can build, develop and lead high-performance technical teams and effectively manage people and resources in-person and remotely across multiple geographic locations. My extensive experience allows me to leverage my business acumen and technical expertise to translate a technology needs into innovative solutions and actionable plans. Hands-on but I know how to delegate. I am just as comfortable managing people and engineering resources as I am hacking away at code.  tl;dr: I build things that make companies go.</p></div>
+    			<div><p>Whether it’s leading a team of programmers, rapidly developing a new app, or aligning software development with strategic business objectives, I bring a blend of technical know-how, leadership skills, and business acumen to every project. I am looking forward to collaborating with you to turn your innovative ideas into reality. I have extensive experience in software engineering and leading groups of unruly programmers. Skilled in a wide range of programming languages, including JavaScript, C, C++, Java, Python, Swift, Kotlin and others. I have a proven track record of successfully leading teams, delivering finished product and driving strategic planning, process improvement, and product development initiatives. Recognized for implementing innovative solutions and modernizing systems to support business growth, as evidenced by transforming D. Harris Tours' operations, resulting in a fleet expansion from 2 to 12 buses. Strong expertise in microservices architecture, Agile methodologies, and cloud services. Committed to continuous learning and staying updated with emerging technologies. A collaborative and proactive problem-solver with a passion for delivering exceptional results. I could go on but I'm afraid I've said too much already &#128513;</p></div>
     		</section>
     	</section>
     
@@ -902,7 +898,7 @@ section { clear: left; }
     </section>
     <section class="section">
       <header>
-        <h2 class='section-title'>Work Experience <span class="item-count">(11)</span></h2>
+        <h2 class='section-title'>Work Experience <span class="item-count">(6)</span></h2>
       </header>
     
       <section id="work">
@@ -912,23 +908,22 @@ section { clear: left; }
             <label for="work-item-0"></label>
     
     			<header>
-    				<div class="position">Chief Technology Officer</div>
+    				<div class="position">CTO</div>
     				<div class="company">D. Harris Tours, Inc.</div>
     				<div class="date">
-    				  <span class="startDate">March 2020</span> 
-    					<span class="endDate">- Present</span> 
+    				  <span class="startDate">February 2020</span> 
+    					<span class="endDate">- March 2024</span> 
     				</div>
     			</header>
     			
     			<span class="location">
-    				<span class="fa fa-map-marker"></span>
-                    San Francisco, CA
+    				<span class="fa fa-map-marker"></span> 
     			</span>
         	<span class="website">
         		<a target="_blank" href="https://dharristours.com/">https://dharristours.com/</a>
         	</span>      	<div class="item" id="work-item">
             <div class="summary">
-              <p><p>D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire.  The majority of their business is derived from schools (student event transportation) and local tours.  10 years ago, I developed and implemented software that allowed D Harris to grow from 2 buses to 12. But the system I implemented 10 years ago was not made for the increased number of drivers, buses, customers and trips the company had grown to serve. Hired as CTO where I updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. After reviewing the first months trip data, I found that drivers would often sit idle for 4-5 hours, waiting to pickup students they had dropped off at a football game or band practice.  I developed an algorithm to identify these idle times and match them with jobs. I offered drivers an extra hours pay if they did the extra trip.  This nearly doubled the daily revenue until the COVID-19 shutdown.</p></p>
+              <p><p><ul><li>Spearheaded technological transformation and business processes that allowed D Harris to grow from a fleet of two buses to 12 buses.</li><li>Updated and enhanced the company's systems with modern tools to better manage the growing business, including real-time bus data, automated maintenance notifications, and automated trip confirmations and notifications via email and SMS.</li><li>Implemented route optimization algorithm to identify opportunities for one bus to handle multiple trips, increasing their daily revenue by 30%.</li><li>Implemented automated notifications for trips, bus maintenance, and billing and invoicing.</li></ul></p></p>
             </div>
             <ul class="highlights">
                 <li><p>Automated notifications for trips, bus maintenance</p></li>
@@ -945,7 +940,7 @@ section { clear: left; }
     
     			<header>
     				<div class="position">Manager, Software Engineering</div>
-    				<div class="company">Conversant, Inc. (formerly Mediaplex)</div>
+    				<div class="company">Conversant, Inc.</div>
     				<div class="date">
     				  <span class="startDate">July 2010</span> 
     					<span class="endDate">- February 2020</span> 
@@ -954,13 +949,12 @@ section { clear: left; }
     			
     			<span class="location">
     				<span class="fa fa-map-marker"></span> 
-                    San Francisco, CA
     			</span>
         	<span class="website">
         		<a target="_blank" href="https://conversantmedia.com">https://conversantmedia.com</a>
         	</span>      	<div class="item" id="work-item">
             <div class="summary">
-              <p><p>Working at the same company for 10 years presented many challenges. I wore many hats and performed many roles all while the company changed names and was bought and sold twice. By the time my team was cut due to COVID-19, we were responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day. </p><p>Mediaplex was an online advertising company that was started in 1999 and in 2001 acquired by ValueClick. The servers and software that ran the ad serving platform was over a decade old and the stack was beginning to show its age. The surge in popularity of "Rich Media" ads that began hitting the market in 2009 was beyond what their backend had been engineered to handle. Competing ad vendors who could serve these new rich media ads began stealing away valuable business, costing the company revenue and customers. I was hired to lead their Rich Media effort and help modernize their ad serving infrastructure and metric collection.</p><p>I was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure.</p><p>A large part of Rich Media ad serving and reporting is performed in the client and this required creating a small, reliable, cross-browser client-side ad loading framework that worked in tandem with the new backend API. After stabilizing the infrastructure, Managed engineering resources to work with product services team to ensure the successful deployment of all Rich Media ad campaigns. These enhancements were a great success by all counts; increasing revenue by $1.2 million in the first year alone.</p><p>By the time Rich Media ad serving was running smoothly, demand for mobile ads was steadily increasing.  My team was tasked with implementing a mobile ad solution. Our company joined the IAB [https://iab.com], a consortium of online advertising companies that develops industry standards on my recommendation. As a participating IAB member, we  were instrumental in helping to define the updated MRAID 2.0 standard for serving mobile ads.  The MRAID protocol is still currently in use and the de facto standard for mobile ad serving. I wrote the initial Conversant Mobile Ad MRAID SDK's for both iOS and Android as well test apps for both platforms to be used internally and by our customers to preview ads in a mobile environment before deployment. Infrastructure upgrades done for logging and reporting of rich media ads carried over nicely to mobile and no changes to the backend were needed.</p></p>
+              <p><p>Designed, developed, and maintained the infrastructure and code-base that served many millions of mobile and rich media ads each day.</p><p>Led the Rich Media effort and helped modernize the ad serving infrastructure and metric collection.</p><p>Designed and implemented a RESTful API for serving rich media ads and built out scalable backend services to handle integration with existing servers and infrastructure.</p></p>
             </div>
             <ul class="highlights">
                 <li><p>Contributed to IAB MRAID 2.0 standard</p></li>
@@ -990,14 +984,18 @@ section { clear: left; }
     			
     			<span class="location">
     				<span class="fa fa-map-marker"></span> 
-                    San Francisco, CA
     			</span>
         	<span class="website">
         		<a target="_blank" href="https://www.mindjet.com">https://www.mindjet.com</a>
         	</span>      	<div class="item" id="work-item">
             <div class="summary">
-              <p><p>Hired to migrate the Mindjet website from PHP to an ASP.Net solution, my role quickly grew into heading up Mindjet's foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.</p><p>Mindjet Catalyst was a web-based mindmapping software that allowed browser-based real-time multi-person sharing, collaborating and editing of mindmaps.  The Catalyst client canvas was originally written in Flash and my team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript.  The new application was designed to utilize open standards with HTML5, CSS3, Javascript, canvas and SVG with few to zero dependancies on external 3rd party libraries.</p></p>
+              <p><p>Led Mindjet's initial Software as a Service (SaaS) product, Mindjet Catalyst. Transformed Mindjet's business model with the new service nearly doubling monthly revenue.</p></p>
             </div>
+            <ul class="highlights">
+                <li><p>Ported PHP website to ASP.NET</p></li>
+                <li><p>Ported Catalyst Flash client to standards based HTML5/canvas</p></li>
+                <li><p>Architected and led the team that implemented Mindjet Catalyst</p></li>
+            </ul>
         	</div>
         </section>
         <section class="work-item">
@@ -1016,25 +1014,19 @@ section { clear: left; }
     			
     			<span class="location">
     				<span class="fa fa-map-marker"></span> 
-                    San Francisco, CA
     			</span>
         	<span class="website">
         		<a target="_blank" href="http://simplesoftwaresf.com">http://simplesoftwaresf.com</a>
         	</span>      	<div class="item" id="work-item">
             <div class="summary">
-              <p><p>Contracted software development and consulting. Provided contract support for previous work positions (Interactivate), developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses. Customers included Peterson-Dean Roofing, Interactivate, Genetic Savings &amp; Clone, Symantec and more.</p></p>
+              <p><p>Mr. Robison provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p></p>
             </div>
             <ul class="highlights">
-                <li><p>GC Homes - Contractor documents and blueprints online. [http://gch-dev.netoasis.net/app/]</p></li>
+                <li><p>GC Homes - Contractor documents and blueprints online.</p></li>
                 <li><p>Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</p></li>
-                <li><p>Lender Tool: http://bay-dev.netoasis.net/lenders.php</p></li>
-                <li><p>Form Definition Tool: http://bay-dev.netoasis.net/fields.php?id=50</p></li>
-                <li><p>HUD Calculator - calculates potential reverse mortgage values: http://bay-dev.netoasis.net/HUD/calc.html</p></li>
-                <li><p>DB Tool: http://bay-dev.netoasis.net/admin/dbedit/</p></li>
-                <li><p>Tzero Technology - Customized content management system http://www.tzerotech.com/site/</p></li>
-                <li><p>TZero Technology CMS: http://tzero-dev.netoasis.net/</p></li>
-                <li><p>Metrika - Customized content management system http://www.metrika.com/site/</p></li>
-                <li><p>Metrika CMS: http://met-dev.netoasis.net/</p></li>
+                <li><p>HUD Calculator - calculates potential reverse mortgage values</p></li>
+                <li><p>Tzero Technology - Custom content management system</p></li>
+                <li><p>Metrika - Custom content management system</p></li>
             </ul>
         	</div>
         </section>
@@ -1054,17 +1046,17 @@ section { clear: left; }
     			
     			<span class="location">
     				<span class="fa fa-map-marker"></span> 
-                    Sausalito, CA
     			</span>
          	<div class="item" id="work-item">
             <div class="summary">
-              <p><p>Genetic Savings & Clone was a genetic services company that offered commercial pet gene banking and cloning.  Working here was a lot of fun as it gave me the opportunity to apply my technical and management skills to the genetic sciences industry.  I was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery. My team managed and integrated diverse genetic equipment such as PCR machines and genetic analysers into our network while securely providing real-time data to internal and client facing applications. Developed a unique application for viewing real-time business operations with high-level overview drilling down into details in an animated, interactive map. Automated business processes pushed customer orders through the pipeline from biobox to clone. During the course of researching, integrating and automating business processes, I had the unique experience of cloning a cat, Lil' Nicky, from start to finish.</p></p>
+              <p><p>Genetic Savings & Clone was a genetic services company that offered commercial banking of genetic material as well as cloning services for cats. Responsible for architecting, developing and deploying Clonesoft, a bespoke business process automation software that ran every aspect of the company including employee and customer management, order tracking, tracking clone progress, and delivering the cloned pet to the customer.</p></p>
             </div>
             <ul class="highlights">
                 <li><p>Cloned a cat and delivered it to customer</p></li>
-                <li><p>Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business.</p></li>
-                <li><p>CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with various genetic analysis hardware including the Applied Biosystem Genetic Analyser 3130</p></li>
-                <li><p>Integration of genetic analysis hardware</p></li>
+                <li><p>Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business and automated many processes.</p></li>
+                <li><p>CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with specialized gene analysis hardware which included the Applied Biosystem Genetic Analyser 3130.</p></li>
+                <li><p>Created and analized pet genotyping database, identifying 7 unique markers for traits such as Polycystic Kidney Disease (PKD), fur color, and polydactylism (6-toed cat).</p></li>
+                <li><p>Integration with gene analysis and sequencing hardware.</p></li>
                 <li><p>Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time's bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</p></li>
             </ul>
         	</div>
@@ -1085,11 +1077,10 @@ section { clear: left; }
     			
     			<span class="location">
     				<span class="fa fa-map-marker"></span> 
-                    San Diego, CA
     			</span>
          	<div class="item" id="work-item">
             <div class="summary">
-              <p><p>As Technical Director for Interactivate, Inc., my responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. </p></p>
+              <p><p>As Technical Director for Interactivate, Inc., Mr. Robison's responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. </p></p>
             </div>
             <ul class="highlights">
                 <li><p>Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</p></li>
@@ -1107,153 +1098,6 @@ section { clear: left; }
                 <li><p>Responsible for the full availability of DNS, SMTP, HTTP, POP & IMAP servers</p></li>
                 <li><p>Maintaining security for all Interactivate networks</p></li>
             </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-6" type="checkbox" class="toggle-item" />
-            <label for="work-item-6"></label>
-    
-    			<header>
-    				<div class="position">Software Architect / Technical Director</div>
-    				<div class="company">TheFinancialCafe.Com</div>
-    				<div class="date">
-    				  <span class="startDate">May 2000</span> 
-    					<span class="endDate">- November 2001</span> 
-    				</div>
-    			</header>
-    			
-    			<span class="location">
-    				<span class="fa fa-map-marker"></span> 
-                    San Francisco, CA
-    			</span>
-         	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>TheFinancialCafe.Com was an Online Financial Broker/Dealer which provides free online market orders. Hired to build a custom CRM application for their support staff, the application quickly grew to encompass every aspect of the company from CRM to billing to handling email, managing the company website and integration with 3rd party financial services.</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Designed and implemented web-based network management & systems analysis tools</p></li>
-                <li><p>Required to support high volume access & availability characteristics as well as identifying & resolving system hardware & software problems</p></li>
-                <li><p>Working with vendors, developers & 3rd party integrators.</p></li>
-                <li><p>Installation & administration of Solaris, FreeBSD & Windows NT in a heterogeneous environment</p></li>
-                <li><p>Installation & maintaining network equipment</p></li>
-                <li><p>Responsible for the full availability of DNS, SMTP, HTTP, POP & IMAP servers</p></li>
-                <li><p>Design, implementation, and maintenance for the companies internal and external network infrastructure.</p></li>
-                <li><p>Extensive automation of administrative functions via shell scripting & Perl</p></li>
-                <li><p>Responsible for backup implementation and recovery strategy & procedures</p></li>
-                <li><p>DBA to a number of Mysql databases (one master, multiple slaves)</p></li>
-                <li><p>Responsible for the seamless integration of multiple third-party application services into the company's website.</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-7" type="checkbox" class="toggle-item" />
-            <label for="work-item-7"></label>
-    
-    			<header>
-    				<div class="position">Senior Web Developer / Administrator</div>
-    				<div class="company">Food.Com</div>
-    				<div class="date">
-    				  <span class="startDate">March 1998</span> 
-    					<span class="endDate">- May 2000</span> 
-    				</div>
-    			</header>
-    			
-    			<span class="location">
-    				<span class="fa fa-map-marker"></span> 
-                    San Francisco, CA
-    			</span>
-         	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Food.Com was an nationwide online food ordering and delivery service. Responsible for architecting and development of the online ordering application and the processes and procedures for delivering customer orders to restaurants via various notification mechanisms including IVR phone calls, faxes and custom terminals.</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Developed 'FUDGE', the 'Food.Com Ubiquitous Dining Guide Engine' which was used by thousands of restaurant reviewers to enter and maintain Food.Com's dining guide database.</p></li>
-                <li><p>Setup of automated development environment using web-based tools</p></li>
-                <li><p>Development of tools and utilities (both web based and command line) to automate development efforts</p></li>
-                <li><p>Migration of code-base from Objective-C/WebObjects to Java</p></li>
-                <li><p>Wrote and maintained various web-based backend tools for maintaining accounts and order information</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-8" type="checkbox" class="toggle-item" />
-            <label for="work-item-8"></label>
-    
-    			<header>
-    				<div class="position">Web Engineer</div>
-    				<div class="company">Slip.Net</div>
-    				<div class="date">
-    				  <span class="startDate">May 1996</span> 
-    					<span class="endDate">- March 1998</span> 
-    				</div>
-    			</header>
-    			
-    			<span class="location">
-    				<span class="fa fa-map-marker"></span> 
-                    San Francisco, CA
-    			</span>
-         	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>Slip.Net was one of the earliest Internet Service Providers in the San Francisco Bay Area with a client base of over 50,000 users.  My roles and responsibilities were divided between system administration and web application development. As the 'Web Administrator', I was responsible for shared administration of our server farm of 30+ servers.  I was responsible for all web-based software, E-commerce, network accessible databases, secure server certificates, web server maintenance, and more. In addition to these administration duties, I was also given a myriad of development projects, including the renovation of the existing system of disassociated and unwieldy collection of flat text db files and dbm's that constituted their 'client database'. I developed an easy to use and coherent system of procedures, tools, scripts, and interfaces using the new 'MySQL' open source database engine and Perl.</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Built the Slip.Net Account Control Center which allowed customers to administrate their own accounts.  Reduced support call volume by 50% the first week.</p></li>
-                <li><p>Developed Slip.Net Signup Wizard that walked a customer through setting up a new account as well as register domain names and setup website services all handled automatically</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-9" type="checkbox" class="toggle-item" />
-            <label for="work-item-9"></label>
-    
-    			<header>
-    				<div class="position">Founder / Chief Developer</div>
-    				<div class="company">The NetOASIS Software Co.</div>
-    				<div class="date">
-    				  <span class="startDate">May 1995</span> 
-    					<span class="endDate">- May 1996</span> 
-    				</div>
-    			</header>
-    			
-    			<span class="location">
-    				<span class="fa fa-map-marker"></span> 
-                    San Francisco, CA
-    			</span>
-         	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>As founder and President of the NetOASIS Software Co. I was responsible for every aspect of running the business from graphic design to programming to market research and client solicitation. The primary focus of the company was development of web based applications and the integration of a clients systems into a computer based environment. We also offered freelance programming services, web hosting, web site design and maintenance, and setup and installation of intranet hardware and software components. Specialized in online commerce systems and I have installed, upgraded and maintained online payment servers by Cybercash, First Virtual, and Verisign.</p></p>
-            </div>
-            <ul class="highlights">
-                <li><p>Clients included: Symantec, King Media, The Exploratorium and The Astronomical Society of the Pacific</p></li>
-            </ul>
-        	</div>
-        </section>
-        <section class="work-item">
-    
-            <input id="work-item-10" type="checkbox" class="toggle-item" />
-            <label for="work-item-10"></label>
-    
-    			<header>
-    				<div class="position">Web Developer / Systems Administrator</div>
-    				<div class="company">True World Access, Inc.</div>
-    				<div class="date">
-    				  <span class="startDate">January 1994</span> 
-    					<span class="endDate">- May 1995</span> 
-    				</div>
-    			</header>
-    			
-    			<span class="location">
-    				<span class="fa fa-map-marker"></span> 
-                    Yorba Linda, CA
-    			</span>
-         	<div class="item" id="work-item">
-            <div class="summary">
-              <p><p>System Administrator/Programmer for a network of mixed SunOS/Solaris/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.</p></p>
-            </div>
         	</div>
         </section>
       </section>
@@ -1296,7 +1140,7 @@ section { clear: left; }
     </section>
     <section class="section">
       <header>
-        <h2 class='section-title'>Education <span class="item-count">(4)</span></h2>
+        <h2 class='section-title'>Education <span class="item-count">(3)</span></h2>
       </header>
     
       <section id="education">
@@ -1357,7 +1201,7 @@ section { clear: left; }
                 Computer Science, General Education
               </div>
               <div class="institution">
-                Butte College
+                Butte Community College
               </div>
             </div>
             <div class="date">
@@ -1366,31 +1210,6 @@ section { clear: left; }
               </span>
               <span class="endDate">
               - 1990
-              </span>
-            </div>
-          </header>
-    
-    
-    
-          <div class="item">
-          </div>
-        </section>
-        <section class="education-item">
-          <header>
-            <div class="header-left">
-              <div class="area">
-                General Studies
-              </div>
-              <div class="institution">
-                Paradise High School
-              </div>
-            </div>
-            <div class="date">
-              <span class="startDate">
-              1984
-              </span>
-              <span class="endDate">
-              - 1988
               </span>
             </div>
           </header>

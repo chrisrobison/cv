@@ -1,0 +1,20 @@
+#!/usr/local/bin/php
+<?php
+$exe = array_shift($argv);
+while ($file = array_shift($argv)) {
+    $f = preg_split("/\./", $file, 2);
+    $theme = $f[0];
+    
+    print "Making thumbnail image of {$theme}...";
+    $results = `./mkthumbs {$theme}.html`;
+    print "Done.\n\n";
+    
+    print "Creating DOCX version of {$theme}...";
+    $results = `./mkdocx {$theme}.html`;
+    print "Done.\n\n";
+
+    print "Generating PDF from {$theme}.html...";
+    $results = `./html2pdf {$theme}.html`;
+    print "Done.\n\n";
+}
+?>

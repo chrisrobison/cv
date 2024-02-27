@@ -1,0 +1,24 @@
+#!/usr/local/bin/php
+<?php
+$exe = array_shift($argv);
+
+while ($file = array_shift($argv)) {
+    $parts = preg_split("/\./", $file, 2);
+    $theme = $parts[0];
+    print "Converting $file to $theme.pdf...";
+
+    if (file_exists($file)) {
+        $cmd = "wkhtmltopdf -R 10 -L 10 -B 10 -T 10  --footer-line --footer-font-size 9 --no-background --page-size Letter --footer-right \"Page [page] of [topage]\" --enable-local-file-access --print-media-type https://cdr2.com/cv/resumes/$theme.html $theme.pdf";
+        print $cmd."\n";
+        $results = `$cmd`;
+        print $results;
+        print "\nDone.\n";
+    } else {
+        print "\n*** WARNING: Resume $theme.html does not exist. Skipping...\n";
+    }
+    
+}
+
+
+
+?>

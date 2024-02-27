@@ -1,0 +1,11 @@
+#!/usr/local/bin/php -q
+<?php
+    $exe = array_shift($argv);
+
+    while ($arg = array_shift($argv)) {
+        $parts = preg_split("/\./", $arg, 2);
+        $theme = $parts[0];
+
+        $results = `pandoc -f html -t docx -o {$theme}.docx https://cdr2.com/cv/resumes/{$theme}.html`;
+    }
+?>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,987 +9,806 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style type="text/css">
-        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-        @charset "utf-8";
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@charset "utf-8";
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
 
-        @-webkit-viewport {
-            width: device-width;
-        }
+body{
+  font-family: 'Open Sans', Arial, Tahoma;
+  font-weight: 400;
+  color: #363636;
+  background: #334960;
+}
+blockquote {
+  font-size: 1em;
+}
 
-        @-moz-viewport {
-            width: device-width;
-        }
+.container{
+  margin-top: 80px;
+  margin-bottom: 15px;
+  background: #fff;
+}
 
-        @-ms-viewport {
-            width: device-width;
-        }
+#photo-header{
+  margin-top: -75px;
+}
+#photo{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 5px;
+  background: #334960;
+  display: inline-block;
+}
+#photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+#text-header h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+#text-header h1::first-line{
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+#text-header h1 span{
+  color: #334960;
+  opacity: 0.7;
+}
+#text-header h1 sup{
+  opacity: 0.5;
+}
+#text-header:after{
+  width: 100%;
+  height: 3px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+  content: '';
+  display: block;
+}
 
-        @-o-viewport {
-            width: device-width;
-        }
+.box{
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+.box h2{
+  color: #227c74;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
-        @viewport {
-            width: device-width;
-        }
+#awards,
+#education{
+  margin-top: 20px;
+  margin-bottom: 0;
+  position: relative;
+  padding: 1em 0;
+  list-style: none;
+}
+#awards:before,
+#education:before {
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 35px;
+  top: 0;
+  content: ' ';
+  display: block;
+  background: #32475c;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+#awards li,
+#education li{
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  float: left;
+}
+#awards .year,
+#education .year{
+  width: 14%;
+  background: #fff;
+  padding: 10px;
+  font-weight: 700;
+  display: inline-block;
+}
+#awards .description,
+#education .description{
+  width: 83%;
+  display: inline-block;
+  background: #eee;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#awards .description:after,
+#education .description:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #eee;
+  border-width: 8px;
+  pointer-events: none;
+}
+#awards .description h3,
+#education .description h3{
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+#awards .description p,
+#education .description p{
+  margin-top: 5px;
+  padding: 0;
+}
 
-        body {
-            font-family: 'Open Sans', Arial, Tahoma;
-            font-weight: 400;
-            color: #363636;
-            background: #334960;
-        }
+.job{
+  margin-bottom: 15px;
+}
+.job .details {
+  margin-left: 3%;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.job .where{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .year{
+  opacity: 0.7;
+}
+.job .profession{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.job .description{
+  line-height: 1.5em;
+}
+.job .highlights{
+  padding: 5px 0;
+  font-weight: bold;
+}
+.job .languges {
+  padding: 5px 0;
+  font-weight: bold;
+}
+.job .systems {
+  padding: 5px 0;
+  font-weight: bold;
+}
+.job .job-details {
+  padding-left: 5%;
+  width: 100%;
+}
+.publication {
+  margin-bottom: 0;
+}
+.publication .name{
+  font-size: 1em;
+  font-weight: bold;
+}
+.publication .year{
+    opacity: 0.7;
+}
+.publication p{
+  margin: 0;
+  padding-top: 10px;
+}
 
-        blockquote {
-            font-size: 1em;
-        }
+.contact-item{
+  width: 100%;
+  float: left;
+}
+.contact-item .icon{
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #32475c;
+  background: #eee;
+}
+.contact-item:last-child .icon{
+  border-bottom: none;
+}
+.contact-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-weight: 700;
+  opacity: 0.9;
+}
+.contact-item .title.only{
+  margin-top: 10px;
+}
+.contact-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  color: #334960;
+}
 
-        .container {
-            margin-top: 80px;
-            margin-bottom: 15px;
-            background: #fff;
-        }
+.item-interests,
+.item-skills{
+  height: 30px;
+  color: #334960;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.interest,
+.skill{
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  background: #32475c;
+  position: relative;
+  font-size: .85em;
+}
+.skill-level {
+  background-color: #227c74;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: .75em;
+  position: absolute;
+  margin: 1px 10px;
+}
 
-        #photo-header {
-            margin-top: -75px;
-        }
+#language-skills .skill{
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
 
-        #photo {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            overflow: hidden;
-            padding: 5px;
-            background: #334960;
-            display: inline-block;
-        }
-
-        #photo img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-        }
-
-        #text-header h1 {
-            margin: 0;
-            padding: 0;
-            font-size: 1.5em;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-        }
-
-        #text-header h1::first-line {
-            font-size: 1.5em;
-            font-weight: 800;
-            line-height: 1.5em;
-        }
-
-        #text-header h1 span {
-            color: #334960;
-            opacity: 0.7;
-        }
-
-        #text-header h1 sup {
-            opacity: 0.5;
-        }
-
-        #text-header:after {
-            width: 100%;
-            height: 3px;
-            border-bottom: 1px solid #ddd;
-            margin-top: 15px;
-            content: '';
-            display: block;
-        }
-
-        .box {
-            padding-bottom: 10px;
-            margin-bottom: 25px;
-        }
-
-        .box h2 {
-            color: #227c74;
-            font-size: 1.5em;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-        #awards,
-        #education {
-            margin-top: 20px;
-            margin-bottom: 0;
-            position: relative;
-            padding: 1em 0;
-            list-style: none;
-        }
-
-        #awards:before,
-        #education:before {
-            width: 5px;
-            height: 100%;
-            position: absolute;
-            left: 35px;
-            top: 0;
-            content: ' ';
-            display: block;
-            background: #32475c;
-            background: -moz-linear-gradient(top, #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(7%, #32475c), color-stop(89%, #32475c), color-stop(100%, #ffffff));
-            background: -webkit-linear-gradient(top, #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-            background: -o-linear-gradient(top, #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-            background: -ms-linear-gradient(top, #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-            background: linear-gradient(to bottom, #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
-        }
-
-        #awards li,
-        #education li {
-            width: 100%;
-            z-index: 2;
-            position: relative;
-            float: left;
-        }
-
-        #awards .year,
-        #education .year {
-            width: 14%;
-            background: #fff;
-            padding: 10px;
-            font-weight: 700;
-            display: inline-block;
-        }
-
-        #awards .description,
-        #education .description {
-            width: 83%;
-            display: inline-block;
-            background: #eee;
-            margin-bottom: 10px;
-            position: relative;
-            padding: 10px;
-            border-bottom: 1px solid #ccc;
-            border-right: 1px solid #ccc;
-        }
-
-        #awards .description:after,
-        #education .description:after {
-            content: '';
-            position: absolute;
-            top: 15px;
-            right: 0;
-            left: -16px;
-            height: 0;
-            width: 0;
-            border: solid transparent;
-            border-right-color: #eee;
-            border-width: 8px;
-            pointer-events: none;
-        }
-
-        #awards .description h3,
-        #education .description h3 {
-            font-size: 1.2em;
-            margin: 0;
-            padding: 0;
-            font-weight: 700;
-        }
-
-        #awards .description p,
-        #education .description p {
-            margin-top: 5px;
-            padding: 0;
-        }
-
-        .job {
-            margin-bottom: 15px;
-        }
-
-        .job .details {
-            margin-left: 3%;
-            width: 95%;
-            padding: 10px;
-            margin-bottom: 10px;
-            background: #eee;
-            border-bottom: 1px solid #ccc;
-            border-right: 1px solid #ccc;
-        }
-
-        .job .where {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        .job .year {
-            opacity: 0.7;
-        }
-
-        .job .profession {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-
-        .job .description {
-            line-height: 1.5em;
-        }
-
-        .job .highlights {
-            padding: 5px 0;
-            font-weight: bold;
-        }
-
-        .job .languges {
-            padding: 5px 0;
-            font-weight: bold;
-        }
-
-        .job .systems {
-            padding: 5px 0;
-            font-weight: bold;
-        }
-
-        .job .job-details {
-            padding-left: 5%;
-            width: 100%;
-        }
-
-        .publication {
-            margin-bottom: 0;
-        }
-
-        .publication .name {
-            font-size: 1em;
-            font-weight: bold;
-        }
-
-        .publication .year {
-            opacity: 0.7;
-        }
-
-        .publication p {
-            margin: 0;
-            padding-top: 10px;
-        }
-
-        .contact-item {
-            width: 100%;
-            float: left;
-        }
-
-        .contact-item .icon {
-            padding: 10px;
-            border-right: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-            color: #32475c;
-            background: #eee;
-        }
-
-        .contact-item:last-child .icon {
-            border-bottom: none;
-        }
-
-        .contact-item .title {
-            width: 80%;
-            width: calc(100% - 55px);
-            font-weight: 700;
-            opacity: 0.9;
-        }
-
-        .contact-item .title.only {
-            margin-top: 10px;
-        }
-
-        .contact-item .description {
-            width: 80%;
-            width: calc(100% - 55px);
-            color: #334960;
-        }
-
-        .item-interests,
-        .item-skills {
-            height: 30px;
-            color: #334960;
-            padding: 5px 10px;
-            margin-bottom: 5px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            font-size: 1.1em;
-            font-weight: 600;
-        }
-
-        .interest,
-        .skill {
-            color: #fff;
-            display: inline-block;
-            margin-right: 5px;
-            margin-bottom: 5px;
-            padding: 5px 10px;
-            background: #32475c;
-            position: relative;
-            font-size: .85em;
-        }
-
-        .skill-level {
-            background-color: #227c74;
-            border-radius: 4px;
-            color: #fff;
-            padding: 1px 8px;
-            font-size: .75em;
-            position: absolute;
-            margin: 1px 10px;
-        }
-
-        #language-skills .skill {
-            margin: 10px 0;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #eee;
-        }
     </style>
     <style type="text/css" media="print">
-        body {
-            font-size: .95em;
-            -webkit-print-color-adjust: exact;
-        }
+    body {
+  font-size: .95em;
+  -webkit-print-color-adjust: exact;
+}
 
-        a[href]:after {
-            content: none !important;
-        }
+a[href]:after {
+  content: none !important;
+}
 
-        #photo {
-            display: none;
-        }
+#photo{
+  display: none;
+}
 
-        .box {
-            margin-bottom: -10px;
-        }
+.box {
+  margin-bottom: -10px;
+}
 
-        blockquote,
-        #education,
-        #awards,
-        .contact-item,
-        .publication,
-        .skills,
-        .interests,
-        .job-details,
-        .job {
-            page-break-inside: avoid;
-        }
+blockquote,
+#education,
+#awards,
+.contact-item,
+.publication,
+.skills,
+.interests,
+.job-details,
+.job {
+  page-break-inside: avoid;
+}
 
-        .col-sm-5 {
-            width: 40%;
-            padding: 0 15px;
-        }
+.col-sm-5{
+  width: 40%;
+  padding: 0 15px;
+}
 
-        .col-sm-7 {
-            width: 60%;
-            padding: 0 15px;
-        }
+.col-sm-7{
+  width: 60%;
+  padding: 0 15px;
+}
 
-        .skills .col-sm-offset-1,
-        .interests .col-sm-offset-1 {
-            margin-top: -10px;
-            margin-bottom: 5px;
-        }
+.skills .col-sm-offset-1,
+.interests .col-sm-offset-1{
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
 
-        #education {
-            margin: 0;
-            margin-bottom: -20px;
-        }
+#education {
+  margin: 0;
+  margin-bottom: -20px;
+}
+#awards:before,
+#education:before {
+  background: none;
+}
 
-        #awards:before,
-        #education:before {
-            background: none;
-        }
+#awards .description,
+#education .description,
+.job .details {
+  border: 1px solid #eee;
+}
+.publication,
+.publication .panel-heading,
+.publication .name{
+  margin: 0;
+  padding: 0 5px;
+  border: none;
+}
+.publication .panel-body {
+  padding: 0 10px;
+  margin: 0;
+}
 
-        #awards .description,
-        #education .description,
-        .job .details {
-            border: 1px solid #eee;
-        }
+.badge {
+  margin: 0;
+}
 
-        .publication,
-        .publication .panel-heading,
-        .publication .name {
-            margin: 0;
-            padding: 0 5px;
-            border: none;
-        }
+.list-group-item{
+  border: none;
+  margin: 0;
+  padding: 5px 15px;
+}
+.list-group-item:after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 0;
+  left: -1px;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-right-color: #999;
+  border-width: 4px;
+  pointer-events: none;
+ }
 
-        .publication .panel-body {
-            padding: 0 10px;
-            margin: 0;
-        }
-
-        .badge {
-            margin: 0;
-        }
-
-        .list-group-item {
-            border: none;
-            margin: 0;
-            padding: 5px 15px;
-        }
-
-        .list-group-item:after {
-            content: '';
-            position: absolute;
-            top: 8px;
-            right: 0;
-            left: -1px;
-            height: 0;
-            width: 0;
-            border: solid transparent;
-            border-right-color: #999;
-            border-width: 4px;
-            pointer-events: none;
-        }
     </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <div id="photo-header" class="text-center">
-                    <!-- PHOTO (AVATAR) -->
-                    <div id="photo">
-                        <img src="data:image&#x2F;jpeg;base64,&#x2F;9j&#x2F;4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP&#x2F;sABFEdWNreQABAAQAAAAKAAD&#x2F;7gAOQWRvYmUAZMAAAAAB&#x2F;9sAhAAUEBAZEhknFxcnMiYfJjIuJiYmJi4+NTU1NTU+REFBQUFBQUREREREREREREREREREREREREREREREREREREREARUZGSAcICYYGCY2JiAmNkQ2Kys2REREQjVCRERERERERERERERERERERERERERERERERERERERERERERERERET&#x2F;wAARCADJAM0DASIAAhEBAxEB&#x2F;8QAjQAAAQUBAQAAAAAAAAAAAAAAAAECAwQFBgcBAQADAQEAAAAAAAAAAAAAAAABAgMEBRAAAgECBQICBwcEAQUAAAAAAAECEQMhMUESBFEFYXGBkdEiMlIT8LHBQmIjBuEzFBXxcqLiczURAQEAAgIBBAEEAwAAAAAAAAABEQIhAzIxQWESUXGRIlLBQjP&#x2F;2gAMAwEAAhEDEQA&#x2F;ANLQQFkIbMi1ErUJMTUBRcxuQtcABhF4DXn6GCeASe2MqqkHJ5luwvfePRZmRf5d3lOnww6e0ptvIma2tO93C3DJ18dCjLnXLlWsV4ZGdO7C3kqvrIp3OZdm8HReBldrs0kkaF7nyTx2+TI490cXVYLwM9XJ3HR4kTbIwOu4XcY3lR0T8&#x2F;A0N2CocTx9ywfw6o6OPcIfTVKyaXkXm2OKrY0t9KiJ1Mhd0lXC28f1Is2ebC69uMZ&#x2F;LLD1dS82lVxV7cCkV1NMdvzLITbsQIlIdUCRManmN3YUCoCsSuIjYV+4CzkhA0DNkoI+gA3kInqAoVwEqJXABTP7lznxoqFv+5PLwXX2F2dxW4ucnSMcWcz9WV+5K&#x2F;P4n&#x2F;2roU32xPlbWZqW1ajFb5Oss3X7Zj53Eo751p+WC18ytCTvSp+RZ+P216l2NhN7p40+&#x2F;oc14dEmWZNyuNtxS6UJLfb5XfeSobPH4S+OSzyRoQsroV+7adTCh2uaVEhk+3bFkv6nRO3QrXo1iyPtU3rmHPvjXLeKz0og+u4JK5V1qakoYplediNxUehfLG6qnuXFSPqeDEt3nYkq4x1WqJo8Rwe2aqtGNv2nDFY9a9PxJ&#x2F;RTDShdqk9B8J1qZ3FuUjTTQsQnQ3lzGVmF1SxFU6laMxymXiFneO3FfcOUsAhK394VGNhXEC6wEY32lkFriAAyUCv4iJ1ECOSAr9wTlYklq8fI5lNv3Y&#x2F;8nUctbrM0s2mc&#x2F;wASzvubmsjn7eK26+eF7jcdR2r0ss8W39SVHksR0I0LHDt7K16nLbXbIuxhkWbdhSIok8J7WVaXOOFe&#x2F;HbgZ9&#x2F;4W2afJe4zuQqx29cAjmzlVksEQJdCxon4DIxoql2dFaxoVr8tyoSzlRle49UXjHdWsOm6PTFEsJkS9246Z0w9IkHQ01Y1cjIfuKykSKRsqsqQ7cQKQ+pOUJlLAXcQp4Dqgw0xGKwLqG6igwYCVwAWgnQBHj6TI4sHGUl0wNh5GYpKF2638xh3Tht0+S5biWrcTNjzYR0ZZs8yE8mcljvm0y006DkymrtRs7+0rhZbuOpTvKpTvdycXRZdSo+VduP3a06lpFLtF6SonTUjw2ohi5xWLqRwuPIlW064m8ipKWOJeKty223QtGO6rR1b6aiRFbwa8RImurKpYsemRIcjRVMmPqQxeI+pZCVMWuBGmG4Ibgmv26CsHn9uhooawBitgFRAABHkZHKgoX3J5PE128Cly7e9oy7fFp1+Sq3bmssaVyGRhtdISxWmTJ7FuNu3K2vzOrZJxuLZsLbBPH4txy8Y+XXJtn04TcScp+680P5VuSJbCpKq0Hch1M88tsWxkxsKWnp19AnJn&#x2F;hUi4pNrBYvM0YrAbJ1zVfMvLPdltrtjhSuq4ranTP5RLcZP8rZaduUn4E8YbViRbPZM1vupyjt8CK7c2RfV4LzZbvIpOO9qLxxRMRYiu8dW7Lk86pFRGl3Ge21GPzSb9Rlpmunox7PJKmKhqYtTRkeniPbyIosduLCVOgm4ZUbUIdILQBG8TVmRsH1BiSAMhWIw0AHgQyfvUJWV6&#x2F;uPyRj3eLbpmd0kbCY92owVQ+oooid36nkcb0eFzjxwr1GX44kth+6R3JKLxIT7IrclF0ZdhGLRm3JxSciS3ekopk2IlXZW4rErXENXKU9cRkrhGE54RXCmvdmm8MS1KRWvPGpeOfZD3hbZQXgzNTH8nlS5Ek5aKhEmbazEYb3NymTFqMqOqXZ05Dq4jAbxLB+7ASoyoVA6utRNRHqLU1ZEEkIxXqAA8BAbqANlK9hcquiLhX5Ecpegz7JnVp1XGyvcu7pbZvbFKr8SWsbkaJ4PoPjBSWJU5PHnGtyw9stY6P0HI7c1Lvv2Y7YNuK11IJwv82e2dYQ&#x2F;NTUn4ly9etqbgqt7XFYOpeULuC+lKryJwj7T+yjDgWbbqk&#x2F;S2WXNJYi3bPI95uKhtp8Uq5+RlcqE7s3Ztz3NPTBDF90feXjXlYu8i1KWxJyn+nMkswnTGtFlXMbw+FHixosZv4pF3KJC8n5V3gU+RKhauTzZk8q9ubp5EyMtrwpDkCQGzGpKioahakqlqFcRKiN4gOYlRK4CFh11QB9UJU1ZDoIw6AwD2iAIvaAo2cVJNPJjgZApRk7ctss0Tt1VUJftb1WPxLIh483XYzk31+tdnX2Zh&#x2F;0qtSi6NalqNy&#x2F;FUU3TxxIWtrJlGTM84dP1128oju2p3f7s3JdMkNt242ltiqInaaQyEG3UFkkxIMEQXbuiDk3VBNdClduq1BzlnqWkY2o+XyFBbVmxvA7Xe57c&#x2F;hsxq5XXkqdOpd7V&#x2F;H73cJq&#x2F;wAlO3Z6ZSl5dF4+om&#x2F;k3eYWof67iUUUttxxyS+Vfj6upeRjtcuYt3N1VqiQpRbi6rMtQmpLxLKpKghoZEoPqJqNbCpIc8hArgBZDr3kNQolMDVkRrIMcQeDDqAIRYi1ohEAvmAVoJoAdSlzF9J&#x2F;VWGK3F4ZK2rqcWqpqjKb+NX68&#x2F;aSGwmri3LUmjcoYjjd4brbxj8rHx7m38UfUceHoTsxMVtOW4jnejaj46GVPuSSwUvST8LtfM7o1KX7dl&#x2F;neq8Ov3EzVXfsmECcuTcUYJydcEtX9tTpe3dhjaavcqk7ixjH8sfa&#x2F;H1Gjwe3WOBDbZjR6yebMP8Akn8i&#x2F;wARPi8Z&#x2F;vP45L8n&#x2F;l9xpNcOa7ZM&#x2F;kv8i&#x2F;x0+JxX+5lOa&#x2F;L4Lx+7zy4TMG23V5gWVAsZOLqhAAn+unoSpqSwyKY6E3F1QFpgRq4pY5D6gOTwAj3YC7iyMOxfgJjTABVojZkR6Bp6QBvHEBHqGQjGXbsLS3XGorqwHvOo25cjbjvm1FdWY&#x2F;J77GOFiNX80svUY1&#x2F;k3OQ912Tkyl2k9FprW1yu+RhWNhbn80svUbn8Tnc5lu&#x2F;O+6xbjBLRZt&#x2F;ejhD0X+H2vp9vUvnnKX4fgZ22ryYQ8&#x2F;hfTk01X8UZS7PLkzpZWPjkvM7XkWI31teaJLVqNqO2CojGaXPw6NuyXX0&#x2F;kxu3&#x2F;wAa43FpO6vq3F83wryXtNwDO7x3a32uw7s8ZvCEOr9i1NWCj&#x2F;I++Lttr6Vp&#x2F;vzXu&#x2F;pXzez+h5zKTk3KTq3i2yXlcm5y7sr117pydWyEAAAAAAAAAAAAAAdvfUX6jGAB3SEWgaiao6GIeQy7dhZi53GlHqzJ7j3fY3a4&#x2F;wAX5p+z2mHcuzuus5OT8WUu2Fpq2OV31v3eOqfqln6jHu3p3pbrknJ+IwDO21eTAAAISDs&#x2F;9z&#x2F;q+Dx+LFNXJ297ks4qVaNdWcYanOvx5d1Tt5fTtR8nGCTXrItxF9NftcOktcjlRsp9tvRv6z3x&#x2F;e9NXp9qmr2bvcefWzdWzkR+KDwr4r8VocHaTsSU4yamsU1obfI5lvuNn&#x2F;IhJW+dZSbphvS1Xiv6ZUKzbLbfpuk&#x2F;n6fn8Oy5vMt8KzK&#x2F;edIxXr8F4s8u7n3K73K+713yjHSK6E3dO9X+6KCvUSgso5OWsvP7tDMLuYAAAAAAAAAAAAAAAAAAAB3CzMru&#x2F;OdiCtQfvyWL6L+ppSmrac5ZJbmcdyL0r9yVyebZttcRnrMowADFoAAAAAAANz&#x2F;H4sbEb9i7Hdt963PCVdaewxYKsks8S&#x2F;ynPkzajHH5YrBLyWiK7f1&#x2F;Lo6ZtM9s&#x2F;wBVS5elJtZEJrd5tTjGxcvOLvTt+&#x2F;teOD91y8dtPUZJaSRjttdrna5AAAVAAAAAAAAAAAAAAAAAAAAdT3S4ocaabo5UivHwOWNnv3xW&#x2F;JmMX39VdfQAAFFgAAAAAAWuBad26klV6Lq3gjo+fdt9nsS49mkuVNfu3Pl&#x2F;Svt4vSmP&#x2F;Hf&#x2F;AKFn&#x2F;qDvP965&#x2F;wCyf3spfL5dWv8Ay58c39&#x2F;n&#x2F;DLbcnV4sQALuUAAAAAAAAAAAAAAAAAAAAAAAf&#x2F;Z" alt="avatar">
-                    </div>
-                    <div id="text-header">
-                        <h1>Christopher Robison<br><span>Award-winning technology leader</span></h1>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img src="data:image&#x2F;jpeg;base64,&#x2F;9j&#x2F;4AAQSkZJRgABAQAAAQABAAD&#x2F;2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL&#x2F;2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL&#x2F;wAARCAEAAPkDASIAAhEBAxEB&#x2F;8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL&#x2F;8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6&#x2F;8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL&#x2F;8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6&#x2F;9oADAMBAAIRAxEAPwD2MmikozQMOtKKTNFADhTqZn1pQfwoEPyacPyqME5607NADx0604e9MFOB9DQIfntml6ds&#x2F;SmZwaUsOoB96AH5yAcVXu7+CxTzJ5VUe9ct4t8cWugwtFA0cl1&#x2F;dz93&#x2F;wCv7V47qvijUdanZriaVlJyEXgfpQOx63qXxN0uycomXPI4PX8Kxx8WIXk&#x2F;499qk9dvH455ry1YJzyI0jzyRjJ&#x2F;WmSSTRcuu5fYj+lAz2a2+IMTOrEKAT&#x2F;CeDXRWfi6zucK8gRs9ulfOsF6oy0RIPUoT1&#x2F;CtKy1XphyOexoEfSqzx7VKtkd1NS71LbRkcZ5rxTQPGlzaPFDI5kjZsAsehz0r1G3162ZA73ESFgDksB9KANzjJPUUpY7ue9Yp8Q6cJQrahbDPbzVAFXbe+guv9TLE+OBsfOaALpHXP4mjlR8oX3zUeexIx6Z6U8cDaOvbJoAXdn69qU&#x2F;e4H4U0sR&#x2F;Dk9s0Z&#x2F;v8D0HNMBSykgL070bGGSVwPrTcjB5IHuKCc9XOB0x0oATggDAPpRyO9L1HQ00gnkqeTQAjHjjGfWmfL6j8qeRgcHv3qL&#x2F;gX6UhlM00&#x2F;SnU05zQAtGcdqTNGaBDgc0uTTRx9KdQAuacpI7UwH2pQeaBEgNO&#x2F;Kmdf&#x2F;ANVLnjJoAczbQScDHevPfG3jcWEbWNkczv8AKduf6VreMvEaaNYlQ+JXBxg8j&#x2F;65&#x2F;wAT2rxKaae6nMzEtcSev8IpMaQ6Z&#x2F;PnMt4xkkJ&#x2F;1anOPxpXuUhQBIVjx2XHH5gmqV7fW+nQkZ8yb0Hc1hHUb+7f5ZNi54VBgU0ijemu3YYQj22Y&#x2F;lWdcXcq&#x2F;wCtOf8Aa7&#x2F;jVyy0u8uI1f5yD&#x2F;eyavP4cvXXzDEWXvih6FKLZzbStuDrwwPanxXDo5+u7H48108PhYmLcB+HpVO60MwnlTz6ClzIbpSRXGoFI42BPTdVyPW5ZCA0pzgYGSaqPpbsNiKzY7jgCoWsp4JMorbl6EjpTuiOVl+a4kTLSOVJ7dSaW2166s5FaOdlI6buKx55ZUyD97uW6&#x2F;8A1qp+f&#x2F;CeCepPWnYR67ofxSuYWRLsrMhOCd2D+HWvVdE8SWWtQK9vJjI+4x5&#x2F;Cvk4Bh8y78Gt3w74kutFvUlt5XIBG+NmxuA9D2PoaAPq4ld33gR+dBYFScg4rlfC3iW317T0njmy5OCSOc+h966Y8DLE59cUCHM3csB7UFvUk5NIMuvyLnHJJ5zTcsO&#x2F;1wtAD368E7R36U0EFs847ZNNLgjoxpN&#x2F;HIz+NACsWH3gv4Gm7z6frQMAc8e&#x2F;Wo93vQBWppNLmmk1IChs9qTPbmmk&#x2F;wCRSg+lMB46UoI96ZknqMCnCmA8dKXPFRjrTs+1Ah&#x2F;agnAzSAkd6SRtqEk8DmkB4x8R7h5&#x2F;E7QH7kSg&#x2F;jiuKu5jaxmMN+8bqR&#x2F;Kul8W30c3iC+nXOFbv6&#x2F;4Vx6q1zKXPfml1LWxniB7ibLDJJ6V12g+Gw+JZV5&#x2F;lUei6X5socjgH0rvbC1CRgdKic7aI6aNK+rEstOSNQqxjjrW1HaIq8qCPSi2h44&#x2F;OrscXWseY7VBIpCyty+4xDdVafRYJ3JZVUdgBW55IIBxzUTrg9MH2pXY+VMwRo1vCCEQH3xVK50+M5wgH4V0Uq45zWVdAksf5UXYvZo4vVdHiwSEAJrjNQ0x48lO3UCvUriJZVYNzXK6nakO3yn3rWE2c1akuhxcErIwjcZ9j0NJMQGJBP49RWjc2OJCcZqncwlUz1IroWqOF6M7D4deIX0zWUheUrBN8jjPAz91vz619D2lyJ7cF2&#x2F;ejhiOOa+PracwzK2cAGvoTwH4h&#x2F;tXSY98mblB5cu7uR0b&#x2F;PepEz0fzCcBTj3pSQR1H19fzrPim46kk&#x2F;Sp1lZmz6egpiLGfl4J+ppOi&#x2F;KB9elMDgg9qNo6ljn1oGOOd3Xn3p3lN&#x2F;tf98Uwf7P1Bz0oz&#x2F;tP&#x2F;wB9UCKRNNJozTSakYuQRwaOPxptGfXNMB+eMnNOB9Kj5z14pQaYiTNLnnrTAaUH60ASCqWrTGDTLhlByEParYIFZ+uqW0a8IHAhc&#x2F;oaAPnjUpjNO4znfISx&#x2F;nT7CIzyBEXC96qvlpGGP8mt7QYDguV+lQ3ZGsVdm9pVp5cOQvGa6CBSADjFZ9mm2IAcVqQjoc8iuZu7PSprQ0rRflwR+NakVtuHy&#x2F;p2qhaDCgHk+1a0R8tMA9etCNGNEORtKMMdwaq+QeSUP17VaaYhWBU9Dg4qCGZRGQRk9celNgkZ90oAJxWPct1z&#x2F;Kty7KsBzjNYdzwxwc++KllIzpu1ZN7AJc5&#x2F;GteUA4x1qpImeTyKaMqiOKvoikpAFYtxNtYqw47g112o2xMpOK5fUAN&#x2F;QH1yK6YSPPqxs7mNcxiNhJH9w&#x2F;pXffDHUmXU2t84LLkH6c&#x2F;41xEkeUKj7rcY9PetbwJM1v4qtkPd9pHrVMwPo2KVvKBzwfarkcwYAfeA6Y6fpWPEylQfmHrxwDVuN8MQASfXIoEaiy5K7Qcipg+OWLY+tUkfKfebHpTsdMHA&#x2F;PNAF5XZxndxil3L6fzquj4IBTOOmTU32hvX9BTGVM000ppppCDmim5oBpgOzTgaZSg89KAHg804E47UwH2pcj3oAkFV9RjaXTrmNeWaJgB6nFTD2pe2KBHzh5HkmXfwwYgg1u6ICydMDvTPGdr9l8Q3iqhVfMJx7Hmr2jReVZI7dW5rOex0UdWdHaxr5Y9avW8ZGCV5NctNriw5jiVvN&#x2F;vFcrTbfxqkeUkU+aB9xeufxxWHKzvjOKO8hHQLWgAwUY6+lcbbeLreS3V1cFj26H6Eetbtnq8N9CrRyZORkDrRaxqpJ7GjLlEOc&#x2F;X1qMKQSDnileZGeLzD0OTjnj&#x2F;9dMe&#x2F;iwSBwSAMdqCkVrkADJwfesuVV3HA+ta91LEseSw47k1iyXtqMgzx5J4+Yc0rDuilPHgnHSqnlnnqatzXdtyrSY+lVZrqLBKZ&#x2F;KhIxm7mXeqG3Yrjr+LczIcEg8HFdnctkkVymrFoZshQVPUYraBw1djCKHkYywHT1qzpAa38Q2k6qT86N9acwz5chOTnGf6Gul8NaP8AadRhmZf3UPJOOp7Vqcx65bNm2TccnA+UVYUgdT+BNULIERLk5wMZq4C5P3gAO1AjRhkz0I&#x2F;LFT7j2YA+xqlbkkZYHH04q4D2XaAfWgCZGOcH8Mipfn&#x2F;uD8qrLk8ZFS7B&#x2F;eWgZGfrTTSE00nHegBTSZpuR6UbgOhpiHj60oNRg88U4N2pgSAinVGD7U4UhDx6GnZApgPrmlB7AUwOD+IumwyR2twqASMxDt6jtXPxpss1jBH3MA&#x2F;hXaeOURtKjduofjH0rlokZ7XiPd8vGMVjUdjqoIy4mt7RC04AyOc1DfPptyivNAqr2Y4TP5kVFqWm3szKynyVzwTg49xVO+0tY7O1aOA3DAnz2A3Ox7EnB460oLme5rNuMb2uNAtFmBTdjPDFgwP4jNdNo92tvIN2VJ&#x2F;KuX03TmeaZriFreIKSu8e&#x2F;AJwM8ewrcsLOf7O0scitGh5U9fwoqJJ2LoybXNax2cUpkBc9CKpXF0IMFmwM5q&#x2F;o8LNbsrE8DGRXK+J5WjbYoPHLfSsVqdDlZXKeu61NNuSGXaPrzXKMl&#x2F;K5KyEse7ECt3yT5KMyeX5g4IGWb6Cor+1l0+dEZLWJ2i80&#x2F;aGUcc4yWIGTg8f&#x2F;qraEW9Ec1WWnNIgtdNvJFCy3CLjk4Oc1Ld21xACY5vMUdQTWZBc3FzHLNHHEwQbz5YKNtOeR&#x2F;hUltffaPleTJHcjB&#x2F;GiUXF6malGSui&#x2F;ZXkkh8p+TUGsW5kMW0Annir9usWAwI3Y60lwEd4gQRgnaaIvUmexyxiLKFHBzn6Yr0jw9bG20yNCpDMNxNYGneHme5SV1&#x2F;dFhISxHzd8Adh65rtrOIhuR8w6ZrU5ma1qo8sEAkfWrQIyOWHsTVeLCjAX9asI2&#x2F;gIPqBQIuW4HXG49+vFWt&#x2F;pn6Y6VDGdoHyjiplJY8c+1MCSP5uuT9am2L6PSRqcZOB+FSfN60DKZppoJ9s0wnFAmBbtijd6U33pM5poRICPWlzz3qPNKDzyaYEoPtxTgcVGCOxpwNICQGlzxTAfcUoIoAwfGEIn0mMH&#x2F;nrg49wa5uyiRFxgntXU+JpVXS9p+80gC&#x2F;Wuah4VcVz1dzvw7vFIhv7UYBBOw89zg1nm3GBkIfQkkGumhhWTBbB7e1TmxjfGUGPpWSbOzkOMks55nABLgH7oI&#x2F;&#x2F;AF1qwQSxW5WR+g4QdK3ZbKOGIuFVR+VZ8iqwwpyT6UNsfKW7SRobTOMZFcp4hYSSArj5utdiYxHajcccdK5DWoiX+XGM9qS3Ca0CONWhj+TDqv3lJGBUV&#x2F;ZxX0SfaU8xo1Kq3mEHFWtLUCExSnIYYB9K0n0ffFlZCAemMVSm4vQz5FJWaOMjsks1dY4+GPOTnIHSpbbToZpN0saA9yeK3n0Z1bDTZA7EYzRJEbZCiqvPOAMZpubZHsrGc1vDbriNVTHYjrWVqM+0xKM72bitq4YTRAAc9we1ZklssuqWowNqkkjt2pwMZJX1OotY9+1AccY5FblvD5SgGsnT1y2CQR6A1soR91QfzrpOEmUl+CgrQt4vlBPQVQjLBsHn9f5VpRDjj9KAJenQ&#x2F;pU8RZjyKgJJHU4+mKsRZIBI&#x2F;WgCyPp+tLikBHA60uf85pjKOaYTTvemHmkJiZFJ1pDRk0xC04GmUuaYDxTwfcVEGIp2c0ASg0uR2&#x2F;lUYbjj8iKXPFAGJ4rdRYwIeplyPyNczHPtYelbPi1yHsx2y39K52T5WBzwRXNV3O&#x2F;DaRRsC9EQzmobnxELZeGGa5+&#x2F;1AW0aopLyNwq9yap29s8knm3WGfP3Oy1mkdvtFsbMmqXN8wyzbWOM44rWso9qqwbjPesWWdRBiPgjpTbHW2WURSrtwe3IosVc7K5mC2hYiuVvR56F17k4NdDLqNilphpg8rj7uelcZf61bWUzguu3tnsaEiZtWIbK+ltLwCYnywdufeuytb2KSHhhjFecXmpRXUO2EhmdgeO1XIL2a3iVlOSO2etNxIjJHcTyJuByBxxWfM6MME5I7msaLWhN1chu4PWiW9BU4bNTYptNEkijJwahRglzGfXioln3c5p8ISW4QsCdvzAVpFanFUdrnSWJKjvWgJBnB6&#x2F;TNY1qwjPJq8JsgdPzroOI1bZwG6g&#x2F;jWmrrgZ5HaufglIbrWvFISnQfhQBdHHv6YNWoG55B9jWbuIPQirVu+TyaBmkGp3P+RUKscUu40wKuaYaXNNJxSEIfpSZ9+aDSZFMQv1pc81y&#x2F;iHxzpPh5jFK7XFyOsMODt&#x2F;3ieB&#x2F;P2rN0z4paHeI32wyWTg4AYGQEeuVFMdjuwfypc1gweK9Eu2C2+q2ru3RfMAJ&#x2F;A1oC4bruzQFi&#x2F;n0xS59ay21AKcZpw1KML8xAoEZXjFMW9pOBwkpU&#x2F;iP&#x2F;rVzbuWCnPykV1OtSR6lpM8CYL43Jz&#x2F;ABDkVxdvOk0QGefSsai1uddGWljLu7eU6j5itgEYUkdKrzXcmnzBLnftb5llABB9sV0EsSyJnOOabd6dFqNgY3Az1B7qazvY6YK5Us7qO6VXikEinupyP&#x2F;rVbSGNs5HuQRWDpEa2Er6deDbGzEwzdChJ6Zrq30i9gmlNtMlzFGgZRNw59RxQ7DVSztLQw54gJswyupP41k3GlI8pkkd5Gz&#x2F;F2rrbmWS2gWW60uaEP0YDdn8qyr1pWdY49Nu97glQ6YJxTTB23uZMdvHBGdvQUNMigliSewzVfUZrm3tBO8AjQkgbz1xWNbwX2qy7mdo4fb5RTsRzXdkbH2mKUkIW8wdwOlXbNZJrfzScckHPtS2WnRoI4UG1B7cn3NbF0YraBYI8Dj0pMNihG2OKtWJLXTey1QMgTnNaGlKSjy44Y4FOK1Oao9DYicjg1OJPRqpqcdqkDcc1sc5fhkJYc81sQSfLgn8zWDb7i47fWteJsLzQBeST&#x2F;ayKu27&#x2F;ADc81lq5&#x2F;vYq9bZ4&#x2F;mKANhHyMc&#x2F;hTsj0qCNsjFSc+lMZXyRSFqO1IaQhpJ7VzHjfxMvhvRTJHg3c&#x2F;wAkI9D3b8K6Y8GvCfijq7X3iZ7YMfKtFEYX&#x2F;a6k0wORub+WSV5HYs7HJYnJJqoZixLHAzzUTtk4qNnNAyz5zZ4Y1qWviXVrRFSLULpFXoEmYD9DWGG7U5WyKQztrb4ja1Bt8yWO4UdpYx&#x2F;MYNb9p8SLO7Kx3cElu543Kd6&#x2F;pz&#x2F;OvKi5HGafExVWkzz0H1ouB13inxpNe77LT5GS1HDyAkGT&#x2F;Afzp&#x2F;g&#x2F;VpZ0ktnR3MK7t4UkBc459OT+tcQFeVwqglmOAB3NfRPg&#x2F;wAHW&#x2F;hTwpIt3Ekl7eIDcbhnGRwg9h&#x2F;OlLYcG09DnI5fmGQCK0IZtw6bTWde2&#x2F;2W4aMEkKcqT3FPtpwZsnpjmsWjupy1Fu7aO5YjGT3p9mdQtZZWhn3mQYImyw449ciluA0cm5enfFSLc7lHA&#x2F;GoOv3WrSRpya5deXEl5p8hVGBDRkMpx9SDVG&#x2F;8SGSRpFtpA4QqucDrj39qrT3bsxGDjpxVSUJ5W5iSaZm6NMw7lJdRaE3RG2L7qgEAfX3qzGkcSgIAF&#x2F;nTZZgzbVUYpHYxoCcc&#x2F;pTSMm1HRF6FkiOXPNVLm4aeT5RnHeqpneVvLUnJ6nPSmTSSLBKkC7vLjaRznsBk1VjnlMlUNd3CwRdf4m7AetdLCqRRJGvCqMCuL8OeJbRpRazx+TPIflfqH9vY12qtuAwQRWiVjmlK7JFP41LHy33aiAH&#x2F;AOqr9pEr4qiSzaxFfb2NXwQODxUUa7Vx2qZRn3oAljXcRwD9K0rdcY4&#x2F;CqkEIwDWjGNoGKBlhScck078T+dMU0&#x2F;&#x2F;AD0pkkdNOfWjIxnOK828Y&#x2F;EpbF3stFZJJRkPcnkKf9kdCffp9aSGdprmuWWgae15eu2wHCqgBZz6AV87eIb&#x2F;APtPVri9xt85y4HoDUGoa1f6lcebe3k9w3YyOWx9M9Kz5WyqknnFMZETyaZ3oboKbuoAdmlDflTKTNICVucVLK33UHRR+tQKwIxmp4YXnnSKMF5HYKqqMkk9BQkM9B+D&#x2F;hMa54lOo3KbrPT8SYI4aT+Efh1&#x2F;AV7Xr8wU7c&#x2F;LjH51L4N8OR+FPCFrYhB5+zzJ2&#x2F;vOeT+XT8KzNec+dHnuS31FTJlQWpymr25VkVuSAQD6isUboZuPwroPEcgil0x&#x2F;4ZJTGfoVP+FZV5bFScfUEVnfWx0pdSyzrLECMbcc1YtbZJFG48Y6+lZVrdBMxOMAcGrq3bRArGx2+gqGrHfTkpIszW0MY+Ugk+9Yt2mV9F9M1daQyHBbFU7hQuQcY9KCnaxTSFCSeOOay76ctMQo6cAVfu7pYYiqYLsMYrJSJnfeauKPPrS6IczmCLYp+Y9T61eNs1l4J1TVJhhp4THED1wflz+Oas+HvD7a7e5YN9jjb52H8Z9M+lWfi1dJY6Ha6bFhfOkHyj+6vP8APFWkcsn0PISMxr2IPBrrdA8ay2ipb6gvmwj5fMH31+vrXIMcKKCe471ZB7lBNHcRJLC6vG4yGByCKtxuUOQfyrzPwZ4jSwWSyvJdsJO6MtnAPcV6JFdxSqGWRSpGQQcj&#x2F;wCvSEbVvc7xhjzWhCyg56+9YEbgnI59xWnbT5wM5pgbsbAr8p5q2nGKyYZCuOc1owyhgKBltafg0wUv40Enz34g+JGsazA1ozRwW5JyIAVLjPAY5NcdLOX6mq7NmmFjVDFZyeCeKC2UFNLZU0KRjBpAMkPzYpuaH+8ab3pDH54ppNKemabQAor1L4N+G473XRruoBVsbJsIWP3psDAx3wDn8q8uHFev&#x2F;BnX7TFx4cvGEbzyGa3du7YAK&#x2F;XjP500B71PcpNFmFldCOxritdcGTA5wfl9q6i4tfs3lzICroOQD19a5XXIXjukkxmNxlWHf2PvWci4bnOeLInmtbFY&#x2F;vxzhx+Rqe3jW8slbA3AVYuVEzxMw+6wIFYvh69PlywScNHIy4z2zx+lZT7nXSd9BbrTA5JQYPp3qk0NxCMbjtrpplWXkHDVTeF24IyPWkpF8rWxjeY69Rk4qtIk8ykJG+71roVs24Xj61KLZIiAwJJp8yC0n1OP&#x2F;syQndJ1rR0rw9JqdyEKMLdfvnpu9q6G30&#x2F;7XcBEXYmeSBz9BXbaVpcdpAoCgADirjd6nPVtHQr2GmwabZLFFGqKoxgDFeB&#x2F;FXU&#x2F;t3i026tlLWMJ&#x2F;wACPJ&#x2F;TFe+6&#x2F;fxWFlLNI21I0LE+gAr5R1K9fUdUubyQ5aaRn59zWiRzELnp7UzNITxQOppgSIxDZrqtB8RCwh8q48xogcqV5K&#x2F;h6VyQ61YichT70AeuWOt2lwE8m5ik3jIUOA35da3Le7HXmvCy2du3Oc1v2GvXlg6hLh2QdUc5B&#x2F;PpSsFj2iG+4HzcVoQXhznOa4LStes9QVfLmVZT1jY8j&#x2F;GuktJzkDPFFwOsgvgwAJ5qx9rWufRzwQTU3nN60XEfL5bPsaQmkb9KYePpVAPzSqPmH1qPNSRnJNADG5Y9qb0pWptIY9RkGmmpFGIiajoELUlvPJBcJPC7RyRsGRlOCpHQiojSihAfS3w9+JEHi2xXS9SdYtWiXr0E4H8S+&#x2F;qPyrp9SsZZ7KWI4JAEkYx3HUfl&#x2F;Kvku0up7K6iubaV4pomDI6HBUjuK958F&#x2F;Fyy1W1Fnr8kdnfxr8lweI5cf8AoJPp0Pb0puNxp2L87qLy1bohIB&#x2F;lWRq+i3uj6n&#x2F;aNvbvNYTL87IM7DnuP61reILZ44blojgp8ykdh1rqPBmrLqmjxO4xIFwwPr3rJxubRm4u5wSalbzICJgG9CcVPHOW4DZrvtQ8F6BqLM8lkscjcloSUyfoOKxf+FdadbOWhv7yNfTev+FZezZ0KvHqY8ZOPmq1b27XjbEP3eSewrbg8PWcO0KJ7k9jI2B+mK17TSlRgzhAB0RRwKcabvqKeIVvdK+l6WIkHygAenetG4YRx4HGKuELGmBxWJqlyI0JJraxxt31PLPi&#x2F;wCIPs2lpp8T&#x2F;vbolWHog6&#x2F;0FeHV0vjvWjrXie4lDZihPlR&#x2F;h1P51zVUSIelL0pMEmloGKKUPim0AFmAHU0gLULcF&#x2F;yp3mZNRlggCjoKYZKYFuKcowZTgg5rq9K8d3NiiRzwi4Vf4mbDY+tcWHGKXdQB7toHi3TdbIhiZorgjPlSDBP0PeuixXzfbXcttIrxOVcEFWU4IPqK0f7e1j&#x2F;oKXX&#x2F;AH&#x2F;b&#x2F;GlYDBJqM0pJ&#x2F;CkpiExUkXVvYUylQ43fShAIaTqaU0qDJoAkcYjUVFUkp+b6VHQwE704U2njihDHCtXw9bfbPEOnW2MiW5jQ&#x2F;iwFZY611fw6g+0eP9FjIz&#x2F;pKt+XP9KpCPorXNNUBXIzHIpjcVQ8ExpZSS2UowY5GCn2zkfpXX3luLiwmjxz95fqK5ZE+z6tDIOPMXB+oqWtS1sdXdzwWoTe4XecDceKx5JYpZNxuwRnoI2x+tLqxEkkO48KM&#x2F;nWa0plkEUfU9&#x2F;ShIVzVjufOfyoFJPQyN1&#x2F;AdqteStscqx39zmjT7UW8QY&#x2F;eNUvEF6bKxJj&#x2F;wBdIdifU00hE8epi5aZAP8AVHbu7Me4&#x2F;CuA+JPiI6RoUzxtiaT5I&#x2F;qf8k12um2YtbSGE5z95yfU8mvA&#x2F;jBqf2nxY2nxSBobVckA&#x2F;wAZ6&#x2F;pj86LCPOySxJPJNIaPekJ46UmAuaOo9qb1p3YD2oGJUifIhbuaaq5Pt3pWOaQBnPNBpKKYCinCm05Bk+1MRKh2jPel3+&#x2F;6VHnPakz9aAIjxSUvSkNIBKUHmkoFIBTUkI5z6VFmpUOIzTQDWPNNpTzQKBhilFJSihAPWu9+EUPm&#x2F;EfTOPub2&#x2F;8AHDXBrzXpfwTi8z4gRt&#x2F;zzt5G&#x2F;kP61SEfS4T92rY9jXI65F9nvoivAEnH0NdnEN0Dexrl&#x2F;EPlPKuTuIIIUdWI7UmNGXqly0lyIkOTgDFaGlWQjQOw5PJNVbHT3dzNL95jk1tqNoCL0FAE4buegrm52&#x2F;tPWfOcgWlmeWY4G6tXV7r7Hpkrg4bHFeMfEi8a18LwW4Y7ryfJ56hRk&#x2F;qRVIRtePfija6bbSafoVwlxeuMNOh3JEPr0J9vz9K8JnmkuJ3mmkaSWRizOxyST1NIxzTOppNgNopWBBwaSpATHzYp+3J4pF6j60pPagYH5eB+NFJRnANAgzzSgYFIBTqAE61IOBimqOaWmAUlLRSAYeRTad1oIoAjPBoqSJI3kxJJ5a4J3bc844H9KjpAFPzhBTAKcaYCE0DpSUtIApwptLTAkB5r1T4GgDxbdS&#x2F;3bQj82X&#x2F;CvKRXqnwYcRanqc5&#x2F;hhQfmT&#x2F;hVID3PVNbkt0+y2xHmP8Aeb+6KybSTNyPMDSM3R2qj5pmuGkfvmr1igQiRmyew9Kh3uM24yNoxUyYqgLgArzUsdwME5qxGN4pusQLEO7CvEPinfebrttp6n5bK3AOP77fMf6V6zq0&#x2F;wBq1qGHOQGya8A8U6h&#x2F;anibUbwHKyTtt&#x2F;3QcD9AKYGMabSmkqWA&#x2F;wC+vuKjNKpIOaQ8nNIAH3hS0iDqaKAFoPXFAoHNABSikpy460wHUUUlAC0UoGOtGR70Af&#x2F;Z" alt="avatar">
             </div>
+            <div id="text-header" >
+              <h1>Christopher Robison<br><span>Turning ideas into reality.</span></h1>
+            </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-7">
-                <!-- ABOUT ME -->
-                <div class="box">
-                    <h2><i class="fa fa-user ico"></i> About</h2>
-                    <p>Skilled technology leader excelling in the rapid development of solutions to manage complex technical environments for growing companies, ranging from startups to billion dollar industry leaders. With over 20 years experience in the industry, I can build, develop and lead high-performance technical teams and effectively manage people and resources in-person and remotely across multiple geographic locations. My extensive experience allows me to leverage my business acumen and technical expertise to translate a technology needs into innovative solutions and actionable plans. Hands-on but I know how to delegate. I am just as comfortable managing people and engineering resources as I am hacking away at code. tl;dr: I build things that make companies go.</p>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- ABOUT ME -->
+          <div class="box">
+            <h2><i class="fa fa-user ico"></i> About</h2>
+            <p>Whether it’s leading a team of programmers, rapidly developing a new app, or aligning software development with strategic business objectives, I bring a blend of technical know-how, leadership skills, and business acumen to every project. I am looking forward to collaborating with you to turn your innovative ideas into reality. I have extensive experience in software engineering and leading groups of unruly programmers. Skilled in a wide range of programming languages, including JavaScript, C, C++, Java, Python, Swift, Kotlin and others. I have a proven track record of successfully leading teams, delivering finished product and driving strategic planning, process improvement, and product development initiatives. Recognized for implementing innovative solutions and modernizing systems to support business growth, as evidenced by transforming D. Harris Tours' operations, resulting in a fleet expansion from 2 to 12 buses. Strong expertise in microservices architecture, Agile methodologies, and cloud services. Committed to continuous learning and staying updated with emerging technologies. A collaborative and proactive problem-solver with a passion for delivering exceptional results. I could go on but I'm afraid I've said too much already &#128513;</p>
+          </div>
+          <!-- WORK EXPERIENCE -->
+          <div class="box">
+            <h2><i class= "fa fa-suitcase ico"></i> Work Experience</h2>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">D. Harris Tours, Inc.</div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;dharristours.com&#x2F;" target= "_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;dharristours.com&#x2F;</a>
+                    </div>
+                    <div class="year">February 2020 – March 2024</div>
+                  </div>
                 </div>
-                <!-- WORK EXPERIENCE -->
-                <div class="box">
-                    <h2><i class="fa fa-suitcase ico"></i> Work Experience</h2>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">D. Harris Tours, Inc.</div>
-                                <div class="address">
-                                    <a href="https:&#x2F;&#x2F;dharristours.com&#x2F;" target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;dharristours.com&#x2F;</a>
-                                </div>
-                                <div class="year">February 2020 – Present</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="job-details col-xs-11">
-                                <div class="profession">Chief Technology Officer</div>
-                                <div class="description">
-                                    D Harris Tours is a shuttle bus transportation company which offers 22-44 passenger buses for hire. The majority of their business is derived from schools (student event transportation) and local tours. 10 years ago, I developed and implemented software that allowed D Harris to grow from 2 buses to 12. But the system I implemented 10 years ago was not made for the increased number of drivers, buses, customers and trips the company had grown to serve. Hired as CTO where I updated and enhanced their systems with modern tools to better manage the growing company; real-time bus data, automated maintenance notifications, automated trip confirmations and notifications via email and SMS and more. After reviewing the first months trip data, I found that drivers would often sit idle for 4-5 hours, waiting to pickup students they had dropped off at a football game or band practice. I developed an algorithm to identify these idle times and match them with jobs. I offered drivers an extra hours pay if they did the extra trip. This nearly doubled the daily revenue until the COVID-19 shutdown.
-
-                                    <div class="highlights">Highlights</div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Automated notifications for trips, bus maintenance</li>
-                                        <li class="list-group-item">Automated billing and invoicing</li>
-                                        <li class="list-group-item">Migrated driver logs to digital format</li>
-                                        <li class="list-group-item">Increased daily revenue with better trip optimization</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">CTO</div>
+                    <div class="description">
+                      <ul><li>Spearheaded technological transformation and business processes that allowed D Harris to grow from a fleet of two buses to 12 buses.</li><li>Updated and enhanced the company's systems with modern tools to better manage the growing business, including real-time bus data, automated maintenance notifications, and automated trip confirmations and notifications via email and SMS.</li><li>Implemented route optimization algorithm to identify opportunities for one bus to handle multiple trips, increasing their daily revenue by 30%.</li><li>Implemented automated notifications for trips, bus maintenance, and billing and invoicing.</li></ul>
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Automated notifications for trips, bus maintenance</li>
+                        <li class="list-group-item">Automated billing and invoicing</li>
+                        <li class="list-group-item">Migrated driver logs to digital format</li>
+                        <li class="list-group-item">Increased daily revenue with better trip optimization</li>
+                      </ul>
                     </div>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">Conversant, Inc. (formerly Mediaplex)</div>
-                                <div class="address">
-                                    <a href="https:&#x2F;&#x2F;conversantmedia.com" target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;conversantmedia.com</a>
-                                </div>
-                                <div class="year">July 2010 – February 2020</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="job-details col-xs-11">
-                                <div class="profession">Manager, Software Engineering</div>
-                                <div class="description">
-                                    Working at the same company for 10 years presented many challenges. I wore many hats and performed many roles all while the company changed names and was bought and sold twice. By the time my team was cut due to COVID-19, we were responsible for designing, developing and maintaining the infrastructure and code-base that serves many millions of mobile and rich media ads each day.
-
-                                    Mediaplex was an online advertising company that was started in 1999 and in 2001 acquired by ValueClick. The servers and software that ran the ad serving platform was over a decade old and the stack was beginning to show its age. The surge in popularity of "Rich Media" ads that began hitting the market in 2009 was beyond what their backend had been engineered to handle. Competing ad vendors who could serve these new rich media ads began stealing away valuable business, costing the company revenue and customers. I was hired to lead their Rich Media effort and help modernize their ad serving infrastructure and metric collection.
-
-                                    I was responsible for designing and implementing a RESTful API for serving rich media ads and building out scalable backend services to handle integration with existing servers and infrastructure.
-
-                                    A large part of Rich Media ad serving and reporting is performed in the client and this required creating a small, reliable, cross-browser client-side ad loading framework that worked in tandem with the new backend API. After stabilizing the infrastructure, Managed engineering resources to work with product services team to ensure the successful deployment of all Rich Media ad campaigns. These enhancements were a great success by all counts; increasing revenue by $1.2 million in the first year alone.
-
-                                    By the time Rich Media ad serving was running smoothly, demand for mobile ads was steadily increasing. My team was tasked with implementing a mobile ad solution. Our company joined the IAB [https://iab.com], a consortium of online advertising companies that develops industry standards on my recommendation. As a participating IAB member, we were instrumental in helping to define the updated MRAID 2.0 standard for serving mobile ads. The MRAID protocol is still currently in use and the de facto standard for mobile ad serving. I wrote the initial Conversant Mobile Ad MRAID SDK's for both iOS and Android as well test apps for both platforms to be used internally and by our customers to preview ads in a mobile environment before deployment. Infrastructure upgrades done for logging and reporting of rich media ads carried over nicely to mobile and no changes to the backend were needed.
-                                    <div class="highlights">Highlights</div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Contributed to IAB MRAID 2.0 standard</li>
-                                        <li class="list-group-item">Implemented MRAID SDK's on iOS and Android platforms</li>
-                                        <li class="list-group-item">Developed and deployed mobile ad solutions for multiple platforms.</li>
-                                        <li class="list-group-item">Designed and deployed 'Rich Media' ad delivery and reporting infrastructure.</li>
-                                        <li class="list-group-item">Architected and deployed RESTful API for ad serving, tracking metrics and reporting.</li>
-                                        <li class="list-group-item">Developed client-side Javascript 'ad controller' for mobile and web</li>
-                                        <li class="list-group-item">Developed flexible metrics tracking with non-blocking endpoints</li>
-                                        <li class="list-group-item">10 years</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">Mindjet</div>
-                                <div class="address">
-                                    <a href="https:&#x2F;&#x2F;www.mindjet.com" target="_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;www.mindjet.com</a>
-                                </div>
-                                <div class="year">September 2007 – July 2010</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="job-details col-xs-11">
-                                <div class="profession">Web Architect</div>
-                                <div class="description">
-                                    Hired to migrate the Mindjet website from PHP to an ASP.Net solution, my role quickly grew into heading up Mindjet's foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.
-
-                                    Mindjet Catalyst was a web-based mindmapping software that allowed browser-based real-time multi-person sharing, collaborating and editing of mindmaps. The Catalyst client canvas was originally written in Flash and my team was responsible for porting the Flash app to a more standards-based implementation utilizing HTML canvas and Javascript. The new application was designed to utilize open standards with HTML5, CSS3, Javascript, canvas and SVG with few to zero dependancies on external 3rd party libraries.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">Simple Software, Inc.</div>
-                                <div class="address">
-                                    <a href="http:&#x2F;&#x2F;simplesoftwaresf.com" target="_blank"><i class="fa fa-globe ico"></i> http:&#x2F;&#x2F;simplesoftwaresf.com</a>
-                                </div>
-                                <div class="year">April 2006 – September 2007</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="job-details col-xs-11">
-                                <div class="profession">CEO &#x2F; Founder</div>
-                                <div class="description">
-                                    Contracted software development and consulting. Provided contract support for previous work positions (Interactivate), developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses. Customers included Peterson-Dean Roofing, Interactivate, Genetic Savings &amp; Clone, Symantec and more.
-                                    <div class="highlights">Highlights</div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">GC Homes - Contractor documents and blueprints online. [http://gch-dev.netoasis.net/app/]</li>
-                                        <li class="list-group-item">Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</li>
-                                        <li class="list-group-item">Lender Tool: http://bay-dev.netoasis.net/lenders.php</li>
-                                        <li class="list-group-item">Form Definition Tool: http://bay-dev.netoasis.net/fields.php?id=50</li>
-                                        <li class="list-group-item">HUD Calculator - calculates potential reverse mortgage values: http://bay-dev.netoasis.net/HUD/calc.html</li>
-                                        <li class="list-group-item">DB Tool: http://bay-dev.netoasis.net/admin/dbedit/</li>
-                                        <li class="list-group-item">Tzero Technology - Customized content management system http://www.tzerotech.com/site/</li>
-                                        <li class="list-group-item">TZero Technology CMS: http://tzero-dev.netoasis.net/</li>
-                                        <li class="list-group-item">Metrika - Customized content management system http://www.metrika.com/site/</li>
-                                        <li class="list-group-item">Metrika CMS: http://met-dev.netoasis.net/</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">Genetic Savings &amp; Clone</div>
-                                <div class="year">June 2004 – April 2006</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="job-details col-xs-11">
-                                <div class="profession">VP Engineering</div>
-                                <div class="description">
-                                    Genetic Savings & Clone was a genetic services company that offered commercial pet gene banking and cloning. Working here was a lot of fun as it gave me the opportunity to apply my technical and management skills to the genetic sciences industry. I was responsible for architecting, developing and deploying Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery. My team managed and integrated diverse genetic equipment such as PCR machines and genetic analysers into our network while securely providing real-time data to internal and client facing applications. Developed a unique application for viewing real-time business operations with high-level overview drilling down into details in an animated, interactive map. Automated business processes pushed customer orders through the pipeline from biobox to clone. During the course of researching, integrating and automating business processes, I had the unique experience of cloning a cat, Lil' Nicky, from start to finish.
-                                    <div class="highlights">Highlights</div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Cloned a cat and delivered it to customer</li>
-                                        <li class="list-group-item">Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business.</li>
-                                        <li class="list-group-item">CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with various genetic analysis hardware including the Applied Biosystem Genetic Analyser 3130</li>
-                                        <li class="list-group-item">Integration of genetic analysis hardware</li>
-                                        <li class="list-group-item">Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time's bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">Inter@ctivate, Inc.</div>
-                                <div class="year">December 2001 – June 2004</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="job-details col-xs-11">
-                                <div class="profession">Technical Director</div>
-                                <div class="description">
-                                    As Technical Director for Interactivate, Inc., my responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites. Help grow the company from 10 to 65 employees.
-                                    <div class="highlights">Highlights</div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</li>
-                                        <li class="list-group-item">Designed and implemented web-based network management, monitoring & systems analysis tools</li>
-                                        <li class="list-group-item">Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
-                                        <li class="list-group-item">Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.</li>
-                                        <li class="list-group-item">Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.</li>
-                                        <li class="list-group-item">Installation & administration of Solaris, FreeBSD & Windows NT in a heterogeneous environment</li>
-                                        <li class="list-group-item">Design, implementation, migration and maintenance for Interactivate's internal and external network infrastructure.</li>
-                                        <li class="list-group-item">Working with vendors, developers & 3rd party integrators.</li>
-                                        <li class="list-group-item">Maintain and monitor over 50 hosted client web sites and dozens of web applications</li>
-                                        <li class="list-group-item">Identifying & resolving network related problems</li>
-                                        <li class="list-group-item">Responsible for backup implementation and recovery strategy & procedures</li>
-                                        <li class="list-group-item">Required to support high volume access & availability characteristics as well as identifying & resolving system hardware & software problems</li>
-                                        <li class="list-group-item">Responsible for the full availability of DNS, SMTP, HTTP, POP & IMAP servers</li>
-                                        <li class="list-group-item">Maintaining security for all Interactivate networks</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">TheFinancialCafe.Com</div>
-                                <div class="year">May 2000 – November 2001</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="job-details col-xs-11">
-                                <div class="profession">Software Architect &#x2F; Technical Director</div>
-                                <div class="description">
-                                    TheFinancialCafe.Com was an Online Financial Broker/Dealer which provides free online market orders. Hired to build a custom CRM application for their support staff, the application quickly grew to encompass every aspect of the company from CRM to billing to handling email, managing the company website and integration with 3rd party financial services.
-                                    <div class="highlights">Highlights</div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Designed and implemented web-based network management & systems analysis tools</li>
-                                        <li class="list-group-item">Required to support high volume access & availability characteristics as well as identifying & resolving system hardware & software problems</li>
-                                        <li class="list-group-item">Working with vendors, developers & 3rd party integrators.</li>
-                                        <li class="list-group-item">Installation & administration of Solaris, FreeBSD & Windows NT in a heterogeneous environment</li>
-                                        <li class="list-group-item">Installation & maintaining network equipment</li>
-                                        <li class="list-group-item">Responsible for the full availability of DNS, SMTP, HTTP, POP & IMAP servers</li>
-                                        <li class="list-group-item">Design, implementation, and maintenance for the companies internal and external network infrastructure.</li>
-                                        <li class="list-group-item">Extensive automation of administrative functions via shell scripting & Perl</li>
-                                        <li class="list-group-item">Responsible for backup implementation and recovery strategy & procedures</li>
-                                        <li class="list-group-item">DBA to a number of Mysql databases (one master, multiple slaves)</li>
-                                        <li class="list-group-item">Responsible for the seamless integration of multiple third-party application services into the company's website.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">Food.Com</div>
-                                <div class="year">March 1998 – May 2000</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="job-details col-xs-11">
-                                <div class="profession">Senior Web Developer &#x2F; Administrator</div>
-                                <div class="description">
-                                    Food.Com was an nationwide online food ordering and delivery service. Responsible for architecting and development of the online ordering application and the processes and procedures for delivering customer orders to restaurants via various notification mechanisms including IVR phone calls, faxes and custom terminals.
-                                    <div class="highlights">Highlights</div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Developed 'FUDGE', the 'Food.Com Ubiquitous Dining Guide Engine' which was used by thousands of restaurant reviewers to enter and maintain Food.Com's dining guide database.</li>
-                                        <li class="list-group-item">Setup of automated development environment using web-based tools</li>
-                                        <li class="list-group-item">Development of tools and utilities (both web based and command line) to automate development efforts</li>
-                                        <li class="list-group-item">Migration of code-base from Objective-C/WebObjects to Java</li>
-                                        <li class="list-group-item">Wrote and maintained various web-based backend tools for maintaining accounts and order information</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">Slip.Net</div>
-                                <div class="year">May 1996 – March 1998</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="job-details col-xs-11">
-                                <div class="profession">Web Engineer</div>
-                                <div class="description">
-                                    Slip.Net was one of the earliest Internet Service Providers in the San Francisco Bay Area with a client base of over 50,000 users. My roles and responsibilities were divided between system administration and web application development. As the 'Web Administrator', I was responsible for shared administration of our server farm of 30+ servers. I was responsible for all web-based software, E-commerce, network accessible databases, secure server certificates, web server maintenance, and more. In addition to these administration duties, I was also given a myriad of development projects, including the renovation of the existing system of disassociated and unwieldy collection of flat text db files and dbm's that constituted their 'client database'. I developed an easy to use and coherent system of procedures, tools, scripts, and interfaces using the new 'MySQL' open source database engine and Perl.
-                                    <div class="highlights">Highlights</div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Built the Slip.Net Account Control Center which allowed customers to administrate their own accounts. Reduced support call volume by 50% the first week.</li>
-                                        <li class="list-group-item">Developed Slip.Net Signup Wizard that walked a customer through setting up a new account as well as register domain names and setup website services all handled automatically</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">The NetOASIS Software Co.</div>
-                                <div class="year">May 1995 – May 1996</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="job-details col-xs-11">
-                                <div class="profession">Founder &#x2F; Chief Developer</div>
-                                <div class="description">
-                                    As founder and President of the NetOASIS Software Co. I was responsible for every aspect of running the business from graphic design to programming to market research and client solicitation. The primary focus of the company was development of web based applications and the integration of a clients systems into a computer based environment. We also offered freelance programming services, web hosting, web site design and maintenance, and setup and installation of intranet hardware and software components. Specialized in online commerce systems and I have installed, upgraded and maintained online payment servers by Cybercash, First Virtual, and Verisign.
-                                    <div class="highlights">Highlights</div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Clients included: Symantec, King Media, The Exploratorium and The Astronomical Society of the Pacific</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">True World Access, Inc.</div>
-                                <div class="year">January 1994 – May 1995</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="job-details col-xs-11">
-                                <div class="profession">Web Developer &#x2F; Systems Administrator</div>
-                                <div class="description">
-                                    System Administrator/Programmer for a network of mixed SunOS/Solaris/NT servers. Also head of programming staff. Responsible for maintenance of all network hosts, virtually hosted web, email, ftp, and gopher services. Maintained server statistics, CGI scripts and eventually developed online retail software that is used for dozens of web catalogs. Other job functions included working directly with clients during development of their software and site, designing of graphics and layout of web sites, implementing new and emerging technologies on clients sites, and handling some customer technical support issues.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <!-- AWARDS -->
-                <div class="box">
-                    <h2><i class="fa fa-certificate ico"></i> Awards</h2>
-                    <ul id="awards" class="clearfix">
-                        <li>
-                            <div class="year pull-left">June 1988</div>
-                            <div class="description pull-right">
-                                <h3>Paradise High School</h3>
-                                <p><i class="fa fa-trophy ico"></i> Computer Science Award</p>
-                                <p>First recipient of the Paradise High School "Computer Science Award" for developing a data application to track school resources that ran on an Apple IIe. </p>
-                            </div>
-                        </li>
-                    </ul>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Conversant, Inc.</div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;conversantmedia.com" target= "_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;conversantmedia.com</a>
+                    </div>
+                    <div class="year">July 2010 – February 2020</div>
+                  </div>
                 </div>
-                <!-- VOLUNTEER -->
-                <div class="box">
-                    <h2><i class="fa fa-group ico"></i> Volunteer</h2>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">San Francisco Elks Lodge #3</div>
-                                <div class="year">April 2010 – April 2011</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-11 pull-right">
-                                <div class="profession">Esteemed Leading Knight &#x2F; House Committee Chair</div>
-                                <div class="description">
-                                    As Leading Knight and House Committee Chair I was responsible for the day-to-day operations of the Lodge restaurant and bar as well as organizing and holding events to raise money for local underprivileged children. During my tenure as House Committee Chair, with the help of the SFPD, we were able to build 100 bicycles to give as Christmas presents to children which were very well received. We raised over $34,000 for the children in that year.
-                                </div>
-                            </div>
-                        </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Manager, Software Engineering</div>
+                    <div class="description">
+                      Designed, developed, and maintained the infrastructure and code-base that served many millions of mobile and rich media ads each day.
+Led the Rich Media effort and helped modernize the ad serving infrastructure and metric collection.
+Designed and implemented a RESTful API for serving rich media ads and built out scalable backend services to handle integration with existing servers and infrastructure.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Contributed to IAB MRAID 2.0 standard</li>
+                        <li class="list-group-item">Implemented MRAID SDK's on iOS and Android platforms</li>
+                        <li class="list-group-item">Developed and deployed mobile ad solutions for multiple platforms.</li>
+                        <li class="list-group-item">Designed and deployed 'Rich Media' ad delivery and reporting infrastructure.</li>
+                        <li class="list-group-item">Architected and deployed RESTful API for ad serving, tracking metrics and reporting.</li>
+                        <li class="list-group-item">Developed client-side Javascript 'ad controller' for mobile and web</li>
+                        <li class="list-group-item">Developed flexible metrics tracking with non-blocking endpoints</li>
+                        <li class="list-group-item">10 years</li>
+                      </ul>
                     </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col-xs-12 col-sm-5">
-                <!-- CONTACT -->
-                <div class="box clearfix">
-                    <h2><i class="fa fa-bullseye ico"></i> Contact</h2>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
-
-                        <div class="title only  pull-right">San Francisco, CA</div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Mindjet</div>
+                    <div class="address">
+                      <a href="https:&#x2F;&#x2F;www.mindjet.com" target= "_blank"><i class="fa fa-globe ico"></i> https:&#x2F;&#x2F;www.mindjet.com</a>
                     </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
-                        <div class="title only pull-right">(415) 810-6991</div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-                        <div class="title only pull-right"><a href="mailto:cdr@cdr2.com" target="_blank">cdr@cdr2.com</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
-                        <div class="title only pull-right"><a href="https:&#x2F;&#x2F;www.cdr2.com&#x2F;" target="_blank">https:&#x2F;&#x2F;www.cdr2.com&#x2F;</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
-                        <div class="title pull-right">linkedin</div>
-                        <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;crobison" target="_blank">crobison</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-twitter fa-fw"></span></div>
-                        <div class="title pull-right">twitter</div>
-                        <div class="description pull-right"><a href="https:&#x2F;&#x2F;twitter.com&#x2F;thechrisrobison" target="_blank">thechrisrobison</a></div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
-                        <div class="title pull-right">github</div>
-                        <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;chrisrobison" target="_blank">chrisrobison</a></div>
-                    </div>
+                    <div class="year">September 2007 – July 2010</div>
+                  </div>
                 </div>
-                <!-- EDUCATION -->
-                <div class="box">
-                    <h2><i class="fa fa-university ico"></i> Education</h2>
-                    <ul id="education" class="clearfix">
-                        <li>
-                            <div class="year pull-left">2009 2010</div>
-                            <div class="description pull-right">
-                                <h3>City College of San Francisco</h3>
-
-                                <p>Japanese, Business</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="year pull-left">1988 1991</div>
-                            <div class="description pull-right">
-                                <h3>California State University-Chico</h3>
-
-                                <p>Computer Science</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="year pull-left">1988 1990</div>
-                            <div class="description pull-right">
-                                <h3>Butte College</h3>
-
-                                <p>Computer Science, General Education</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="year pull-left">1984 1988</div>
-                            <div class="description pull-right">
-                                <h3>Paradise High School</h3>
-
-                                <p>General Studies</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- SKILLS -->
-                <div class="box">
-                    <h2><i class="fa fa-tasks ico"></i> Skills</h2>
-                    <div class="skills clearfix">
-                        <div class="item-skills">
-                            Programming Languages
-
-                        </div>
-                        <div class="col-sm-offset-1 col-sm-12 clearfix">
-                            <span class="skill badge">Javascript [node.js]</span>
-                            <span class="skill badge">Javascript [browser]</span>
-                            <span class="skill badge">C</span>
-                            <span class="skill badge">C++</span>
-                            <span class="skill badge">Java</span>
-                            <span class="skill badge">Kotlin</span>
-                            <span class="skill badge">Objective-C</span>
-                            <span class="skill badge">Swift</span>
-                            <span class="skill badge">PHP</span>
-                            <span class="skill badge">Python</span>
-                            <span class="skill badge">Perl</span>
-                            <span class="skill badge">Go</span>
-                            <span class="skill badge">C#</span>
-                            <span class="skill badge">Bash</span>
-                        </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Web Architect</div>
+                    <div class="description">
+                      Led Mindjet's initial Software as a Service (SaaS) product, Mindjet Catalyst. Transformed Mindjet's business model with the new service nearly doubling monthly revenue.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Ported PHP website to ASP.NET</li>
+                        <li class="list-group-item">Ported Catalyst Flash client to standards based HTML5/canvas</li>
+                        <li class="list-group-item">Architected and led the team that implemented Mindjet Catalyst</li>
+                      </ul>
                     </div>
-                    <div class="skills clearfix">
-                        <div class="item-skills">
-                            Leadership
-
-                        </div>
-                        <div class="col-sm-offset-1 col-sm-12 clearfix">
-                            <span class="skill badge">Strategic Planning</span>
-                            <span class="skill badge">Team Building</span>
-                            <span class="skill badge">Team Leadership</span>
-                            <span class="skill badge">Procedure Development</span>
-                            <span class="skill badge">Process Improvement</span>
-                            <span class="skill badge">Product Development</span>
-                            <span class="skill badge">Entrepreneurship</span>
-                            <span class="skill badge">Budgeting / Financial Planning</span>
-                        </div>
-                    </div>
-                    <div class="skills clearfix">
-                        <div class="item-skills">
-                            Software Engineering
-
-                        </div>
-                        <div class="col-sm-offset-1 col-sm-12 clearfix">
-                            <span class="skill badge">Best Practices</span>
-                            <span class="skill badge">Entrepreneurship</span>
-                            <span class="skill badge">Software Development</span>
-                            <span class="skill badge">Microservices Architecture</span>
-                            <span class="skill badge">Scrum / Agile</span>
-                            <span class="skill badge">Mobile Application Development</span>
-                            <span class="skill badge">Cloud Services</span>
-                            <span class="skill badge">Service Integration</span>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <!-- LANGUAGES -->
-                <div class="box">
-                    <h2><i class="fa fa-language ico"></i> Languages</h2>
-                    <ul class="list-group">
-                        <li class=" list-group-item">English<span class="skill badge pull-right">Native or bilingual</span></li>
-                    </ul>
-                </div>
-                <!-- HOBBIES -->
-                <div class="box">
-                    <h2><i class="fa fa-heart ico"></i> Interests</h2>
-                    <div class="interests clearfix">
-                        <div class="item-interests">
-                            Hobbies
-                        </div>
-                        <div class="col-sm-offset-1 col-sm-12 clearfix">
-                            <span class="interest badge">3D Printing</span>
-                            <span class="interest badge">Raspberry Pi</span>
-                            <span class="interest badge">Arduino</span>
-                            <span class="interest badge">Laser engraving</span>
-                            <span class="interest badge">Electronics</span>
-                        </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Simple Software, Inc.</div>
+                    <div class="address">
+                      <a href="http:&#x2F;&#x2F;simplesoftwaresf.com" target= "_blank"><i class="fa fa-globe ico"></i> http:&#x2F;&#x2F;simplesoftwaresf.com</a>
                     </div>
-                    <div class="interests clearfix">
-                        <div class="item-interests">
-                            Recreation
-                        </div>
-                        <div class="col-sm-offset-1 col-sm-12 clearfix">
-                            <span class="interest badge">Golf</span>
-                            <span class="interest badge">Recreational Programming</span>
-                            <span class="interest badge">Karaoke</span>
-                        </div>
+                    <div class="year">April 2006 – September 2007</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">CEO &#x2F; Founder</div>
+                    <div class="description">
+                      Mr. Robison provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">GC Homes - Contractor documents and blueprints online.</li>
+                        <li class="list-group-item">Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</li>
+                        <li class="list-group-item">HUD Calculator - calculates potential reverse mortgage values</li>
+                        <li class="list-group-item">Tzero Technology - Custom content management system</li>
+                        <li class="list-group-item">Metrika - Custom content management system</li>
+                      </ul>
                     </div>
+                  </div>
                 </div>
-                <div class="box">
-                    <h2><i class="fa fa-check-square ico"></i> References</h2>
-                    <blockquote>
-                        <div>Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs.</div>
-                        <footer>
-                            <a href="chrisrobison?theme=keloran" target="_blank">Kevin Ready (Software Developer and Consultant)</a>
-                        </footer>
-                    </blockquote><br>
-                    <blockquote>
-                        <div>This guy has some seriously mad coding skills.</div>
-                        <footer>
-                            <a href="chrisrobison?theme=keloran" target="_blank">Thomas Weaver (Network Provisioner at Twitch)</a>
-                        </footer>
-                    </blockquote><br>
-                    <blockquote>
-                        <div>His system is well oil; all my web services are working with no down time. He offers all the greatest gadgets, ideal environment for a programmer like me.</div>
-                        <footer>
-                            <a href="chrisrobison?theme=keloran" target="_blank">Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</a>
-                        </footer>
-                    </blockquote><br>
-                    <blockquote>
-                        <div>Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager.</div>
-                        <footer>
-                            <a href="chrisrobison?theme=keloran" target="_blank">Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</a>
-                        </footer>
-                    </blockquote><br>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Genetic Savings &amp; Clone</div>
+                    <div class="year">June 2004 – April 2006</div>
+                  </div>
                 </div>
-            </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">VP Engineering</div>
+                    <div class="description">
+                      Genetic Savings & Clone was a genetic services company that offered commercial banking of genetic material as well as cloning services for cats. Responsible for architecting, developing and deploying Clonesoft, a bespoke business process automation software that ran every aspect of the company including employee and customer management, order tracking, tracking clone progress, and delivering the cloned pet to the customer.
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Cloned a cat and delivered it to customer</li>
+                        <li class="list-group-item">Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business and automated many processes.</li>
+                        <li class="list-group-item">CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with specialized gene analysis hardware which included the Applied Biosystem Genetic Analyser 3130.</li>
+                        <li class="list-group-item">Created and analized pet genotyping database, identifying 7 unique markers for traits such as Polycystic Kidney Disease (PKD), fur color, and polydactylism (6-toed cat).</li>
+                        <li class="list-group-item">Integration with gene analysis and sequencing hardware.</li>
+                        <li class="list-group-item">Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time's bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">Inter@ctivate, Inc.</div>
+                    <div class="year">December 2001 – June 2004</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="job-details col-xs-11">
+                    <div class="profession">Technical Director</div>
+                    <div class="description">
+                      As Technical Director for Interactivate, Inc., Mr. Robison's responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. 
+                      <div class="highlights">Highlights</div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</li>
+                        <li class="list-group-item">Designed and implemented web-based network management, monitoring & systems analysis tools</li>
+                        <li class="list-group-item">Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
+                        <li class="list-group-item">Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.</li>
+                        <li class="list-group-item">Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.</li>
+                        <li class="list-group-item">Installation & administration of Solaris, FreeBSD & Windows NT in a heterogeneous environment</li>
+                        <li class="list-group-item">Design, implementation, migration and maintenance for Interactivate's internal and external network infrastructure.</li>
+                        <li class="list-group-item">Working with vendors, developers & 3rd party integrators.</li>
+                        <li class="list-group-item">Maintain and monitor over 50 hosted client web sites and dozens of web applications</li>
+                        <li class="list-group-item">Identifying & resolving network related problems</li>
+                        <li class="list-group-item">Responsible for backup implementation and recovery strategy & procedures</li>
+                        <li class="list-group-item">Required to support high volume access & availability characteristics as well as identifying & resolving system hardware & software problems</li>
+                        <li class="list-group-item">Responsible for the full availability of DNS, SMTP, HTTP, POP & IMAP servers</li>
+                        <li class="list-group-item">Maintaining security for all Interactivate networks</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- AWARDS -->
+          <div class="box">
+            <h2><i class="fa fa-certificate ico"></i> Awards</h2>
+            <ul id="awards" class="clearfix">
+              <li>
+                <div class="year pull-left">June  1988</div>
+                <div class="description pull-right">
+                  <h3>Paradise High School</h3>
+                  <p><i class="fa fa-trophy ico"></i> Computer Science Award</p>
+                  <p>First recipient of the Paradise High School "Computer Science Award" for developing a data application to track school resources that ran on an Apple IIe.  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- VOLUNTEER -->
+          <div class="box">
+            <h2><i class= "fa fa-group ico"></i> Volunteer</h2>
+              <div class="job clearfix">
+                <div class="row">
+                  <div class="details">
+                    <div class="where">San Francisco Elks Lodge #3</div>
+                    <div class="year">April 2010 – April 2011</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-11 pull-right">
+                    <div class="profession">Esteemed Leading Knight &#x2F; House Committee Chair</div>
+                    <div class="description">
+                      As Leading Knight and House Committee Chair I was responsible for the day-to-day operations of the Lodge restaurant and bar as well as organizing and holding events to raise money for local underprivileged children.  During my tenure as House Committee Chair, with the help of the SFPD, we were able to build 100 bicycles to give as Christmas presents to children which were very well received.  We raised over $34,000 for the children in that year.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
         </div>
+        <div class="col-xs-12 col-sm-5">
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2><i class="fa fa-bullseye ico"></i> Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+              
+              <div class="title only  pull-right">San Francisco, CA</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+              <div class="title only pull-right">(415) 810-6991</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right"><a href="mailto:cdr@cdr2.com" target="_blank">cdr@cdr2.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
+              <div class="title only pull-right"><a href="https:&#x2F;&#x2F;www.cdr2.com&#x2F;" target="_blank">https:&#x2F;&#x2F;www.cdr2.com&#x2F;</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
+              <div class="title pull-right">linkedin</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;crobison" target="_blank">crobison</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-twitter fa-fw"></span></div>
+              <div class="title pull-right">twitter</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;twitter.com&#x2F;thechrisrobison" target="_blank">thechrisrobison</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
+              <div class="title pull-right">github</div>
+              <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;chrisrobison" target="_blank">chrisrobison</a></div>
+            </div>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2><i class="fa fa-university ico"></i> Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">2009 2010</div>
+                <div class="description pull-right">
+                  <h3>City College of San Francisco</h3>
+                  
+                  <p>Japanese, Business</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">1988 1991</div>
+                <div class="description pull-right">
+                  <h3>California State University-Chico</h3>
+                  
+                  <p>Computer Science</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">1988 1990</div>
+                <div class="description pull-right">
+                  <h3>Butte Community College</h3>
+                  
+                  <p>Computer Science, General Education</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2><i class="fa fa-tasks ico"></i> Skills</h2>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Programming Languages
+                  
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Javascript [node.js]</span>
+                <span class= "skill badge">Javascript [browser]</span>
+                <span class= "skill badge">C</span>
+                <span class= "skill badge">C++</span>
+                <span class= "skill badge">Java</span>
+                <span class= "skill badge">Kotlin</span>
+                <span class= "skill badge">Objective-C</span>
+                <span class= "skill badge">Swift</span>
+                <span class= "skill badge">PHP</span>
+                <span class= "skill badge">Python</span>
+                <span class= "skill badge">Perl</span>
+                <span class= "skill badge">Go</span>
+                <span class= "skill badge">C#</span>
+                <span class= "skill badge">Bash</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Leadership
+                  
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Strategic Planning</span>
+                <span class= "skill badge">Team Building</span>
+                <span class= "skill badge">Team Leadership</span>
+                <span class= "skill badge">Procedure Development</span>
+                <span class= "skill badge">Process Improvement</span>
+                <span class= "skill badge">Product Development</span>
+                <span class= "skill badge">Entrepreneurship</span>
+                <span class= "skill badge">Budgeting / Financial Planning</span>
+              </div>
+            </div>
+            <div class="skills clearfix">
+              <div class="item-skills">
+                  Software Engineering
+                  
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "skill badge">Best Practices</span>
+                <span class= "skill badge">Entrepreneurship</span>
+                <span class= "skill badge">Software Development</span>
+                <span class= "skill badge">Microservices Architecture</span>
+                <span class= "skill badge">Scrum / Agile</span>
+                <span class= "skill badge">Mobile Application Development</span>
+                <span class= "skill badge">Cloud Services</span>
+                <span class= "skill badge">Service Integration</span>
+              </div>
+            </div>
+          </div>
+          <!-- LANGUAGES -->
+          <div class="box">
+            <h2><i class="fa fa-language ico"></i> Languages</h2>
+            <ul class="list-group">
+              <li class=" list-group-item">English<span class="skill badge pull-right">Native or bilingual</span></li>
+            </ul>
+          </div>
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2><i class="fa fa-heart ico"></i> Interests</h2>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Hobbies
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "interest badge">3D Printing</span>
+                <span class= "interest badge">Raspberry Pi</span>
+                <span class= "interest badge">Arduino</span>
+                <span class= "interest badge">Laser engraving</span>
+                <span class= "interest badge">Electronics</span>
+              </div>
+            </div>
+            <div class="interests clearfix">
+              <div class="item-interests">
+                  Recreation
+              </div>
+              <div class="col-sm-offset-1 col-sm-12 clearfix">
+                <span class= "interest badge">Golf</span>
+                <span class= "interest badge">Recreational Programming</span>
+                <span class= "interest badge">Karaoke</span>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <h2><i class= "fa fa-check-square ico"></i> References</h2>
+            <blockquote>
+              <div>Chris has a broad understanding of Internet technologies and is generous with knowledge sharing. Equally at home working with Web Services, XMPP and server-side applications as he is working with CSS, JavaScript and the most recent HTML5 for devices. He brings a lot to a Web dev team and can pinch hit in a number of chairs.</div>
+              <footer>
+                <a href="" target= "_blank">Kevin Ready (Software Developer and Consultant)</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>This guy has some seriously mad coding skills.</div>
+              <footer>
+                <a href="" target= "_blank">Thomas Weaver (Network Provisioner at Twitch)</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>His system is well oil; all my web services are working with no down time.  He offers all the greatest gadgets, ideal environment for a programmer like me.</div>
+              <footer>
+                <a href="" target= "_blank">Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</a>
+              </footer>
+            </blockquote><br>
+            <blockquote>
+              <div>Extreme knowledge of Perl and UNIX environment, fast programmer, brilliant manager.</div>
+              <footer>
+                <a href="" target= "_blank">Benoit Marsot (Senior Developer R&amp;D at Medsphere Systems Corporation)</a>
+              </footer>
+            </blockquote><br>
+          </div>
+        </div>
+      </div>
     </div>
 
-</body>
-
+  </body>
 </html>
