@@ -6,765 +6,6 @@
   <title>Christopher Robison</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   <style>
-  /********************************************
-* 	reset from
-* 	http://meyerweb.com/eric/tools/css/reset/
-*******************************************/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/****************
-*	COMMONS
-****************/
-
-body,
-html {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 13px;
-  color: #40484f;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1.46153846;
-  text-align: left;
-    background:#fff;
-}
-
-p {
-  display: block;
-}
-
-a {
-  color: #0095ff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #0c65a5;
-  text-decoration: underline;
-}
-
-li {
-  list-style-type: square;
-  list-style-position: outside;
-  margin-left: 1.3em;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.67rem;
-}
-
-h3 {
-  font-size: 1.27rem;
-}
-
-em {
-  color: #757575;
-}
-
-blockquote {
-  margin-bottom: 1em;
-}
-
-strong {
-  font-weight: 700;
-}
-
-/* main container */
-
-#resume {
-  padding: 1.5rem;
-}
-
-/* every section wrapper */
-
-.section {
-  margin-bottom: 1rem;
-}
-
-section .location {
-  margin-right: 0.5em;
-  color: #606d76;
-  font-weight: 700;
-}
-
-#contact {
-  margin-top: 0.5rem;
-}
-
-#profiles .item {
-  padding: 0;
-}
-
-#header > #profiles,
-#header > #contact,
-#skills,
-#languages,
-#interests {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-}
-
-#header > div {
-  line-height: 1.5;
-}
-
-#header > div > div {
-  margin-right: 1.2em;
-}
-
-#header h1.name {
-  font-size: 2.8rem;
-  font-weight: 100;
-  line-height: 100%;
-}
-
-#header h2.label {
-  color: #202931;
-  font-size: 1.47rem;
-  font-weight: 300;
-}
-
-#header .image {
-  width: 11em;
-  float: right;
-  border-radius: 4px;
-}
-
-.main-summary {
-  background: #f1f8ff;
-  padding: 1.2em 1em;
-  margin-top: 1rem;
-}
-
-.main-summary p {
-  margin: 0;
-}
-
-.section-title {
-  display: inline-block;
-  background: #fff;
-  padding: 0 1em 0.3em 0;
-  color: #ff6d1f;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: none;
-  font-size: 0.9rem;
-}
-
-.section > header {
-  position: relative;
-}
-
-.fa {
-  margin-right: 0.25em;
-}
-
-.section > header::after {
-  position: absolute;
-  left: 0;
-  top: 0.7em;
-  height: 1px;
-  background: #ccc;
-  content: "";
-  width: 100%;
-  z-index: -100;
-  display: block;
-}
-
-.section.main-summary > section {
-  margin: 0;
-}
-
-.section > section > header {
-  font-size: 1.38rem;
-  position: relative;
-  margin-top: 0.7em;
-}
-
-.section > section > header:first-of-type {
-  margin: 0;
-}
-
-.section > section > header .space-left {
-  position: absolute;
-  left: -1.56rem;
-  top: 5px;
-  color: #aaa;
-  line-height: 1;
-  opacity: 0;
-}
-
-.position,
-.company,
-.organization,
-.institution,
-.date,
-.area,
-.studyType,
-.title,
-.awarder {
-  display: inline;
-}
-
-.position,
-.studyType,
-.area,
-.title,
-.language,
-.name {
-  font-weight: 600;
-}
-
-.company::before,
-.institution::before,
-.organization::before,
-.awarder::before {
-  content: "at ";
-}
-
-.company,
-.institution,
-.organization,
-.awarder {
-  color: #606d76;
-  font-weight: 400;
-}
-
-.section header .date {
-  display: block;
-  font-size: 1rem;
-  padding: 0.1em 0;
-  color: #606d76;
-  font-weight: 400;
-}
-
-.keywords,
-.courses {
-  margin: 0.5em 0;
-}
-
-.keywords li,
-.courses li {
-  display: inline-block;
-  margin: 2px 2px 2px 0;
-  padding: 4px 5px 5px;
-  font-size: 0.9rem;
-  line-height: 1;
-  color: #3e6d8e;
-  background-color: #dfeaf1;
-  border: 0 solid #dfeaf1;
-  white-space: nowrap;
-}
-
-.keywords li:hover,
-.courses li:hover {
-  background: #dfeaf0;
-}
-
-.highlights {
-  margin: 1em 0 0 0;
-}
-
-.highlights > li > p {
-  margin-bottom: 0.5em;
-}
-
-.item {
-  overflow: hidden;
-}
-
-.gpa {
-  clear: both;
-  padding-bottom: 0.5em;
-}
-
-.fa.social {
-  font-size: 1.1em;
-}
-
-/* Social Media Brand Colors */
-
-.google-plus {
-  color: #dd4b39;
-}
-
-.tumblr {
-  color: #32506d;
-}
-
-.foursquare {
-  color: #0072b1;
-}
-
-.facebook {
-  color: #3b5998;
-}
-
-.linkedin {
-  color: #007bb6;
-}
-
-.pinterest {
-  color: #cb2027;
-}
-
-.dribbble {
-  color: #ea4c89;
-}
-
-.instagram {
-  color: #517fa4;
-}
-
-.twitter {
-  color: #00aced;
-}
-
-.soundcloud {
-  color: #ff3a00;
-}
-
-.wordpress {
-  color: #21759b;
-}
-
-.youtube {
-  color: #bb0000;
-}
-
-.github {
-  color: #171515;
-}
-
-.stack-overflow {
-  color: #828386;
-  position: relative;
-}
-
-.flickr {
-  color: #ff0084;
-}
-
-.reddit {
-  color: #ff4500;
-}
-
-.hacker-news {
-  color: #ff6600;
-}
-
-.stack-overflow::after {
-  position: absolute;
-  left: 0;
-  content: "\f16c";
-  color: #f68a1f;
-  overflow: hidden;
-  height: 100%;
-}
-
-.telegram {
-  color: #2291c3;
-}
-
-#languages .item,
-#skills .item,
-#interests .item {
-  width: 15em;
-  padding: 0 0.5em 0.5em 0;
-  border-bottom: none;
-}
-
-#skills .item {
-  width: 16em;
-}
-
-#skills .item .keywords {
-  width: 15em;
-}
-
-/* Skill chart */
-
-.level {
-  margin-bottom: 0.5em;
-}
-
-.level em {
-  padding-left: 0.2em;
-}
-
-.level .bar {
-  border: 1px solid #ddd;
-  display: block;
-  width: 10em;
-  height: 5px;
-  position: relative;
-}
-
-.level .bar::after {
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  background: black;
-  height: 5px;
-}
-
-.level.beginner .bar::after {
-  background: #eb5f51;
-  width: 2.5em;
-}
-
-.level.intermediate .bar::after {
-  background: #ffdf1f;
-  width: 5em;
-}
-
-.level.advanced .bar::after,
-.level.fluent .bar::after {
-  background: #5cb85c;
-  width: 7.5em;
-}
-
-.level.master .bar::after,
-.level.native.speaker .bar::after {
-  background: #59c596;
-  width: 10em;
-}
-
-#references .item {
-  padding-left: 0.5em;
-  border-left: 5px solid #ff6d1f;
-}
-
-.section > section > section {
-  margin-bottom: 1rem;
-}
-
-/******************
-*	HELPER CLASSES
-******************/
-
-.clear::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.display {
-  display: block;
-  opacity: 1 !important;
-}
-
-/****************
-*		TABLET
-****************/
-
-@media screen and (min-width: 602px) {
-  #resume {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .section header .date {
-    float: right;
-    font-weight: 600;
-    color: #000;
-  }
-}
-
-/****************
-*		LAPTOP
-****************/
-
-@media screen and (min-width: 1025px) {
-  li {
-    margin-left: 1.5em;
-  }
-  #resume {
-    width: 820px;
-    margin: 2rem auto;
-  }
-  .section > section > header .space-left {
-    opacity: 1;
-    cursor: pointer;
-  }
-  .section > section:not(.main-summary) {
-    margin-left: 1.67rem;
-  }
-  .company::before,
-  .institution::before,
-  .organization::before,
-  .awarder::before {
-    content: "| ";
-  }
-  .header-left {
-    float: left;
-    width: 70%;
-    word-break: normal;
-  }
-  .section header .date {
-    padding: 0.2em;
-  }
-  .display {
-    display: none;
-  }
-  .display:not(.none) {
-    display: block;
-  }
-}
-
-@media print {
-  #profiles a:not(.hide-href-print)::after{
-    content: " (" attr(href) ") ";
-  }
-  #resume {
-    margin: 0.1em;
-    padding: 0.1em;
-    -ms-word-wrap: break-word;
-    word-wrap: break-word;
-    line-height: 1.25;
-  }
-  @page {
-    margin: 1cm 1.4cm;
-  }
-  .item-count {
-    display: none;
-  }
-  .company::before,
-  .institution::before,
-  .organization::before,
-  .awarder::before {
-    content: "at ";
-  }
-  .main-summary {
-    padding: 0;
-    background: transparent;
-  }
-  .section {
-    margin: 0.8rem 0;
-    padding: 0;
-  }
-  .section header {
-    padding-bottom: 0.15rem;
-  }
-  .section .location {
-    padding-bottom: 0.15rem;
-  }
-  .section > section > section {
-    margin: 0 0 1em 0;
-  }
-  .section > section > section:last-of-type {
-    margin: 0;
-  }
-  .stack-overflow::after {
-    content: "";
-  }
-  .fa.social {
-    color: #828386;
-  }
-  ul {
-    margin-top: 0.4em;
-  }
-  ul,
-  li {
-    padding: 0;
-  }
-  ul.keywords li,
-  ul.courses li {
-    margin: 0;
-    padding: 0;
-    font-size: 0.8rem;
-    background: transparent;
-  }
-  ul.keywords li::after,
-  ul.courses li::after {
-    padding: 0 0 0 0.1rem;
-    content: " |";
-  }
-  ul.keywords::before,
-  ul.courses::before {
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-  #skills .item {
-    width: calc(100% / 3);
-    padding: 0;
-  }
-  .highlights {
-    margin: 0.5em 0 0 0;
-  }
-  ul.keywords::before {
-    content: "Skills acquired: ";
-  }
-  #skills .keywords::before {
-    content: none;
-  }
-  .section p {
-    margin: 0;
-    padding: 0;
-  }
-  ul.courses::before {
-    content: "Major courses: ";
-  }
-  ul.keywords li:last-of-type::after,
-  ul.courses li:last-of-type::after {
-    content: "";
-  }
-  .level em {
-    font-style: normal;
-    padding: 0.1em 0;
-  }
-  .level .bar {
-    display: none;
-  }
-  #profiles .item {
-    padding: 0;
-  }
-  .item.display {
-    display: block;
-    opacity: 1 !important;
-  }
-  .fa-map-marker-alt:before {
-    padding-left: 0.1em;
-  }
-}
-
   
   </style>
   
@@ -775,7 +16,7 @@ section .location {
     	<header id="header" class="clear">
     		<div>
     			<h1 class="name">Christopher Robison</h1>
-    			<h2 class="label"></h2>
+    			<h2 class="label">Full Stack Expertise Meets Effective Engineering Leadership</h2>
     		</div>
     
     		<span class="location">
@@ -829,7 +70,7 @@ section .location {
     
     	<section class="section">
     		<section class="main-summary">
-    			<div><p>Results-oriented and versatile professional with extensive experience in software engineering and leadership roles. Skilled in a wide range of programming languages, including JavaScript, C++, Java, Python, and more. Proven track record of successfully leading teams and driving strategic planning, process improvement, and product development initiatives. Recognized for implementing innovative solutions and modernizing systems to support business growth, as evidenced by transforming D. Harris Tours' operations, resulting in a fleet expansion from 2 to 12 buses. Strong expertise in microservices architecture, Agile methodologies, and cloud services. Committed to continuous learning and staying updated with emerging technologies. A collaborative and proactive problem-solver with a passion for delivering exceptional results.</p></div>
+    			<div><p>Whether it’s leading a team of programmers, rapidly developing a new app, or aligning software development with strategic business objectives, I bring a blend of technical know-how, leadership skills, and business acumen to every project. I am looking forward to collaborating with you to turn your innovative ideas into reality. I have extensive experience in software engineering and leading groups of unruly programmers. Skilled in a wide range of programming languages, including JavaScript, C, C++, Java, Python, Swift, Kotlin and others. I have a proven track record of successfully leading teams, delivering finished product and driving strategic planning, process improvement, and product development initiatives. Recognized for implementing innovative solutions and modernizing systems to support business growth, as evidenced by transforming D. Harris Tours' operations, resulting in a fleet expansion from 2 to 12 buses. Strong expertise in microservices architecture, Agile methodologies, and cloud services. Committed to continuous learning and staying updated with emerging technologies. A collaborative and proactive problem-solver with a passion for delivering exceptional results. I could go on but I'm afraid I've said too much already &#128513;</p></div>
     		</section>
     	</section>
     
@@ -899,11 +140,12 @@ section .location {
       <section id="work">
         <section class="work-item">
     
+          <label for="work-item-0"></label>
     
           <header class="clear">
             <div class="date">
               <span class="startDate">Feb 2020</span>
-              <span class="endDate">- Present</span>
+              <span class="endDate">- Dec 2023</span>
             </div>
             <div class="position">CTO</div>
             <div class="company">D. Harris Tours, Inc.</div>
@@ -915,11 +157,12 @@ section .location {
             <span class="fas fa-external-link-alt"></span>
             <a target="_blank" href="https://dharristours.com/">https://dharristours.com/</a>
           </span>        <div class="item" id="work-item">
+            <div class="summary"><p><ul><li>Spearheaded technological transformation and business processes that allowed D Harris to grow from a fleet of two buses to 12 buses.</li><li>Updated and enhanced the company's systems with modern tools to better manage the growing business, including real-time bus data, automated maintenance notifications, and automated trip confirmations and notifications via email and SMS.</li><li>Implemented route optimization algorithm to identify opportunities for one bus to handle multiple trips, increasing their daily revenue by 30%.</li><li>Implemented automated notifications for trips, bus maintenance, and billing and invoicing.</li></ul></p></div>
             <ul class="highlights">
-              <li><p>Led the development and implemention of business processes and technology that allowed D Harris to grow from a fleet of two buses to 12 buses.</p></li>
-              <li><p>Updated and enhanced the company's systems with modern tools to better manage the growing business, including real-time bus data, automated maintenance notifications, and automated trip confirmations and notifications via email and SMS.</p></li>
-              <li><p>Implemented route optimization algorithm to identify opportunities for one bus to handle multiple trips, increasing their daily revenue by 30%.</p></li>
-              <li><p>Implemented automated notifications for trips, bus maintenance, and billing and invoicing.</p></li>
+              <li><p>Automated notifications for trips, bus maintenance</p></li>
+              <li><p>Automated billing and invoicing</p></li>
+              <li><p>Migrated driver logs to digital format</p></li>
+              <li><p>Increased daily revenue with better trip optimization</p></li>
             </ul>
           </div>
         </section>
@@ -933,7 +176,7 @@ section .location {
               <span class="endDate">- Feb 2020</span>
             </div>
             <div class="position">Manager, Software Engineering</div>
-            <div class="company">Conversant, Inc. (formerly Mediaplex)</div>
+            <div class="company">Conversant, Inc.</div>
           </header>
     
           <span class="fas fa-map-marker-alt"></span>
@@ -942,19 +185,22 @@ section .location {
             <span class="fas fa-external-link-alt"></span>
             <a target="_blank" href="https://conversantmedia.com">https://conversantmedia.com</a>
           </span>        <div class="item" id="work-item">
-            <div class="summary"><p>Led the Rich Media Ad team and later the Mobile Ad team.</p></div>
+            <div class="summary"><p>Designed, developed, and maintained the infrastructure and code-base that served many millions of mobile and rich media ads each day.</p><p>Led the Rich Media effort and helped modernize the ad serving infrastructure and metric collection.</p><p>Designed and implemented a RESTful API for serving rich media ads and built out scalable backend services to handle integration with existing servers and infrastructure.</p></div>
             <ul class="highlights">
-              <li><p>Designed, developed, and maintained the infrastructure and code-base that served many millions of mobile and rich media ads each day.</p></li>
-              <li><p>Led the Rich Media effort and helped modernize the ad serving infrastructure and metric collection.</p></li>
-              <li><p>Designed and implemented a RESTful API for serving rich media ads and built out scalable backend services to handle integration with existing servers and infrastructure.</p></li>
-              <li><p>Contributed to the IAB MRAID 2.0 standard, implemented MRAID SDKs on iOS and Android platforms, and developed and deployed mobile ad solutions for multiple platforms.</p></li>
-              <li><p>Architected and deployed 'Rich Media' ad delivery and reporting infrastructure, RESTful API for ad serving, tracking metrics, and reporting, and developed client-side Javascript 'ad controller' for mobile and web.</p></li>
-              <li><p>Developed flexible metrics tracking with non-blocking endpoints.</p></li>
+              <li><p>Contributed to IAB MRAID 2.0 standard</p></li>
+              <li><p>Implemented MRAID SDK's on iOS and Android platforms</p></li>
+              <li><p>Developed and deployed mobile ad solutions for multiple platforms.</p></li>
+              <li><p>Designed and deployed 'Rich Media' ad delivery and reporting infrastructure.</p></li>
+              <li><p>Architected and deployed RESTful API for ad serving, tracking metrics and reporting.</p></li>
+              <li><p>Developed client-side Javascript 'ad controller' for mobile and web</p></li>
+              <li><p>Developed flexible metrics tracking with non-blocking endpoints</p></li>
+              <li><p>10 years</p></li>
             </ul>
           </div>
         </section>
         <section class="work-item">
     
+          <label for="work-item-2"></label>
     
           <header class="clear">
             <div class="date">
@@ -971,9 +217,11 @@ section .location {
             <span class="fas fa-external-link-alt"></span>
             <a target="_blank" href="https://www.mindjet.com">https://www.mindjet.com</a>
           </span>        <div class="item" id="work-item">
+            <div class="summary"><p>Led Mindjet's initial Software as a Service (SaaS) product, Mindjet Catalyst. Transformed Mindjet's business model with the new service nearly doubling monthly revenue.</p></div>
             <ul class="highlights">
-              <li><p>Migrated the Mindjet website from PHP to an ASP.Net solution and headed up Mindjet's foray into the Software as a Service (SaaS) arena-- Mindjet Catalyst.</p></li>
-              <li><p>Ported the Catalyst client canvas from Flash to a more standards-based implementation utilizing HTML canvas and Javascript.</p></li>
+              <li><p>Ported PHP website to ASP.NET</p></li>
+              <li><p>Ported Catalyst Flash client to standards based HTML5/canvas</p></li>
+              <li><p>Architected and led the team that implemented Mindjet Catalyst</p></li>
             </ul>
           </div>
         </section>
@@ -996,13 +244,13 @@ section .location {
             <span class="fas fa-external-link-alt"></span>
             <a target="_blank" href="http://simplesoftwaresf.com">http://simplesoftwaresf.com</a>
           </span>        <div class="item" id="work-item">
-            <div class="summary"><p>Provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p></div>
+            <div class="summary"><p>Mr. Robison provided contracted software development and consulting, developed the Simple Software Application Platform that provided content management systems and business process management applications to small to mid-sized businesses.</p></div>
             <ul class="highlights">
-              <li><p>Developed custom solutions for:</p></li>
-              <li><p>GC Homes (Contractor documents and blueprints online)</p></li>
-              <li><p>Bay Docs (Document preparation services and tools for generating documentation for reverse mortgages)</p></li>
-              <li><p>Tzero Technology</p></li>
-              <li><p>Metrika</p></li>
+              <li><p>GC Homes - Contractor documents and blueprints online.</p></li>
+              <li><p>Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</p></li>
+              <li><p>HUD Calculator - calculates potential reverse mortgage values</p></li>
+              <li><p>Tzero Technology - Custom content management system</p></li>
+              <li><p>Metrika - Custom content management system</p></li>
             </ul>
           </div>
         </section>
@@ -1022,17 +270,20 @@ section .location {
           <span class="fas fa-map-marker-alt"></span>
           <span class="location">Sausalito, CA,</span>
            <div class="item" id="work-item">
-            <div class="summary"><p>Genetic Savings & Clone was a genetic services company that offered commercial pet gene banking and cloning where Mr. Robison led the Engineering department.</p></div>
+            <div class="summary"><p>Genetic Savings & Clone was a genetic services company that offered commercial banking of genetic material as well as cloning services for cats. Responsible for architecting, developing and deploying Clonesoft, a bespoke business process automation software that ran every aspect of the company including employee and customer management, order tracking, tracking clone progress, and delivering the cloned pet to the customer.</p></div>
             <ul class="highlights">
-              <li><p>Architectured, developed, and deployed Clonesoft, custom business process automation software that ran every aspect of the business from the website to cloned pet delivery.</p></li>
-              <li><p>Cloned a cat and delivered it to a customer.</p></li>
-              <li><p>Designed and developed a database-driven feline DNA identification website, CatBank.</p></li>
-              <li><p>Implemented all backend code for Retro vs. Metro, an online companion website to the New York Time's bestseller: Retro vs. Metro - The Great Political Divide in America. </p></li>
+              <li><p>Cloned a cat and delivered it to customer</p></li>
+              <li><p>Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business and automated many processes.</p></li>
+              <li><p>CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with specialized gene analysis hardware which included the Applied Biosystem Genetic Analyser 3130.</p></li>
+              <li><p>Created and analized pet genotyping database, identifying 7 unique markers for traits such as Polycystic Kidney Disease (PKD), fur color, and polydactylism (6-toed cat).</p></li>
+              <li><p>Integration with gene analysis and sequencing hardware.</p></li>
+              <li><p>Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time's bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</p></li>
             </ul>
           </div>
         </section>
         <section class="work-item">
     
+          <label for="work-item-5"></label>
     
           <header class="clear">
             <div class="date">
@@ -1046,12 +297,22 @@ section .location {
           <span class="fas fa-map-marker-alt"></span>
           <span class="location">San Diego, CA,</span>
            <div class="item" id="work-item">
+            <div class="summary"><p>As Technical Director for Interactivate, Inc., Mr. Robison's responsibilities were extensive and included, but were not limited to managing and maintaining IT resources including customer applications and websites.  Help grow the company from 10 to 65 employees. </p></div>
             <ul class="highlights">
-              <li><p>Managed and maintained IT resources, including customer applications and websites, and helped grow the company from 10 to 65 employees.</p></li>
-              <li><p>Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes, built out server clusters, and managed a farm of over 60 machines including a SAN.</p></li>
-              <li><p>Designed and implemented web-based network management, monitoring & systems analysis tools.</p></li>
+              <li><p>Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</p></li>
+              <li><p>Designed and implemented web-based network management, monitoring & systems analysis tools</p></li>
               <li><p>Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</p></li>
-              <li><p>Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting</p></li>
+              <li><p>Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.</p></li>
+              <li><p>Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.</p></li>
+              <li><p>Installation & administration of Solaris, FreeBSD & Windows NT in a heterogeneous environment</p></li>
+              <li><p>Design, implementation, migration and maintenance for Interactivate's internal and external network infrastructure.</p></li>
+              <li><p>Working with vendors, developers & 3rd party integrators.</p></li>
+              <li><p>Maintain and monitor over 50 hosted client web sites and dozens of web applications</p></li>
+              <li><p>Identifying & resolving network related problems</p></li>
+              <li><p>Responsible for backup implementation and recovery strategy & procedures</p></li>
+              <li><p>Required to support high volume access & availability characteristics as well as identifying & resolving system hardware & software problems</p></li>
+              <li><p>Responsible for the full availability of DNS, SMTP, HTTP, POP & IMAP servers</p></li>
+              <li><p>Maintaining security for all Interactivate networks</p></li>
             </ul>
           </div>
         </section>
@@ -1069,7 +330,7 @@ section .location {
           <header class="clear">
             <div class="header-left">
               <div class="position">
-                Esteemed Loyal Knight, Esteemed Leading Knight, House Committee Chair
+                Esteemed Leading Knight / House Committee Chair
               </div>
               <div class="organization">
                 San Francisco Elks Lodge #3
@@ -1080,12 +341,12 @@ section .location {
                 Apr 2010
               </span>
               <span class="endDate">
-                - Apr 2014
+                - Apr 2011
               </span>
             </div>
           </header>
           <div class="item">
-            <div class="summary"><p>Leading &amp; Loyal Knight and House Committee Chair responsibility included overseeing day-to-day operations of the Lodge restaurant and bar, organizing and holding fundraising events.  With the help of the SFPD, SFFD and local Elks memebers, built 100 bicycles which were donated to the Tenderloin Community Youth Center as Christmas presents to local children.  Raised over $34,000 for the Elks National Fund..</p></div>
+            <div class="summary"><p>As Leading Knight and House Committee Chair I was responsible for the day-to-day operations of the Lodge restaurant and bar as well as organizing and holding events to raise money for local underprivileged children.  During my tenure as House Committee Chair, with the help of the SFPD, we were able to build 100 bicycles to give as Christmas presents to children which were very well received.  We raised over $34,000 for the children in that year.</p></div>
           </div>
         </section>
       </section>
@@ -1287,5 +548,6 @@ section .location {
         </div>
       </section>
     </section>
+
   </body>
 </html>
