@@ -1,835 +1,689 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resume of Christopher Robison</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300" rel='stylesheet' type='text/css'>
-    <style type="text/css">
-        html,
-        body,
-        div,
-        span,
-        object,
-        iframe,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        blockquote,
-        pre,
-        abbr,
-        address,
-        cite,
-        code,
-        del,
-        dfn,
-        em,
-        img,
-        ins,
-        kbd,
-        q,
-        samp,
-        small,
-        strong,
-        sub,
-        sup,
-        var,
-        b,
-        i,
-        dl,
-        dt,
-        dd,
-        ol,
-        ul,
-        li,
-        fieldset,
-        form,
-        label,
-        legend,
-        table,
-        caption,
-        tbody,
-        tfoot,
-        thead,
-        tr,
-        th,
-        td,
-        article,
-        aside,
-        canvas,
-        details,
-        figcaption,
-        figure,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        section,
-        summary,
-        time,
-        mark,
-        audio,
-        video {
-            border: 0;
-            font: inherit;
-            font-size: 100%;
-            margin: 0;
-            padding: 0;
-            vertical-align: baseline;
-        }
-
-        article,
-        aside,
-        details,
-        figcaption,
-        figure,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        section {
-            display: block;
-        }
-
-        html,
-        body {
-            background: #181818;
-            font-family: 'Lato', helvetica, arial, sans-serif;
-            font-size: 16px;
-            color: #222;
-        }
-
-        .clear {
-            clear: both;
-        }
-
-        p {
-            font-size: 1em;
-            line-height: 1.4em;
-            margin-bottom: 20px;
-            color: #444;
-        }
-
-        #cv {
-            width: 90%;
-            max-width: 1000px;
-            background: #f3f3f3;
-            margin: 30px auto;
-        }
-
-        .mainDetails {
-            padding: 25px 35px;
-            border-bottom: 2px solid #cf8a05;
-            background: #ededed;
-        }
-
-        #name h1 {
-            font-size: 3.3em;
-            font-weight: 700;
-            font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-            margin-bottom: -6px;
-        }
-
-        #name h2 {
-            font-size: 2.6em;
-            margin-left: 2px;
-            font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-        }
-
-        #mainArea {
-            padding: 0 40px;
-        }
-
-        #headshot {
-            width: 20%;
-            float: left;
-            margin-right: 30px;
-        }
-
-        #headshot img {
-            width: 100%;
-            height: auto;
-            -webkit-border-radius: 100px;
-            border-radius: 100px;
-        }
-
-        #name {
-            float: left;
-        }
-
-        #contactDetails {
-            float: right;
-            width: 38%;
-        }
-
-        #contactDetails ul {
-            list-style-type: none;
-            font-size: 0.9em;
-            margin-top: 2px;
-        }
-
-        #contactDetails ul li {
-            margin-bottom: 3px;
-            color: #444;
-        }
-
-        #contactDetails ul li a,
-        a[href^=tel] {
-            color: #444;
-            text-decoration: none;
-            -webkit-transition: all .3s ease-in;
-            -moz-transition: all .3s ease-in;
-            -o-transition: all .3s ease-in;
-            -ms-transition: all .3s ease-in;
-            transition: all .3s ease-in;
-        }
-
-        #contactDetails ul li a:hover {
-            color: #cf8a05;
-        }
-
-
-        section {
-            border-top: 1px solid #dedede;
-            padding: 20px 0 0;
-        }
-
-        section:first-child {
-            border-top: 0;
-        }
-
-        section:last-child {
-            padding: 20px 0 10px;
-        }
-
-        .sectionTitle {
-            float: left;
-            width: 25%;
-        }
-
-        .sectionContent {
-            float: right;
-            width: 72.5%;
-        }
-
-        .sectionTitle h1 {
-            font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-            font-style: italic;
-            font-size: 1.5em;
-            color: #cf8a05;
-        }
-
-        .sectionContent h2 {
-            font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-            font-size: 1.5em;
-            margin-bottom: -2px;
-        }
-
-        .subDetails {
-            font-size: 0.8em;
-            font-style: italic;
-            margin-bottom: 3px;
-        }
-
-        .keySkills {
-            list-style-type: none;
-            -moz-column-count: 3;
-            -webkit-column-count: 3;
-            column-count: 3;
-            margin-bottom: 20px;
-            font-size: 1em;
-            color: #444;
-        }
-
-        .keySkills ul li {
-            margin-bottom: 3px;
-        }
-
-        .contact-item {
-            width: 100%;
-            float: left;
-        }
-
-        .contact-item .icon {
-            padding: 10px;
-            border-right: 1px solid #ccc;
-            border-bottom: 1px solid #ccc;
-            color: #32475c;
-            background: #eee;
-        }
-
-        .contact-item:last-child .icon {
-            border-bottom: none;
-        }
-
-        .contact-item .title {
-            width: 80%;
-            width: calc(100% - 55px);
-            font-weight: 700;
-            opacity: 0.9;
-        }
-
-        .contact-item .title.only {
-            margin-top: 10px;
-        }
-
-        .contact-item .description {
-            width: 80%;
-            width: calc(100% - 55px);
-            color: #334960;
-        }
-
-        .badge {
-            color: #fff;
-            display: inline-block;
-            margin-right: 5px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            padding: 5px 10px;
-            background: #32475C;
-            position: relative;
-            font-size: 1em;
-            font-weight: bold;
-            font-style: normal;
-        }
-
-        @media all and (min-width: 602px) and (max-width: 800px) {
-            #headshot {
-                display: none;
-            }
-
-            .keySkills {
-                -moz-column-count: 2;
-                -webkit-column-count: 2;
-                column-count: 2;
-            }
-        }
-
-        @media all and (max-width: 601px) {
-            #cv {
-                width: 95%;
-                margin: 10px auto;
-                min-width: 280px;
-            }
-
-            #headshot {
-                display: none;
-            }
-
-            #name,
-            #contactDetails {
-                float: none;
-                width: 100%;
-                text-align: center;
-            }
-
-            .sectionTitle,
-            .sectionContent {
-                float: none;
-                width: 100%;
-            }
-
-            .sectionTitle {
-                margin-left: -2px;
-                font-size: 1.25em;
-            }
-
-            .keySkills {
-                -moz-column-count: 2;
-                -webkit-column-count: 2;
-                column-count: 2;
-            }
-        }
-
-        @media all and (max-width: 480px) {
-            .mainDetails {
-                padding: 15px 15px;
-            }
-
-            section {
-                padding: 15px 0 0;
-            }
-
-            #mainArea {
-                padding: 0 25px;
-            }
-
-
-            .keySkills {
-                -moz-column-count: 1;
-                -webkit-column-count: 1;
-                column-count: 1;
-            }
-
-            #name h1 {
-                line-height: .8em;
-                margin-bottom: 4px;
-            }
-        }
-
-        @media print {
-            #cv {
-                width: 100%;
-            }
-
-            html,
-            body {
-                width: 100%;
-                height: auto;
-                margin: inherit;
-                padding: 0;
-            }
-
-            a[href]:after {
-                content: none !important;
-            }
-        }
-
-        @-webkit-keyframes reset {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
-        @-webkit-keyframes fade-in {
-            0% {
-                opacity: 0;
-            }
-
-            40% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @-moz-keyframes reset {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
-        @-moz-keyframes fade-in {
-            0% {
-                opacity: 0;
-            }
-
-            40% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes reset {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
-        @keyframes fade-in {
-            0% {
-                opacity: 0;
-            }
-
-            40% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        .instaFade {
-            -webkit-animation-name: reset, fade-in;
-            -webkit-animation-duration: 1.5s;
-            -webkit-animation-timing-function: ease-in;
-
-            -moz-animation-name: reset, fade-in;
-            -moz-animation-duration: 1.5s;
-            -moz-animation-timing-function: ease-in;
-
-            animation-name: reset, fade-in;
-            animation-duration: 1.5s;
-            animation-timing-function: ease-in;
-        }
-
-        .quickFade {
-            -webkit-animation-name: reset, fade-in;
-            -webkit-animation-duration: 2.5s;
-            -webkit-animation-timing-function: ease-in;
-
-            -moz-animation-name: reset, fade-in;
-            -moz-animation-duration: 2.5s;
-            -moz-animation-timing-function: ease-in;
-
-            animation-name: reset, fade-in;
-            animation-duration: 2.5s;
-            animation-timing-function: ease-in;
-        }
-
-        .delayOne {
-            -webkit-animation-delay: 0, .5s;
-            -moz-animation-delay: 0, .5s;
-            animation-delay: 0, .5s;
-        }
-
-        .delayTwo {
-            -webkit-animation-delay: 0, 1s;
-            -moz-animation-delay: 0, 1s;
-            animation-delay: 0, 1s;
-        }
-
-        .delayThree {
-            -webkit-animation-delay: 0, 1.5s;
-            -moz-animation-delay: 0, 1.5s;
-            animation-delay: 0, 1.5s;
-        }
-
-        .delayFour {
-            -webkit-animation-delay: 0, 2s;
-            -moz-animation-delay: 0, 2s;
-            animation-delay: 0, 2s;
-        }
-
-        .delayFive {
-            -webkit-animation-delay: 0, 2.5s;
-            -moz-animation-delay: 0, 2.5s;
-            animation-delay: 0, 2.5s;
-        }
-    </style>
-</head>
-
-<body id="top">
-    <div id="cv" class="instaFade">
-        <div class="mainDetails">
-            <div id="headshot" class="quickFade">
-                <img src="chrisrobison?theme=tan-responsive" alt="avatar" />
-            </div>
-            <div id="name">
-                <h1 class="quickFade delayTwo">Christopher Robison</h1>
-                <h2 class="quickFade delayThree">Award-winning technology leader</h2>
-            </div>
-            <div id="contactDetails" class="quickFade delayFour">
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
-
-                    <div class="title only  pull-right">San Francisco, CA</div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
-                    <div class="title only pull-right">(415) 810-6991</div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
-                    <div class="title only pull-right"><a href="mailto:cdr@cdr2.com" target="_blank">cdr@cdr2.com</a></div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
-                    <div class="title only pull-right"><a href="https:&#x2F;&#x2F;www.cdr2.com&#x2F;" target="_blank">https:&#x2F;&#x2F;www.cdr2.com&#x2F;</a></div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
-                    <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;crobison" target="_blank">crobison</a></div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-twitter fa-fw"></span></div>
-                    <div class="description pull-right"><a href="https:&#x2F;&#x2F;twitter.com&#x2F;thechrisrobison" target="_blank">thechrisrobison</a></div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
-                    <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;chrisrobison" target="_blank">chrisrobison</a></div>
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div id="mainArea" class="quickFade delayFive">
-            <section>
-                <article>
-                    <div class="sectionTitle">
-                        <h1>About</h1>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Resume of Christopher Robison</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300" rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+border:0;
+font:inherit;
+font-size:100%;
+margin:0;
+padding:0;
+vertical-align:baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+display:block;
+}
+
+html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+
+.clear {clear: both;}
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+	color: #444;
+}
+
+#cv {
+	width: 90%;
+	max-width: 1000px;
+	background: #f3f3f3;
+	margin: 30px auto;
+}
+
+.mainDetails {
+	padding: 25px 35px;
+	border-bottom: 2px solid #cf8a05;
+	background: #ededed;
+}
+
+#name h1 {
+	font-size: 3.3em;
+	font-weight: 700;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	margin-bottom: -6px;
+}
+
+#name h2 {
+	font-size: 2.6em;
+	margin-left: 2px;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
+
+#mainArea {
+	padding: 0 40px;
+}
+
+#headshot {
+	width: 20%;
+	float: left;
+	margin-right: 30px;
+}
+
+#headshot img {
+	width: 100%;
+	height: auto;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+}
+
+#name {
+	float: left;
+}
+
+#contactDetails {
+	float: right;
+    width: 38%;
+}
+
+#contactDetails ul {
+	list-style-type: none;
+	font-size: 0.9em;
+	margin-top: 2px;
+}
+
+#contactDetails ul li {
+	margin-bottom: 3px;
+	color: #444;
+}
+
+#contactDetails ul li a, a[href^=tel] {
+	color: #444;
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+#contactDetails ul li a:hover {
+	color: #cf8a05;
+}
+
+
+section {
+	border-top: 1px solid #dedede;
+	padding: 20px 0 0;
+}
+
+section:first-child {
+	border-top: 0;
+}
+
+section:last-child {
+	padding: 20px 0 10px;
+}
+
+.sectionTitle {
+	float: left;
+	width: 25%;
+}
+
+.sectionContent {
+	float: right;
+	width: 72.5%;
+}
+
+.sectionTitle h1 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 1.5em;
+	color: #cf8a05;
+}
+
+.sectionContent h2 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	margin-bottom: -2px;
+}
+
+.subDetails {
+	font-size: 0.8em;
+	font-style: italic;
+	margin-bottom: 3px;
+}
+
+.keySkills {
+	list-style-type: none;
+	-moz-column-count:3;
+	-webkit-column-count:3;
+	column-count:3;
+	margin-bottom: 20px;
+	font-size: 1em;
+	color: #444;
+}
+
+.keySkills ul li {
+	margin-bottom: 3px;
+}
+
+.contact-item{
+  width: 100%;
+  float: left;
+}
+.contact-item .icon{
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #32475c;
+  background: #eee;
+}
+.contact-item:last-child .icon{
+  border-bottom: none;
+}
+.contact-item .title{
+  width: 80%;
+  width: calc(100% - 55px);
+  font-weight: 700;
+  opacity: 0.9;
+}
+.contact-item .title.only{
+  margin-top: 10px;
+}
+.contact-item .description{
+  width: 80%;
+  width: calc(100% - 55px);
+  color: #334960;
+}
+
+.badge{
+	color: #fff;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px 10px;
+	background: #32475C;
+	position: relative;
+	font-size: 1em;
+	font-weight: bold;
+	font-style: normal;
+}
+
+@media all and (min-width: 602px) and (max-width: 800px) {
+	#headshot {
+		display: none;
+	}
+
+	.keySkills {
+	-moz-column-count:2;
+	-webkit-column-count:2;
+	column-count:2;
+	}
+}
+
+@media all and (max-width: 601px) {
+	#cv {
+		width: 95%;
+		margin: 10px auto;
+		min-width: 280px;
+	}
+
+	#headshot {
+		display: none;
+	}
+
+	#name, #contactDetails {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.sectionTitle, .sectionContent {
+		float: none;
+		width: 100%;
+	}
+
+	.sectionTitle {
+		margin-left: -2px;
+		font-size: 1.25em;
+	}
+
+	.keySkills {
+		-moz-column-count:2;
+		-webkit-column-count:2;
+		column-count:2;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.mainDetails {
+		padding: 15px 15px;
+	}
+
+	section {
+		padding: 15px 0 0;
+	}
+
+	#mainArea {
+		padding: 0 25px;
+	}
+
+
+	.keySkills {
+	-moz-column-count:1;
+	-webkit-column-count:1;
+	column-count:1;
+	}
+
+	#name h1 {
+		line-height: .8em;
+		margin-bottom: 4px;
+	}
+}
+
+@media print {
+    #cv {
+        width: 100%;
+    }
+		html, body {
+			width:100%;
+			height:auto;
+			margin:inherit;
+			padding:0;
+		}
+		a[href]:after {
+	    content: none !important;
+	  }
+}
+
+@-webkit-keyframes reset {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes reset {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes reset {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.instaFade {
+    -webkit-animation-name: reset, fade-in;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in;
+
+	-moz-animation-name: reset, fade-in;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-timing-function: ease-in;
+
+	animation-name: reset, fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+.quickFade {
+    -webkit-animation-name: reset, fade-in;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-timing-function: ease-in;
+
+	-moz-animation-name: reset, fade-in;
+    -moz-animation-duration: 2.5s;
+    -moz-animation-timing-function: ease-in;
+
+	animation-name: reset, fade-in;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in;
+}
+
+.delayOne {
+	-webkit-animation-delay: 0, .5s;
+	-moz-animation-delay: 0, .5s;
+	animation-delay: 0, .5s;
+}
+
+.delayTwo {
+	-webkit-animation-delay: 0, 1s;
+	-moz-animation-delay: 0, 1s;
+	animation-delay: 0, 1s;
+}
+
+.delayThree {
+	-webkit-animation-delay: 0, 1.5s;
+	-moz-animation-delay: 0, 1.5s;
+	animation-delay: 0, 1.5s;
+}
+
+.delayFour {
+	-webkit-animation-delay: 0, 2s;
+	-moz-animation-delay: 0, 2s;
+	animation-delay: 0, 2s;
+}
+
+.delayFive {
+	-webkit-animation-delay: 0, 2.5s;
+	-moz-animation-delay: 0, 2.5s;
+	animation-delay: 0, 2.5s;
+}
+
+		</style>
+	</head>
+	<body id="top">
+		<div id="cv" class="instaFade">
+			<div class="mainDetails">
+				<div id="headshot" class="quickFade">
+					<img src="" alt="avatar" />
+				</div>
+				<div id="name">
+					<h1 class="quickFade delayTwo">Christopher Robison</h1>
+					<h2 class="quickFade delayThree">Full Stack Expertise Meets Effective Engineering Leadership</h2>
+				</div>
+				<div id="contactDetails" class="quickFade delayFour">
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span></div>
+                          
+                          <div class="title only  pull-right">San Francisco, CA</div>
+                        </div>
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+                          <div class="title only pull-right">(415) 810-6991</div>
+                        </div>
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+                          <div class="title only pull-right"><a href="mailto:cdr@cdr2.com" target="_blank">cdr@cdr2.com</a></div>
+                        </div>
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span></div>
+                          <div class="title only pull-right"><a href="https:&#x2F;&#x2F;www.cdr2.com&#x2F;" target="_blank">https:&#x2F;&#x2F;www.cdr2.com&#x2F;</a></div>
+                        </div>
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="fa fa-linkedin fa-fw"></span></div>
+                          <div class="description pull-right"><a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;crobison" target="_blank">crobison</a></div>
+                        </div>
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="fa fa-twitter fa-fw"></span></div>
+                          <div class="description pull-right"><a href="https:&#x2F;&#x2F;twitter.com&#x2F;thechrisrobison" target="_blank">thechrisrobison</a></div>
+                        </div>
+                        <div class="contact-item">
+                          <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span></div>
+                          <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;chrisrobison" target="_blank">chrisrobison</a></div>
+                        </div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="mainArea" class="quickFade delayFive">
+				<section>
+					<article>
+						<div class="sectionTitle">
+							<h1>About</h1>
+						</div>
+						<div class="sectionContent">
+							<p>Whether it’s leading a team of programmers, rapidly developing a new app, or aligning software development with strategic business objectives, I bring a blend of technical know-how, leadership skills, and business acumen to every project. I am looking forward to collaborating with you to turn your innovative ideas into reality. I have extensive experience in software engineering and leading groups of unruly programmers. Skilled in a wide range of programming languages, including JavaScript, C, C++, Java, Python, Swift, Kotlin and others. I have a proven track record of successfully leading teams, delivering finished product and driving strategic planning, process improvement, and product development initiatives. Recognized for implementing innovative solutions and modernizing systems to support business growth, as evidenced by transforming D. Harris Tours' operations, resulting in a fleet expansion from 2 to 12 buses. Strong expertise in microservices architecture, Agile methodologies, and cloud services. Committed to continuous learning and staying updated with emerging technologies. A collaborative and proactive problem-solver with a passion for delivering exceptional results. I could go on but I'm afraid I've said too much already &#128513;</p>
+						</div>
+					</article>
+					<div class="clear"></div>
+				</section>
+				<section>
+					<div class="sectionTitle">
+						<h1><B>WORK EXPERIENCE</B></h1>
+					</div>
+					<div class="sectionContent">
+						<article>
+                            <h2>CTO at D. Harris Tours, Inc., San Francisco, CA</h2>
+                            <p class="subDetails">February 2020 – December 2023</p>
+                                <ul class="info">
+                                    <li>Automated notifications for trips, bus maintenance</li>
+                                    <li>Automated billing and invoicing</li>
+                                    <li>Migrated driver logs to digital format</li>
+                                    <li>Increased daily revenue with better trip optimization</li>
+                                </ul>
+                            <br/>
+                            <h2>Manager, Software Engineering at Conversant, Inc., San Francisco, CA</h2>
+                            <p class="subDetails">July 2010 – February 2020</p>
+                                <ul class="info">
+                                    <li>Contributed to IAB MRAID 2.0 standard</li>
+                                    <li>Implemented MRAID SDK's on iOS and Android platforms</li>
+                                    <li>Developed and deployed mobile ad solutions for multiple platforms.</li>
+                                    <li>Designed and deployed 'Rich Media' ad delivery and reporting infrastructure.</li>
+                                    <li>Architected and deployed RESTful API for ad serving, tracking metrics and reporting.</li>
+                                    <li>Developed client-side Javascript 'ad controller' for mobile and web</li>
+                                    <li>Developed flexible metrics tracking with non-blocking endpoints</li>
+                                    <li>10 years</li>
+                                </ul>
+                            <br/>
+                            <h2>Web Architect at Mindjet, San Francisco, CA</h2>
+                            <p class="subDetails">September 2007 – July 2010</p>
+                                <ul class="info">
+                                    <li>Ported PHP website to ASP.NET</li>
+                                    <li>Ported Catalyst Flash client to standards based HTML5/canvas</li>
+                                    <li>Architected and led the team that implemented Mindjet Catalyst</li>
+                                </ul>
+                            <br/>
+                            <h2>CEO &#x2F; Founder at Simple Software, Inc., San Francisco, CA</h2>
+                            <p class="subDetails">April 2006 – September 2007</p>
+                                <ul class="info">
+                                    <li>GC Homes - Contractor documents and blueprints online.</li>
+                                    <li>Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</li>
+                                    <li>HUD Calculator - calculates potential reverse mortgage values</li>
+                                    <li>Tzero Technology - Custom content management system</li>
+                                    <li>Metrika - Custom content management system</li>
+                                </ul>
+                            <br/>
+                            <h2>VP Engineering at Genetic Savings &amp; Clone, Sausalito, CA</h2>
+                            <p class="subDetails">June 2004 – April 2006</p>
+                                <ul class="info">
+                                    <li>Cloned a cat and delivered it to customer</li>
+                                    <li>Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business and automated many processes.</li>
+                                    <li>CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with specialized gene analysis hardware which included the Applied Biosystem Genetic Analyser 3130.</li>
+                                    <li>Created and analized pet genotyping database, identifying 7 unique markers for traits such as Polycystic Kidney Disease (PKD), fur color, and polydactylism (6-toed cat).</li>
+                                    <li>Integration with gene analysis and sequencing hardware.</li>
+                                    <li>Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time's bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</li>
+                                </ul>
+                            <br/>
+                            <h2>Technical Director at Inter@ctivate, Inc., San Diego, CA</h2>
+                            <p class="subDetails">December 2001 – June 2004</p>
+                                <ul class="info">
+                                    <li>Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</li>
+                                    <li>Designed and implemented web-based network management, monitoring & systems analysis tools</li>
+                                    <li>Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
+                                    <li>Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.</li>
+                                    <li>Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.</li>
+                                    <li>Installation & administration of Solaris, FreeBSD & Windows NT in a heterogeneous environment</li>
+                                    <li>Design, implementation, migration and maintenance for Interactivate's internal and external network infrastructure.</li>
+                                    <li>Working with vendors, developers & 3rd party integrators.</li>
+                                    <li>Maintain and monitor over 50 hosted client web sites and dozens of web applications</li>
+                                    <li>Identifying & resolving network related problems</li>
+                                    <li>Responsible for backup implementation and recovery strategy & procedures</li>
+                                    <li>Required to support high volume access & availability characteristics as well as identifying & resolving system hardware & software problems</li>
+                                    <li>Responsible for the full availability of DNS, SMTP, HTTP, POP & IMAP servers</li>
+                                    <li>Maintaining security for all Interactivate networks</li>
+                                </ul>
+                            <br/>
+						</article>
+						<br>
+					</div>
+					<div class="clear"></div>
+				</section>
+				<section>
+					<div class="sectionTitle">
+						<h1><B>CERTIFICATIONS</B></h1>
+					</div>
+					<div class="sectionContent">
+						<article>
+						</article>
+						<br>
+					</div>
+					<div class="clear"></div>
+				</section>
+				<section>
+					<div class="sectionTitle">
+						<h1><B>PROJECTS</B></h1>
+					</div>
+					<div class="sectionContent">
+						<article>
+						</article>
+						<br>
+					</div>
+					<div class="clear"></div>
+				</section>
+				<section>
+					<div class="sectionTitle">
+                        <h1><B>SKILLS</B></h1>
                     </div>
                     <div class="sectionContent">
-                        <p>Skilled technology leader excelling in the rapid development of solutions to manage complex technical environments for growing companies, ranging from startups to billion dollar industry leaders. With over 20 years experience in the industry, I can build, develop and lead high-performance technical teams and effectively manage people and resources in-person and remotely across multiple geographic locations. My extensive experience allows me to leverage my business acumen and technical expertise to translate a technology needs into innovative solutions and actionable plans. Hands-on but I know how to delegate. I am just as comfortable managing people and engineering resources as I am hacking away at code. tl;dr: I build things that make companies go.</p>
+                        <article>
+						<div class="info">
+                            <br/><h2>Programming Languages</h2>
+							<div class="info">
+								
+							</div>
+							<div class="col-sm-offset-1 col-sm-12 subDetails">
+								<span class= "skill badge">Javascript [node.js]  </span>
+								<span class= "skill badge">Javascript [browser]  </span>
+								<span class= "skill badge">C  </span>
+								<span class= "skill badge">C++  </span>
+								<span class= "skill badge">Java  </span>
+								<span class= "skill badge">Kotlin  </span>
+								<span class= "skill badge">Objective-C  </span>
+								<span class= "skill badge">Swift  </span>
+								<span class= "skill badge">PHP  </span>
+								<span class= "skill badge">Python  </span>
+								<span class= "skill badge">Perl  </span>
+								<span class= "skill badge">Go  </span>
+								<span class= "skill badge">C#  </span>
+								<span class= "skill badge">Bash  </span>
+							</div>
+
+						</div>
+                        </article>
+                        <article>
+						<div class="info">
+                            <br/><h2>Leadership</h2>
+							<div class="info">
+								
+							</div>
+							<div class="col-sm-offset-1 col-sm-12 subDetails">
+								<span class= "skill badge">Strategic Planning  </span>
+								<span class= "skill badge">Team Building  </span>
+								<span class= "skill badge">Team Leadership  </span>
+								<span class= "skill badge">Procedure Development  </span>
+								<span class= "skill badge">Process Improvement  </span>
+								<span class= "skill badge">Product Development  </span>
+								<span class= "skill badge">Entrepreneurship  </span>
+								<span class= "skill badge">Budgeting / Financial Planning  </span>
+							</div>
+
+						</div>
+                        </article>
+                        <article>
+						<div class="info">
+                            <br/><h2>Software Engineering</h2>
+							<div class="info">
+								
+							</div>
+							<div class="col-sm-offset-1 col-sm-12 subDetails">
+								<span class= "skill badge">Best Practices  </span>
+								<span class= "skill badge">Entrepreneurship  </span>
+								<span class= "skill badge">Software Development  </span>
+								<span class= "skill badge">Microservices Architecture  </span>
+								<span class= "skill badge">Scrum / Agile  </span>
+								<span class= "skill badge">Mobile Application Development  </span>
+								<span class= "skill badge">Cloud Services  </span>
+								<span class= "skill badge">Service Integration  </span>
+							</div>
+
+						</div>
+                        </article>
+					</div>
+					<div class="clear"></div>
+				</section>
+				<section>
+					<!-- EDUCATION -->
+                    <div class="sectionTitle">
+                        <h1><B>EDUCATION</B></h1>
                     </div>
-                </article>
-                <div class="clear"></div>
-            </section>
-            <section>
-                <div class="sectionTitle">
-                    <h1><B>WORK EXPERIENCE</B></h1>
-                </div>
-                <div class="sectionContent">
-                    <article>
-                        <h2>Chief Technology Officer at D. Harris Tours, Inc., San Francisco, CA</h2>
-                        <p class="subDetails">February 2020 – December 2020</p>
-                        <ul class="info">
-                            <li>Automated notifications for trips, bus maintenance</li>
-                            <li>Automated billing and invoicing</li>
-                            <li>Migrated driver logs to digital format</li>
-                            <li>Increased daily revenue with better trip optimization</li>
-                        </ul>
-                        <br />
-                        <h2>Manager, Software Engineering at Conversant, Inc. (formerly Mediaplex), San Francisco, CA</h2>
-                        <p class="subDetails">July 2010 – February 2020</p>
-                        <ul class="info">
-                            <li>Contributed to IAB MRAID 2.0 standard</li>
-                            <li>Implemented MRAID SDK's on iOS and Android platforms</li>
-                            <li>Developed and deployed mobile ad solutions for multiple platforms.</li>
-                            <li>Designed and deployed 'Rich Media' ad delivery and reporting infrastructure.</li>
-                            <li>Architected and deployed RESTful API for ad serving, tracking metrics and reporting.</li>
-                            <li>Developed client-side Javascript 'ad controller' for mobile and web</li>
-                            <li>Developed flexible metrics tracking with non-blocking endpoints</li>
-                            <li>10 years</li>
-                        </ul>
-                        <br />
-                        <h2>Web Architect at Mindjet, San Francisco, CA</h2>
-                        <p class="subDetails">September 2007 – July 2010</p>
-                        <br />
-                        <h2>CEO &#x2F; Founder at Simple Software, Inc., San Francisco, CA</h2>
-                        <p class="subDetails">April 2006 – September 2007</p>
-                        <ul class="info">
-                            <li>GC Homes - Contractor documents and blueprints online. [http://gch-dev.netoasis.net/app/]</li>
-                            <li>Bay Docs - Document preparation services and tools for generating documentation for reverse mortgages</li>
-                            <li>Lender Tool: http://bay-dev.netoasis.net/lenders.php</li>
-                            <li>Form Definition Tool: http://bay-dev.netoasis.net/fields.php?id=50</li>
-                            <li>HUD Calculator - calculates potential reverse mortgage values: http://bay-dev.netoasis.net/HUD/calc.html</li>
-                            <li>DB Tool: http://bay-dev.netoasis.net/admin/dbedit/</li>
-                            <li>Tzero Technology - Customized content management system http://www.tzerotech.com/site/</li>
-                            <li>TZero Technology CMS: http://tzero-dev.netoasis.net/</li>
-                            <li>Metrika - Customized content management system http://www.metrika.com/site/</li>
-                            <li>Metrika CMS: http://met-dev.netoasis.net/</li>
-                        </ul>
-                        <br />
-                        <h2>VP Engineering at Genetic Savings &amp; Clone, Sausalito, CA</h2>
-                        <p class="subDetails">June 2004 – April 2006</p>
-                        <ul class="info">
-                            <li>Cloned a cat and delivered it to customer</li>
-                            <li>Clonesoft - Architected and implemented web-based business process application that was used to manage the animal gene banking and feline cloning business.</li>
-                            <li>CatBank - http://www.catbank.org/ Designed and developed database driven feline DNA identification website. Back-end requirements included integration with various genetic analysis hardware including the Applied Biosystem Genetic Analyser 3130</li>
-                            <li>Integration of genetic analysis hardware</li>
-                            <li>Retro vs. Metro - http://www.retrovsmetro.org/ Implemented all backend code for this online companion website to the New York Time's bestseller: Retro vs. Metro - The Great Political Divide in America. Required access and aggregation of various data items scattered across the Internet (such as the Iraq war dead count and real-time government deficit counter)</li>
-                        </ul>
-                        <br />
-                        <h2>Technical Director at Inter@ctivate, Inc., San Diego, CA</h2>
-                        <p class="subDetails">December 2001 – June 2004</p>
-                        <ul class="info">
-                            <li>Designed and architected network infrastructure using both Windows servers and various legacy Unix boxes. Built out server clusters and managed a farm of over 60 machines including a SAN.</li>
-                            <li>Designed and implemented web-based network management, monitoring & systems analysis tools</li>
-                            <li>Developed web-based tools for creation and maintenance of customer websites, DNS, and email services.</li>
-                            <li>Designed and developed email marketing application using 3 tier architecture and XML and XSLT for transporting and rendering email messages and associated web pages. As of December, 2003, the Activatemail system sends and tracks over 1,000,000 requested messages per day between 89 clients including Sunkist Growers, The California Avocado Commission, San Diego Zoo and many more.</li>
-                            <li>Setup automated development environment which allows Interactivate developers to create their own dedicated web sandboxes via a web interface. Automated CVS checkouts and local network mounts to development sandboxes rounded out this implementation.</li>
-                            <li>Installation & administration of Solaris, FreeBSD & Windows NT in a heterogeneous environment</li>
-                            <li>Design, implementation, migration and maintenance for Interactivate's internal and external network infrastructure.</li>
-                            <li>Working with vendors, developers & 3rd party integrators.</li>
-                            <li>Maintain and monitor over 50 hosted client web sites and dozens of web applications</li>
-                            <li>Identifying & resolving network related problems</li>
-                            <li>Responsible for backup implementation and recovery strategy & procedures</li>
-                            <li>Required to support high volume access & availability characteristics as well as identifying & resolving system hardware & software problems</li>
-                            <li>Responsible for the full availability of DNS, SMTP, HTTP, POP & IMAP servers</li>
-                            <li>Maintaining security for all Interactivate networks</li>
-                        </ul>
-                        <br />
-                        <h2>Software Architect &#x2F; Technical Director at TheFinancialCafe.Com, San Francisco, CA</h2>
-                        <p class="subDetails">May 2000 – November 2001</p>
-                        <ul class="info">
-                            <li>Designed and implemented web-based network management & systems analysis tools</li>
-                            <li>Required to support high volume access & availability characteristics as well as identifying & resolving system hardware & software problems</li>
-                            <li>Working with vendors, developers & 3rd party integrators.</li>
-                            <li>Installation & administration of Solaris, FreeBSD & Windows NT in a heterogeneous environment</li>
-                            <li>Installation & maintaining network equipment</li>
-                            <li>Responsible for the full availability of DNS, SMTP, HTTP, POP & IMAP servers</li>
-                            <li>Design, implementation, and maintenance for the companies internal and external network infrastructure.</li>
-                            <li>Extensive automation of administrative functions via shell scripting & Perl</li>
-                            <li>Responsible for backup implementation and recovery strategy & procedures</li>
-                            <li>DBA to a number of Mysql databases (one master, multiple slaves)</li>
-                            <li>Responsible for the seamless integration of multiple third-party application services into the company's website.</li>
-                        </ul>
-                        <br />
-                        <h2>Senior Web Developer &#x2F; Administrator at Food.Com, San Francisco, CA</h2>
-                        <p class="subDetails">March 1998 – May 2000</p>
-                        <ul class="info">
-                            <li>Developed 'FUDGE', the 'Food.Com Ubiquitous Dining Guide Engine' which was used by thousands of restaurant reviewers to enter and maintain Food.Com's dining guide database.</li>
-                            <li>Setup of automated development environment using web-based tools</li>
-                            <li>Development of tools and utilities (both web based and command line) to automate development efforts</li>
-                            <li>Migration of code-base from Objective-C/WebObjects to Java</li>
-                            <li>Wrote and maintained various web-based backend tools for maintaining accounts and order information</li>
-                        </ul>
-                        <br />
-                        <h2>Web Engineer at Slip.Net, San Francisco, CA</h2>
-                        <p class="subDetails">May 1996 – March 1998</p>
-                        <ul class="info">
-                            <li>Built the Slip.Net Account Control Center which allowed customers to administrate their own accounts. Reduced support call volume by 50% the first week.</li>
-                            <li>Developed Slip.Net Signup Wizard that walked a customer through setting up a new account as well as register domain names and setup website services all handled automatically</li>
-                        </ul>
-                        <br />
-                        <h2>Founder &#x2F; Chief Developer at The NetOASIS Software Co., San Francisco, CA</h2>
-                        <p class="subDetails">May 1995 – May 1996</p>
-                        <ul class="info">
-                            <li>Clients included: Symantec, King Media, The Exploratorium and The Astronomical Society of the Pacific</li>
-                        </ul>
-                        <br />
-                        <h2>Web Developer &#x2F; Systems Administrator at True World Access, Inc., Los Angeles, CA</h2>
-                        <p class="subDetails">January 1994 – May 1995</p>
-                        <br />
-                    </article>
-                    <br>
-                </div>
-                <div class="clear"></div>
-            </section>
-            <section>
-                <div class="sectionTitle">
-                    <h1><B>PROJECTS</B></h1>
-                </div>
-                <div class="sectionContent">
-                    <article>
-                    </article>
-                    <br>
-                </div>
-                <div class="clear"></div>
-            </section>
-            <section>
-                <div class="sectionTitle">
-                    <h1><B>SKILLS</B></h1>
-                </div>
-                <div class="sectionContent">
-                    <article>
-                        <div class="info">
-                            <br />
-                            <h2>Programming Languages</h2>
-                            <div class="info">
-
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-12 subDetails">
-                                <span class="skill badge">Javascript [node.js] </span>
-                                <span class="skill badge">Javascript [browser] </span>
-                                <span class="skill badge">C </span>
-                                <span class="skill badge">C++ </span>
-                                <span class="skill badge">Java </span>
-                                <span class="skill badge">Kotlin </span>
-                                <span class="skill badge">Objective-C </span>
-                                <span class="skill badge">Swift </span>
-                                <span class="skill badge">PHP </span>
-                                <span class="skill badge">Python </span>
-                                <span class="skill badge">Perl </span>
-                                <span class="skill badge">Go </span>
-                                <span class="skill badge">C# </span>
-                                <span class="skill badge">Bash </span>
-                            </div>
-
-                        </div>
-                    </article>
-                    <article>
-                        <div class="info">
-                            <br />
-                            <h2>Leadership</h2>
-                            <div class="info">
-
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-12 subDetails">
-                                <span class="skill badge">Strategic Planning </span>
-                                <span class="skill badge">Team Building </span>
-                                <span class="skill badge">Team Leadership </span>
-                                <span class="skill badge">Procedure Development </span>
-                                <span class="skill badge">Process Improvement </span>
-                                <span class="skill badge">Product Development </span>
-                                <span class="skill badge">Entrepreneurship </span>
-                                <span class="skill badge">Budgeting / Financial Planning </span>
-                            </div>
-
-                        </div>
-                    </article>
-                    <article>
-                        <div class="info">
-                            <br />
-                            <h2>Software Engineering</h2>
-                            <div class="info">
-
-                            </div>
-                            <div class="col-sm-offset-1 col-sm-12 subDetails">
-                                <span class="skill badge">Best Practices </span>
-                                <span class="skill badge">Entrepreneurship </span>
-                                <span class="skill badge">Software Development </span>
-                                <span class="skill badge">Microservices Architecture </span>
-                                <span class="skill badge">Scrum / Agile </span>
-                                <span class="skill badge">Mobile Application Development </span>
-                                <span class="skill badge">Cloud Services </span>
-                                <span class="skill badge">Service Integration </span>
-                            </div>
-
-                        </div>
-                    </article>
-                </div>
-                <div class="clear"></div>
-            </section>
-            <section>
-                <!-- EDUCATION -->
-                <div class="sectionTitle">
-                    <h1><B>EDUCATION</B></h1>
-                </div>
-                <div class="sectionContent">
-                    <article>
-                        <h2>City College of San Francisco</h2>
-                        <p class="subDetails">2009 - 2010</p>
-                    </article>
-                    <br>
-                    <article>
-                        <h2>California State University-Chico</h2>
-                        <p class="subDetails">1988 - 1991</p>
-                    </article>
-                    <br>
-                    <article>
-                        <h2>Butte College</h2>
-                        <p class="subDetails">1988 - 1990</p>
-                    </article>
-                    <br>
-                    <article>
-                        <h2>Paradise High School</h2>
-                        <p class="subDetails">1984 - 1988</p>
-                    </article>
-                    <br>
-                </div>
-                <div class="clear" />
-            </section>
-        </div>
-    </div>
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-        var pageTracker = _gat._getTracker("UA-3753241-1");
-        pageTracker._initData();
-        pageTracker._trackPageview();
-    </script>
-</body>
-
+                    <div class="sectionContent">
+                        <article>
+                            <h2>City College of San Francisco</h2>
+                            <p class="subDetails">2009 - 2010</p>
+                        </article>
+                        <br>
+                        <article>
+                            <h2>California State University-Chico</h2>
+                            <p class="subDetails">1988 - 1991</p>
+                        </article>
+                        <br>
+                        <article>
+                            <h2>Butte Community College</h2>
+                            <p class="subDetails">1988 - 1990</p>
+                        </article>
+                        <br>
+                    </div>
+					<div class="clear" />
+				</section>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-3753241-1");
+			pageTracker._initData();
+			pageTracker._trackPageview();
+		</script>
+	</body>
 </html>
